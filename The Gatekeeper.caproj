@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>The Gatekeeper</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>27700</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Chris Kent" id="SpriteFontPlus" version="1">SpriteFont+</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="System">
+            <object-type name="Function" sid="787651117062534">
+                <plugin id="Function" />
+            </object-type>
+            <object-type name="Mouse" sid="809833847571406">
+                <plugin id="Mouse" />
+            </object-type>
+            <object-type name="Keyboard" sid="283810597545244">
+                <plugin id="Keyboard" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Background">
+            <object-type name="moonlight" sid="155951570907244">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="355859712714498" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Rizky\Downloads\moon-night-sky-stars-landscape-scenery-landscape-uhdpaper.com-8K-189.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-type name="Text" sid="538347276261797">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Btn_Select" sid="587870514108402">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="selected" sid="497498248064877">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="clicked" sid="264927820558664">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="373446718687947">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="460895609183763" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505263" original-source="C:\Users\Rizky\Desktop\btn.png">
+                        <collision-poly>
+                            <point x="0.123397" y="0.810526" />
+                            <point x="0.5" y="0" />
+                            <point x="0.865385" y="0.884211" />
+                            <point x="0.866987" y="0.126316" />
+                            <point x="0.5" y="1" />
+                            <point x="0.125" y="0.178947" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont_24px" sid="884395245772662">
+            <plugin id="SpriteFontPlus" />
+            <instance-variables>
+                <instance-variable name="menu" sid="995485286394917" type="number" />
+            </instance-variables>
+            <texture original-source="C:\Users\Rizky\Desktop\font\SpriteFont_RecoletaDEMO_Regular_(24)_[1,1,1,1]_32x30.png" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>MainMenu.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>MainMenu.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Function" uid="2" />
+        <global-instance type="Mouse" uid="3" />
+        <global-instance type="Keyboard" uid="4" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

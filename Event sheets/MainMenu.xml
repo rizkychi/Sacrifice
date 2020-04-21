@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MainMenu</name>
+    <events>
+        <variable constant="0" name="canvas_width" sid="810359835436184" static="0" type="number">1280</variable>
+        <variable constant="0" name="canvas_height" sid="270031639976141" static="0" type="number">720</variable>
+        <event-block sid="350440106561632">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="823111593882079" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="293122517312743" type="System">
+                    <param id="0" name="Seconds">10</param>
+                </action>
+                <action id="-6" name="Scroll to Y" sid="774442446818750" type="System">
+                    <param id="0" name="Y">canvas_height+scrolly</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="211164629512341">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="778576725355436" type="System">
+                    <param id="0" name="First value">scrolly</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">canvas_height + scrolly</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-6" name="Scroll to Y" sid="748060130784278" type="System">
+                    <param id="0" name="Y">scrolly+5</param>
+                </action>
+            </actions>
+        </event-block>
+        <variable constant="0" name="selected_menu" sid="400337251306604" static="0" type="number">0</variable>
+        <variable constant="0" name="menu_pos_x" sid="115651717605931" static="0" type="number">960</variable>
+        <variable constant="0" name="menu_pos_y" sid="942998579979188" static="0" type="number">1120</variable>
+        <event-group description="" sid="953504148835317" title="Main Menu">
+            <sub-events>
+                <event-block sid="655311428265455">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="282098811638230" type="Keyboard">
+                            <param id="0" name="Key">40</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="314215226999923">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="506999288578364" type="System">
+                                    <param id="0" name="Variable">selected_menu</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="857488464568170" type="System">
+                                    <param id="0" name="Variable">selected_menu</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="617665187930952">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="566361099244217" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="182392773797148" type="System">
+                                    <param id="0" name="Variable">selected_menu</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="377571905251803">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="901865585301051" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="806317337888400">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="797712298622100" type="System">
+                                    <param id="0" name="Variable">selected_menu</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="531985167260885" type="System">
+                                    <param id="0" name="Variable">selected_menu</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="843200143693637">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="139303350777258" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="393684051206536" type="System">
+                                    <param id="0" name="Variable">selected_menu</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="402572030847966">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="835840775129876" type="Mouse">
+                            <param id="0" name="Object">SpriteFont_24px</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="782965939623066" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="532931771700473" type="System">
+                            <param id="0" name="Variable">selected_menu</param>
+                            <param id="1" name="Value">SpriteFont_24px.menu</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="720284617265253">
+                    <conditions>
+                        <condition id="-9" name="Layer is visible" sid="202629964532261" type="System">
+                            <param id="0" name="Layer">&quot;MenuScreen&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="selected" id="10" name="Start" sid="440180958707254" type="Btn_Select">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="selected" id="3" name="Set target" sid="143949439896306" type="Btn_Select">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">menu_pos_x</param>
+                        </action>
+                        <action behavior="selected" id="3" name="Set target" sid="184940585924690" type="Btn_Select">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">menu_pos_y + selected_menu * 40</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block any="1" sid="499285674646327">
+            <conditions>
+                <condition id="0" name="On click" sid="921444447500082" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition id="0" name="On key pressed" sid="192307916489981" type="Keyboard">
+                    <param id="0" name="Key">13</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="clicked" id="10" name="Start" sid="268094297731435" type="Btn_Select">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="290781380327177" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action behavior="clicked" id="11" name="Reverse" sid="288090490992859" type="Btn_Select">
+                    <param id="0" name="Reverse mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
