@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">MainMenu</layout>
-        <event-sheet active="1" order="1">MainMenu</event-sheet>
+        <layout order="1">MainMenu</layout>
+        <event-sheet active="1" order="2">MainMenu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -23,7 +23,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/System/" />
-        <folder expanded="1" path="object-folder/Background/" />
+        <folder expanded="0" path="object-folder/Background/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
@@ -32,5 +32,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/moonlight/" />
         <folder expanded="1" path="animation-folder/Btn_Select/" />
+        <folder expanded="1" path="animation-folder/btn_check/" />
+        <folder expanded="1" path="animation-folder/fade_popup/" />
+        <folder expanded="1" path="animation-folder/bg_popup/" />
+        <folder expanded="1" path="animation-folder/btn_cross_pressed/" />
     </folders-expanded>
 </c2uistate>

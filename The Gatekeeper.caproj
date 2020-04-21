@@ -10,6 +10,7 @@
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>27700</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
@@ -18,6 +19,7 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
     </used-behaviors>
@@ -56,6 +58,9 @@
             <object-type name="Keyboard" sid="283810597545244">
                 <plugin id="Keyboard" />
             </object-type>
+            <object-type name="Browser" sid="360947787172155">
+                <plugin id="Browser" />
+            </object-type>
         </object-folder>
         <object-folder name="Background">
             <object-type name="moonlight" sid="155951570907244">
@@ -85,7 +90,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="460895609183763" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.505263" original-source="C:\Users\Rizky\Desktop\btn.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\faded_button.png">
                         <collision-poly>
                             <point x="0.123397" y="0.810526" />
                             <point x="0.5" y="0" />
@@ -98,12 +103,125 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="SpriteFont_24px" sid="884395245772662">
+        <object-type name="SpriteFont_Menu" sid="884395245772662">
             <plugin id="SpriteFontPlus" />
             <instance-variables>
                 <instance-variable name="menu" sid="995485286394917" type="number" />
             </instance-variables>
-            <texture original-source="C:\Users\Rizky\Desktop\font\SpriteFont_RecoletaDEMO_Regular_(24)_[1,1,1,1]_32x30.png" />
+            <texture original-source="C:\Users\Rizky\Desktop\font\SpriteFont_KGBlankSpaceSolid_Regular_(22)_[1,1,1,1]_27x32.png" />
+        </object-type>
+        <object-type name="btn_check" sid="577207573902056">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="741602148999668" speed="0">
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.504348" original-source="C:\Users\Rizky\Downloads\btn_check_standby.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.130435" />
+                            <point x="0.495238" y="0" />
+                            <point x="0.857143" y="0.130435" />
+                            <point x="1" y="0.495652" />
+                            <point x="0.857143" y="0.869565" />
+                            <point x="0.495238" y="1" />
+                            <point x="0.142857" y="0.869565" />
+                            <point x="0" y="0.495652" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.504348" original-source="C:\Users\Rizky\Downloads\btn_check_pressed.png">
+                        <collision-poly>
+                            <point x="0.180952" y="0.165217" />
+                            <point x="0.495238" y="0.0608696" />
+                            <point x="0.819048" y="0.165217" />
+                            <point x="1" y="0.495652" />
+                            <point x="0.857143" y="0.869565" />
+                            <point x="0.495238" y="1" />
+                            <point x="0.142857" y="0.869565" />
+                            <point x="0" y="0.495652" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fade_popup" sid="928849804887510">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="FadeIn" sid="209294212481316">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="FadeOut" sid="897241384356145">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="892826412908614" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bg_popup" sid="642212834364272">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="824771921780636">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="645618850875540" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\faded_button.png">
+                        <collision-poly>
+                            <point x="0.5" y="0" />
+                            <point x="0.82625" y="0.5" />
+                            <point x="0.5" y="1" />
+                            <point x="0.18375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont_Text" sid="554928407064154">
+            <plugin id="SpriteFontPlus" />
+            <instance-variables>
+                <instance-variable name="type" sid="554907401682220" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="FadeOut" sid="276337965557053">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="FadeIn" sid="554403698261580">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Rizky\Desktop\font\SpriteFont_KGBlankSpaceSolid_Regular_(22)_[1,1,1,1]_27x32.png" />
+        </object-type>
+        <object-type name="btn_cross_pressed" sid="369134622016919">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="875590277469070" speed="0">
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.504348" original-source="C:\Users\Rizky\Downloads\btn_cross_standby.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.130435" />
+                            <point x="0.495238" y="0" />
+                            <point x="0.857143" y="0.130435" />
+                            <point x="1" y="0.495652" />
+                            <point x="0.857143" y="0.869565" />
+                            <point x="0.495238" y="1" />
+                            <point x="0.142857" y="0.869565" />
+                            <point x="0" y="0.495652" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.504348" original-source="C:\Users\Rizky\Downloads\btn_cross_pressed.png">
+                        <collision-poly>
+                            <point x="0.180952" y="0.165217" />
+                            <point x="0.495238" y="0.0608696" />
+                            <point x="0.819048" y="0.165217" />
+                            <point x="1" y="0.495652" />
+                            <point x="0.857143" y="0.869565" />
+                            <point x="0.495238" y="1" />
+                            <point x="0.142857" y="0.869565" />
+                            <point x="0" y="0.495652" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
@@ -117,6 +235,7 @@
         <global-instance type="Function" uid="2" />
         <global-instance type="Mouse" uid="3" />
         <global-instance type="Keyboard" uid="4" />
+        <global-instance type="Browser" uid="16" />
     </global-instances>
     <sounds-folder />
     <music-folder />
