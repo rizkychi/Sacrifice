@@ -112,6 +112,14 @@
         </object-type>
         <object-type name="btn_check" sid="577207573902056">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="FadeIn" sid="823674769603024">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="FadeOut" sid="934472464843207">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="741602148999668" speed="0">
                     <frame duration="1" hotspotX="0.504762" hotspotY="0.504348" original-source="C:\Users\Rizky\Downloads\btn_check_standby.png">
@@ -192,8 +200,16 @@
             </behaviors>
             <texture original-source="C:\Users\Rizky\Desktop\font\SpriteFont_KGBlankSpaceSolid_Regular_(22)_[1,1,1,1]_27x32.png" />
         </object-type>
-        <object-type name="btn_cross_pressed" sid="369134622016919">
+        <object-type name="btn_cross" sid="369134622016919">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="FadeIn" sid="338319322087676">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="FadeOut" sid="538787241931884">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="875590277469070" speed="0">
                     <frame duration="1" hotspotX="0.504762" hotspotY="0.504348" original-source="C:\Users\Rizky\Downloads\btn_cross_standby.png">
@@ -220,6 +236,14 @@
                             <point x="0" y="0.495652" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="881451823067299">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="770206153197781" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
