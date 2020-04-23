@@ -2,9 +2,9 @@
 <c2layout>
     <name>MainMenu</name>
     <sid>8873350371196689</sid>
-    <event-sheet>MainMenu</event-sheet>
+    <event-sheet>MainMenu_Event</event-sheet>
     <size>
-        <width>2560</width>
+        <width>3840</width>
         <height>1440</height>
     </size>
     <margins>
@@ -51,6 +51,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="moonlight" uid="20">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2560</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>2560</width>
+                        <height>1440</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -70,7 +92,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Text" uid="1">
+                <instance type="Title" uid="1">
                     <properties>
                         <text>The Gatekeeper</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -85,7 +107,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>650</x>
+                        <x>1930</x>
                         <y>842</y>
                         <z>0</z>
                         <width>536</width>
@@ -132,7 +154,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>960</x>
+                        <x>2240</x>
                         <y>1120</y>
                         <z>0</z>
                         <width>360</width>
@@ -167,7 +189,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>960</x>
+                        <x>2240</x>
                         <y>1120</y>
                         <z>0</z>
                         <width>160</width>
@@ -202,7 +224,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>960</x>
+                        <x>2240</x>
                         <y>1160</y>
                         <z>0</z>
                         <width>160</width>
@@ -237,7 +259,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>960</x>
+                        <x>2240</x>
                         <y>1200</y>
                         <z>0</z>
                         <width>160</width>
@@ -272,7 +294,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>960</x>
+                        <x>2240</x>
                         <y>1240</y>
                         <z>0</z>
                         <width>160</width>
@@ -307,11 +329,436 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>960</x>
+                        <x>2240</x>
                         <y>1280</y>
                         <z>0</z>
                         <width>160</width>
                         <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="faded_background" uid="11">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>640</x>
+                        <y>1080</y>
+                        <z>0</z>
+                        <width>800</width>
+                        <height>380</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="title_bar" uid="18">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>640</x>
+                        <y>890</y>
+                        <z>0</z>
+                        <width>248.736968994</width>
+                        <height>54.547580719</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.50666666</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFont_Title" uid="19">
+                    <properties>
+                        <character-width>28</character-width>
+                        <character-height>34</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>Options</text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,19,1],&quot;&quot;data&quot;&quot;:[[[8],[7],[8],[9],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[21],[22],[25],[26],[27]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;,`&quot;&quot;],[&quot;&quot;il1.;:!&apos;|&quot;&quot;],[&quot;&quot;°&quot;&quot;],[&quot;&quot;()[]&quot;&quot;],[&quot;&quot;-+=&quot;&quot;],[&quot;&quot;\&quot;&quot;\\&lt;&quot;&quot;],[&quot;&quot;Jjt_/&gt;&quot;&quot;],[&quot;&quot;Lsz~%&quot;&quot;],[&quot;&quot;EFISTr7$£&quot;&quot;],[&quot;&quot;BZfhnux#*&quot;&quot;],[&quot;&quot;CDPRUabcdgkopq235689?&quot;&quot;],[&quot;&quot;GHKYey04€&quot;&quot;],[&quot;&quot;v&amp;&quot;&quot;],[&quot;&quot;ANVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;w&quot;&quot;],[&quot;&quot;MWm&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>640</x>
+                        <y>890</y>
+                        <z>0</z>
+                        <width>114</width>
+                        <height>34</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="btn_sound" uid="23">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <type>music</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>740</x>
+                        <y>980</y>
+                        <z>0</z>
+                        <width>55</width>
+                        <height>60</height>
+                        <depth>0</depth>
+                        <hotspotX>0.504761934</hotspotX>
+                        <hotspotY>0.504347801</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="btn_sound" uid="24">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <type>sfx</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>740</x>
+                        <y>1060</y>
+                        <z>0</z>
+                        <width>55</width>
+                        <height>60</height>
+                        <depth>0</depth>
+                        <hotspotX>0.504761934</hotspotX>
+                        <hotspotY>0.504347801</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Camera" uid="27">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="ScrollTo">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1920</x>
+                        <y>360</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Camera_Core" uid="28">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1920</x>
+                        <y>360</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="btn_back" uid="26">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>640</x>
+                        <y>1210</y>
+                        <z>0</z>
+                        <width>55</width>
+                        <height>60</height>
+                        <depth>0</depth>
+                        <hotspotX>0.504761994</hotspotX>
+                        <hotspotY>0.50434798</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFont_NormalText" uid="21">
+                    <properties>
+                        <character-width>27</character-width>
+                        <character-height>32</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>Music</text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,20,1],&quot;&quot;data&quot;&quot;:[[[7],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[22],[23],[24],[25]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;`&quot;&quot;],[&quot;&quot;il1,:&apos;|&quot;&quot;],[&quot;&quot;.;!&quot;&quot;],[&quot;&quot;)°&quot;&quot;],[&quot;&quot;([]+&quot;&quot;],[&quot;&quot;-=&quot;&quot;],[&quot;&quot;j_\&quot;&quot;\\&lt;&gt;&quot;&quot;],[&quot;&quot;Lt~/%&quot;&quot;],[&quot;&quot;IJTsz&quot;&quot;],[&quot;&quot;EFSfhnru7#*$£&quot;&quot;],[&quot;&quot;BDKUZcox23568?€&quot;&quot;],[&quot;&quot;CGHPRabdegkpqy049&amp;&quot;&quot;],[&quot;&quot;AYv&quot;&quot;],[&quot;&quot;NVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;w&quot;&quot;],[&quot;&quot;Wm&quot;&quot;],[&quot;&quot;M&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>560</x>
+                        <y>980</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>40</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFont_NormalText" uid="22">
+                    <properties>
+                        <character-width>27</character-width>
+                        <character-height>32</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>SFX</text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,20,1],&quot;&quot;data&quot;&quot;:[[[7],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[22],[23],[24],[25]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;`&quot;&quot;],[&quot;&quot;il1,:&apos;|&quot;&quot;],[&quot;&quot;.;!&quot;&quot;],[&quot;&quot;)°&quot;&quot;],[&quot;&quot;([]+&quot;&quot;],[&quot;&quot;-=&quot;&quot;],[&quot;&quot;j_\&quot;&quot;\\&lt;&gt;&quot;&quot;],[&quot;&quot;Lt~/%&quot;&quot;],[&quot;&quot;IJTsz&quot;&quot;],[&quot;&quot;EFSfhnru7#*$£&quot;&quot;],[&quot;&quot;BDKUZcox23568?€&quot;&quot;],[&quot;&quot;CGHPRabdegkpqy049&amp;&quot;&quot;],[&quot;&quot;AYv&quot;&quot;],[&quot;&quot;NVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;w&quot;&quot;],[&quot;&quot;Wm&quot;&quot;],[&quot;&quot;M&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>560</x>
+                        <y>1060</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>40</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFont_NormalText" uid="25">
+                    <properties>
+                        <character-width>27</character-width>
+                        <character-height>32</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>Credits</text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,20,1],&quot;&quot;data&quot;&quot;:[[[7],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[22],[23],[24],[25]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;`&quot;&quot;],[&quot;&quot;il1,:&apos;|&quot;&quot;],[&quot;&quot;.;!&quot;&quot;],[&quot;&quot;)°&quot;&quot;],[&quot;&quot;([]+&quot;&quot;],[&quot;&quot;-=&quot;&quot;],[&quot;&quot;j_\&quot;&quot;\\&lt;&gt;&quot;&quot;],[&quot;&quot;Lt~/%&quot;&quot;],[&quot;&quot;IJTsz&quot;&quot;],[&quot;&quot;EFSfhnru7#*$£&quot;&quot;],[&quot;&quot;BDKUZcox23568?€&quot;&quot;],[&quot;&quot;CGHPRabdegkpqy049&amp;&quot;&quot;],[&quot;&quot;AYv&quot;&quot;],[&quot;&quot;NVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;w&quot;&quot;],[&quot;&quot;Wm&quot;&quot;],[&quot;&quot;M&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>640</x>
+                        <y>1140</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>40</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="faded_background" uid="30">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3180</x>
+                        <y>1080</y>
+                        <z>0</z>
+                        <width>800</width>
+                        <height>380</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="title_bar" uid="31">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3180</x>
+                        <y>890</y>
+                        <z>0</z>
+                        <width>248.736968994</width>
+                        <height>54.547580719</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.50666666</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFont_Title" uid="32">
+                    <properties>
+                        <character-width>28</character-width>
+                        <character-height>34</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>Help</text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,19,1],&quot;&quot;data&quot;&quot;:[[[8],[7],[8],[9],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[21],[22],[25],[26],[27]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;,`&quot;&quot;],[&quot;&quot;il1.;:!&apos;|&quot;&quot;],[&quot;&quot;°&quot;&quot;],[&quot;&quot;()[]&quot;&quot;],[&quot;&quot;-+=&quot;&quot;],[&quot;&quot;\&quot;&quot;\\&lt;&quot;&quot;],[&quot;&quot;Jjt_/&gt;&quot;&quot;],[&quot;&quot;Lsz~%&quot;&quot;],[&quot;&quot;EFISTr7$£&quot;&quot;],[&quot;&quot;BZfhnux#*&quot;&quot;],[&quot;&quot;CDPRUabcdgkopq235689?&quot;&quot;],[&quot;&quot;GHKYey04€&quot;&quot;],[&quot;&quot;v&amp;&quot;&quot;],[&quot;&quot;ANVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;w&quot;&quot;],[&quot;&quot;MWm&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3180</x>
+                        <y>890</y>
+                        <z>0</z>
+                        <width>114</width>
+                        <height>34</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="btn_back" uid="35">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3180</x>
+                        <y>1210</y>
+                        <z>0</z>
+                        <width>55</width>
+                        <height>60</height>
+                        <depth>0</depth>
+                        <hotspotX>0.504761994</hotspotX>
+                        <hotspotY>0.50434798</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFont_NormalText" uid="36">
+                    <properties>
+                        <character-width>27</character-width>
+                        <character-height>32</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>How to play</text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,20,1],&quot;&quot;data&quot;&quot;:[[[7],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[22],[23],[24],[25]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;`&quot;&quot;],[&quot;&quot;il1,:&apos;|&quot;&quot;],[&quot;&quot;.;!&quot;&quot;],[&quot;&quot;)°&quot;&quot;],[&quot;&quot;([]+&quot;&quot;],[&quot;&quot;-=&quot;&quot;],[&quot;&quot;j_\&quot;&quot;\\&lt;&gt;&quot;&quot;],[&quot;&quot;Lt~/%&quot;&quot;],[&quot;&quot;IJTsz&quot;&quot;],[&quot;&quot;EFSfhnru7#*$£&quot;&quot;],[&quot;&quot;BDKUZcox23568?€&quot;&quot;],[&quot;&quot;CGHPRabdegkpqy049&amp;&quot;&quot;],[&quot;&quot;AYv&quot;&quot;],[&quot;&quot;NVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;w&quot;&quot;],[&quot;&quot;Wm&quot;&quot;],[&quot;&quot;M&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3180</x>
+                        <y>950</y>
+                        <z>0</z>
+                        <width>160</width>
+                        <height>40</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -327,8 +774,8 @@
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
             <parallax>
-                <x>1</x>
-                <y>1</y>
+                <x>0</x>
+                <y>0</y>
             </parallax>
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
@@ -368,7 +815,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>640</x>
+                        <x>1920</x>
                         <y>1080</y>
                         <z>0</z>
                         <width>1280</width>
@@ -403,7 +850,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>640</x>
+                        <x>1920</x>
                         <y>1050</y>
                         <z>0</z>
                         <width>1040</width>
@@ -415,7 +862,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SpriteFont_Text" uid="14">
+                <instance type="SpriteFont_PopupText" uid="14">
                     <properties>
                         <character-width>27</character-width>
                         <character-height>32</character-height>
@@ -425,7 +872,7 @@
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
+                        <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
                         <character-spacing>0</character-spacing>
                         <line-height>0</line-height>
@@ -458,14 +905,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>420</x>
-                        <y>970</y>
+                        <x>1920</x>
+                        <y>1010</y>
                         <z>0</z>
                         <width>440</width>
                         <height>80</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -500,8 +947,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>720</x>
-                        <y>1080</y>
+                        <x>2000</x>
+                        <y>1081</y>
                         <z>0</z>
                         <width>55</width>
                         <height>60</height>
@@ -512,7 +959,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btn_cross" uid="17">
+                <instance type="btn_close" uid="17">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -542,8 +989,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>560</x>
-                        <y>1080</y>
+                        <x>1840</x>
+                        <y>1081</y>
                         <z>0</z>
                         <width>55</width>
                         <height>60</height>

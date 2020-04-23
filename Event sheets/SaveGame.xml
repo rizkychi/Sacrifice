@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>SaveGame</name>
+    <events>
+        <comment>Game</comment>
+        <variable constant="0" name="gold" sid="673577673543886" static="0" type="number">0</variable>
+        <variable constant="0" name="stage" sid="857258920512710" static="0" type="number">0</variable>
+        <variable constant="0" name="potion_red" sid="682118864006962" static="0" type="number">0</variable>
+        <variable constant="0" name="potion_blue" sid="590790848335604" static="0" type="number">0</variable>
+        <comment>Option</comment>
+        <variable constant="0" name="sound_music" sid="598958781670658" static="0" type="number">1</variable>
+        <variable constant="0" name="sound_sfx" sid="234761892111547" static="0" type="number">1</variable>
+    </events>
+</c2eventsheet>
