@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>SaveGame</name>
     <events>
+        <variable constant="0" name="saved_game" sid="607039955341509" static="0" type="number">0</variable>
         <comment>Game</comment>
         <variable constant="0" name="gold" sid="673577673543886" static="0" type="number">0</variable>
         <variable constant="0" name="stage" sid="857258920512710" static="0" type="number">0</variable>
@@ -11,5 +12,225 @@
         <comment>Option</comment>
         <variable constant="0" name="sound_music" sid="598958781670658" static="0" type="number">1</variable>
         <variable constant="0" name="sound_sfx" sid="234761892111547" static="0" type="number">1</variable>
+        <event-block sid="344328330184494">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="860521505597611" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="135715836642432" type="Function">
+                    <param id="0" name="Name">&quot;options_load&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="467336822416256">
+            <conditions>
+                <condition id="0" name="On function" sid="391066207164174" type="Function">
+                    <param id="0" name="Name">&quot;game_save&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="405273618856428" type="LocalStorage">
+                    <param id="0" name="Key">&quot;saved_game&quot;</param>
+                    <param id="1" name="Value">saved_game</param>
+                </action>
+                <action id="0" name="Set item" sid="843139629125029" type="LocalStorage">
+                    <param id="0" name="Key">&quot;gold&quot;</param>
+                    <param id="1" name="Value">gold</param>
+                </action>
+                <action id="0" name="Set item" sid="870576174578928" type="LocalStorage">
+                    <param id="0" name="Key">&quot;stage&quot;</param>
+                    <param id="1" name="Value">stage</param>
+                </action>
+                <action id="0" name="Set item" sid="665160733460689" type="LocalStorage">
+                    <param id="0" name="Key">&quot;potion_red&quot;</param>
+                    <param id="1" name="Value">potion_red</param>
+                </action>
+                <action id="0" name="Set item" sid="904357093193899" type="LocalStorage">
+                    <param id="0" name="Key">&quot;potion_blue&quot;</param>
+                    <param id="1" name="Value">potion_blue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="266178238374566">
+            <conditions>
+                <condition id="0" name="On function" sid="275782570917952" type="Function">
+                    <param id="0" name="Name">&quot;game_new&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="439197398016457" type="System">
+                    <param id="0" name="Variable">saved_game</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="362082290368377" type="System">
+                    <param id="0" name="Variable">gold</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="637296188438822" type="System">
+                    <param id="0" name="Variable">stage</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="712573256469070" type="System">
+                    <param id="0" name="Variable">potion_red</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="798240636123437" type="System">
+                    <param id="0" name="Variable">potion_blue</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="130917255351944" type="Function">
+                    <param id="0" name="Name">&quot;game_save&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="860270260171374">
+            <conditions>
+                <condition id="0" name="On function" sid="238235075988166" type="Function">
+                    <param id="0" name="Name">&quot;game_load&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Check item exists" sid="637488375297436" type="LocalStorage">
+                    <param id="0" name="Key">&quot;gold&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="966451148694867" type="LocalStorage">
+                    <param id="0" name="Key">&quot;stage&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="584932799462170" type="LocalStorage">
+                    <param id="0" name="Key">&quot;potion_red&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="940236510289070" type="LocalStorage">
+                    <param id="0" name="Key">&quot;potion_blue&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="324953954411671">
+            <conditions>
+                <condition id="0" name="On function" sid="313727132336153" type="Function">
+                    <param id="0" name="Name">&quot;options_save&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="418640214278567" type="LocalStorage">
+                    <param id="0" name="Key">&quot;music&quot;</param>
+                    <param id="1" name="Value">sound_music</param>
+                </action>
+                <action id="0" name="Set item" sid="616906707974187" type="LocalStorage">
+                    <param id="0" name="Key">&quot;sfx&quot;</param>
+                    <param id="1" name="Value">sound_sfx</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="144156445573172">
+            <conditions>
+                <condition id="0" name="On function" sid="188919944842739" type="Function">
+                    <param id="0" name="Name">&quot;options_load&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Check item exists" sid="902472731291041" type="LocalStorage">
+                    <param id="0" name="Key">&quot;saved_game&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="481968954451907" type="LocalStorage">
+                    <param id="0" name="Key">&quot;music&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="811653355288656" type="LocalStorage">
+                    <param id="0" name="Key">&quot;sfx&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="721266165569374">
+            <conditions>
+                <condition id="9" name="On item exists" sid="398243074636882" type="LocalStorage">
+                    <param id="0" name="Key">&quot;saved_game&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="612029978395497" type="System">
+                    <param id="0" name="Variable">saved_game</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="270846062188078">
+            <conditions>
+                <condition id="9" name="On item exists" sid="953303157507468" type="LocalStorage">
+                    <param id="0" name="Key">&quot;music&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="155298899044375" type="System">
+                    <param id="0" name="Variable">sound_music</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="167031337922175">
+            <conditions>
+                <condition id="9" name="On item exists" sid="103517728018405" type="LocalStorage">
+                    <param id="0" name="Key">&quot;sfx&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="896219694843531" type="System">
+                    <param id="0" name="Variable">sound_sfx</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="262229793184268">
+            <conditions>
+                <condition id="9" name="On item exists" sid="587332112265907" type="LocalStorage">
+                    <param id="0" name="Key">&quot;gold&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="938422403945780" type="System">
+                    <param id="0" name="Variable">gold</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="132819389339567">
+            <conditions>
+                <condition id="9" name="On item exists" sid="127384001999239" type="LocalStorage">
+                    <param id="0" name="Key">&quot;stage&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="780849688514024" type="System">
+                    <param id="0" name="Variable">stage</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="683700928914327">
+            <conditions>
+                <condition id="9" name="On item exists" sid="411710653344578" type="LocalStorage">
+                    <param id="0" name="Key">&quot;potion_red&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="131308791337563" type="System">
+                    <param id="0" name="Variable">potion_red</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="119688084549416">
+            <conditions>
+                <condition id="9" name="On item exists" sid="446802287696281" type="LocalStorage">
+                    <param id="0" name="Key">&quot;potion_blue&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="152810893716462" type="System">
+                    <param id="0" name="Variable">potion_blue</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

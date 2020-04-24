@@ -417,46 +417,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btn_sound" uid="23">
+                <instance type="btn_music" uid="23">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <instance-variables>
-                        <type>music</type>
-                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>740</x>
                         <y>980</y>
-                        <z>0</z>
-                        <width>55</width>
-                        <height>60</height>
-                        <depth>0</depth>
-                        <hotspotX>0.504761934</hotspotX>
-                        <hotspotY>0.504347801</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="btn_sound" uid="24">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <type>sfx</type>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>740</x>
-                        <y>1060</y>
                         <z>0</z>
                         <width>55</width>
                         <height>60</height>
@@ -534,8 +506,8 @@
                         <width>55</width>
                         <height>60</height>
                         <depth>0</depth>
-                        <hotspotX>0.504761994</hotspotX>
-                        <hotspotY>0.50434798</hotspotY>
+                        <hotspotX>0.504761934</hotspotX>
+                        <hotspotY>0.504347801</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -728,8 +700,8 @@
                         <width>55</width>
                         <height>60</height>
                         <depth>0</depth>
-                        <hotspotX>0.504761994</hotspotX>
-                        <hotspotY>0.50434798</hotspotY>
+                        <hotspotX>0.504761934</hotspotX>
+                        <hotspotY>0.504347801</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -762,6 +734,58 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="tes_music" uid="34">
+                    <properties>
+                        <text>Text</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>550</x>
+                        <y>1100</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="btn_sfx" uid="24">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <type></type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>740</x>
+                        <y>1060</y>
+                        <z>0</z>
+                        <width>55</width>
+                        <height>60</height>
+                        <depth>0</depth>
+                        <hotspotX>0.504761994</hotspotX>
+                        <hotspotY>0.50434798</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

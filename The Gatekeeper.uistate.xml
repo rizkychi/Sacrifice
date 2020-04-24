@@ -11,8 +11,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="1">MainMenu</layout>
-        <layout active="1" order="4">WorldMap</layout>
-        <event-sheet order="2">MainMenu_Event</event-sheet>
+        <layout order="4">WorldMap</layout>
+        <event-sheet active="1" order="2">MainMenu_Event</event-sheet>
         <event-sheet order="3">SaveGame</event-sheet>
     </open-tabs>
     <properties>
@@ -24,10 +24,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="0" path="object-folder/System/" />
+        <folder expanded="1" path="object-folder/System/" />
         <folder expanded="0" path="object-folder/Background/" />
         <folder expanded="0" path="object-folder/Text/" />
-        <folder expanded="0" path="object-folder/Button/" />
+        <folder expanded="1" path="object-folder/Button/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
@@ -39,7 +39,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/btn_back/" />
         <folder expanded="1" path="animation-folder/btn_check/" />
         <folder expanded="1" path="animation-folder/btn_close/" />
-        <folder expanded="1" path="animation-folder/btn_sound/" />
+        <folder expanded="1" path="animation-folder/btn_music/" />
+        <folder expanded="1" path="animation-folder/btn_sfx/" />
         <folder expanded="1" path="animation-folder/Btn_Select/" />
         <folder expanded="1" path="animation-folder/fade_popup/" />
         <folder expanded="1" path="animation-folder/bg_popup/" />

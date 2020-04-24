@@ -13,6 +13,7 @@
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Chris Kent" id="SpriteFontPlus" version="1">SpriteFont+</plugin>
@@ -61,6 +62,9 @@
             </object-type>
             <object-type name="Browser" sid="360947787172155">
                 <plugin id="Browser" />
+            </object-type>
+            <object-type name="LocalStorage" sid="608448208729570">
+                <plugin id="LocalStorage" />
             </object-type>
         </object-folder>
         <object-folder name="Background">
@@ -223,13 +227,10 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="btn_sound" sid="968918872978455">
+            <object-type name="btn_music" sid="968918872978455">
                 <plugin id="Sprite" />
-                <instance-variables>
-                    <instance-variable name="type" sid="830179432129477" type="string" />
-                </instance-variables>
                 <animation-folder>
-                    <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="279599833658250" speed="0">
+                    <animation framecount="2" loop="0" name="SoundOn" pingpong="0" repeatcount="1" repeatto="0" sid="279599833658250" speed="0">
                         <frame duration="1" hotspotX="0.504762" hotspotY="0.504348" original-source="C:\Users\Rizky\Desktop\btn\btn_sound_on_standby.png">
                             <collision-poly>
                                 <point x="0.142857" y="0.130435" />
@@ -254,7 +255,9 @@
                                 <point x="0" y="0.495652" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.504762" hotspotY="0.504348" original-source="C:\Users\Rizky\Desktop\btn\btn_sound_off_standby.png">
+                    </animation>
+                    <animation framecount="2" loop="0" name="SoundOff" pingpong="0" repeatcount="1" repeatto="0" sid="981671570399451" speed="0">
+                        <frame duration="1" hotspotX="0.504762" hotspotY="0.504348">
                             <collision-poly>
                                 <point x="0.142857" y="0.130435" />
                                 <point x="0.495238" y="0" />
@@ -266,7 +269,67 @@
                                 <point x="0" y="0.495652" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.504762" hotspotY="0.504348" original-source="C:\Users\Rizky\Desktop\btn\btn_sound_off_pressed.png">
+                        <frame duration="1" hotspotX="0.504762" hotspotY="0.504348">
+                            <collision-poly>
+                                <point x="0.180952" y="0.165217" />
+                                <point x="0.495238" y="0.0608696" />
+                                <point x="0.819048" y="0.165217" />
+                                <point x="1" y="0.495652" />
+                                <point x="0.857143" y="0.869565" />
+                                <point x="0.495238" y="1" />
+                                <point x="0.142857" y="0.869565" />
+                                <point x="0" y="0.495652" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btn_sfx" sid="730831541594448">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="type" sid="537806068868695" type="string" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="SoundOn" pingpong="0" repeatcount="1" repeatto="0" sid="859901663051534" speed="0">
+                        <frame duration="1" hotspotX="0.504762" hotspotY="0.504348" original-source="C:\Users\Rizky\Desktop\btn\btn_sound_on_standby.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.130435" />
+                                <point x="0.495238" y="0" />
+                                <point x="0.857143" y="0.130435" />
+                                <point x="1" y="0.495652" />
+                                <point x="0.857143" y="0.869565" />
+                                <point x="0.495238" y="1" />
+                                <point x="0.142857" y="0.869565" />
+                                <point x="0" y="0.495652" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504762" hotspotY="0.504348" original-source="C:\Users\Rizky\Desktop\btn\btn_sound_on_pressed.png">
+                            <collision-poly>
+                                <point x="0.180952" y="0.165217" />
+                                <point x="0.495238" y="0.0608696" />
+                                <point x="0.819048" y="0.165217" />
+                                <point x="1" y="0.495652" />
+                                <point x="0.857143" y="0.869565" />
+                                <point x="0.495238" y="1" />
+                                <point x="0.142857" y="0.869565" />
+                                <point x="0" y="0.495652" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="2" loop="0" name="SoundOff" pingpong="0" repeatcount="1" repeatto="0" sid="244361590459736" speed="0">
+                        <frame duration="1" hotspotX="0.504762" hotspotY="0.504348">
+                            <collision-poly>
+                                <point x="0.142857" y="0.130435" />
+                                <point x="0.495238" y="0" />
+                                <point x="0.857143" y="0.130435" />
+                                <point x="1" y="0.495652" />
+                                <point x="0.857143" y="0.869565" />
+                                <point x="0.495238" y="1" />
+                                <point x="0.142857" y="0.869565" />
+                                <point x="0" y="0.495652" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504762" hotspotY="0.504348">
                             <collision-poly>
                                 <point x="0.180952" y="0.165217" />
                                 <point x="0.495238" y="0.0608696" />
@@ -414,6 +477,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="tes_music" sid="615015366625352">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -430,6 +496,7 @@
         <global-instance type="Mouse" uid="3" />
         <global-instance type="Keyboard" uid="4" />
         <global-instance type="Browser" uid="16" />
+        <global-instance type="LocalStorage" uid="33" />
     </global-instances>
     <sounds-folder />
     <music-folder />
