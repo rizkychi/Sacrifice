@@ -22,6 +22,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra, Alex Hanson-White" id="PinPlus" version="1">Pin+</behavior>
         <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
@@ -114,6 +115,17 @@
             </object-type>
             <object-type name="SpriteFont_NormalText" sid="949670844818802">
                 <plugin id="SpriteFontPlus" />
+                <instance-variables>
+                    <instance-variable name="layout" sid="496025257788275" type="string" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="829800924024429">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="807461945012203">
+                        <behavior id="PinPlus" />
+                    </behavior-type>
+                </behaviors>
                 <texture original-source="C:\Users\Rizky\Desktop\font\SpriteFont_KGBlankSpaceSolid_Regular_(22)_[1,1,1,1]_27x32.png" />
             </object-type>
         </object-folder>
@@ -412,14 +424,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="881451823067299">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="770206153197781" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="faded_background" sid="988845423567811">
             <plugin id="Sprite" />
             <animation-folder>
@@ -479,6 +483,250 @@
         </object-type>
         <object-type name="tes_music" sid="615015366625352">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="icon_back" sid="249166188651431">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="153510038560920">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="454167452011935" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\icon_back.png">
+                        <collision-poly>
+                            <point x="0.382813" y="0.121094" />
+                            <point x="0.404297" y="0.273438" />
+                            <point x="0.746094" y="0.285156" />
+                            <point x="0.953125" y="0.535156" />
+                            <point x="0.833984" y="0.869141" />
+                            <point x="0.410156" y="0.878906" />
+                            <point x="0.378906" y="0.621094" />
+                            <point x="0.0625" y="0.375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="icon_book" sid="276668974215058">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="610428364799951">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="987123466641998" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\icon_book.png">
+                        <collision-poly>
+                            <point x="0.181641" y="0.0820313" />
+                            <point x="0.5" y="0.0683594" />
+                            <point x="0.814453" y="0.0800781" />
+                            <point x="0.806641" y="0.806641" />
+                            <point x="0.351563" y="0.927734" />
+                            <point x="0.183594" y="0.816406" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="icon_skill" sid="324105077111905">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="541573482684917">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="232108234333691" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500952" original-source="C:\Users\Rizky\Downloads\icon_skill.png">
+                        <collision-poly>
+                            <point x="0.111842" y="0.0971429" />
+                            <point x="0.5" y="0.289524" />
+                            <point x="0.888158" y="0.0971429" />
+                            <point x="0.800439" y="0.499048" />
+                            <point x="0.917763" y="0.833333" />
+                            <point x="0.701754" y="0.740952" />
+                            <point x="0.5" y="0.929524" />
+                            <point x="0.298246" y="0.740952" />
+                            <point x="0.107456" y="0.818095" />
+                            <point x="0.197368" y="0.499048" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="icon_cart" sid="576290975415045">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="627723574427168">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="910570911000044" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\icon_cart.png">
+                        <collision-poly>
+                            <point x="0.0605469" y="0.107422" />
+                            <point x="0.226563" y="0.105469" />
+                            <point x="0.9375" y="0.210938" />
+                            <point x="0.892578" y="0.5" />
+                            <point x="0.818359" y="0.904297" />
+                            <point x="0.351563" y="0.890625" />
+                            <point x="0.326172" y="0.673828" />
+                            <point x="0.105469" y="0.179688" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="faded_background_icon" sid="811332912078035">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="947665512715367">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="852826579434583" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\faded_background.png">
+                        <collision-poly>
+                            <point x="0.12625" y="0.2525" />
+                            <point x="0.5" y="0" />
+                            <point x="0.875" y="0.25" />
+                            <point x="0.875" y="0.75" />
+                            <point x="0.5" y="1" />
+                            <point x="0.12625" y="0.7475" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="paper" sid="832849379748631">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="700574099568109">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="471733145582418" speed="5">
+                    <frame duration="1" hotspotX="0.500818" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\paper.png">
+                        <collision-poly>
+                            <point x="0.0834697" y="0.0787037" />
+                            <point x="0.499182" y="0.0632716" />
+                            <point x="0.914894" y="0.0802469" />
+                            <point x="0.890344" y="0.5" />
+                            <point x="0.92144" y="0.925926" />
+                            <point x="0.499182" y="0.941358" />
+                            <point x="0.0851064" y="0.919753" />
+                            <point x="0.11293" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="potion_blue_small" sid="761069467654462">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="price" sid="668501543138583" type="number" />
+                <instance-variable name="amount" sid="154676117308372" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="319714816332485">
+                    <behavior id="PinPlus" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="605101049792054" speed="5">
+                    <frame duration="1" hotspotX="0.501587" hotspotY="0.500312" original-source="C:\Users\Rizky\Downloads\potion_blue_small.png">
+                        <collision-poly>
+                            <point x="0.0444444" y="0.00873362" />
+                            <point x="0.955556" y="0.00873362" />
+                            <point x="0.819048" y="0.964442" />
+                            <point x="0.498413" y="1" />
+                            <point x="0.180952" y="0.964442" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="potion_red_small" sid="501246678959886">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="price" sid="513897334661175" type="number" />
+                <instance-variable name="amount" sid="998284550013397" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="271778825013177">
+                    <behavior id="PinPlus" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="954800365864350" speed="5">
+                    <frame duration="1" hotspotX="0.501587" hotspotY="0.500312" original-source="C:\Users\Rizky\Downloads\potion_red_small.png">
+                        <collision-poly>
+                            <point x="0.0444444" y="0.00873362" />
+                            <point x="0.955556" y="0.00873362" />
+                            <point x="0.819048" y="0.964442" />
+                            <point x="0.498413" y="1" />
+                            <point x="0.180952" y="0.964442" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="potion_blue" sid="222429570964053">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="price" sid="533254516091801" type="number" />
+                <instance-variable name="amount" sid="377144245815431" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="871392076359597">
+                    <behavior id="PinPlus" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="439991707242603" speed="5">
+                    <frame duration="1" hotspotX="0.500407" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\potion_blue.png">
+                        <collision-poly>
+                            <point x="0.499593" y="0" />
+                            <point x="0.796583" y="0.5" />
+                            <point x="0.887714" y="0.932419" />
+                            <point x="0.499593" y="1" />
+                            <point x="0.112286" y="0.932419" />
+                            <point x="0.202604" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="potion_red" sid="214335354877114">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="price" sid="728550869905780" type="number" />
+                <instance-variable name="amount" sid="296155939052816" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="792871951028265">
+                    <behavior id="PinPlus" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="571992710347876" speed="5">
+                    <frame duration="1" hotspotX="0.500407" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\potion_red.png">
+                        <collision-poly>
+                            <point x="0.499593" y="0" />
+                            <point x="0.796583" y="0.5" />
+                            <point x="0.887714" y="0.932419" />
+                            <point x="0.499593" y="1" />
+                            <point x="0.112286" y="0.932419" />
+                            <point x="0.202604" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

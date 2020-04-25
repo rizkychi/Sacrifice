@@ -152,6 +152,10 @@
                     <param id="0" name="Variable">saved_game</param>
                     <param id="1" name="Value">LocalStorage.ItemValue</param>
                 </action>
+                <action id="-9" name="Set value" sid="311104299725348" type="System">
+                    <param id="0" name="Variable">selected_menu</param>
+                    <param id="1" name="Value">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="270846062188078">

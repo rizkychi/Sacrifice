@@ -6,6 +6,11 @@
         <include>SaveGame</include>
         <variable constant="0" name="canvas_width" sid="810359835436184" static="0" type="number">1280</variable>
         <variable constant="0" name="canvas_height" sid="270031639976141" static="0" type="number">720</variable>
+        <variable constant="0" name="selected_menu" sid="400337251306604" static="0" type="number">1</variable>
+        <variable constant="0" name="menu_pos_x" sid="115651717605931" static="0" type="number">2240</variable>
+        <variable constant="0" name="menu_pos_y" sid="942998579979188" static="0" type="number">1120</variable>
+        <variable constant="0" name="mouse_vel_y" sid="370209843661181" static="0" type="number">0</variable>
+        <variable constant="0" name="mouse_pos_y" sid="398069381512139" static="0" type="number">0</variable>
         <event-block sid="350440106561632">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="823111593882079" type="System" />
@@ -19,11 +24,6 @@
                 </action>
             </actions>
         </event-block>
-        <variable constant="0" name="selected_menu" sid="400337251306604" static="0" type="number">1</variable>
-        <variable constant="0" name="menu_pos_x" sid="115651717605931" static="0" type="number">2240</variable>
-        <variable constant="0" name="menu_pos_y" sid="942998579979188" static="0" type="number">1120</variable>
-        <variable constant="0" name="mouse_vel_y" sid="370209843661181" static="0" type="number">0</variable>
-        <variable constant="0" name="mouse_pos_y" sid="398069381512139" static="0" type="number">0</variable>
         <event-group description="" sid="953504148835317" title="Main Menu">
             <sub-events>
                 <comment>Debug</comment>
@@ -37,6 +37,7 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>End Debug</comment>
                 <event-block sid="634028976513584">
                     <conditions>
                         <condition id="6" name="On object clicked" sid="629671030594969" type="Mouse">
@@ -82,22 +83,39 @@
                         </event-block>
                         <event-block sid="490312875560595">
                             <conditions>
-                                <condition id="-14" name="Compare variable" sid="736085718938686" type="System">
-                                    <param id="0" name="Variable">saved_game</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
                                 <condition id="-7" name="Compare instance variable" sid="594250700847405" type="SpriteFont_Menu">
                                     <param id="0" name="Instance variable">menu</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-16" name="Set opacity" sid="878600219560346" type="SpriteFont_Menu">
-                                    <param id="0" name="Opacity">50</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="313082508272187">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="409776726143816" type="System">
+                                            <param id="0" name="Variable">saved_game</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Set opacity" sid="878600219560346" type="SpriteFont_Menu">
+                                            <param id="0" name="Opacity">50</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="341184692789815">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="284170998177404" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Set opacity" sid="722176282085199" type="SpriteFont_Menu">
+                                            <param id="0" name="Opacity">100</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="361725675261734">
                             <conditions>
@@ -429,19 +447,42 @@
                                             <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="0" name="Call function" sid="535677874028802" type="Function">
-                                            <param id="0" name="Name">&quot;popup_show&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                        <action id="0" name="Set text" sid="105724570298187" type="SpriteFont_PopupText">
-                                            <param id="0" name="Text">&quot;All previous data will be deleted. Start new game?&quot;</param>
-                                        </action>
-                                        <action id="-10" name="Set value" sid="793831948169030" type="SpriteFont_PopupText">
-                                            <param id="0" name="Instance variable">type</param>
-                                            <param id="1" name="Value">&quot;new&quot;</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="742657252201970">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="249001992404554" type="System">
+                                                    <param id="0" name="Variable">saved_game</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Call function" sid="535677874028802" type="Function">
+                                                    <param id="0" name="Name">&quot;popup_show&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="105724570298187" type="SpriteFont_PopupText">
+                                                    <param id="0" name="Text">&quot;All previous data will be deleted. Start new game?&quot;</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="793831948169030" type="SpriteFont_PopupText">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Value">&quot;new&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="650997656729377">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="102641279419269" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Call function" sid="322137147795202" type="Function">
+                                                    <param id="0" name="Name">&quot;game_new&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="788112634830517">
                                     <conditions>
