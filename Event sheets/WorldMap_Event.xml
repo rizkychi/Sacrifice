@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>WorldMap_Event</name>
     <events>
+        <include>SaveGame</include>
         <variable constant="0" name="icon_ready" sid="487593616460646" static="0" type="number">0</variable>
         <event-block sid="436666058311991">
             <conditions>
@@ -36,22 +37,23 @@
                 <action id="-6" name="Set height" sid="736600379308738" type="paper">
                     <param id="0" name="Height">0</param>
                 </action>
+                <action id="-16" name="Set opacity" sid="495834955202551" type="icon_close">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="214908504691823" type="bar_coin_white">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="765504555567482" type="icon_coin">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="321677204904639" type="SpriteFont_Coins">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="834903554597722" type="bar_white_small">
+                    <param id="0" name="Opacity">0</param>
+                </action>
             </actions>
             <sub-events>
-                <event-block sid="379021292269223">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="985533054720952" type="SpriteFont_NormalText">
-                            <param id="0" name="Instance variable">layout</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;WorldMap_Title&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Set opacity" sid="340826534250666" type="SpriteFont_NormalText">
-                            <param id="0" name="Opacity">0</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="791401862974216">
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="900312911010857" type="SpriteFont_NormalText">
@@ -64,16 +66,12 @@
                         <action id="-16" name="Set opacity" sid="495446046021295" type="SpriteFont_NormalText">
                             <param id="0" name="Opacity">0</param>
                         </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="851199800391361" type="SpriteFont_NormalText">
-                            <param id="0" name="Pin to">SpriteFont_NormalText</param>
-                            <param id="1" name="Mode">0</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="519915163058427">
                     <conditions />
                     <actions>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="321123148706080" type="potion_blue">
+                        <action behavior="Pin" id="0" name="Pin to object" sid="321123148706080" type="potion_blue_large">
                             <param id="0" name="Pin to">SpriteFont_NormalText</param>
                             <param id="1" name="Mode">0</param>
                         </action>
@@ -81,11 +79,47 @@
                             <param id="0" name="Pin to">SpriteFont_NormalText</param>
                             <param id="1" name="Mode">0</param>
                         </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="305190306533652" type="potion_red">
+                        <action behavior="Pin" id="0" name="Pin to object" sid="305190306533652" type="potion_red_large">
                             <param id="0" name="Pin to">SpriteFont_NormalText</param>
                             <param id="1" name="Mode">0</param>
                         </action>
                         <action behavior="Pin" id="0" name="Pin to object" sid="848257293844470" type="potion_red_small">
+                            <param id="0" name="Pin to">SpriteFont_NormalText</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="198703824791239" type="Text_Shop">
+                            <param id="0" name="Pin to">SpriteFont_NormalText</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="121353703979405" type="bg_shop">
+                            <param id="0" name="Pin to">SpriteFont_NormalText</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="585944781132159" type="price_2250">
+                            <param id="0" name="Pin to">SpriteFont_NormalText</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="932282335600626" type="price_500">
+                            <param id="0" name="Pin to">SpriteFont_NormalText</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="578072196565385" type="icon_close">
+                            <param id="0" name="Pin to">SpriteFont_NormalText</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="883272744264320" type="bar_coin_white">
+                            <param id="0" name="Pin to">SpriteFont_NormalText</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="619355478851207" type="icon_coin">
+                            <param id="0" name="Pin to">SpriteFont_NormalText</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="926734392680386" type="SpriteFont_Coins">
+                            <param id="0" name="Pin to">SpriteFont_NormalText</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="831002910649572" type="bar_white_small">
                             <param id="0" name="Pin to">SpriteFont_NormalText</param>
                             <param id="1" name="Mode">0</param>
                         </action>
@@ -187,370 +221,569 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="220754191076552">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="311662479977583" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="289519219550888">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="112778638781699" type="SpriteFont_Coins">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;gold&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="315001697901158" type="SpriteFont_Coins">
+                            <param id="0" name="Text">gold</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="628848145499274">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="671383848022815" type="SpriteFont_Coins">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;HP_small&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="453953157085083" type="SpriteFont_Coins">
+                            <param id="0" name="Text">hp_potion_small</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="132505882923295">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="582663817427499" type="SpriteFont_Coins">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;HP_large&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="170406174112105" type="SpriteFont_Coins">
+                            <param id="0" name="Text">hp_potion_large</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="448746477201670">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="262247622692795" type="SpriteFont_Coins">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;MP_small&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="748065078381193" type="SpriteFont_Coins">
+                            <param id="0" name="Text">mp_potion_small</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="376577080599183">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="974249972193401" type="SpriteFont_Coins">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;MP_large&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="590477906312016" type="SpriteFont_Coins">
+                            <param id="0" name="Text">mp_potion_large</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
         <event-group description="" sid="999887579193405" title="IconMenu">
             <sub-events>
-                <event-block sid="363189226425251">
+                <event-block sid="680019525666139">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="972280983779222" type="System">
-                            <param id="0" name="Variable">icon_ready</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
+                        <condition id="-9" inverted="1" name="Is visible" sid="234746856407593" type="fade_popup" />
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="415451969575596">
+                        <event-block sid="363189226425251">
                             <conditions>
-                                <condition id="7" name="Cursor is over object" sid="826596057702888" type="Mouse">
-                                    <param id="0" name="Object">icon_back</param>
+                                <condition id="-14" name="Compare variable" sid="972280983779222" type="System">
+                                    <param id="0" name="Variable">icon_ready</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="415451969575596">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="826596057702888" type="Mouse">
+                                            <param id="0" name="Object">icon_back</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="564540005130018" type="icon_back">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="288974515349949" type="icon_back">
+                                            <param id="0" name="Target is">4</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">80</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="278540423880605" type="icon_back">
+                                            <param id="0" name="Target is">5</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">80</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="519653673210158">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="774340146073509" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="200805678744132" type="icon_back">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="301038215485484" type="icon_back">
+                                            <param id="0" name="Target is">4</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">70</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="221054852424843" type="icon_back">
+                                            <param id="0" name="Target is">5</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">70</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="313122889182199">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="574387998578056" type="Mouse">
+                                            <param id="0" name="Object">icon_cart</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="945520486037783" type="icon_cart">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="620624967461011" type="icon_cart">
+                                            <param id="0" name="Target is">4</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">80</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="691582303386384" type="icon_cart">
+                                            <param id="0" name="Target is">5</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">80</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="662324077076038">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="517989125470478" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="748700176130548" type="icon_cart">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="590705671604398" type="icon_cart">
+                                            <param id="0" name="Target is">4</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">70</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="412600319480811" type="icon_cart">
+                                            <param id="0" name="Target is">5</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">70</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="220983145901577">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="429358820903050" type="Mouse">
+                                            <param id="0" name="Object">icon_book</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="511395400629111" type="icon_book">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="692793088690681" type="icon_book">
+                                            <param id="0" name="Target is">4</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">80</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="310216663627165" type="icon_book">
+                                            <param id="0" name="Target is">5</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">80</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="977626549586826">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="636411754007955" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="399948500473770" type="icon_book">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="623120406906849" type="icon_book">
+                                            <param id="0" name="Target is">4</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">70</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="250166172391001" type="icon_book">
+                                            <param id="0" name="Target is">5</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">70</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="869852946888059">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="264130199511775" type="Mouse">
+                                            <param id="0" name="Object">icon_skill</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="914164181838627" type="icon_skill">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="387478657992089" type="icon_skill">
+                                            <param id="0" name="Target is">4</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">80</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="956264064328865" type="icon_skill">
+                                            <param id="0" name="Target is">5</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">90</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="725319986006834">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="202771020039024" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="541363277688573" type="icon_skill">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="909232010158266" type="icon_skill">
+                                            <param id="0" name="Target is">4</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">70</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="213797190802271" type="icon_skill">
+                                            <param id="0" name="Target is">5</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">80</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="408679058826157">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="204738613558493" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">icon_back</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="LiteTween" id="10" name="Start" sid="564540005130018" type="icon_back">
+                                <action id="-9" name="Set value" sid="703807633764487" type="System">
+                                    <param id="0" name="Variable">icon_ready</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="10" name="Start" sid="649852836969567" type="icon_back">
                                     <param id="0" name="Start Mode">0</param>
                                     <param id="1" name="Force use current">0</param>
                                 </action>
-                                <action behavior="LiteTween" id="3" name="Set target" sid="288974515349949" type="icon_back">
+                                <action behavior="LiteTween" id="3" name="Set target" sid="467613470585236" type="icon_back">
                                     <param id="0" name="Target is">4</param>
                                     <param id="1" name="Relativity">0</param>
-                                    <param id="2" name="Value">80</param>
+                                    <param id="2" name="Value">60</param>
                                 </action>
-                                <action behavior="LiteTween" id="3" name="Set target" sid="278540423880605" type="icon_back">
+                                <action behavior="LiteTween" id="3" name="Set target" sid="837047437119756" type="icon_back">
                                     <param id="0" name="Target is">5</param>
                                     <param id="1" name="Relativity">0</param>
-                                    <param id="2" name="Value">80</param>
+                                    <param id="2" name="Value">60</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="406107853692820" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action behavior="LiteTween" id="11" name="Reverse" sid="343652230805720" type="icon_back">
+                                    <param id="0" name="Reverse mode">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="487472896350523" type="System">
+                                    <param id="0" name="Variable">icon_ready</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="876416298787449" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="573031322094786" type="System">
+                                    <param id="0" name="Layout">MainMenu</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="519653673210158">
+                        <event-block sid="679567604014266">
                             <conditions>
-                                <condition id="-22" name="Else" sid="774340146073509" type="System" />
-                            </conditions>
-                            <actions>
-                                <action behavior="LiteTween" id="10" name="Start" sid="200805678744132" type="icon_back">
-                                    <param id="0" name="Start Mode">0</param>
-                                    <param id="1" name="Force use current">0</param>
-                                </action>
-                                <action behavior="LiteTween" id="3" name="Set target" sid="301038215485484" type="icon_back">
-                                    <param id="0" name="Target is">4</param>
-                                    <param id="1" name="Relativity">0</param>
-                                    <param id="2" name="Value">70</param>
-                                </action>
-                                <action behavior="LiteTween" id="3" name="Set target" sid="221054852424843" type="icon_back">
-                                    <param id="0" name="Target is">5</param>
-                                    <param id="1" name="Relativity">0</param>
-                                    <param id="2" name="Value">70</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="313122889182199">
-                            <conditions>
-                                <condition id="7" name="Cursor is over object" sid="574387998578056" type="Mouse">
-                                    <param id="0" name="Object">icon_cart</param>
+                                <condition id="6" name="On object clicked" sid="248123666554740" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">icon_cart</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="LiteTween" id="10" name="Start" sid="945520486037783" type="icon_cart">
+                                <action id="-9" name="Set value" sid="920590047839655" type="System">
+                                    <param id="0" name="Variable">icon_ready</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="10" name="Start" sid="975160804370702" type="icon_cart">
                                     <param id="0" name="Start Mode">0</param>
                                     <param id="1" name="Force use current">0</param>
                                 </action>
-                                <action behavior="LiteTween" id="3" name="Set target" sid="620624967461011" type="icon_cart">
+                                <action behavior="LiteTween" id="3" name="Set target" sid="989587967208550" type="icon_cart">
                                     <param id="0" name="Target is">4</param>
                                     <param id="1" name="Relativity">0</param>
-                                    <param id="2" name="Value">80</param>
+                                    <param id="2" name="Value">60</param>
                                 </action>
-                                <action behavior="LiteTween" id="3" name="Set target" sid="691582303386384" type="icon_cart">
+                                <action behavior="LiteTween" id="3" name="Set target" sid="553233318912314" type="icon_cart">
                                     <param id="0" name="Target is">5</param>
                                     <param id="1" name="Relativity">0</param>
-                                    <param id="2" name="Value">80</param>
+                                    <param id="2" name="Value">60</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="854842406265015" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action behavior="LiteTween" id="11" name="Reverse" sid="144909808149137" type="icon_cart">
+                                    <param id="0" name="Reverse mode">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="594671701602756" type="System">
+                                    <param id="0" name="Variable">icon_ready</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="549334236651232" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="0" name="Call function" sid="915519547971562" type="Function">
+                                    <param id="0" name="Name">&quot;shop_show&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="662324077076038">
+                        <event-block sid="969637635274114">
                             <conditions>
-                                <condition id="-22" name="Else" sid="517989125470478" type="System" />
-                            </conditions>
-                            <actions>
-                                <action behavior="LiteTween" id="10" name="Start" sid="748700176130548" type="icon_cart">
-                                    <param id="0" name="Start Mode">0</param>
-                                    <param id="1" name="Force use current">0</param>
-                                </action>
-                                <action behavior="LiteTween" id="3" name="Set target" sid="590705671604398" type="icon_cart">
-                                    <param id="0" name="Target is">4</param>
-                                    <param id="1" name="Relativity">0</param>
-                                    <param id="2" name="Value">70</param>
-                                </action>
-                                <action behavior="LiteTween" id="3" name="Set target" sid="412600319480811" type="icon_cart">
-                                    <param id="0" name="Target is">5</param>
-                                    <param id="1" name="Relativity">0</param>
-                                    <param id="2" name="Value">70</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="220983145901577">
-                            <conditions>
-                                <condition id="7" name="Cursor is over object" sid="429358820903050" type="Mouse">
-                                    <param id="0" name="Object">icon_book</param>
+                                <condition id="6" name="On object clicked" sid="268239743891029" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">icon_book</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="LiteTween" id="10" name="Start" sid="511395400629111" type="icon_book">
+                                <action id="-9" name="Set value" sid="872620021094602" type="System">
+                                    <param id="0" name="Variable">icon_ready</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="10" name="Start" sid="257476751909047" type="icon_book">
                                     <param id="0" name="Start Mode">0</param>
                                     <param id="1" name="Force use current">0</param>
                                 </action>
-                                <action behavior="LiteTween" id="3" name="Set target" sid="692793088690681" type="icon_book">
+                                <action behavior="LiteTween" id="3" name="Set target" sid="305356804708701" type="icon_book">
                                     <param id="0" name="Target is">4</param>
                                     <param id="1" name="Relativity">0</param>
-                                    <param id="2" name="Value">80</param>
+                                    <param id="2" name="Value">60</param>
                                 </action>
-                                <action behavior="LiteTween" id="3" name="Set target" sid="310216663627165" type="icon_book">
+                                <action behavior="LiteTween" id="3" name="Set target" sid="633828733123705" type="icon_book">
                                     <param id="0" name="Target is">5</param>
                                     <param id="1" name="Relativity">0</param>
-                                    <param id="2" name="Value">80</param>
+                                    <param id="2" name="Value">60</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="508579869027337" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action behavior="LiteTween" id="11" name="Reverse" sid="140072572285154" type="icon_book">
+                                    <param id="0" name="Reverse mode">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="940838881724091" type="System">
+                                    <param id="0" name="Variable">icon_ready</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="892896906722791" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="977626549586826">
+                        <event-block sid="893533239816772">
                             <conditions>
-                                <condition id="-22" name="Else" sid="636411754007955" type="System" />
-                            </conditions>
-                            <actions>
-                                <action behavior="LiteTween" id="10" name="Start" sid="399948500473770" type="icon_book">
-                                    <param id="0" name="Start Mode">0</param>
-                                    <param id="1" name="Force use current">0</param>
-                                </action>
-                                <action behavior="LiteTween" id="3" name="Set target" sid="623120406906849" type="icon_book">
-                                    <param id="0" name="Target is">4</param>
-                                    <param id="1" name="Relativity">0</param>
-                                    <param id="2" name="Value">70</param>
-                                </action>
-                                <action behavior="LiteTween" id="3" name="Set target" sid="250166172391001" type="icon_book">
-                                    <param id="0" name="Target is">5</param>
-                                    <param id="1" name="Relativity">0</param>
-                                    <param id="2" name="Value">70</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="869852946888059">
-                            <conditions>
-                                <condition id="7" name="Cursor is over object" sid="264130199511775" type="Mouse">
-                                    <param id="0" name="Object">icon_skill</param>
+                                <condition id="6" name="On object clicked" sid="294120882846637" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">icon_skill</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="LiteTween" id="10" name="Start" sid="914164181838627" type="icon_skill">
+                                <action id="-9" name="Set value" sid="151434139796278" type="System">
+                                    <param id="0" name="Variable">icon_ready</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="10" name="Start" sid="494645250439093" type="icon_skill">
                                     <param id="0" name="Start Mode">0</param>
                                     <param id="1" name="Force use current">0</param>
                                 </action>
-                                <action behavior="LiteTween" id="3" name="Set target" sid="387478657992089" type="icon_skill">
+                                <action behavior="LiteTween" id="3" name="Set target" sid="827372402978530" type="icon_skill">
                                     <param id="0" name="Target is">4</param>
                                     <param id="1" name="Relativity">0</param>
-                                    <param id="2" name="Value">80</param>
+                                    <param id="2" name="Value">60</param>
                                 </action>
-                                <action behavior="LiteTween" id="3" name="Set target" sid="956264064328865" type="icon_skill">
+                                <action behavior="LiteTween" id="3" name="Set target" sid="655044102091323" type="icon_skill">
                                     <param id="0" name="Target is">5</param>
-                                    <param id="1" name="Relativity">0</param>
-                                    <param id="2" name="Value">90</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="725319986006834">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="202771020039024" type="System" />
-                            </conditions>
-                            <actions>
-                                <action behavior="LiteTween" id="10" name="Start" sid="541363277688573" type="icon_skill">
-                                    <param id="0" name="Start Mode">0</param>
-                                    <param id="1" name="Force use current">0</param>
-                                </action>
-                                <action behavior="LiteTween" id="3" name="Set target" sid="909232010158266" type="icon_skill">
-                                    <param id="0" name="Target is">4</param>
                                     <param id="1" name="Relativity">0</param>
                                     <param id="2" name="Value">70</param>
                                 </action>
-                                <action behavior="LiteTween" id="3" name="Set target" sid="213797190802271" type="icon_skill">
-                                    <param id="0" name="Target is">5</param>
-                                    <param id="1" name="Relativity">0</param>
-                                    <param id="2" name="Value">80</param>
+                                <action id="-16" name="Wait" sid="371286001589577" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action behavior="LiteTween" id="11" name="Reverse" sid="728595476432641" type="icon_skill">
+                                    <param id="0" name="Reverse mode">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="378441597655724" type="System">
+                                    <param id="0" name="Variable">icon_ready</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="843795111352550" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="408679058826157">
+                <event-block sid="956954053904141">
                     <conditions>
-                        <condition id="6" name="On object clicked" sid="204738613558493" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">icon_back</param>
-                        </condition>
+                        <condition id="-9" name="Is visible" sid="342426996187814" type="fade_popup" />
                     </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="703807633764487" type="System">
-                            <param id="0" name="Variable">icon_ready</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action behavior="LiteTween" id="10" name="Start" sid="649852836969567" type="icon_back">
-                            <param id="0" name="Start Mode">0</param>
-                            <param id="1" name="Force use current">0</param>
-                        </action>
-                        <action behavior="LiteTween" id="3" name="Set target" sid="467613470585236" type="icon_back">
-                            <param id="0" name="Target is">4</param>
-                            <param id="1" name="Relativity">0</param>
-                            <param id="2" name="Value">60</param>
-                        </action>
-                        <action behavior="LiteTween" id="3" name="Set target" sid="837047437119756" type="icon_back">
-                            <param id="0" name="Target is">5</param>
-                            <param id="1" name="Relativity">0</param>
-                            <param id="2" name="Value">60</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="406107853692820" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                        <action behavior="LiteTween" id="11" name="Reverse" sid="343652230805720" type="icon_back">
-                            <param id="0" name="Reverse mode">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="487472896350523" type="System">
-                            <param id="0" name="Variable">icon_ready</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="876416298787449" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="573031322094786" type="System">
-                            <param id="0" name="Layout">MainMenu</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="679567604014266">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="248123666554740" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">icon_cart</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="920590047839655" type="System">
-                            <param id="0" name="Variable">icon_ready</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action behavior="LiteTween" id="10" name="Start" sid="975160804370702" type="icon_cart">
-                            <param id="0" name="Start Mode">0</param>
-                            <param id="1" name="Force use current">0</param>
-                        </action>
-                        <action behavior="LiteTween" id="3" name="Set target" sid="989587967208550" type="icon_cart">
-                            <param id="0" name="Target is">4</param>
-                            <param id="1" name="Relativity">0</param>
-                            <param id="2" name="Value">60</param>
-                        </action>
-                        <action behavior="LiteTween" id="3" name="Set target" sid="553233318912314" type="icon_cart">
-                            <param id="0" name="Target is">5</param>
-                            <param id="1" name="Relativity">0</param>
-                            <param id="2" name="Value">60</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="854842406265015" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                        <action behavior="LiteTween" id="11" name="Reverse" sid="144909808149137" type="icon_cart">
-                            <param id="0" name="Reverse mode">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="594671701602756" type="System">
-                            <param id="0" name="Variable">icon_ready</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="549334236651232" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                        <action id="0" name="Call function" sid="915519547971562" type="Function">
-                            <param id="0" name="Name">&quot;shop_show&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="969637635274114">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="268239743891029" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">icon_book</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="872620021094602" type="System">
-                            <param id="0" name="Variable">icon_ready</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action behavior="LiteTween" id="10" name="Start" sid="257476751909047" type="icon_book">
-                            <param id="0" name="Start Mode">0</param>
-                            <param id="1" name="Force use current">0</param>
-                        </action>
-                        <action behavior="LiteTween" id="3" name="Set target" sid="305356804708701" type="icon_book">
-                            <param id="0" name="Target is">4</param>
-                            <param id="1" name="Relativity">0</param>
-                            <param id="2" name="Value">60</param>
-                        </action>
-                        <action behavior="LiteTween" id="3" name="Set target" sid="633828733123705" type="icon_book">
-                            <param id="0" name="Target is">5</param>
-                            <param id="1" name="Relativity">0</param>
-                            <param id="2" name="Value">60</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="508579869027337" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                        <action behavior="LiteTween" id="11" name="Reverse" sid="140072572285154" type="icon_book">
-                            <param id="0" name="Reverse mode">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="940838881724091" type="System">
-                            <param id="0" name="Variable">icon_ready</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="892896906722791" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="893533239816772">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="294120882846637" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">icon_skill</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="151434139796278" type="System">
-                            <param id="0" name="Variable">icon_ready</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action behavior="LiteTween" id="10" name="Start" sid="494645250439093" type="icon_skill">
-                            <param id="0" name="Start Mode">0</param>
-                            <param id="1" name="Force use current">0</param>
-                        </action>
-                        <action behavior="LiteTween" id="3" name="Set target" sid="827372402978530" type="icon_skill">
-                            <param id="0" name="Target is">4</param>
-                            <param id="1" name="Relativity">0</param>
-                            <param id="2" name="Value">60</param>
-                        </action>
-                        <action behavior="LiteTween" id="3" name="Set target" sid="655044102091323" type="icon_skill">
-                            <param id="0" name="Target is">5</param>
-                            <param id="1" name="Relativity">0</param>
-                            <param id="2" name="Value">70</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="371286001589577" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                        <action behavior="LiteTween" id="11" name="Reverse" sid="728595476432641" type="icon_skill">
-                            <param id="0" name="Reverse mode">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="378441597655724" type="System">
-                            <param id="0" name="Variable">icon_ready</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="843795111352550" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="902387048296139">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="565195282448813" type="System">
+                                    <param id="0" name="Variable">icon_ready</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="287450398222739">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="910602714064709" type="Mouse">
+                                            <param id="0" name="Object">icon_close</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="175799663887760" type="icon_close">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="608094055137161" type="icon_close">
+                                            <param id="0" name="Target is">4</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">80</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="977963546634395" type="icon_close">
+                                            <param id="0" name="Target is">5</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">80</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="457249069864678">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="825613530178735" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="248801936241908" type="icon_close">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="555583539981250" type="icon_close">
+                                            <param id="0" name="Target is">4</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">70</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="979397222562175" type="icon_close">
+                                            <param id="0" name="Target is">5</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">70</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block any="1" sid="684968346453518">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="643852773719032" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">icon_close</param>
+                                </condition>
+                                <condition id="0" name="On key pressed" sid="178138460874694" type="Keyboard">
+                                    <param id="0" name="Key">27</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="391483122977942" type="System">
+                                    <param id="0" name="Variable">icon_ready</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="10" name="Start" sid="520669250363132" type="icon_close">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="893663748880404" type="icon_close">
+                                    <param id="0" name="Target is">4</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">60</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="603025823821360" type="icon_close">
+                                    <param id="0" name="Target is">5</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">60</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="614884568624643" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action behavior="LiteTween" id="11" name="Reverse" sid="413180644838048" type="icon_close">
+                                    <param id="0" name="Reverse mode">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="918259528964035" type="System">
+                                    <param id="0" name="Variable">icon_ready</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="390797405794229" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="0" name="Call function" sid="646369174404172" type="Function">
+                                    <param id="0" name="Name">&quot;shop_hide&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -563,6 +796,10 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-15" name="Set visible" sid="872865395992674" type="fade_popup">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="FadeIn" id="0" name="Restart fade" sid="385490771438930" type="fade_popup" />
                         <action behavior="LiteTween" id="10" name="Start" sid="230676894884223" type="paper">
                             <param id="0" name="Start Mode">0</param>
                             <param id="1" name="Force use current">0</param>
@@ -586,7 +823,245 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="752283120238832">
+                    <conditions>
+                        <condition id="0" name="On function" sid="316788758191168" type="Function">
+                            <param id="0" name="Name">&quot;shop_hide&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="747811551676062" type="SpriteFont_NormalText">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="604929437146327" type="SpriteFont_NormalText">
+                            <param id="0" name="Target is">3</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="112610380131170" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action behavior="FadeOut" id="0" name="Restart fade" sid="863838085625789" type="fade_popup" />
+                        <action behavior="LiteTween" id="10" name="Start" sid="128656865046467" type="paper">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="132768715037522" type="paper">
+                            <param id="0" name="Target is">5</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="410032890033953" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="804084259934243" type="fade_popup">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="673783108940135" title="Price">
+            <sub-events>
+                <event-block sid="443824011650676">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="140761238333565" type="potion_blue_small">
+                            <param id="0" name="Instance variable">price</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">gold</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="137786762767688" type="price_500">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="264765386127877">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="611092740141697" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">price_500</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="903862157243412" type="price_500">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="811652556699733" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="100363198924165" type="price_500">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="273155565475358" type="System">
+                                    <param id="0" name="Variable">gold</param>
+                                    <param id="1" name="Value">potion_blue_small.price</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="764731318715463">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="792981575868194" type="price_500">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;hp&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="227167748903042" type="System">
+                                            <param id="0" name="Variable">hp_potion_small</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="682456171171715">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="673852706213088" type="price_500">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;mp&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="388386603674879" type="System">
+                                            <param id="0" name="Variable">mp_potion_small</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="169545399224156">
+                                    <conditions />
+                                    <actions>
+                                        <action id="0" name="Call function" sid="684114829023390" type="Function">
+                                            <param id="0" name="Name">&quot;game_save&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="522335357933656">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="636086602093919" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="814230975208542" type="price_500">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="144185197588737">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="555682606022247" type="potion_blue_large">
+                            <param id="0" name="Instance variable">price</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">gold</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="570826798631176" type="price_2250">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="936698887134434">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="375103436862455" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">price_2250</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="354382278495407" type="price_2250">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="380744366823773" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="605619783232249" type="price_2250">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="167437915248035" type="System">
+                                    <param id="0" name="Variable">gold</param>
+                                    <param id="1" name="Value">potion_blue_large.price</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="721253222738455">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="170538929696152" type="price_2250">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;hp&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="849651855785604" type="System">
+                                            <param id="0" name="Variable">hp_potion_large</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="765446284343214">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="468805280201494" type="price_2250">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;mp&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="917111158907951" type="System">
+                                            <param id="0" name="Variable">mp_potion_large</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="770742759887337">
+                                    <conditions />
+                                    <actions>
+                                        <action id="0" name="Call function" sid="664803453486346" type="Function">
+                                            <param id="0" name="Name">&quot;game_save&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="892592157093779">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="803535575035750" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="950152183052542" type="price_2250">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="482587083997391">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="338748613263568" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">tes_shop</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="149501391309668" type="System">
+                    <param id="0" name="Variable">gold</param>
+                    <param id="1" name="Value">1000</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

@@ -7,8 +7,10 @@
         <comment>Game</comment>
         <variable constant="0" name="gold" sid="673577673543886" static="0" type="number">0</variable>
         <variable constant="0" name="stage" sid="857258920512710" static="0" type="number">0</variable>
-        <variable constant="0" name="potion_red" sid="682118864006962" static="0" type="number">0</variable>
-        <variable constant="0" name="potion_blue" sid="590790848335604" static="0" type="number">0</variable>
+        <variable constant="0" name="hp_potion_small" sid="682118864006962" static="0" type="number">0</variable>
+        <variable constant="0" name="hp_potion_large" sid="352814893565074" static="0" type="number">0</variable>
+        <variable constant="0" name="mp_potion_small" sid="590790848335604" static="0" type="number">0</variable>
+        <variable constant="0" name="mp_potion_large" sid="382025316379264" static="0" type="number">0</variable>
         <comment>Option</comment>
         <variable constant="0" name="sound_music" sid="598958781670658" static="0" type="number">1</variable>
         <variable constant="0" name="sound_sfx" sid="234761892111547" static="0" type="number">1</variable>
@@ -43,12 +45,20 @@
                     <param id="1" name="Value">stage</param>
                 </action>
                 <action id="0" name="Set item" sid="665160733460689" type="LocalStorage">
-                    <param id="0" name="Key">&quot;potion_red&quot;</param>
-                    <param id="1" name="Value">potion_red</param>
+                    <param id="0" name="Key">&quot;hp_potion_small&quot;</param>
+                    <param id="1" name="Value">hp_potion_small</param>
+                </action>
+                <action id="0" name="Set item" sid="569882222435065" type="LocalStorage">
+                    <param id="0" name="Key">&quot;hp_potion_large&quot;</param>
+                    <param id="1" name="Value">hp_potion_large</param>
                 </action>
                 <action id="0" name="Set item" sid="904357093193899" type="LocalStorage">
-                    <param id="0" name="Key">&quot;potion_blue&quot;</param>
-                    <param id="1" name="Value">potion_blue</param>
+                    <param id="0" name="Key">&quot;mp_potion_small&quot;</param>
+                    <param id="1" name="Value">mp_potion_small</param>
+                </action>
+                <action id="0" name="Set item" sid="843459889559739" type="LocalStorage">
+                    <param id="0" name="Key">&quot;mp_potion_large&quot;</param>
+                    <param id="1" name="Value">mp_potion_large</param>
                 </action>
             </actions>
         </event-block>
@@ -65,18 +75,26 @@
                 </action>
                 <action id="-9" name="Set value" sid="362082290368377" type="System">
                     <param id="0" name="Variable">gold</param>
-                    <param id="1" name="Value">0</param>
+                    <param id="1" name="Value">1000</param>
                 </action>
                 <action id="-9" name="Set value" sid="637296188438822" type="System">
                     <param id="0" name="Variable">stage</param>
                     <param id="1" name="Value">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="712573256469070" type="System">
-                    <param id="0" name="Variable">potion_red</param>
+                    <param id="0" name="Variable">hp_potion_small</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="486324609956583" type="System">
+                    <param id="0" name="Variable">hp_potion_large</param>
                     <param id="1" name="Value">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="798240636123437" type="System">
-                    <param id="0" name="Variable">potion_blue</param>
+                    <param id="0" name="Variable">mp_potion_small</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="179414585551569" type="System">
+                    <param id="0" name="Variable">mp_potion_large</param>
                     <param id="1" name="Value">0</param>
                 </action>
                 <action id="0" name="Call function" sid="130917255351944" type="Function">
@@ -99,10 +117,16 @@
                     <param id="0" name="Key">&quot;stage&quot;</param>
                 </action>
                 <action id="5" name="Check item exists" sid="584932799462170" type="LocalStorage">
-                    <param id="0" name="Key">&quot;potion_red&quot;</param>
+                    <param id="0" name="Key">&quot;hp_potion_small&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="879986374386477" type="LocalStorage">
+                    <param id="0" name="Key">&quot;hp_potion_large&quot;</param>
                 </action>
                 <action id="5" name="Check item exists" sid="940236510289070" type="LocalStorage">
-                    <param id="0" name="Key">&quot;potion_blue&quot;</param>
+                    <param id="0" name="Key">&quot;mp_potion_small&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="745982296593263" type="LocalStorage">
+                    <param id="0" name="Key">&quot;mp_potion_large&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -213,12 +237,25 @@
         <event-block sid="683700928914327">
             <conditions>
                 <condition id="9" name="On item exists" sid="411710653344578" type="LocalStorage">
-                    <param id="0" name="Key">&quot;potion_red&quot;</param>
+                    <param id="0" name="Key">&quot;hp_potion_small&quot;</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="131308791337563" type="System">
-                    <param id="0" name="Variable">potion_red</param>
+                    <param id="0" name="Variable">hp_potion_small</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="741423429877070">
+            <conditions>
+                <condition id="9" name="On item exists" sid="684878463077040" type="LocalStorage">
+                    <param id="0" name="Key">&quot;hp_potion_large&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="842462001072331" type="System">
+                    <param id="0" name="Variable">hp_potion_large</param>
                     <param id="1" name="Value">LocalStorage.ItemValue</param>
                 </action>
             </actions>
@@ -226,12 +263,25 @@
         <event-block sid="119688084549416">
             <conditions>
                 <condition id="9" name="On item exists" sid="446802287696281" type="LocalStorage">
-                    <param id="0" name="Key">&quot;potion_blue&quot;</param>
+                    <param id="0" name="Key">&quot;mp_potion_small&quot;</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="152810893716462" type="System">
-                    <param id="0" name="Variable">potion_blue</param>
+                    <param id="0" name="Variable">mp_potion_small</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="408658137149882">
+            <conditions>
+                <condition id="9" name="On item exists" sid="212325750795660" type="LocalStorage">
+                    <param id="0" name="Key">&quot;mp_potion_large&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="200815165517015" type="System">
+                    <param id="0" name="Variable">mp_potion_large</param>
                     <param id="1" name="Value">LocalStorage.ItemValue</param>
                 </action>
             </actions>
