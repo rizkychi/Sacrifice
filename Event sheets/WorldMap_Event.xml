@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>WorldMap_Event</name>
     <events>
+        <variable constant="1" name="price_inc" sid="883665851247848" static="0" type="number">750</variable>
+        <variable constant="1" name="price_init" sid="796704678919319" static="0" type="number">2000</variable>
         <include>SaveGame</include>
         <variable constant="0" name="icon_ready" sid="487593616460646" static="0" type="number">0</variable>
         <event-block sid="436666058311991">
@@ -37,6 +39,9 @@
                 <action id="-6" name="Set height" sid="736600379308738" type="paper">
                     <param id="0" name="Height">0</param>
                 </action>
+                <action id="-5" name="Set width" sid="692395150135937" type="book">
+                    <param id="0" name="Width">0</param>
+                </action>
                 <action id="-16" name="Set opacity" sid="495834955202551" type="icon_close">
                     <param id="0" name="Opacity">0</param>
                 </action>
@@ -50,6 +55,24 @@
                     <param id="0" name="Opacity">0</param>
                 </action>
                 <action id="-16" name="Set opacity" sid="834903554597722" type="bar_white_small">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="342561027174676" type="btn_upgrade">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="535605754080252" type="icon_health">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="271080675278327" type="icon_shield">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="406924331526040" type="icon_sword">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="329908329361465" type="icon_treasure">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="794297753269031" type="icon_mana">
                     <param id="0" name="Opacity">0</param>
                 </action>
             </actions>
@@ -120,6 +143,30 @@
                             <param id="1" name="Mode">0</param>
                         </action>
                         <action behavior="Pin" id="0" name="Pin to object" sid="831002910649572" type="bar_white_small">
+                            <param id="0" name="Pin to">SpriteFont_NormalText</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="475445663415982" type="btn_upgrade">
+                            <param id="0" name="Pin to">SpriteFont_NormalText</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="589934841505625" type="icon_health">
+                            <param id="0" name="Pin to">SpriteFont_NormalText</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="925930151733084" type="icon_mana">
+                            <param id="0" name="Pin to">SpriteFont_NormalText</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="762910454443785" type="icon_shield">
+                            <param id="0" name="Pin to">SpriteFont_NormalText</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="901359364810578" type="icon_sword">
+                            <param id="0" name="Pin to">SpriteFont_NormalText</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="424983463127264" type="icon_treasure">
                             <param id="0" name="Pin to">SpriteFont_NormalText</param>
                             <param id="1" name="Mode">0</param>
                         </action>
@@ -296,6 +343,376 @@
                             <param id="0" name="Text">mp_potion_large</param>
                         </action>
                     </actions>
+                </event-block>
+                <event-block sid="228961066237203">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="887225481937320" type="Text_Shop">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;lv_atk&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="833879817212640" type="Text_Shop">
+                            <param id="0" name="Text">&quot;(Level &quot;&amp;level_atk&amp;&quot;)&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="903086288201393">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="901858677739576" type="System">
+                                    <param id="0" name="Variable">level_atk</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="497076289763963" type="Text_Shop">
+                                    <param id="0" name="Text">Text_Shop.Text&amp;&quot; MAX&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="847201822130456">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="574125291313443" type="Text_Shop">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;lv_def&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="897161445954489" type="Text_Shop">
+                            <param id="0" name="Text">&quot;(Level &quot;&amp;level_def&amp;&quot;)&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="230126056357772">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="701492684898167" type="System">
+                                    <param id="0" name="Variable">level_def</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="662819656238565" type="Text_Shop">
+                                    <param id="0" name="Text">Text_Shop.Text&amp;&quot; MAX&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="324239265254092">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="663255503963010" type="Text_Shop">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;lv_gold&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="686246298827176" type="Text_Shop">
+                            <param id="0" name="Text">&quot;(Level &quot;&amp;level_gold&amp;&quot;)&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="787741949482760">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="680468464274257" type="System">
+                                    <param id="0" name="Variable">level_gold</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="671650048996185" type="Text_Shop">
+                                    <param id="0" name="Text">Text_Shop.Text&amp;&quot; MAX&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="668703105873778">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="235897623742503" type="Text_Shop">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;lv_health&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="160955238839084" type="Text_Shop">
+                            <param id="0" name="Text">&quot;(Level &quot;&amp;level_health&amp;&quot;)&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="512227962943371">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="241092449670241" type="System">
+                                    <param id="0" name="Variable">level_health</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="506182473325601" type="Text_Shop">
+                                    <param id="0" name="Text">Text_Shop.Text&amp;&quot; MAX&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="712053828159240">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="500108549294750" type="Text_Shop">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;lv_mana&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="142037234319459" type="Text_Shop">
+                            <param id="0" name="Text">&quot;(Level &quot;&amp;level_mana&amp;&quot;)&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="817007714496719">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="675341204935569" type="System">
+                                    <param id="0" name="Variable">level_mana</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="996709406742434" type="Text_Shop">
+                                    <param id="0" name="Text">Text_Shop.Text&amp;&quot; MAX&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="801167702646949">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="545931392378458" type="Text_Shop">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;fx_atk&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="209834718905341" type="Text_Shop">
+                            <param id="0" name="Text">&quot;Effect: +&quot;&amp;level_atk*10&amp;&quot;%  damage to enemy&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="863784448498575">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="855027453917726" type="Text_Shop">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;fx_def&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="270795600080454" type="Text_Shop">
+                            <param id="0" name="Text">&quot;Effect: -&quot;&amp;level_def*5&amp;&quot;%  damage received&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="826290923555102">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="290059488385529" type="Text_Shop">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;fx_gold&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="534847814287057" type="Text_Shop">
+                            <param id="0" name="Text">&quot;Effect: +&quot;&amp;level_gold*10&amp;&quot;%  gold earned&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="901968820402885">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="987789559337066" type="Text_Shop">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;fx_health&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="219278640528080" type="Text_Shop">
+                            <param id="0" name="Text">&quot;Effect: +&quot;&amp;level_health*200&amp;&quot; health point&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="827739978711550">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="940346881130124" type="Text_Shop">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;fx_mana&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="136910891541889" type="Text_Shop">
+                            <param id="0" name="Text">&quot;Effect: +&quot;&amp;level_mana*10&amp;&quot; mana point&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="260098412184064">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="189636304325190" type="Text_Shop">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;next_atk&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="159607533357579" type="Text_Shop">
+                            <param id="0" name="Text">&quot;Next level : &quot;&amp;PRICE_INIT+(level_atk*PRICE_INC)&amp;&quot; Gold&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="142019625727887">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="791569908985746" type="System">
+                                    <param id="0" name="Variable">level_atk</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="401650688799936" type="Text_Shop">
+                                    <param id="0" name="Text">&quot;Next level : -&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="490574294732563">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="182805408077342" type="Text_Shop">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;next_def&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="698333210443621" type="Text_Shop">
+                            <param id="0" name="Text">&quot;Next level : &quot;&amp;PRICE_INIT+(level_def*PRICE_INC)&amp;&quot; Gold&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="860773632769809">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="743033425967221" type="System">
+                                    <param id="0" name="Variable">level_def</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="740975777137783" type="Text_Shop">
+                                    <param id="0" name="Text">&quot;Next level : -&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="553014671296780">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="892809371388594" type="Text_Shop">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;next_gold&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="390502890267427" type="Text_Shop">
+                            <param id="0" name="Text">&quot;Next level : &quot;&amp;PRICE_INIT+(level_gold*PRICE_INC)&amp;&quot; Gold&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="942719805709384">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="185646829770264" type="System">
+                                    <param id="0" name="Variable">level_gold</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="538845247634901" type="Text_Shop">
+                                    <param id="0" name="Text">&quot;Next level : -&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="318429177771006">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="340333416840050" type="Text_Shop">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;next_health&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="656404743234643" type="Text_Shop">
+                            <param id="0" name="Text">&quot;Next level : &quot;&amp;PRICE_INIT+(level_health*PRICE_INC)&amp;&quot; Gold&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="981100532369681">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="184282000345537" type="System">
+                                    <param id="0" name="Variable">level_health</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="557794174422439" type="Text_Shop">
+                                    <param id="0" name="Text">&quot;Next level : -&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="439211699361426">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="335163361882631" type="Text_Shop">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;next_mana&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="152984394454081" type="Text_Shop">
+                            <param id="0" name="Text">&quot;Next level : &quot;&amp;PRICE_INIT+(level_mana*PRICE_INC)&amp;&quot; Gold&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="449042657148252">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="498178359708520" type="System">
+                                    <param id="0" name="Variable">level_mana</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="965778632948831" type="Text_Shop">
+                                    <param id="0" name="Text">&quot;Next level : -&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
@@ -626,6 +1043,10 @@
                                 <action id="-16" name="Wait" sid="892896906722791" type="System">
                                     <param id="0" name="Seconds">0.2</param>
                                 </action>
+                                <action id="0" name="Call function" sid="120221773592780" type="Function">
+                                    <param id="0" name="Name">&quot;book_show&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="893533239816772">
@@ -667,6 +1088,10 @@
                                 </action>
                                 <action id="-16" name="Wait" sid="843795111352550" type="System">
                                     <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="0" name="Call function" sid="281737970688965" type="Function">
+                                    <param id="0" name="Name">&quot;skills_show&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
                         </event-block>
@@ -777,11 +1202,48 @@
                                 <action id="-16" name="Wait" sid="390797405794229" type="System">
                                     <param id="0" name="Seconds">0.2</param>
                                 </action>
-                                <action id="0" name="Call function" sid="646369174404172" type="Function">
-                                    <param id="0" name="Name">&quot;shop_hide&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
-                                </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="957275439944354">
+                                    <conditions>
+                                        <condition id="-9" name="Layer is visible" sid="803216069760071" type="System">
+                                            <param id="0" name="Layer">&quot;Shop&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="646369174404172" type="Function">
+                                            <param id="0" name="Name">&quot;shop_hide&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="934791454223880">
+                                    <conditions>
+                                        <condition id="-9" name="Layer is visible" sid="612018058963005" type="System">
+                                            <param id="0" name="Layer">&quot;Skills&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="424332224424125" type="Function">
+                                            <param id="0" name="Name">&quot;skills_hide&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="458381894879196">
+                                    <conditions>
+                                        <condition id="-9" name="Layer is visible" sid="496117861487844" type="System">
+                                            <param id="0" name="Layer">&quot;Book&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="732805371868733" type="Function">
+                                            <param id="0" name="Name">&quot;book_hide&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -796,6 +1258,10 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-4" name="Set layer visible" sid="451478333184850" type="System">
+                            <param id="0" name="Layer">&quot;Shop&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
                         <action id="-15" name="Set visible" sid="872865395992674" type="fade_popup">
                             <param id="0" name="Visibility">1</param>
                         </action>
@@ -858,193 +1324,840 @@
                         <action id="-15" name="Set visible" sid="804084259934243" type="fade_popup">
                             <param id="0" name="Visibility">0</param>
                         </action>
+                        <action id="-4" name="Set layer visible" sid="217365836775034" type="System">
+                            <param id="0" name="Layer">&quot;Shop&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="129490143173147" title="Skills">
+            <sub-events>
+                <event-block sid="295537152631415">
+                    <conditions>
+                        <condition id="0" name="On function" sid="837980731876914" type="Function">
+                            <param id="0" name="Name">&quot;skills_show&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="879176724527686" type="System">
+                            <param id="0" name="Layer">&quot;Skills&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="272567661999744" type="fade_popup">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="FadeIn" id="0" name="Restart fade" sid="258417122262874" type="fade_popup" />
+                        <action behavior="LiteTween" id="10" name="Start" sid="904831516412821" type="paper">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="561903759879823" type="paper">
+                            <param id="0" name="Target is">5</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">648</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="387438778179927" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="487137181802896" type="SpriteFont_NormalText">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="385210957646795" type="SpriteFont_NormalText">
+                            <param id="0" name="Target is">3</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="778702477707887">
+                    <conditions>
+                        <condition id="0" name="On function" sid="557646181399799" type="Function">
+                            <param id="0" name="Name">&quot;skills_hide&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="648709851767832" type="SpriteFont_NormalText">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="672844001591462" type="SpriteFont_NormalText">
+                            <param id="0" name="Target is">3</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="795950926657690" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action behavior="FadeOut" id="0" name="Restart fade" sid="330225516592465" type="fade_popup" />
+                        <action behavior="LiteTween" id="10" name="Start" sid="102838966827184" type="paper">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="820982597694670" type="paper">
+                            <param id="0" name="Target is">5</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="418203229197470" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="761157823298400" type="fade_popup">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="748823010668435" type="System">
+                            <param id="0" name="Layer">&quot;Skills&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="307898417387760" title="Book">
+            <sub-events>
+                <event-block sid="280930422059940">
+                    <conditions>
+                        <condition id="0" name="On function" sid="592108320940611" type="Function">
+                            <param id="0" name="Name">&quot;book_show&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="317421818395663" type="System">
+                            <param id="0" name="Layer">&quot;Book&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="860172002321999" type="fade_popup">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="FadeIn" id="0" name="Restart fade" sid="140100501862530" type="fade_popup" />
+                        <action behavior="LiteTween" id="10" name="Start" sid="356219413066302" type="book">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="584590682626356" type="book">
+                            <param id="0" name="Target is">4</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">1013</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="228918653379569" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="409094542643667" type="SpriteFont_NormalText">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="525646334613334" type="SpriteFont_NormalText">
+                            <param id="0" name="Target is">3</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="872991626238939">
+                    <conditions>
+                        <condition id="0" name="On function" sid="469815761315276" type="Function">
+                            <param id="0" name="Name">&quot;book_hide&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="278629006856095" type="SpriteFont_NormalText">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="230077274233188" type="SpriteFont_NormalText">
+                            <param id="0" name="Target is">3</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="987716366946578" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action behavior="FadeOut" id="0" name="Restart fade" sid="118089257875942" type="fade_popup" />
+                        <action behavior="LiteTween" id="10" name="Start" sid="476013323198801" type="book">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="347500719133895" type="book">
+                            <param id="0" name="Target is">4</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="172204281835552" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="302290743265379" type="fade_popup">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="656158886894459" type="System">
+                            <param id="0" name="Layer">&quot;Book&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="673783108940135" title="Price">
             <sub-events>
-                <event-block sid="443824011650676">
+                <event-block sid="961350809441458">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="140761238333565" type="potion_blue_small">
-                            <param id="0" name="Instance variable">price</param>
-                            <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Value">gold</param>
+                        <condition id="-9" name="Layer is visible" sid="891541047123960" type="System">
+                            <param id="0" name="Layer">&quot;Shop&quot;</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="137786762767688" type="price_500">
-                            <param id="0" name="Frame number">0</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
-                        <event-block sid="264765386127877">
+                        <event-block sid="443824011650676">
                             <conditions>
-                                <condition id="6" name="On object clicked" sid="611092740141697" type="Mouse">
-                                    <param id="0" name="Mouse button">0</param>
-                                    <param id="1" name="Click type">0</param>
-                                    <param id="2" name="Object clicked">price_500</param>
+                                <condition id="-7" name="Compare instance variable" sid="140761238333565" type="potion_blue_small">
+                                    <param id="0" name="Instance variable">price</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">gold</param>
                                 </condition>
                             </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="721470560460281">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="913339508347552" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="137786762767688" type="price_500">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="264765386127877">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="611092740141697" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">price_500</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Subtract from" sid="273155565475358" type="System">
+                                            <param id="0" name="Variable">gold</param>
+                                            <param id="1" name="Value">potion_blue_small.price</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="903862157243412" type="price_500">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="811652556699733" type="System">
+                                            <param id="0" name="Seconds">0.2</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="100363198924165" type="price_500">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="764731318715463">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="792981575868194" type="price_500">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;hp&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="227167748903042" type="System">
+                                                    <param id="0" name="Variable">hp_potion_small</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="682456171171715">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="673852706213088" type="price_500">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;mp&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="388386603674879" type="System">
+                                                    <param id="0" name="Variable">mp_potion_small</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="169545399224156">
+                                            <conditions />
+                                            <actions>
+                                                <action id="0" name="Call function" sid="684114829023390" type="Function">
+                                                    <param id="0" name="Name">&quot;game_save&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="522335357933656">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="636086602093919" type="System" />
+                            </conditions>
                             <actions>
-                                <action id="5" name="Set frame" sid="903862157243412" type="price_500">
-                                    <param id="0" name="Frame number">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="811652556699733" type="System">
-                                    <param id="0" name="Seconds">0.2</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="100363198924165" type="price_500">
-                                    <param id="0" name="Frame number">0</param>
-                                </action>
-                                <action id="-11" name="Subtract from" sid="273155565475358" type="System">
-                                    <param id="0" name="Variable">gold</param>
-                                    <param id="1" name="Value">potion_blue_small.price</param>
+                                <action id="5" name="Set frame" sid="814230975208542" type="price_500">
+                                    <param id="0" name="Frame number">2</param>
                                 </action>
                             </actions>
+                        </event-block>
+                        <event-block sid="144185197588737">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="555682606022247" type="potion_blue_large">
+                                    <param id="0" name="Instance variable">price</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">gold</param>
+                                </condition>
+                            </conditions>
+                            <actions />
                             <sub-events>
-                                <event-block sid="764731318715463">
+                                <event-block sid="369575197106031">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="792981575868194" type="price_500">
-                                            <param id="0" name="Instance variable">type</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;hp&quot;</param>
-                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="622616629505046" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Add to" sid="227167748903042" type="System">
-                                            <param id="0" name="Variable">hp_potion_small</param>
-                                            <param id="1" name="Value">1</param>
+                                        <action id="5" name="Set frame" sid="570826798631176" type="price_2250">
+                                            <param id="0" name="Frame number">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="682456171171715">
+                                <event-block sid="936698887134434">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="673852706213088" type="price_500">
-                                            <param id="0" name="Instance variable">type</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;mp&quot;</param>
+                                        <condition id="6" name="On object clicked" sid="375103436862455" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">price_2250</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Add to" sid="388386603674879" type="System">
-                                            <param id="0" name="Variable">mp_potion_small</param>
-                                            <param id="1" name="Value">1</param>
+                                        <action id="-11" name="Subtract from" sid="167437915248035" type="System">
+                                            <param id="0" name="Variable">gold</param>
+                                            <param id="1" name="Value">potion_blue_large.price</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="354382278495407" type="price_2250">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="380744366823773" type="System">
+                                            <param id="0" name="Seconds">0.2</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="605619783232249" type="price_2250">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="721253222738455">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="170538929696152" type="price_2250">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;hp&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="849651855785604" type="System">
+                                                    <param id="0" name="Variable">hp_potion_large</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="765446284343214">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="468805280201494" type="price_2250">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;mp&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="917111158907951" type="System">
+                                                    <param id="0" name="Variable">mp_potion_large</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="770742759887337">
+                                            <conditions />
+                                            <actions>
+                                                <action id="0" name="Call function" sid="664803453486346" type="Function">
+                                                    <param id="0" name="Name">&quot;game_save&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="892592157093779">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="803535575035750" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="950152183052542" type="price_2250">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="490284452539445">
+                    <conditions>
+                        <condition id="-9" name="Layer is visible" sid="522258548935697" type="System">
+                            <param id="0" name="Layer">&quot;Skills&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>ATTACK</comment>
+                        <event-block sid="923823610436247">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="915982635434004" type="btn_upgrade">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;atk&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="890465620893966">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="880613229886126" type="System">
+                                            <param id="0" name="Variable">gold</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">PRICE_INIT+(level_atk*PRICE_INC)</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="233902103116405" type="System">
+                                            <param id="0" name="Variable">level_atk</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">10</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="797286397281718">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="775830136278187" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="5" name="Set frame" sid="985390557922091" type="btn_upgrade">
+                                                    <param id="0" name="Frame number">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="130647448965587">
+                                            <conditions>
+                                                <condition id="6" name="On object clicked" sid="779895315028323" type="Mouse">
+                                                    <param id="0" name="Mouse button">0</param>
+                                                    <param id="1" name="Click type">0</param>
+                                                    <param id="2" name="Object clicked">btn_upgrade</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="706370062827165" type="System">
+                                                    <param id="0" name="Variable">gold</param>
+                                                    <param id="1" name="Value">PRICE_INIT+(level_atk*PRICE_INC)</param>
+                                                </action>
+                                                <action id="-10" name="Add to" sid="752383195566176" type="System">
+                                                    <param id="0" name="Variable">level_atk</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="536321560036188" type="btn_upgrade">
+                                                    <param id="0" name="Frame number">1</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="959023738964642" type="System">
+                                                    <param id="0" name="Seconds">0.2</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="550924416158620" type="btn_upgrade">
+                                                    <param id="0" name="Frame number">0</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="764349072136966">
+                                                    <conditions />
+                                                    <actions>
+                                                        <action id="0" name="Call function" sid="704120380469053" type="Function">
+                                                            <param id="0" name="Name">&quot;game_save&quot;</param>
+                                                            <param id="1" name="Parameter {n}"></param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="584211550530358">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="724344589069971" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="594802358368592" type="btn_upgrade">
+                                            <param id="0" name="Frame number">2</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="169545399224156">
-                                    <conditions />
+                            </sub-events>
+                        </event-block>
+                        <comment>DEFENSE</comment>
+                        <event-block sid="141884252335172">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="882724876553807" type="btn_upgrade">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;def&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="622887731806766">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="744917467240086" type="System">
+                                            <param id="0" name="Variable">gold</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">PRICE_INIT+(level_def*PRICE_INC)</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="184176784255907" type="System">
+                                            <param id="0" name="Variable">level_def</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">10</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="808822089887217">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="210804335858749" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="5" name="Set frame" sid="857018896619828" type="btn_upgrade">
+                                                    <param id="0" name="Frame number">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="470181697988338">
+                                            <conditions>
+                                                <condition id="6" name="On object clicked" sid="951464726432613" type="Mouse">
+                                                    <param id="0" name="Mouse button">0</param>
+                                                    <param id="1" name="Click type">0</param>
+                                                    <param id="2" name="Object clicked">btn_upgrade</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="911796350876419" type="System">
+                                                    <param id="0" name="Variable">gold</param>
+                                                    <param id="1" name="Value">PRICE_INIT+(level_def*PRICE_INC)</param>
+                                                </action>
+                                                <action id="-10" name="Add to" sid="423432014763861" type="System">
+                                                    <param id="0" name="Variable">level_def</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="257512237527625" type="btn_upgrade">
+                                                    <param id="0" name="Frame number">1</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="411305702355763" type="System">
+                                                    <param id="0" name="Seconds">0.2</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="816457725076990" type="btn_upgrade">
+                                                    <param id="0" name="Frame number">0</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="671644154988278">
+                                                    <conditions />
+                                                    <actions>
+                                                        <action id="0" name="Call function" sid="837338985119175" type="Function">
+                                                            <param id="0" name="Name">&quot;game_save&quot;</param>
+                                                            <param id="1" name="Parameter {n}"></param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="423359472999611">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="372698744107523" type="System" />
+                                    </conditions>
                                     <actions>
-                                        <action id="0" name="Call function" sid="684114829023390" type="Function">
-                                            <param id="0" name="Name">&quot;game_save&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
+                                        <action id="5" name="Set frame" sid="713568971130549" type="btn_upgrade">
+                                            <param id="0" name="Frame number">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>EXTRA GOLD</comment>
+                        <event-block sid="156913360612649">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="159796756206859" type="btn_upgrade">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;gold&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="356948619229318">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="806659017097857" type="System">
+                                            <param id="0" name="Variable">gold</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">PRICE_INIT+(level_gold*PRICE_INC)</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="104352865085944" type="System">
+                                            <param id="0" name="Variable">level_gold</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">10</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="605596760749652">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="405335426914130" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="5" name="Set frame" sid="770634434719817" type="btn_upgrade">
+                                                    <param id="0" name="Frame number">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="966480318408823">
+                                            <conditions>
+                                                <condition id="6" name="On object clicked" sid="931340405881770" type="Mouse">
+                                                    <param id="0" name="Mouse button">0</param>
+                                                    <param id="1" name="Click type">0</param>
+                                                    <param id="2" name="Object clicked">btn_upgrade</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="944642196980656" type="System">
+                                                    <param id="0" name="Variable">gold</param>
+                                                    <param id="1" name="Value">PRICE_INIT+(level_gold*PRICE_INC)</param>
+                                                </action>
+                                                <action id="-10" name="Add to" sid="324923937873128" type="System">
+                                                    <param id="0" name="Variable">level_gold</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="688739454183015" type="btn_upgrade">
+                                                    <param id="0" name="Frame number">1</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="304069824515214" type="System">
+                                                    <param id="0" name="Seconds">0.2</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="387521832319447" type="btn_upgrade">
+                                                    <param id="0" name="Frame number">0</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="991598010841956">
+                                                    <conditions />
+                                                    <actions>
+                                                        <action id="0" name="Call function" sid="201108189182264" type="Function">
+                                                            <param id="0" name="Name">&quot;game_save&quot;</param>
+                                                            <param id="1" name="Parameter {n}"></param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="389887446795376">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="577979056793453" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="512725443130754" type="btn_upgrade">
+                                            <param id="0" name="Frame number">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>HEALTH</comment>
+                        <event-block sid="357583320527821">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="948867909753294" type="btn_upgrade">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;health&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="654981140798370">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="351414340621919" type="System">
+                                            <param id="0" name="Variable">gold</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">PRICE_INIT+(level_health*PRICE_INC)</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="895106594542973" type="System">
+                                            <param id="0" name="Variable">level_health</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">10</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="492135894766764">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="221654957295674" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="5" name="Set frame" sid="719324516269069" type="btn_upgrade">
+                                                    <param id="0" name="Frame number">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="607663538694321">
+                                            <conditions>
+                                                <condition id="6" name="On object clicked" sid="370809436288296" type="Mouse">
+                                                    <param id="0" name="Mouse button">0</param>
+                                                    <param id="1" name="Click type">0</param>
+                                                    <param id="2" name="Object clicked">btn_upgrade</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="571679521285517" type="System">
+                                                    <param id="0" name="Variable">gold</param>
+                                                    <param id="1" name="Value">PRICE_INIT+(level_health*PRICE_INC)</param>
+                                                </action>
+                                                <action id="-10" name="Add to" sid="570593068930194" type="System">
+                                                    <param id="0" name="Variable">level_health</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="833207922401952" type="btn_upgrade">
+                                                    <param id="0" name="Frame number">1</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="678880614314315" type="System">
+                                                    <param id="0" name="Seconds">0.2</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="672484354939835" type="btn_upgrade">
+                                                    <param id="0" name="Frame number">0</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="557244646153483">
+                                                    <conditions />
+                                                    <actions>
+                                                        <action id="0" name="Call function" sid="507679353193764" type="Function">
+                                                            <param id="0" name="Name">&quot;game_save&quot;</param>
+                                                            <param id="1" name="Parameter {n}"></param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="407757607623730">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="701117060615763" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="966790913185730" type="btn_upgrade">
+                                            <param id="0" name="Frame number">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>MANA</comment>
+                        <event-block sid="494457563748125">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="277714765478366" type="btn_upgrade">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;mana&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="840105679053088">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="702278025702250" type="System">
+                                            <param id="0" name="Variable">gold</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">PRICE_INIT+(level_mana*PRICE_INC)</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="997602584409166" type="System">
+                                            <param id="0" name="Variable">level_mana</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">10</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="488173327197428">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="447685555177772" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="5" name="Set frame" sid="553151630849184" type="btn_upgrade">
+                                                    <param id="0" name="Frame number">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="971499857147601">
+                                            <conditions>
+                                                <condition id="6" name="On object clicked" sid="991806354140377" type="Mouse">
+                                                    <param id="0" name="Mouse button">0</param>
+                                                    <param id="1" name="Click type">0</param>
+                                                    <param id="2" name="Object clicked">btn_upgrade</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="354247685004889" type="System">
+                                                    <param id="0" name="Variable">gold</param>
+                                                    <param id="1" name="Value">PRICE_INIT+(level_mana*PRICE_INC)</param>
+                                                </action>
+                                                <action id="-10" name="Add to" sid="281304170406223" type="System">
+                                                    <param id="0" name="Variable">level_mana</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="202034258391339" type="btn_upgrade">
+                                                    <param id="0" name="Frame number">1</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="706297792314690" type="System">
+                                                    <param id="0" name="Seconds">0.2</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="443520849153483" type="btn_upgrade">
+                                                    <param id="0" name="Frame number">0</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="889909475251677">
+                                                    <conditions />
+                                                    <actions>
+                                                        <action id="0" name="Call function" sid="147455681200609" type="Function">
+                                                            <param id="0" name="Name">&quot;game_save&quot;</param>
+                                                            <param id="1" name="Parameter {n}"></param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="978391952231982">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="747353293874029" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="693838401897348" type="btn_upgrade">
+                                            <param id="0" name="Frame number">2</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
                     </sub-events>
-                </event-block>
-                <event-block sid="522335357933656">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="636086602093919" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="814230975208542" type="price_500">
-                            <param id="0" name="Frame number">2</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="144185197588737">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="555682606022247" type="potion_blue_large">
-                            <param id="0" name="Instance variable">price</param>
-                            <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Value">gold</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="570826798631176" type="price_2250">
-                            <param id="0" name="Frame number">0</param>
-                        </action>
-                    </actions>
-                    <sub-events>
-                        <event-block sid="936698887134434">
-                            <conditions>
-                                <condition id="6" name="On object clicked" sid="375103436862455" type="Mouse">
-                                    <param id="0" name="Mouse button">0</param>
-                                    <param id="1" name="Click type">0</param>
-                                    <param id="2" name="Object clicked">price_2250</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="5" name="Set frame" sid="354382278495407" type="price_2250">
-                                    <param id="0" name="Frame number">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="380744366823773" type="System">
-                                    <param id="0" name="Seconds">0.2</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="605619783232249" type="price_2250">
-                                    <param id="0" name="Frame number">0</param>
-                                </action>
-                                <action id="-11" name="Subtract from" sid="167437915248035" type="System">
-                                    <param id="0" name="Variable">gold</param>
-                                    <param id="1" name="Value">potion_blue_large.price</param>
-                                </action>
-                            </actions>
-                            <sub-events>
-                                <event-block sid="721253222738455">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="170538929696152" type="price_2250">
-                                            <param id="0" name="Instance variable">type</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;hp&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-10" name="Add to" sid="849651855785604" type="System">
-                                            <param id="0" name="Variable">hp_potion_large</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="765446284343214">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="468805280201494" type="price_2250">
-                                            <param id="0" name="Instance variable">type</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;mp&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-10" name="Add to" sid="917111158907951" type="System">
-                                            <param id="0" name="Variable">mp_potion_large</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="770742759887337">
-                                    <conditions />
-                                    <actions>
-                                        <action id="0" name="Call function" sid="664803453486346" type="Function">
-                                            <param id="0" name="Name">&quot;game_save&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="892592157093779">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="803535575035750" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="950152183052542" type="price_2250">
-                            <param id="0" name="Frame number">2</param>
-                        </action>
-                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
@@ -1059,7 +2172,7 @@
             <actions>
                 <action id="-10" name="Add to" sid="149501391309668" type="System">
                     <param id="0" name="Variable">gold</param>
-                    <param id="1" name="Value">1000</param>
+                    <param id="1" name="Value">100000</param>
                 </action>
             </actions>
         </event-block>

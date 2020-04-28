@@ -11,6 +11,11 @@
         <variable constant="0" name="hp_potion_large" sid="352814893565074" static="0" type="number">0</variable>
         <variable constant="0" name="mp_potion_small" sid="590790848335604" static="0" type="number">0</variable>
         <variable constant="0" name="mp_potion_large" sid="382025316379264" static="0" type="number">0</variable>
+        <variable constant="0" name="level_atk" sid="887315478881117" static="0" type="number">0</variable>
+        <variable constant="0" name="level_def" sid="896696029284705" static="0" type="number">0</variable>
+        <variable constant="0" name="level_gold" sid="160879927268211" static="0" type="number">0</variable>
+        <variable constant="0" name="level_health" sid="281847354707807" static="0" type="number">0</variable>
+        <variable constant="0" name="level_mana" sid="260085832846256" static="0" type="number">0</variable>
         <comment>Option</comment>
         <variable constant="0" name="sound_music" sid="598958781670658" static="0" type="number">1</variable>
         <variable constant="0" name="sound_sfx" sid="234761892111547" static="0" type="number">1</variable>
@@ -60,6 +65,26 @@
                     <param id="0" name="Key">&quot;mp_potion_large&quot;</param>
                     <param id="1" name="Value">mp_potion_large</param>
                 </action>
+                <action id="0" name="Set item" sid="476042584423399" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level_atk&quot;</param>
+                    <param id="1" name="Value">level_atk</param>
+                </action>
+                <action id="0" name="Set item" sid="607575891363372" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level_def&quot;</param>
+                    <param id="1" name="Value">level_def</param>
+                </action>
+                <action id="0" name="Set item" sid="734987234828087" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level_gold&quot;</param>
+                    <param id="1" name="Value">level_gold</param>
+                </action>
+                <action id="0" name="Set item" sid="126323486363344" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level_health&quot;</param>
+                    <param id="1" name="Value">level_health</param>
+                </action>
+                <action id="0" name="Set item" sid="324166469090886" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level_mana&quot;</param>
+                    <param id="1" name="Value">level_mana</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="266178238374566">
@@ -97,6 +122,26 @@
                     <param id="0" name="Variable">mp_potion_large</param>
                     <param id="1" name="Value">0</param>
                 </action>
+                <action id="-9" name="Set value" sid="498702531132083" type="System">
+                    <param id="0" name="Variable">level_atk</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="933807912418028" type="System">
+                    <param id="0" name="Variable">level_def</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="854901211553652" type="System">
+                    <param id="0" name="Variable">level_gold</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="449706385586742" type="System">
+                    <param id="0" name="Variable">level_health</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="221931925132502" type="System">
+                    <param id="0" name="Variable">level_mana</param>
+                    <param id="1" name="Value">0</param>
+                </action>
                 <action id="0" name="Call function" sid="130917255351944" type="Function">
                     <param id="0" name="Name">&quot;game_save&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
@@ -127,6 +172,21 @@
                 </action>
                 <action id="5" name="Check item exists" sid="745982296593263" type="LocalStorage">
                     <param id="0" name="Key">&quot;mp_potion_large&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="373040452764194" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level_atk&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="441995716808097" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level_def&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="718542212797347" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level_gold&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="439188480497030" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level_health&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="261554224947549" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level_mana&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -282,6 +342,71 @@
             <actions>
                 <action id="-9" name="Set value" sid="200815165517015" type="System">
                     <param id="0" name="Variable">mp_potion_large</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="713929932620573">
+            <conditions>
+                <condition id="9" name="On item exists" sid="985319701857802" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level_atk&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="284960775571238" type="System">
+                    <param id="0" name="Variable">level_atk</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="695530756230929">
+            <conditions>
+                <condition id="9" name="On item exists" sid="845567523116364" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level_def&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="288783733113207" type="System">
+                    <param id="0" name="Variable">level_def</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="440810059339308">
+            <conditions>
+                <condition id="9" name="On item exists" sid="577304044512246" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level_gold&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="604105211348492" type="System">
+                    <param id="0" name="Variable">level_gold</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="976270207334477">
+            <conditions>
+                <condition id="9" name="On item exists" sid="776921677000483" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level_health&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="641571245880056" type="System">
+                    <param id="0" name="Variable">level_health</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="739833494187939">
+            <conditions>
+                <condition id="9" name="On item exists" sid="342500046333493" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level_mana&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="395903917564026" type="System">
+                    <param id="0" name="Variable">level_mana</param>
                     <param id="1" name="Value">LocalStorage.ItemValue</param>
                 </action>
             </actions>
