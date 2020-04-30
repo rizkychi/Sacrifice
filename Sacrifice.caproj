@@ -10,6 +10,7 @@
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>27700</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
@@ -23,6 +24,7 @@
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra, Alex Hanson-White" id="PinPlus" version="1">Pin+</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
@@ -66,6 +68,9 @@
             </object-type>
             <object-type name="LocalStorage" sid="608448208729570">
                 <plugin id="LocalStorage" />
+            </object-type>
+            <object-type global="1" name="Array_book" sid="440445988079029">
+                <plugin id="Arr" />
             </object-type>
         </object-folder>
         <object-folder name="Background">
@@ -150,6 +155,27 @@
                         <behavior id="PinPlus" />
                     </behavior-type>
                 </behaviors>
+            </object-type>
+            <object-type name="SpriteFont_Book_Title" sid="963340397554890">
+                <plugin id="SpriteFontPlus" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="734581313995140">
+                        <behavior id="PinPlus" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\Rizky\Desktop\font\SpriteFont_KGBlankSpaceSketch_Regular_(48)_[1,1,1,1]_54x67.png" />
+            </object-type>
+            <object-type name="SpriteFont_Book_Content" sid="193208954690638">
+                <plugin id="SpriteFontPlus" />
+                <instance-variables>
+                    <instance-variable name="type" sid="828227526131441" type="string" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Pin" sid="895613114374845">
+                        <behavior id="PinPlus" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\Rizky\Desktop\font\SpriteFont_KGBlankSpaceSolid_Regular_(22)_[1,1,1,1]_27x32_brown.png" />
             </object-type>
         </object-folder>
         <object-folder name="Button">
@@ -527,6 +553,80 @@
                                 <point x="0.495238" y="1" />
                                 <point x="0.142857" y="0.869565" />
                                 <point x="0" y="0.495652" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="arrow_left" sid="983622501826222">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="877035327517522">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="508154392254635">
+                        <behavior id="PinPlus" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220062849805961" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\arrow_left_standby.png">
+                            <collision-poly>
+                                <point x="0.108" y="0.392" />
+                                <point x="0.728" y="0" />
+                                <point x="0.796" y="0.068" />
+                                <point x="0.792" y="0.792" />
+                                <point x="0.756" y="1" />
+                                <point x="0.124" y="0.56" />
+                                <point x="0.096" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\arrow_left_pressed.png">
+                            <collision-poly>
+                                <point x="0.128" y="0.424" />
+                                <point x="0.76" y="0.012" />
+                                <point x="0.792" y="0.208" />
+                                <point x="0.792" y="0.792" />
+                                <point x="0.756" y="1" />
+                                <point x="0.124" y="0.56" />
+                                <point x="0.096" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="arrow_right" sid="788162176641624">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="587246923013369">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="317463982624677">
+                        <behavior id="PinPlus" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="542939078015303" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\arrow_right_standby.png">
+                            <collision-poly>
+                                <point x="0.208" y="0.208" />
+                                <point x="0.24" y="0" />
+                                <point x="0.716" y="0.284" />
+                                <point x="0.936" y="0.472" />
+                                <point x="0.7" y="0.7" />
+                                <point x="0.268" y="0.988" />
+                                <point x="0.208" y="0.792" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\arrow_right_pressed.png">
+                            <collision-poly>
+                                <point x="0.208" y="0.208" />
+                                <point x="0.24" y="0" />
+                                <point x="0.716" y="0.284" />
+                                <point x="0.936" y="0.472" />
+                                <point x="0.7" y="0.7" />
+                                <point x="0.268" y="0.988" />
+                                <point x="0.208" y="0.792" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -942,6 +1042,98 @@
                                 <point x="0.1875" y="0.5" />
                             </collision-poly>
                         </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="book_items" sid="116253028801231">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="189927299990941">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="8" loop="0" name="Unlocked" pingpong="0" repeatcount="1" repeatto="0" sid="728830981701091" speed="0">
+                        <frame duration="1" hotspotX="0.501901" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\Gems\potion_purple.png" />
+                        <frame duration="1" hotspotX="0.501567" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\Gems\gems_pink.png">
+                            <collision-poly>
+                                <point x="0.147335" y="0.094" />
+                                <point x="0.498433" y="0" />
+                                <point x="0.852665" y="0.094" />
+                                <point x="1" y="0.5" />
+                                <point x="0.855799" y="0.908" />
+                                <point x="0.498433" y="1" />
+                                <point x="0.147335" y="0.906" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\Gems\gems_green.png">
+                            <collision-poly>
+                                <point x="0.22973" y="0.204" />
+                                <point x="0.5" y="0" />
+                                <point x="0.77027" y="0.204" />
+                                <point x="0.900901" y="0.5" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0990991" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\Gems\gems_purple.png">
+                            <collision-poly>
+                                <point x="0.170213" y="0.16" />
+                                <point x="0.5" y="0" />
+                                <point x="0.829787" y="0.16" />
+                                <point x="1" y="0.5" />
+                                <point x="0.831915" y="0.842" />
+                                <point x="0.5" y="1" />
+                                <point x="0.170213" y="0.84" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\Gems\gems_orange.png">
+                            <collision-poly>
+                                <point x="0.116" y="0.142857" />
+                                <point x="0.5" y="0" />
+                                <point x="0.884" y="0.142857" />
+                                <point x="0.866" y="0.5" />
+                                <point x="0.5" y="1" />
+                                <point x="0.136" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501155" original-source="C:\Users\Rizky\Downloads\Gems\gems_yellow.png">
+                            <collision-poly>
+                                <point x="0.5" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\Gems\gems_red.png">
+                            <collision-poly>
+                                <point x="0.5" y="0" />
+                                <point x="1" y="0.5" />
+                                <point x="0.5" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\Gems\gems_blue.png">
+                            <collision-poly>
+                                <point x="0.106" y="0.135897" />
+                                <point x="0.5" y="0" />
+                                <point x="0.894" y="0.135897" />
+                                <point x="0.866" y="0.5" />
+                                <point x="0.5" y="1" />
+                                <point x="0.136" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="8" loop="0" name="Locked" pingpong="0" repeatcount="1" repeatto="0" sid="740833596463790" speed="0">
+                        <frame duration="1" hotspotX="0.501901" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\Gems\potion_purple_unknown.png" />
+                        <frame duration="1" hotspotX="0.501567" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\Gems\gems_pink_unknown.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\Gems\gems_green_unknown.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\Gems\gems_purple_unknown.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\Gems\gems_orange_unknown.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501155" original-source="C:\Users\Rizky\Downloads\Gems\gems_yellow_unknown.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\Gems\gems_red_unknown.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\Gems\gems_blue_unknown.png" />
                     </animation>
                 </animation-folder>
             </object-type>

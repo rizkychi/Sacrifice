@@ -3,9 +3,10 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>WorldMap_Event</name>
     <events>
+        <include>SaveGame</include>
+        <variable constant="0" name="selected_page" sid="851738443290280" static="0" type="number">0</variable>
         <variable constant="1" name="price_inc" sid="883665851247848" static="0" type="number">750</variable>
         <variable constant="1" name="price_init" sid="796704678919319" static="0" type="number">2000</variable>
-        <include>SaveGame</include>
         <variable constant="0" name="icon_ready" sid="487593616460646" static="0" type="number">0</variable>
         <event-block sid="436666058311991">
             <conditions>
@@ -73,6 +74,21 @@
                     <param id="0" name="Opacity">0</param>
                 </action>
                 <action id="-16" name="Set opacity" sid="794297753269031" type="icon_mana">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="825148700544519" type="arrow_left">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="633185040148540" type="arrow_right">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="520120651054709" type="SpriteFont_Book_Title">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="761781955230261" type="book_items">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="478006978806463" type="SpriteFont_Book_Content">
                     <param id="0" name="Opacity">0</param>
                 </action>
             </actions>
@@ -168,6 +184,22 @@
                         </action>
                         <action behavior="Pin" id="0" name="Pin to object" sid="424983463127264" type="icon_treasure">
                             <param id="0" name="Pin to">SpriteFont_NormalText</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="340641399265289" type="arrow_left">
+                            <param id="0" name="Pin to">fade_popup</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="900170502309806" type="arrow_right">
+                            <param id="0" name="Pin to">fade_popup</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="531044470788657" type="SpriteFont_Book_Title">
+                            <param id="0" name="Pin to">book_items</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="499821799957924" type="SpriteFont_Book_Content">
+                            <param id="0" name="Pin to">book_items</param>
                             <param id="1" name="Mode">0</param>
                         </action>
                     </actions>
@@ -1444,14 +1476,17 @@
                         <action id="-16" name="Wait" sid="228918653379569" type="System">
                             <param id="0" name="Seconds">0.2</param>
                         </action>
-                        <action behavior="LiteTween" id="10" name="Start" sid="409094542643667" type="SpriteFont_NormalText">
+                        <action behavior="LiteTween" id="10" name="Start" sid="624456874227464" type="book_items">
                             <param id="0" name="Start Mode">0</param>
                             <param id="1" name="Force use current">0</param>
                         </action>
-                        <action behavior="LiteTween" id="3" name="Set target" sid="525646334613334" type="SpriteFont_NormalText">
+                        <action behavior="LiteTween" id="3" name="Set target" sid="927687167691494" type="book_items">
                             <param id="0" name="Target is">3</param>
                             <param id="1" name="Relativity">0</param>
                             <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="333882518185971" type="System">
+                            <param id="0" name="Seconds">0.2</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1462,11 +1497,11 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="LiteTween" id="10" name="Start" sid="278629006856095" type="SpriteFont_NormalText">
+                        <action behavior="LiteTween" id="10" name="Start" sid="180927403425508" type="book_items">
                             <param id="0" name="Start Mode">0</param>
                             <param id="1" name="Force use current">0</param>
                         </action>
-                        <action behavior="LiteTween" id="3" name="Set target" sid="230077274233188" type="SpriteFont_NormalText">
+                        <action behavior="LiteTween" id="3" name="Set target" sid="105991146424655" type="book_items">
                             <param id="0" name="Target is">3</param>
                             <param id="1" name="Relativity">0</param>
                             <param id="2" name="Value">0</param>
@@ -1495,6 +1530,278 @@
                             <param id="1" name="Visibility">0</param>
                         </action>
                     </actions>
+                </event-block>
+                <event-block sid="198104599720053">
+                    <conditions>
+                        <condition id="-9" name="Layer is visible" sid="244006615269005" type="System">
+                            <param id="0" name="Layer">&quot;Book&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="977498792013581">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="199822219861963" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">arrow_left</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="846387798322117" type="arrow_left">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="259180032437736" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="428652919760588" type="arrow_left">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="10" name="Start" sid="261780393443362" type="book_items">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="534039088308597" type="book_items">
+                                    <param id="0" name="Target is">3</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="850822749252581" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="126657544019551">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="214964696415895" type="System">
+                                            <param id="0" name="Variable">selected_page</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="396956093723341" type="System">
+                                            <param id="0" name="Variable">selected_page</param>
+                                            <param id="1" name="Value">7</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="114764077067993">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="747262624223464" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Subtract from" sid="637354185000027" type="System">
+                                            <param id="0" name="Variable">selected_page</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="294282756403440">
+                                    <conditions />
+                                    <actions>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="219949292571827" type="book_items">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="945280757975085" type="book_items">
+                                            <param id="0" name="Target is">3</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">100</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="924057518482083" type="System">
+                                            <param id="0" name="Seconds">0.2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="914321745729954">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="822342214863642" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">arrow_right</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="131746965652556" type="arrow_right">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="770124086588492" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="348558232913137" type="arrow_right">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="10" name="Start" sid="777756798943949" type="book_items">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="302645647021835" type="book_items">
+                                    <param id="0" name="Target is">3</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="623980561968919" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="456410621520642">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="811091767474533" type="System">
+                                            <param id="0" name="Variable">selected_page</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">7</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="700995432219656" type="System">
+                                            <param id="0" name="Variable">selected_page</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="157568170051607">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="446184428819502" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="285970162279433" type="System">
+                                            <param id="0" name="Variable">selected_page</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="936054697815987">
+                                    <conditions />
+                                    <actions>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="687590994663879" type="book_items">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="535236561979930" type="book_items">
+                                            <param id="0" name="Target is">3</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">100</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="907758156393993" type="System">
+                                            <param id="0" name="Seconds">0.2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="920377239446585">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="407497033878343" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="354890518947179" type="SpriteFont_Book_Title">
+                                    <param id="0" name="Text">Array_book.At(selected_page,0)</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="482408044152227" type="book_items">
+                                    <param id="0" name="Frame number">selected_page</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="371550238000804">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="367820855490796" type="SpriteFont_Book_Content">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;location&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="511672057525868" type="SpriteFont_Book_Content">
+                                            <param id="0" name="Text">&quot;Location : &quot;&amp;Array_book.At(selected_page,1)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="389565540422200">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="243600623390526" type="SpriteFont_Book_Content">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;guardian&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="161164291153082" type="SpriteFont_Book_Content">
+                                            <param id="0" name="Text">&quot;Guardian : &quot; &amp;Array_book.At(selected_page,2)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="201970204810363">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="440625047899225" type="SpriteFont_Book_Content">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;story&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="585824557080087" type="SpriteFont_Book_Content">
+                                            <param id="0" name="Text">Array_book.At(selected_page,3)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="601776924787842">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="279632129384471" type="System">
+                                            <param id="0" name="Variable">stage</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">selected_page</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="623054323204518" type="System">
+                                            <param id="0" name="Variable">selected_page</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="188481521659864" type="book_items">
+                                            <param id="0" name="Animation">&quot;Unlocked&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="327933531127002">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="148148063256566" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="438863843809982" type="book_items">
+                                            <param id="0" name="Animation">&quot;Locked&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="949529173308019">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="397257183478886" type="System">
+                                            <param id="0" name="Variable">stage</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">7</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="519372300710736" type="System">
+                                            <param id="0" name="Variable">selected_page</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="281386599499113" type="book_items">
+                                            <param id="0" name="Animation">&quot;Unlocked&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>

@@ -188,6 +188,10 @@
                 <action id="5" name="Check item exists" sid="261554224947549" type="LocalStorage">
                     <param id="0" name="Key">&quot;level_mana&quot;</param>
                 </action>
+                <action id="0" name="Call function" sid="322464843287279" type="Function">
+                    <param id="0" name="Name">&quot;load_book&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="324953954411671">
@@ -410,6 +414,200 @@
                     <param id="1" name="Value">LocalStorage.ItemValue</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="921836330963584">
+            <conditions>
+                <condition id="0" name="On function" sid="467816191453095" type="Function">
+                    <param id="0" name="Name">&quot;load_book&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>Gem&apos;s name</comment>
+                <event-block sid="767171834624642">
+                    <conditions />
+                    <actions>
+                        <action id="3" name="Set at XY" sid="570990455279710" type="Array_book">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">&quot;Water of Life&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="379096158093657" type="Array_book">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">&quot;Pink Sapphire&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="343382198236515" type="Array_book">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">&quot;Green Emerald&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="585901542498778" type="Array_book">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">&quot;Purple Amethyst&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="130991197385979" type="Array_book">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">&quot;Orange Citrine&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="467256276154963" type="Array_book">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">&quot;Lemon Quartz&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="513980832249747" type="Array_book">
+                            <param id="0" name="X">6</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">&quot;Red Ruby&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="237508641819008" type="Array_book">
+                            <param id="0" name="X">7</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">&quot;Blue Diamond&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Gem&apos;s location</comment>
+                <event-block sid="360685726711360">
+                    <conditions />
+                    <actions>
+                        <action id="3" name="Set at XY" sid="669816719298880" type="Array_book">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">&quot;Yggdrasil&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="731295233396357" type="Array_book">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">&quot;Svartalfheim&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="872482178893497" type="Array_book">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">&quot;Alfheim&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="940939745596788" type="Array_book">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">&quot;Niddhavellir&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="288007328705335" type="Array_book">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">&quot;Asgard&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="600460666501156" type="Array_book">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">&quot;Vanaheim&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="552470080148049" type="Array_book">
+                            <param id="0" name="X">6</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">&quot;Muspellheim&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="535371280101541" type="Array_book">
+                            <param id="0" name="X">7</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">&quot;Niflheim&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Gem&apos;s guardian</comment>
+                <event-block sid="714697963292831">
+                    <conditions />
+                    <actions>
+                        <action id="3" name="Set at XY" sid="397053665834087" type="Array_book">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">2</param>
+                            <param id="2" name="Value">&quot;-&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="959636597686423" type="Array_book">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">2</param>
+                            <param id="2" name="Value">&quot;-&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="100617926787929" type="Array_book">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Y">2</param>
+                            <param id="2" name="Value">&quot;Treant&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="150988349889771" type="Array_book">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">2</param>
+                            <param id="2" name="Value">&quot;Golem&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="574419192274280" type="Array_book">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Y">2</param>
+                            <param id="2" name="Value">&quot;-&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="504575258107201" type="Array_book">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Y">2</param>
+                            <param id="2" name="Value">&quot;-&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="217254062039203" type="Array_book">
+                            <param id="0" name="X">6</param>
+                            <param id="1" name="Y">2</param>
+                            <param id="2" name="Value">&quot;-&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="691571628277322" type="Array_book">
+                            <param id="0" name="X">7</param>
+                            <param id="1" name="Y">2</param>
+                            <param id="2" name="Value">&quot;Garm&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Gem&apos;s story</comment>
+                <event-block sid="959900629419710">
+                    <conditions />
+                    <actions>
+                        <action id="3" name="Set at XY" sid="606225402664112" type="Array_book">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">3</param>
+                            <param id="2" name="Value">&quot;The water of life is obtained from the dew of the yggdrasil world tree. This water can cure various diseases and restore the state of the body and soul of all beings.&quot;&amp;newline&amp;&quot;Conditions to obtain : Bring seven gems from seven different worlds to the world tree.&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="463040837331536" type="Array_book">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">3</param>
+                            <param id="2" name="Value">&quot;Diamond&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="580987232405166" type="Array_book">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Y">3</param>
+                            <param id="2" name="Value">&quot;Saphire&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="824206382869073" type="Array_book">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">3</param>
+                            <param id="2" name="Value">&quot;Emerald&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="332079021113865" type="Array_book">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Y">3</param>
+                            <param id="2" name="Value">&quot;Topaz&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="299715987112593" type="Array_book">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Y">3</param>
+                            <param id="2" name="Value">&quot;Amethyst&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="458319822314997" type="Array_book">
+                            <param id="0" name="X">6</param>
+                            <param id="1" name="Y">3</param>
+                            <param id="2" name="Value">&quot;Ruby&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="413378190475334" type="Array_book">
+                            <param id="0" name="X">7</param>
+                            <param id="1" name="Y">3</param>
+                            <param id="2" name="Value">&quot;Alexandrite&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
