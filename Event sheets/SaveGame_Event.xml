@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>SaveGame</name>
+    <name>SaveGame_Event</name>
     <events>
         <variable constant="0" name="saved_game" sid="607039955341509" static="0" type="number">0</variable>
         <comment>Game</comment>
@@ -17,6 +17,7 @@
         <variable constant="0" name="level_health" sid="281847354707807" static="0" type="number">0</variable>
         <variable constant="0" name="level_mana" sid="260085832846256" static="0" type="number">0</variable>
         <comment>Option</comment>
+        <variable constant="0" name="difficulty" sid="363982907183855" static="0" type="text"></variable>
         <variable constant="0" name="sound_music" sid="598958781670658" static="0" type="number">1</variable>
         <variable constant="0" name="sound_sfx" sid="234761892111547" static="0" type="number">1</variable>
         <event-block sid="344328330184494">
@@ -209,6 +210,10 @@
                     <param id="0" name="Key">&quot;sfx&quot;</param>
                     <param id="1" name="Value">sound_sfx</param>
                 </action>
+                <action id="0" name="Set item" sid="547589306827837" type="LocalStorage">
+                    <param id="0" name="Key">&quot;difficulty&quot;</param>
+                    <param id="1" name="Value">difficulty</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="144156445573172">
@@ -226,6 +231,9 @@
                 </action>
                 <action id="5" name="Check item exists" sid="811653355288656" type="LocalStorage">
                     <param id="0" name="Key">&quot;sfx&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="554757320839445" type="LocalStorage">
+                    <param id="0" name="Key">&quot;difficulty&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -268,6 +276,19 @@
             <actions>
                 <action id="-9" name="Set value" sid="896219694843531" type="System">
                     <param id="0" name="Variable">sound_sfx</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="345723290009908">
+            <conditions>
+                <condition id="9" name="On item exists" sid="214467605894344" type="LocalStorage">
+                    <param id="0" name="Key">&quot;difficulty&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="975498385454454" type="System">
+                    <param id="0" name="Variable">difficulty</param>
                     <param id="1" name="Value">LocalStorage.ItemValue</param>
                 </action>
             </actions>

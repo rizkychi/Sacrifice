@@ -38,7 +38,8 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <use-loader-layout>0</use-loader-layout>
+    <first-layout>Starter</first-layout>
+    <use-loader-layout>1</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
         <prop name="Enable WebGL">On</prop>
@@ -74,19 +75,546 @@
             </object-type>
         </object-folder>
         <object-folder name="Background">
-            <object-type name="moonlight" sid="155951570907244">
+            <object-folder name="MainMenu">
+                <object-type name="bg_1" sid="708859090410722">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="635056223369478" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Rizky\Downloads\bg\bg_1.png">
+                                <collision-poly>
+                                    <point x="0.126823" y="0.507821" />
+                                    <point x="0.5" y="0.841502" />
+                                    <point x="0.846354" y="0.615224" />
+                                    <point x="1" y="0.499479" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0.0179687" y="0.499479" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="bg_2" sid="811135356510201">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="521713402476842" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Rizky\Downloads\bg\bg_2.png">
+                                <collision-poly>
+                                    <point x="0.94401" y="0.499421" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0.151563" y="0.499421" />
+                                    <point x="0.119271" y="0.530707" />
+                                    <point x="0.5" y="0.484357" />
+                                    <point x="0.882031" y="0.524913" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="bg_3" sid="264023721921448">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="541442139378249" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Rizky\Downloads\bg\bg_3.png">
+                                <collision-poly>
+                                    <point x="0.179167" y="0.793541" />
+                                    <point x="0.5" y="0.619377" />
+                                    <point x="0.927344" y="0.321799" />
+                                    <point x="0.99974" y="0.499423" />
+                                    <point x="1" y="1" />
+                                    <point x="0.000260417" y="0.998847" />
+                                    <point x="0.553646" y="0.499423" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="bg_4" sid="637582950794020">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="238256483758349" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Rizky\Downloads\bg\bg_4.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="bg_5" sid="119511565969428">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="543431437285730" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.500517" original-source="C:\Users\Rizky\Downloads\bg\bg_5.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="bg_6" sid="456893555126264">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="636341027550786" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Rizky\Downloads\bg\bg_6.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="bg_stars" sid="606693020696004">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="658290320809252" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\bg\bg_stars.png">
+                                <collision-poly>
+                                    <point x="0.868164" y="0.131836" />
+                                    <point x="0.130371" y="0.5" />
+                                    <point x="0.74707" y="0.25293" />
+                                    <point x="0.127441" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="bg_sun" sid="739204644053885">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="848798411119165" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\bg\sun.png">
+                                <collision-poly>
+                                    <point x="0.5" y="0.292641" />
+                                    <point x="0.717105" y="0.5" />
+                                    <point x="0.5" y="0.707792" />
+                                    <point x="0.282895" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="main_chara" sid="678142714209307">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="539413049704438" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.500732" original-source="C:\Users\Rizky\Downloads\main_chara.png">
+                                <collision-poly>
+                                    <point x="0.285156" y="0.213763" />
+                                    <point x="0.5" y="0.118594" />
+                                    <point x="0.712891" y="0.215227" />
+                                    <point x="0.662109" y="0.499268" />
+                                    <point x="0.660156" y="0.745242" />
+                                    <point x="0.5" y="0.935578" />
+                                    <point x="0.369141" y="0.72328" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="logo_title" sid="675373877590927">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="172688977490413" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.500237" original-source="C:\Users\Rizky\Downloads\logo no shadow (2).png">
+                                <collision-poly>
+                                    <point x="0.379032" y="0.445709" />
+                                    <point x="0.5" y="0.0753912" />
+                                    <point x="0.620161" y="0.446657" />
+                                    <point x="0.658468" y="0.499763" />
+                                    <point x="0.828226" y="0.798009" />
+                                    <point x="0.5" y="0.722143" />
+                                    <point x="0.148387" y="0.82551" />
+                                    <point x="0.339113" y="0.499763" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-type name="area" sid="967984546240023">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="id" sid="383024455861798" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="255417363326925">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="355859712714498" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Rizky\Downloads\moon-night-sky-stars-landscape-scenery-landscape-uhdpaper.com-8K-189.jpg" />
+                    <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="853028171074246" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501976" original-source="C:\Users\Rizky\Downloads\maps\Svartalfheim .png">
+                            <collision-poly>
+                                <point x="0.449712" y="0.211462" />
+                                <point x="0.579023" y="0.197628" />
+                                <point x="0.728448" y="0.27668" />
+                                <point x="0.755747" y="0.343874" />
+                                <point x="0.887931" y="0.498024" />
+                                <point x="0.873563" y="0.596838" />
+                                <point x="0.813218" y="0.644269" />
+                                <point x="0.735632" y="0.695652" />
+                                <point x="0.685435" y="0.802496" />
+                                <point x="0.635237" y="0.790762" />
+                                <point x="0.606681" y="0.826582" />
+                                <point x="0.630029" y="0.870554" />
+                                <point x="0.576149" y="0.990119" />
+                                <point x="0.377873" y="0.926878" />
+                                <point x="0.388649" y="0.815712" />
+                                <point x="0.298851" y="0.744071" />
+                                <point x="0.202586" y="0.620553" />
+                                <point x="0.119971" y="0.503953" />
+                                <point x="0.0887661" y="0.404706" />
+                                <point x="0.131555" y="0.295578" />
+                                <point x="0.297593" y="0.184042" />
+                                <point x="0.350934" y="0.257411" />
+                                <point x="0.405891" y="0.253953" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.758242" original-source="C:\Users\Rizky\Downloads\maps\Alfheim.png">
+                            <collision-poly>
+                                <point x="0.513542" y="0.188187" />
+                                <point x="0.550434" y="0.131181" />
+                                <point x="0.615408" y="0.109547" />
+                                <point x="0.706771" y="0.241758" />
+                                <point x="0.75408" y="0.200549" />
+                                <point x="0.798221" y="0.274725" />
+                                <point x="0.841667" y="0.276099" />
+                                <point x="0.852778" y="0.310096" />
+                                <point x="0.820833" y="0.347699" />
+                                <point x="0.890278" y="0.414577" />
+                                <point x="0.931251" y="0.38895" />
+                                <point x="0.937848" y="0.431082" />
+                                <point x="0.927257" y="0.441159" />
+                                <point x="0.933768" y="0.499769" />
+                                <point x="0.955773" y="0.513964" />
+                                <point x="0.945942" y="0.569138" />
+                                <point x="0.920834" y="0.569368" />
+                                <point x="0.904167" y="0.596497" />
+                                <point x="0.881945" y="0.5716" />
+                                <point x="0.868056" y="0.633327" />
+                                <point x="0.875695" y="0.666938" />
+                                <point x="0.887847" y="0.676875" />
+                                <point x="0.882118" y="0.718932" />
+                                <point x="0.865365" y="0.728971" />
+                                <point x="0.87296" y="0.786189" />
+                                <point x="0.89273" y="0.828533" />
+                                <point x="0.924143" y="0.787206" />
+                                <point x="0.932344" y="0.80366" />
+                                <point x="0.9336" y="0.83385" />
+                                <point x="0.918189" y="0.830386" />
+                                <point x="0.907011" y="0.850632" />
+                                <point x="0.880589" y="0.83603" />
+                                <point x="0.867378" y="0.89329" />
+                                <point x="0.88855" y="0.95626" />
+                                <point x="0.886111" y="0.979395" />
+                                <point x="0.819445" y="0.981112" />
+                                <point x="0.78264" y="0.969608" />
+                                <point x="0.762848" y="0.886933" />
+                                <point x="0.669619" y="0.886117" />
+                                <point x="0.657726" y="0.96332" />
+                                <point x="0.610807" y="0.957965" />
+                                <point x="0.5875" y="0.991071" />
+                                <point x="0.551563" y="0.962654" />
+                                <point x="0.520486" y="0.983688" />
+                                <point x="0.476563" y="0.971755" />
+                                <point x="0.44974" y="0.88337" />
+                                <point x="0.367578" y="0.883134" />
+                                <point x="0.354275" y="0.965434" />
+                                <point x="0.289584" y="0.959821" />
+                                <point x="0.271181" y="0.974416" />
+                                <point x="0.213368" y="0.9199" />
+                                <point x="0.151129" y="0.92973" />
+                                <point x="0.0974393" y="0.855661" />
+                                <point x="0.01875" y="0.929945" />
+                                <point x="0.00112846" y="0.845467" />
+                                <point x="0.0207899" y="0.768887" />
+                                <point x="0.0605903" y="0.754121" />
+                                <point x="0.111719" y="0.831731" />
+                                <point x="0.139019" y="0.820399" />
+                                <point x="0.160308" y="0.790007" />
+                                <point x="0.17512" y="0.795416" />
+                                <point x="0.187386" y="0.832461" />
+                                <point x="0.21852" y="0.855104" />
+                                <point x="0.256786" y="0.786506" />
+                                <point x="0.257864" y="0.731602" />
+                                <point x="0.272986" y="0.691788" />
+                                <point x="0.252075" y="0.636166" />
+                                <point x="0.254081" y="0.60527" />
+                                <point x="0.276028" y="0.587497" />
+                                <point x="0.321029" y="0.592346" />
+                                <point x="0.357698" y="0.525766" />
+                                <point x="0.360895" y="0.457168" />
+                                <point x="0.390966" y="0.4421" />
+                                <point x="0.417112" y="0.386489" />
+                                <point x="0.447425" y="0.385823" />
+                                <point x="0.491595" y="0.339202" />
+                                <point x="0.499096" y="0.293914" />
+                                <point x="0.51118" y="0.289128" />
+                                <point x="0.524861" y="0.216679" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\maps\Niddhavellir.png">
+                            <collision-poly>
+                                <point x="0.150338" y="0.378906" />
+                                <point x="0.112331" y="0.366211" />
+                                <point x="0.103463" y="0.316895" />
+                                <point x="0.141258" y="0.251221" />
+                                <point x="0.190562" y="0.282837" />
+                                <point x="0.239865" y="0.240234" />
+                                <point x="0.300676" y="0.238281" />
+                                <point x="0.334459" y="0.166016" />
+                                <point x="0.261824" y="0.139648" />
+                                <point x="0.249155" y="0.0561523" />
+                                <point x="0.331081" y="0.0566406" />
+                                <point x="0.351351" y="0.0263672" />
+                                <point x="0.420608" y="0.106934" />
+                                <point x="0.44679" y="0.0476074" />
+                                <point x="0.488598" y="0.0921631" />
+                                <point x="0.656461" y="0.00506592" />
+                                <point x="0.733636" y="0.00448608" />
+                                <point x="0.797561" y="0.0666962" />
+                                <point x="0.83277" y="0.126953" />
+                                <point x="0.887669" y="0.133789" />
+                                <point x="0.921875" y="0.219238" />
+                                <point x="0.991554" y="0.566406" />
+                                <point x="0.834459" y="0.737305" />
+                                <point x="0.76098" y="0.77002" />
+                                <point x="0.734797" y="0.833984" />
+                                <point x="0.592905" y="0.902344" />
+                                <point x="0.58277" y="0.963867" />
+                                <point x="0.535473" y="0.990234" />
+                                <point x="0.421453" y="0.900391" />
+                                <point x="0.472551" y="0.775391" />
+                                <point x="0.148437" y="0.777344" />
+                                <point x="0.0979728" y="0.693359" />
+                                <point x="0.125845" y="0.597656" />
+                                <point x="0.0996622" y="0.476563" />
+                                <point x="0.146115" y="0.441406" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501805" original-source="C:\Users\Rizky\Downloads\maps\Asgard.png">
+                            <collision-poly>
+                                <point x="0.194444" y="0.214801" />
+                                <point x="0.502662" y="0.2588" />
+                                <point x="0.386806" y="0.21435" />
+                                <point x="0.532871" y="0.204874" />
+                                <point x="0.595371" y="0.00902527" />
+                                <point x="0.620371" y="0.133574" />
+                                <point x="0.62963" y="0.216606" />
+                                <point x="0.736111" y="0.194495" />
+                                <point x="0.868519" y="0.168773" />
+                                <point x="0.951852" y="0.268953" />
+                                <point x="1" y="0.350632" />
+                                <point x="0.894676" y="0.398691" />
+                                <point x="0.765741" y="0.435921" />
+                                <point x="0.807407" y="0.519856" />
+                                <point x="0.79213" y="0.549977" />
+                                <point x="0.823148" y="0.618005" />
+                                <point x="0.653703" y="0.766696" />
+                                <point x="0.69537" y="0.871164" />
+                                <point x="0.603703" y="0.908845" />
+                                <point x="0.529629" y="0.954874" />
+                                <point x="0.516666" y="0.883574" />
+                                <point x="0.459259" y="0.866426" />
+                                <point x="0.336574" y="0.870487" />
+                                <point x="0.182407" y="0.829422" />
+                                <point x="0.124074" y="0.777978" />
+                                <point x="0.0671296" y="0.741426" />
+                                <point x="0.100926" y="0.703068" />
+                                <point x="0.124074" y="0.608303" />
+                                <point x="0.188889" y="0.425993" />
+                                <point x="0.103704" y="0.409634" />
+                                <point x="0" y="0.353565" />
+                                <point x="0.0277778" y="0.277527" />
+                                <point x="0.100926" y="0.204874" />
+                                <point x="0.168518" y="0.185921" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.378295" hotspotY="0.663912" original-source="C:\Users\Rizky\Downloads\maps\Vanaheim.png">
+                            <collision-poly>
+                                <point x="0.163566" y="0.0413223" />
+                                <point x="0.202612" y="0.101132" />
+                                <point x="0.25096" y="0.216038" />
+                                <point x="0.298044" y="0.230975" />
+                                <point x="0.339498" y="0.172693" />
+                                <point x="0.406904" y="0.237947" />
+                                <point x="0.392878" y="0.307851" />
+                                <point x="0.42374" y="0.309917" />
+                                <point x="0.479263" y="0.380165" />
+                                <point x="0.466279" y="0.415977" />
+                                <point x="0.530232" y="0.460055" />
+                                <point x="0.630232" y="0.498623" />
+                                <point x="0.662015" y="0.465565" />
+                                <point x="0.710078" y="0.53168" />
+                                <point x="0.738953" y="0.518079" />
+                                <point x="0.792635" y="0.548554" />
+                                <point x="0.839534" y="0.667355" />
+                                <point x="0.911627" y="0.72314" />
+                                <point x="0.993798" y="0.730027" />
+                                <point x="0.996899" y="0.776859" />
+                                <point x="0.927132" y="0.889807" />
+                                <point x="0.821705" y="0.947658" />
+                                <point x="0.63876" y="0.991735" />
+                                <point x="0.456528" y="0.897017" />
+                                <point x="0.399879" y="0.802299" />
+                                <point x="0.413711" y="0.712035" />
+                                <point x="0.326647" y="0.592114" />
+                                <point x="0.257946" y="0.633265" />
+                                <point x="0.185659" y="0.682507" />
+                                <point x="0.0968993" y="0.615703" />
+                                <point x="0.0666667" y="0.550964" />
+                                <point x="0.103379" y="0.320722" />
+                                <point x="0.152495" y="0.30811" />
+                                <point x="0.0755329" y="0.258092" />
+                                <point x="0.0704457" y="0.19938" />
+                                <point x="0.0881782" y="0.153581" />
+                                <point x="0.125194" y="0.0895315" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502326" hotspotY="0.502203" original-source="C:\Users\Rizky\Downloads\maps\Muspellheim.png">
+                            <collision-poly>
+                                <point x="0.134884" y="0.178414" />
+                                <point x="0.212209" y="0.171806" />
+                                <point x="0.294186" y="0.11674" />
+                                <point x="0.434884" y="0.145374" />
+                                <point x="0.474419" y="0.061674" />
+                                <point x="0.597093" y="0.00220265" />
+                                <point x="0.668605" y="0.0176212" />
+                                <point x="0.830233" y="0.0704846" />
+                                <point x="0.837209" y="0.154185" />
+                                <point x="0.916279" y="0.301762" />
+                                <point x="1" y="0.475771" />
+                                <point x="0.862791" y="0.573788" />
+                                <point x="0.660465" y="0.627753" />
+                                <point x="0.64186" y="0.660793" />
+                                <point x="0.476744" y="0.814978" />
+                                <point x="0.432849" y="0.911894" />
+                                <point x="0.307558" y="0.933921" />
+                                <point x="0.243023" y="1" />
+                                <point x="0.113954" y="0.982379" />
+                                <point x="0.125581" y="0.881057" />
+                                <point x="0.131395" y="0.803414" />
+                                <point x="0.0116279" y="0.712555" />
+                                <point x="0" y="0.495595" />
+                                <point x="0.0755814" y="0.339758" />
+                                <point x="0.0953488" y="0.25" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.50237" original-source="C:\Users\Rizky\Downloads\maps\Niflheim.png">
+                            <collision-poly>
+                                <point x="0.0943396" y="0.336493" />
+                                <point x="0.212264" y="0.308057" />
+                                <point x="0.275943" y="0.225119" />
+                                <point x="0.347877" y="0.193128" />
+                                <point x="0.445165" y="0.215047" />
+                                <point x="0.5" y="0.104265" />
+                                <point x="0.617925" y="0.021327" />
+                                <point x="0.738208" y="0.0035545" />
+                                <point x="0.84316" y="0.0325829" />
+                                <point x="0.90566" y="0.0900474" />
+                                <point x="0.943396" y="0.184834" />
+                                <point x="0.896226" y="0.310426" />
+                                <point x="0.811321" y="0.359005" />
+                                <point x="0.818396" y="0.436019" />
+                                <point x="0.847877" y="0.485782" />
+                                <point x="0.831957" y="0.626778" />
+                                <point x="0.892394" y="0.730451" />
+                                <point x="0.913178" y="0.701719" />
+                                <point x="0.977815" y="0.827163" />
+                                <point x="1" y="1" />
+                                <point x="0.770047" y="0.996445" />
+                                <point x="0.686321" y="0.912323" />
+                                <point x="0.5" y="0.909953" />
+                                <point x="0.266509" y="0.874408" />
+                                <point x="0.167453" y="0.812796" />
+                                <point x="0.119693" y="0.744669" />
+                                <point x="0.0224057" y="0.697868" />
+                                <point x="0.00235849" y="0.64218" />
+                                <point x="0.0471698" y="0.542654" />
+                                <point x="0.0377359" y="0.46327" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.503597" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\maps\Yggdrasil.png">
+                            <collision-poly>
+                                <point x="0.165468" y="0.243333" />
+                                <point x="0.492806" y="0.0800001" />
+                                <point x="0.802158" y="0.23" />
+                                <point x="0.870504" y="0.44" />
+                                <point x="0.870504" y="0.836667" />
+                                <point x="0.107914" y="0.913333" />
+                                <point x="0.122302" y="0.453333" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="worldMap" sid="638479215676216">
+            <object-type name="worldMap" sid="672840528136419">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="744825105301426" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Rizky\Downloads\world map.png" />
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="390423862756134" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\maps\world map.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="fog" sid="748234949303081">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="id" sid="599393492167120" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Fade" sid="698988380742920">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="243295188712580" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\maps\fog_1.png">
+                            <collision-poly>
+                                <point x="0.196629" y="0.301724" />
+                                <point x="0.5" y="0.275862" />
+                                <point x="0.769663" y="0.353448" />
+                                <point x="0.803371" y="0.5" />
+                                <point x="0.786517" y="0.672414" />
+                                <point x="0.5" y="0.801724" />
+                                <point x="0.224719" y="0.655172" />
+                                <point x="0.146067" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.504348" original-source="C:\Users\Rizky\Downloads\maps\fog_2.png">
+                            <collision-poly>
+                                <point x="0.263158" y="0.26087" />
+                                <point x="0.5" y="0.208696" />
+                                <point x="0.72807" y="0.269565" />
+                                <point x="0.824561" y="0.495652" />
+                                <point x="0.701754" y="0.704348" />
+                                <point x="0.5" y="0.834783" />
+                                <point x="0.254386" y="0.747826" />
+                                <point x="0.22807" y="0.495652" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\maps\fog_3.png">
+                            <collision-poly>
+                                <point x="0.279661" y="0.366667" />
+                                <point x="0.5" y="0.222222" />
+                                <point x="0.830508" y="0.5" />
+                                <point x="0.711864" y="0.622222" />
+                                <point x="0.5" y="0.644444" />
+                                <point x="0.220339" y="0.711111" />
+                                <point x="0.262712" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\maps\fog_4.png">
+                            <collision-poly>
+                                <point x="0.116162" y="0.638889" />
+                                <point x="0.5" y="0.527778" />
+                                <point x="0.459596" y="0.5" />
+                                <point x="0.5" y="0.805556" />
+                                <point x="0.212121" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.503226" hotspotY="0.506329" original-source="C:\Users\Rizky\Downloads\maps\fog_5.png">
+                            <collision-poly>
+                                <point x="0.309677" y="0.607595" />
+                                <point x="0.496774" y="0.443038" />
+                                <point x="0.845161" y="0.303797" />
+                                <point x="0.819355" y="0.493671" />
+                                <point x="0.825806" y="0.658228" />
+                                <point x="0.496774" y="0.582278" />
+                                <point x="0.129032" y="0.746835" />
+                                <point x="0.290323" y="0.493671" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -97,7 +625,7 @@
                 <instance-variables>
                     <instance-variable name="menu" sid="995485286394917" type="number" />
                 </instance-variables>
-                <texture original-source="C:\Users\Rizky\Desktop\font\SpriteFont_KGBlankSpaceSolid_Regular_(22)_[1,1,1,1]_27x32.png" />
+                <texture original-source="C:\Users\Rizky\Desktop\font\SpriteFont_KGBlankSpaceSolid_Regular_(22)_[1,1,1,1]_27x32_Menu.png" />
             </object-type>
             <object-type name="SpriteFont_PopupText" sid="554928407064154">
                 <plugin id="SpriteFontPlus" />
@@ -632,6 +1160,37 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="btn_change_difficult" sid="888173105831694">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="937372868107484" speed="0">
+                        <frame duration="1" hotspotX="0.504762" hotspotY="0.504348" original-source="C:\Users\Rizky\Downloads\btn_change_standby.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.130435" />
+                                <point x="0.495238" y="0" />
+                                <point x="0.857143" y="0.130435" />
+                                <point x="1" y="0.495652" />
+                                <point x="0.857143" y="0.869565" />
+                                <point x="0.495238" y="1" />
+                                <point x="0.142857" y="0.869565" />
+                                <point x="0" y="0.495652" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504762" hotspotY="0.504348" original-source="C:\Users\Rizky\Downloads\btn_change_pressed.png">
+                            <collision-poly>
+                                <point x="0.180952" y="0.165217" />
+                                <point x="0.495238" y="0.0608696" />
+                                <point x="0.819048" y="0.165217" />
+                                <point x="1" y="0.495652" />
+                                <point x="0.857143" y="0.869565" />
+                                <point x="0.495238" y="1" />
+                                <point x="0.142857" y="0.869565" />
+                                <point x="0" y="0.495652" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Sprites">
             <object-type name="icon_back" sid="249166188651431">
@@ -1138,10 +1697,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-type name="Title" sid="538347276261797">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="Btn_Select" sid="587870514108402">
+        <object-type name="btn_Select" sid="587870514108402">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="selected" sid="497498248064877">
@@ -1190,6 +1746,12 @@
             <behaviors>
                 <behavior-type name="LiteTween" sid="824771921780636">
                     <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="FadeIn" sid="100703236216383">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="FadeOut" sid="100008316912942">
+                    <behavior id="Fade" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -1241,7 +1803,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Camera" sid="335349714748180">
+        <object-type name="camera" sid="335349714748180">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="ScrollTo" sid="610341024849033">
@@ -1254,7 +1816,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Camera_Core" sid="943711960502822">
+        <object-type name="camera_core" sid="943711960502822">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="462931702952640" speed="5">
@@ -1351,16 +1913,190 @@
         <object-type name="tes_shop" sid="442237503906191">
             <plugin id="Text" />
         </object-type>
+        <object-type name="loading_bg" sid="481666072463064">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="201042021374302">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="151484317202148" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="loading_logo" sid="251464660137280">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="913938602228688">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="189673084342566">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="113168882721899" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\logo only.png">
+                        <collision-poly>
+                            <point x="0.42" y="0.35" />
+                            <point x="0.5" y="0.0722222" />
+                            <point x="0.58" y="0.35" />
+                            <point x="0.673333" y="0.5" />
+                            <point x="0.88" y="0.9" />
+                            <point x="0.5" y="0.966667" />
+                            <point x="0.133333" y="0.888889" />
+                            <point x="0.326667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Loading_text" sid="249063040445348">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="404026390949226">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="502059710327298">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="994799234432580" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="C:\Users\Rizky\Downloads\Loading_text.png">
+                        <collision-poly>
+                            <point x="0.00684932" y="0.0243902" />
+                            <point x="0.5" y="0.219512" />
+                            <point x="0.952055" y="0.170732" />
+                            <point x="1" y="0.487805" />
+                            <point x="0.972603" y="0.902439" />
+                            <point x="0.5" y="0.780488" />
+                            <point x="0.0616438" y="0.780488" />
+                            <point x="0.00684932" y="0.487805" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="start_bg" sid="152210763688773">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="229965805131972" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Rizky\Downloads\start_bg.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="start_bar" sid="827138782516011">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="102179325134380" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_difficulty_hard" sid="281741189572701">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="FadeIn" sid="856264720650932">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="FadeOut" sid="532621048675040">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="363458528439175" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="C:\Users\Rizky\Downloads\btn_hard_standby.png">
+                        <collision-poly>
+                            <point x="0.0444444" y="0.145455" />
+                            <point x="0.5" y="0.0181818" />
+                            <point x="0.95" y="0.163636" />
+                            <point x="0.983333" y="0.490909" />
+                            <point x="0.95" y="0.836364" />
+                            <point x="0.5" y="0.981818" />
+                            <point x="0.0444444" y="0.854545" />
+                            <point x="0.0111111" y="0.490909" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="C:\Users\Rizky\Downloads\btn_hard_pressed.png">
+                        <collision-poly>
+                            <point x="0.05" y="0.163636" />
+                            <point x="0.5" y="0.0545455" />
+                            <point x="0.944444" y="0.181818" />
+                            <point x="0.983333" y="0.490909" />
+                            <point x="0.95" y="0.836364" />
+                            <point x="0.5" y="0.981818" />
+                            <point x="0.0444444" y="0.854545" />
+                            <point x="0.0111111" y="0.490909" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_difficulty_normal" sid="167445365166243">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="FadeIn" sid="532448506106421">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="FadeOut" sid="177733444747070">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="534905321206282" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="C:\Users\Rizky\Downloads\btn_normal_standby.png">
+                        <collision-poly>
+                            <point x="0.0444444" y="0.145455" />
+                            <point x="0.5" y="0.0181818" />
+                            <point x="0.95" y="0.163636" />
+                            <point x="0.983333" y="0.490909" />
+                            <point x="0.95" y="0.836364" />
+                            <point x="0.5" y="0.981818" />
+                            <point x="0.0444444" y="0.854545" />
+                            <point x="0.0111111" y="0.490909" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="C:\Users\Rizky\Downloads\btn_normal_pressed.png">
+                        <collision-poly>
+                            <point x="0.05" y="0.163636" />
+                            <point x="0.5" y="0.0545455" />
+                            <point x="0.944444" y="0.181818" />
+                            <point x="0.983333" y="0.490909" />
+                            <point x="0.95" y="0.836364" />
+                            <point x="0.5" y="0.981818" />
+                            <point x="0.0444444" y="0.854545" />
+                            <point x="0.0111111" y="0.490909" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
+        <layout-folder name="Stage">
+            <layout>Stage 1 - Svartalfheim.xml</layout>
+            <layout>Stage 2 - Alfheim.xml</layout>
+            <layout>Stage 3 - Niddhavellir.xml</layout>
+            <layout>Stage 4 - Asgard.xml</layout>
+            <layout>Stage 5 - Vanaheim.xml</layout>
+            <layout>Stage 6 - Muspellheim.xml</layout>
+            <layout>Stage 7 - Niflheim.xml</layout>
+        </layout-folder>
         <layout>MainMenu.xml</layout>
         <layout>WorldMap.xml</layout>
+        <layout>Starter.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>MainMenu_Event.xml</event-sheet>
         <event-sheet>WorldMap_Event.xml</event-sheet>
-        <event-sheet>SaveGame.xml</event-sheet>
+        <event-sheet>SaveGame_Event.xml</event-sheet>
+        <event-sheet>Loading_Event.xml</event-sheet>
+        <event-sheet>GameControl_Event.xml</event-sheet>
+        <event-sheet>Starter_Event.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Function" uid="2" />

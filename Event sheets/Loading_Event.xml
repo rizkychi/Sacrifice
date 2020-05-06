@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Loading_Event</name>
+    <events>
+        <variable constant="1" name="loading_time" sid="734296386649304" static="0" type="number">3</variable>
+        <event-block sid="641601353859901">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="961711451863176" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="925497336938053" type="System">
+                    <param id="0" name="Layer">&quot;Loading&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Call function" sid="747592204016859" type="Function">
+                    <param id="0" name="Name">&quot;loading_hide&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="427311082929366">
+            <conditions>
+                <condition id="0" name="On function" sid="116050325877373" type="Function">
+                    <param id="0" name="Name">&quot;loading_show&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="583531406640717" type="System">
+                    <param id="0" name="Layer">&quot;Loading&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="664294976912947" type="loading_bg">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-7" name="Set size" sid="167184496581713" type="loading_logo">
+                    <param id="0" name="Width">0</param>
+                    <param id="1" name="Height">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="311072515557607" type="loading_logo">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="698439105226451" type="Loading_text">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="639157287171260" type="Loading_text">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="940179754717639">
+                    <conditions />
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="427032610733574" type="loading_bg">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="552987368123484" type="loading_bg">
+                            <param id="0" name="Target is">3</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="906874317281163" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="489077142205527" type="loading_logo">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="876430392836307" type="loading_logo">
+                            <param id="0" name="Target is">4</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">150</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="430468170263246" type="loading_logo">
+                            <param id="0" name="Target is">5</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">180</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="395198935352800" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="386629095941583" type="Loading_text">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="266096088734576" type="Loading_text">
+                            <param id="0" name="Target is">3</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="127010078745315" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="213104310953145" type="Loading_text">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="481025846192025">
+            <conditions>
+                <condition id="0" name="On function" sid="156119284449298" type="Function">
+                    <param id="0" name="Name">&quot;loading_hide&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="954036444632960">
+                    <conditions />
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="386948523313804" type="Loading_text">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="266731170805683" type="Loading_text">
+                            <param id="0" name="Target is">3</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="341935560705253" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="545879338217771" type="loading_logo">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="301588691598017" type="loading_logo">
+                            <param id="0" name="Target is">4</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="303107659229741" type="loading_logo">
+                            <param id="0" name="Target is">5</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="612415017052874" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="995758465128515" type="loading_logo" />
+                        <action behavior="LiteTween" id="10" name="Start" sid="224900560017770" type="loading_bg">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="229349385806604" type="loading_bg">
+                            <param id="0" name="Target is">3</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="185164002933026" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="125242632232287" type="System">
+                            <param id="0" name="Layer">&quot;Loading&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -3,7 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>WorldMap_Event</name>
     <events>
-        <include>SaveGame</include>
+        <include>Loading_Event</include>
+        <include>SaveGame_Event</include>
         <variable constant="0" name="selected_page" sid="851738443290280" static="0" type="number">0</variable>
         <variable constant="1" name="price_inc" sid="883665851247848" static="0" type="number">750</variable>
         <variable constant="1" name="price_init" sid="796704678919319" static="0" type="number">2000</variable>
@@ -90,6 +91,9 @@
                 </action>
                 <action id="-16" name="Set opacity" sid="478006978806463" type="SpriteFont_Book_Content">
                     <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="9" name="Set scale" sid="713838546048134" type="area">
+                    <param id="0" name="Scale">1</param>
                 </action>
             </actions>
             <sub-events>
@@ -204,7 +208,18 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="827230023749864">
+            </sub-events>
+        </event-block>
+        <event-block sid="827230023749864">
+            <conditions>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="864085098634312" type="System">
+                    <param id="0" name="Layer">&quot;Loading&quot;</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="124306563222616" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="973003961042787">
                     <conditions />
                     <actions>
                         <action behavior="LiteTween" id="10" name="Start" sid="701902116306385" type="faded_background_icon">
@@ -296,6 +311,21 @@
                             <param id="0" name="Variable">icon_ready</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                    </actions>
+                </event-block>
+                <event-block sid="197805300703127">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="961634822723441" type="fog">
+                            <param id="0" name="Instance variable">id</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">stage</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="223308084666885" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="980168274398175" type="fog" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -748,6 +778,246 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-group description="" sid="507399272256641" title="Area">
+            <sub-events>
+                <variable constant="0" name="area" sid="276265898089362" static="0" type="number">0</variable>
+                <event-block sid="969340777326343">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="694584508391711" type="area">
+                            <param id="0" name="Instance variable">id</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">stage+1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="797095532221319">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="511504648096931" type="Mouse">
+                                    <param id="0" name="Object">area</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="275708023275326" type="System">
+                                    <param id="0" name="Variable">area</param>
+                                    <param id="1" name="Value">area.id</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="796584238560862">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="668101513451008" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="443042191838155" type="System">
+                                    <param id="0" name="Variable">area</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="186288387703096">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="317548784911164" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="LiteTween" id="10" name="Start" sid="954250936281761" type="area">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="869728737757646" type="area">
+                                    <param id="0" name="Target is">4</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="735581545185890" type="area">
+                                    <param id="0" name="Target is">5</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="720235445946034">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="737438160305499" type="area">
+                                            <param id="0" name="Instance variable">id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">area</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="650745152585702">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="876664956047573" type="System">
+                                                    <param id="0" name="Variable">area</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="LiteTween" id="10" name="Start" sid="482555838413338" type="area">
+                                                    <param id="0" name="Start Mode">0</param>
+                                                    <param id="1" name="Force use current">0</param>
+                                                </action>
+                                                <action behavior="LiteTween" id="3" name="Set target" sid="946546333909891" type="area">
+                                                    <param id="0" name="Target is">4</param>
+                                                    <param id="1" name="Relativity">0</param>
+                                                    <param id="2" name="Value">1.03</param>
+                                                </action>
+                                                <action behavior="LiteTween" id="3" name="Set target" sid="302132703986322" type="area">
+                                                    <param id="0" name="Target is">5</param>
+                                                    <param id="1" name="Relativity">0</param>
+                                                    <param id="2" name="Value">1.03</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="965553196742760">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="559578092573184" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="LiteTween" id="10" name="Start" sid="843171044015084" type="area">
+                                                    <param id="0" name="Start Mode">0</param>
+                                                    <param id="1" name="Force use current">0</param>
+                                                </action>
+                                                <action behavior="LiteTween" id="3" name="Set target" sid="455569619598432" type="area">
+                                                    <param id="0" name="Target is">4</param>
+                                                    <param id="1" name="Relativity">0</param>
+                                                    <param id="2" name="Value">1.05</param>
+                                                </action>
+                                                <action behavior="LiteTween" id="3" name="Set target" sid="985001760649870" type="area">
+                                                    <param id="0" name="Target is">5</param>
+                                                    <param id="1" name="Relativity">0</param>
+                                                    <param id="2" name="Value">1.05</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="979616880136461">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="435781056017910" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">area</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="805745587902722" type="Function">
+                                    <param id="0" name="Name">&quot;loading_show&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-16" name="Wait" sid="775357598711835" type="System">
+                                    <param id="0" name="Seconds">LOADING_TIME</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="596078625101299">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="296696028674901" type="area">
+                                            <param id="0" name="Instance variable">id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="562124634202689" type="System">
+                                            <param id="0" name="Layout">Stage 1 - Svartalfheim</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="608489967240135">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="442253088357453" type="area">
+                                            <param id="0" name="Instance variable">id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="442494553181326" type="System">
+                                            <param id="0" name="Layout">Stage 2 - Alfheim</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="824175491308934">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="214297566401218" type="area">
+                                            <param id="0" name="Instance variable">id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="940530929574098" type="System">
+                                            <param id="0" name="Layout">Stage 3 - Niddhavellir</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="832868062998336">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="598049246090296" type="area">
+                                            <param id="0" name="Instance variable">id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="638540474292143" type="System">
+                                            <param id="0" name="Layout">Stage 4 - Asgard</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="166016189871048">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="167688825939569" type="area">
+                                            <param id="0" name="Instance variable">id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="136610015971524" type="System">
+                                            <param id="0" name="Layout">Stage 5 - Vanaheim</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="980908121436600">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="842984188035136" type="area">
+                                            <param id="0" name="Instance variable">id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">6</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="859053248175590" type="System">
+                                            <param id="0" name="Layout">Stage 6 - Muspellheim</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="986304845244943">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="377046184449484" type="area">
+                                            <param id="0" name="Instance variable">id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">7</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="536783490870396" type="System">
+                                            <param id="0" name="Layout">Stage 7 - Niflheim</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="999887579193405" title="IconMenu">
             <sub-events>
                 <event-block sid="680019525666139">
@@ -981,8 +1251,12 @@
                                     <param id="0" name="Variable">icon_ready</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
+                                <action id="0" name="Call function" sid="585962186987587" type="Function">
+                                    <param id="0" name="Name">&quot;loading_show&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
                                 <action id="-16" name="Wait" sid="876416298787449" type="System">
-                                    <param id="0" name="Seconds">0.2</param>
+                                    <param id="0" name="Seconds">LOADING_TIME</param>
                                 </action>
                                 <action id="-2" name="Go to layout" sid="573031322094786" type="System">
                                     <param id="0" name="Layout">MainMenu</param>

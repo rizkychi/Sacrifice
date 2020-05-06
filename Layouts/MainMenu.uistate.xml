@@ -4,15 +4,15 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>2433.86</position-x>
-        <position-y>1129.69</position-y>
-        <position-z>90.1578</position-z>
-        <lookat-x>2433.86</lookat-x>
-        <lookat-y>1129.69</lookat-y>
+        <position-x>776.72</position-x>
+        <position-y>1137.41</position-y>
+        <position-z>190.413</position-z>
+        <lookat-x>776.72</lookat-x>
+        <lookat-y>1137.41</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
-    <show-grid>1</show-grid>
+    <show-grid>0</show-grid>
     <snap-width>10</snap-width>
     <snap-height>10</snap-height>
     <show-collision-polys>0</show-collision-polys>
@@ -23,10 +23,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="MenuScreen" />
+    <active-layer name="BG_4.6" />
     <layers>
-        <layer locked="1" name="Background" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="MenuScreen" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Popup" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="BG_6" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="BG_5" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="BG_4.6" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="BG_4.5" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="BG_4" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="BG_3" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="BG_2" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="BG_1" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="MenuScreen" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Popup" parallax-in-editor="0" visible="0" />
+        <layer locked="0" name="Loading" parallax-in-editor="0" visible="0" />
     </layers>
 </c2uistate>

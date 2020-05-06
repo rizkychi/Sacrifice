@@ -3,12 +3,13 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>MainMenu_Event</name>
     <events>
-        <include>SaveGame</include>
+        <include>Loading_Event</include>
+        <include>SaveGame_Event</include>
         <variable constant="0" name="canvas_width" sid="810359835436184" static="0" type="number">1280</variable>
         <variable constant="0" name="canvas_height" sid="270031639976141" static="0" type="number">720</variable>
         <variable constant="0" name="selected_menu" sid="400337251306604" static="0" type="number">1</variable>
         <variable constant="0" name="menu_pos_x" sid="115651717605931" static="0" type="number">2240</variable>
-        <variable constant="0" name="menu_pos_y" sid="942998579979188" static="0" type="number">1120</variable>
+        <variable constant="0" name="menu_pos_y" sid="942998579979188" static="0" type="number">1170</variable>
         <variable constant="0" name="mouse_vel_y" sid="370209843661181" static="0" type="number">0</variable>
         <variable constant="0" name="mouse_pos_y" sid="398069381512139" static="0" type="number">0</variable>
         <event-block sid="350440106561632">
@@ -19,10 +20,32 @@
                 <action id="-5" name="Scroll to X" sid="559463050376691" type="System">
                     <param id="0" name="X">canvas_width * 1.5</param>
                 </action>
-                <action id="-2" name="Set Y" sid="627002585324420" type="Camera_Core">
+                <action id="-2" name="Set Y" sid="627002585324420" type="camera_core">
                     <param id="0" name="Y">canvas_height * 1.5</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="415366883465481">
+                    <conditions />
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="826328716944822" type="btn_difficulty_hard">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="383970345326736" type="btn_difficulty_normal">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="294350583417062" type="btn_check">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="675664698556270" type="btn_close">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="772600162622427" type="bg_popup">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-group description="" sid="953504148835317" title="Main Menu">
             <sub-events>
@@ -65,16 +88,16 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="selected" id="10" name="Start" sid="440180958707254" type="Btn_Select">
+                                <action behavior="selected" id="10" name="Start" sid="440180958707254" type="btn_Select">
                                     <param id="0" name="Start Mode">0</param>
                                     <param id="1" name="Force use current">0</param>
                                 </action>
-                                <action behavior="selected" id="3" name="Set target" sid="143949439896306" type="Btn_Select">
+                                <action behavior="selected" id="3" name="Set target" sid="143949439896306" type="btn_Select">
                                     <param id="0" name="Target is">0</param>
                                     <param id="1" name="Relativity">0</param>
                                     <param id="2" name="Value">menu_pos_x</param>
                                 </action>
-                                <action behavior="selected" id="3" name="Set target" sid="184940585924690" type="Btn_Select">
+                                <action behavior="selected" id="3" name="Set target" sid="184940585924690" type="btn_Select">
                                     <param id="0" name="Target is">1</param>
                                     <param id="1" name="Relativity">0</param>
                                     <param id="2" name="Value">menu_pos_y + selected_menu * 40</param>
@@ -406,14 +429,14 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="clicked" id="10" name="Start" sid="268094297731435" type="Btn_Select">
+                                <action behavior="clicked" id="10" name="Start" sid="268094297731435" type="btn_Select">
                                     <param id="0" name="Start Mode">0</param>
                                     <param id="1" name="Force use current">0</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="290781380327177" type="System">
                                     <param id="0" name="Seconds">0.2</param>
                                 </action>
-                                <action behavior="clicked" id="11" name="Reverse" sid="288090490992859" type="Btn_Select">
+                                <action behavior="clicked" id="11" name="Reverse" sid="288090490992859" type="btn_Select">
                                     <param id="0" name="Reverse mode">0</param>
                                 </action>
                             </actions>
@@ -427,12 +450,16 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Call function" sid="105684003592113" type="Function">
+                                            <param id="0" name="Name">&quot;loading_show&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
                                         <action id="0" name="Call function" sid="768703449290709" type="Function">
                                             <param id="0" name="Name">&quot;game_load&quot;</param>
                                             <param id="1" name="Parameter {n}"></param>
                                         </action>
                                         <action id="-16" name="Wait" sid="690371064924258" type="System">
-                                            <param id="0" name="Seconds">0.3</param>
+                                            <param id="0" name="Seconds">LOADING_TIME</param>
                                         </action>
                                         <action id="-2" name="Go to layout" sid="468723600828819" type="System">
                                             <param id="0" name="Layout">WorldMap</param>
@@ -476,8 +503,8 @@
                                                 <condition id="-22" name="Else" sid="102641279419269" type="System" />
                                             </conditions>
                                             <actions>
-                                                <action id="0" name="Call function" sid="322137147795202" type="Function">
-                                                    <param id="0" name="Name">&quot;game_new&quot;</param>
+                                                <action id="0" name="Call function" sid="858764271664717" type="Function">
+                                                    <param id="0" name="Name">&quot;difficulty_show&quot;</param>
                                                     <param id="1" name="Parameter {n}"></param>
                                                 </action>
                                             </actions>
@@ -493,7 +520,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-1" name="Set X" sid="822860111659508" type="Camera_Core">
+                                        <action id="-1" name="Set X" sid="822860111659508" type="camera_core">
                                             <param id="0" name="X">canvas_width * 0.5</param>
                                         </action>
                                     </actions>
@@ -507,7 +534,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-1" name="Set X" sid="262863815969407" type="Camera_Core">
+                                        <action id="-1" name="Set X" sid="262863815969407" type="camera_core">
                                             <param id="0" name="X">canvas_width * 2.5</param>
                                         </action>
                                     </actions>
@@ -536,140 +563,178 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block any="1" sid="295396327226786">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="925105732736471" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">btn_back</param>
-                        </condition>
-                        <condition id="0" name="On key pressed" sid="123869309269017" type="Keyboard">
-                            <param id="0" name="Key">27</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="807968805421447" type="btn_back">
-                            <param id="0" name="Frame number">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="126457846278861" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="249572628979741" type="btn_back">
-                            <param id="0" name="Frame number">0</param>
-                        </action>
-                        <action id="0" name="Call function" sid="712088845300971" type="Function">
-                            <param id="0" name="Name">&quot;options_save&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
-                        <action id="-16" name="Wait" sid="128690126689808" type="System">
-                            <param id="0" name="Seconds">0.1</param>
-                        </action>
-                        <action id="-1" name="Set X" sid="199244907900980" type="Camera_Core">
-                            <param id="0" name="X">canvas_width * 1.5</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block any="1" sid="843156436654203">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="446181094562008" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">btn_music</param>
-                        </condition>
-                        <condition id="0" name="On key pressed" sid="545515426975004" type="Keyboard">
-                            <param id="0" name="Key">77</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="273268338349862" type="btn_music">
-                            <param id="0" name="Frame number">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="986637045328371" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="837997741716530" type="btn_music">
-                            <param id="0" name="Frame number">0</param>
-                        </action>
-                    </actions>
-                    <sub-events>
-                        <event-block sid="166742999093758">
+                        <event-block any="1" sid="295396327226786">
                             <conditions>
-                                <condition id="-14" name="Compare variable" sid="158238912780597" type="System">
-                                    <param id="0" name="Variable">sound_music</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
+                                <condition id="6" name="On object clicked" sid="925105732736471" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">btn_back</param>
+                                </condition>
+                                <condition id="0" name="On key pressed" sid="123869309269017" type="Keyboard">
+                                    <param id="0" name="Key">27</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Set value" sid="703889133953829" type="System">
-                                    <param id="0" name="Variable">sound_music</param>
-                                    <param id="1" name="Value">1</param>
+                                <action id="5" name="Set frame" sid="807968805421447" type="btn_back">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="126457846278861" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="249572628979741" type="btn_back">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="712088845300971" type="Function">
+                                    <param id="0" name="Name">&quot;options_save&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-16" name="Wait" sid="128690126689808" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="199244907900980" type="camera_core">
+                                    <param id="0" name="X">canvas_width * 1.5</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="693808176892533">
+                        <event-block any="1" sid="843156436654203">
                             <conditions>
-                                <condition id="-22" name="Else" sid="440678894461796" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="444829806092591" type="System">
-                                    <param id="0" name="Variable">sound_music</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block any="1" sid="639940559350188">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="488965454254907" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">btn_sfx</param>
-                        </condition>
-                        <condition id="0" name="On key pressed" sid="684971149764001" type="Keyboard">
-                            <param id="0" name="Key">83</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="438606113323452" type="btn_sfx">
-                            <param id="0" name="Frame number">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="847063678715693" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="498414324648423" type="btn_sfx">
-                            <param id="0" name="Frame number">0</param>
-                        </action>
-                    </actions>
-                    <sub-events>
-                        <event-block sid="913581323145422">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="521416959229165" type="System">
-                                    <param id="0" name="Variable">sound_sfx</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
+                                <condition id="6" name="On object clicked" sid="446181094562008" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">btn_music</param>
+                                </condition>
+                                <condition id="0" name="On key pressed" sid="545515426975004" type="Keyboard">
+                                    <param id="0" name="Key">77</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Set value" sid="736741780035060" type="System">
-                                    <param id="0" name="Variable">sound_sfx</param>
-                                    <param id="1" name="Value">1</param>
+                                <action id="5" name="Set frame" sid="273268338349862" type="btn_music">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="986637045328371" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="837997741716530" type="btn_music">
+                                    <param id="0" name="Frame number">0</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="166742999093758">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="158238912780597" type="System">
+                                            <param id="0" name="Variable">sound_music</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="703889133953829" type="System">
+                                            <param id="0" name="Variable">sound_music</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="693808176892533">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="440678894461796" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="444829806092591" type="System">
+                                            <param id="0" name="Variable">sound_music</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
-                        <event-block sid="432556809819500">
+                        <event-block any="1" sid="639940559350188">
                             <conditions>
-                                <condition id="-22" name="Else" sid="927602175037238" type="System" />
+                                <condition id="6" name="On object clicked" sid="488965454254907" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">btn_sfx</param>
+                                </condition>
+                                <condition id="0" name="On key pressed" sid="684971149764001" type="Keyboard">
+                                    <param id="0" name="Key">83</param>
+                                </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Set value" sid="958388082797211" type="System">
-                                    <param id="0" name="Variable">sound_sfx</param>
-                                    <param id="1" name="Value">0</param>
+                                <action id="5" name="Set frame" sid="438606113323452" type="btn_sfx">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="847063678715693" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="498414324648423" type="btn_sfx">
+                                    <param id="0" name="Frame number">0</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="913581323145422">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="521416959229165" type="System">
+                                            <param id="0" name="Variable">sound_sfx</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="736741780035060" type="System">
+                                            <param id="0" name="Variable">sound_sfx</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="432556809819500">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="927602175037238" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="958388082797211" type="System">
+                                            <param id="0" name="Variable">sound_sfx</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block any="1" sid="714553194190836">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="860747135733684" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">btn_change_difficult</param>
+                                </condition>
+                                <condition id="0" name="On key pressed" sid="332960432016571" type="Keyboard">
+                                    <param id="0" name="Key">68</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="495887847055203" type="btn_change_difficult">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="459567064541046" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="480913179343862" type="btn_change_difficult">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="623508375883781">
+                                    <conditions />
+                                    <actions>
+                                        <action id="0" name="Call function" sid="994819303813084" type="Function">
+                                            <param id="0" name="Name">&quot;difficulty_show&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="374735975147637" type="SpriteFont_PopupText">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Value">&quot;difficulty&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -684,11 +749,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-33" name="Set layer parallax" sid="874349685347533" type="System">
-                            <param id="0" name="Layer">&quot;Popup&quot;</param>
-                            <param id="1" name="Parallax X">100</param>
-                            <param id="2" name="Parallax Y">100</param>
-                        </action>
                         <action id="-4" name="Set layer visible" sid="638620111284613" type="System">
                             <param id="0" name="Layer">&quot;Popup&quot;</param>
                             <param id="1" name="Visibility">1</param>
@@ -713,6 +773,7 @@
                             <param id="1" name="Relativity">0</param>
                             <param id="2" name="Value">1040</param>
                         </action>
+                        <action behavior="FadeIn" id="0" name="Restart fade" sid="670541313710651" type="bg_popup" />
                     </actions>
                 </event-block>
                 <event-block sid="969906059976203">
@@ -739,16 +800,15 @@
                             <param id="2" name="Value">0</param>
                         </action>
                         <action id="-16" name="Wait" sid="830295982788162" type="System">
-                            <param id="0" name="Seconds">0.3</param>
+                            <param id="0" name="Seconds">0.18</param>
+                        </action>
+                        <action behavior="FadeOut" id="0" name="Restart fade" sid="295003579263842" type="bg_popup" />
+                        <action id="-16" name="Wait" sid="895356282945763" type="System">
+                            <param id="0" name="Seconds">0.2</param>
                         </action>
                         <action id="-4" name="Set layer visible" sid="434368595427214" type="System">
                             <param id="0" name="Layer">&quot;Popup&quot;</param>
                             <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-33" name="Set layer parallax" sid="635294552514186" type="System">
-                            <param id="0" name="Layer">&quot;Popup&quot;</param>
-                            <param id="1" name="Parallax X">0</param>
-                            <param id="2" name="Parallax Y">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -756,6 +816,16 @@
                     <conditions>
                         <condition id="-9" name="Layer is visible" sid="603058843544617" type="System">
                             <param id="0" name="Layer">&quot;Popup&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="552979524066525" type="SpriteFont_PopupText">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">&quot;difficulty&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="896267188334340" type="SpriteFont_PopupText">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">&quot;difficulty_startgame&quot;</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -829,26 +899,260 @@
                                         <action id="1" name="Close" sid="222708787945945" type="Browser" />
                                     </actions>
                                 </event-block>
-                                <event-block sid="587587587843690">
+                                <event-block sid="328922516360211">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="483969367241088" type="SpriteFont_PopupText">
+                                        <condition id="-7" name="Compare instance variable" sid="240446473228070" type="SpriteFont_PopupText">
                                             <param id="0" name="Instance variable">type</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;new&quot;</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Call function" sid="694104444082746" type="Function">
-                                            <param id="0" name="Name">&quot;game_new&quot;</param>
+                                        <action id="-16" name="Wait" sid="430460727057028" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="960282685630175" type="Function">
+                                            <param id="0" name="Name">&quot;difficulty_show&quot;</param>
                                             <param id="1" name="Parameter {n}"></param>
                                         </action>
-                                        <action id="-16" name="Wait" sid="797059997314139" type="System">
-                                            <param id="0" name="Seconds">0.3</param>
-                                        </action>
-                                        <action disabled="1" id="-2" name="Go to layout" sid="302473124247267" type="System">
-                                            <param id="0" name="Layout">WorldMap</param>
+                                        <action id="-10" name="Set value" sid="455613534207319" type="SpriteFont_PopupText">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Value">&quot;difficulty_startgame&quot;</param>
                                         </action>
                                     </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="362845077829664" title="Difficulty">
+            <sub-events>
+                <event-block sid="674945979793638">
+                    <conditions>
+                        <condition id="0" name="On function" sid="578387149481610" type="Function">
+                            <param id="0" name="Name">&quot;difficulty_show&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="641687487818343" type="SpriteFont_PopupText">
+                            <param id="0" name="Text">&quot;Select difficulty&quot;</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="501888811467490" type="System">
+                            <param id="0" name="Layer">&quot;Popup&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action behavior="FadeIn" id="0" name="Restart fade" sid="735428520974084" type="fade_popup" />
+                        <action behavior="FadeIn" id="0" name="Restart fade" sid="159345279697083" type="SpriteFont_PopupText" />
+                        <action behavior="FadeIn" id="0" name="Restart fade" sid="243771851101690" type="btn_difficulty_hard" />
+                        <action behavior="FadeIn" id="0" name="Restart fade" sid="136818486842925" type="btn_difficulty_normal" />
+                        <action id="-7" name="Set size" sid="733203198302085" type="bg_popup">
+                            <param id="0" name="Width">0</param>
+                            <param id="1" name="Height">180</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="971603857466321" type="bg_popup">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="5" name="Set easing" sid="509538697591797" type="bg_popup">
+                            <param id="0" name="Function">17</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="827550152383415" type="bg_popup">
+                            <param id="0" name="Target is">4</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">1040</param>
+                        </action>
+                        <action behavior="FadeIn" id="0" name="Restart fade" sid="291163622341143" type="bg_popup" />
+                    </actions>
+                </event-block>
+                <event-block sid="127896495829897">
+                    <conditions>
+                        <condition id="0" name="On function" sid="535466080977836" type="Function">
+                            <param id="0" name="Name">&quot;difficulty_hide&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="FadeOut" id="0" name="Restart fade" sid="683025278597709" type="fade_popup" />
+                        <action behavior="FadeOut" id="1" name="Start fade" sid="379872728210850" type="SpriteFont_PopupText" />
+                        <action behavior="FadeOut" id="0" name="Restart fade" sid="812447662436474" type="btn_difficulty_hard" />
+                        <action behavior="FadeOut" id="0" name="Restart fade" sid="232567323381845" type="btn_difficulty_normal" />
+                        <action behavior="LiteTween" id="10" name="Start" sid="325645966207039" type="bg_popup">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="5" name="Set easing" sid="221995947283171" type="bg_popup">
+                            <param id="0" name="Function">16</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="169577980287026" type="bg_popup">
+                            <param id="0" name="Target is">4</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="686598514940692" type="System">
+                            <param id="0" name="Seconds">0.18</param>
+                        </action>
+                        <action behavior="FadeOut" id="0" name="Restart fade" sid="447664140735597" type="bg_popup" />
+                        <action id="-16" name="Wait" sid="148229167829475" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="887944766547827" type="System">
+                            <param id="0" name="Layer">&quot;Popup&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="874367900377935">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="997387968757493" type="SpriteFont_PopupText">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;difficulty&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="477148547544151" type="SpriteFont_PopupText">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;difficulty_startgame&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="444740202356628">
+                            <conditions>
+                                <condition id="-9" name="Layer is visible" sid="985842083009923" type="System">
+                                    <param id="0" name="Layer">&quot;Popup&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="111065179425504">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="179181109309008" type="Keyboard">
+                                            <param id="0" name="Key">27</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="137860535985963" type="Function">
+                                            <param id="0" name="Name">&quot;difficulty_hide&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="871035038858439">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="107851824327530" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">btn_difficulty_normal</param>
+                                        </condition>
+                                        <condition id="0" name="On key pressed" sid="750706837889419" type="Keyboard">
+                                            <param id="0" name="Key">78</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="819593083100475" type="btn_difficulty_normal">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="817161946698728" type="System">
+                                            <param id="0" name="Variable">difficulty</param>
+                                            <param id="1" name="Value">&quot;normal&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="273259753246607" type="System">
+                                            <param id="0" name="Seconds">0.2</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="773591569717141" type="btn_difficulty_normal">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="968228756473699" type="Function">
+                                            <param id="0" name="Name">&quot;difficulty_hide&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="254560420856621">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="327311423644703" type="SpriteFont_PopupText">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;difficulty_startgame&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Call function" sid="396900461039049" type="Function">
+                                                    <param id="0" name="Name">&quot;loading_show&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                                <action id="0" name="Call function" sid="632489119523279" type="Function">
+                                                    <param id="0" name="Name">&quot;game_new&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="199841563696114" type="System">
+                                                    <param id="0" name="Seconds">LOADING_TIME</param>
+                                                </action>
+                                                <action id="-2" name="Go to layout" sid="205658296160228" type="System">
+                                                    <param id="0" name="Layout">WorldMap</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="577670127466477">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="146389078991305" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">btn_difficulty_hard</param>
+                                        </condition>
+                                        <condition id="0" name="On key pressed" sid="136073303908732" type="Keyboard">
+                                            <param id="0" name="Key">72</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="989493036056237" type="btn_difficulty_hard">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="910284214411699" type="System">
+                                            <param id="0" name="Variable">difficulty</param>
+                                            <param id="1" name="Value">&quot;hard&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="778574673420108" type="System">
+                                            <param id="0" name="Seconds">0.2</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="693128700163018" type="btn_difficulty_hard">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="516478816355521" type="Function">
+                                            <param id="0" name="Name">&quot;difficulty_hide&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="322406331228002">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="203382158352402" type="SpriteFont_PopupText">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;difficulty_startgame&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Call function" sid="229413758274846" type="Function">
+                                                    <param id="0" name="Name">&quot;loading_show&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                                <action id="0" name="Call function" sid="857991383873931" type="Function">
+                                                    <param id="0" name="Name">&quot;game_new&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="702490384026511" type="System">
+                                                    <param id="0" name="Seconds">LOADING_TIME</param>
+                                                </action>
+                                                <action id="-2" name="Go to layout" sid="408215175917364" type="System">
+                                                    <param id="0" name="Layout">WorldMap</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -863,7 +1167,7 @@
                         <condition id="-1" name="Every tick" sid="970714094073556" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-3" name="Set position" sid="338322722407425" type="Camera">
+                        <action id="-3" name="Set position" sid="338322722407425" type="camera">
                             <param id="0" name="X">lerp(Self.X, Camera_Core.X, 0.05)</param>
                             <param id="1" name="Y">lerp(Self.Y, Camera_Core.Y, 0.05)</param>
                         </action>
