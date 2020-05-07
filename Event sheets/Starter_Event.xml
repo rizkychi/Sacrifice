@@ -11,6 +11,9 @@
                 <action id="-5" name="Set width" sid="414115875106609" type="start_bar">
                     <param id="0" name="Width">620-round(loadingprogress*620)</param>
                 </action>
+                <action id="0" name="Set text" sid="546249803534213" type="Text_Starter">
+                    <param id="0" name="Text">round(loadingprogress*100)&amp;&quot;%&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="449192853159840">
@@ -19,7 +22,7 @@
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="508437331579677" type="System">
-                    <param id="0" name="Layout">MainMenu</param>
+                    <param id="0" name="Layout">Intro</param>
                 </action>
             </actions>
         </event-block>

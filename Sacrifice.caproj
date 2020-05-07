@@ -45,7 +45,7 @@
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
-        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Loader style">Progress bar only</prop>
         <prop name="Orientations">Landscape</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
@@ -216,6 +216,72 @@
                                     <point x="0.5" y="0.722143" />
                                     <point x="0.148387" y="0.82551" />
                                     <point x="0.339113" y="0.499763" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="cloud_1" sid="383576637367411">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="939183315130310" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\cloud_3.png">
+                                <collision-poly>
+                                    <point x="0.1625" y="0.541667" />
+                                    <point x="0.5" y="0.298611" />
+                                    <point x="0.910417" y="0.298611" />
+                                    <point x="0.935417" y="0.784722" />
+                                    <point x="0.05625" y="0.8125" />
+                                    <point x="0.21875" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="cloud_2" sid="839275071017297">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="586740587806475" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\cloud_1.png">
+                                <collision-poly>
+                                    <point x="0.166667" y="0.675439" />
+                                    <point x="0.5" y="0.00877193" />
+                                    <point x="0.707792" y="0.5" />
+                                    <point x="0.5" y="0.736842" />
+                                    <point x="0.218615" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="cloud_3" sid="239207454110708">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="401362542322449" speed="5">
+                            <frame duration="1" hotspotX="0.502041" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\cloud_4.png">
+                                <collision-poly>
+                                    <point x="0.497959" y="0.425" />
+                                    <point x="0.926531" y="0.225" />
+                                    <point x="0.938776" y="0.5" />
+                                    <point x="0.918367" y="0.75" />
+                                    <point x="0.497959" y="0.75" />
+                                    <point x="0.481633" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="cloud_4" sid="792309738440235">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="228951160733631" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\cloud_1.png">
+                                <collision-poly>
+                                    <point x="0.781385" y="0.5" />
+                                    <point x="0.5" y="0.736842" />
+                                    <point x="0.292208" y="0.5" />
+                                    <point x="0.5" y="0.00877193" />
+                                    <point x="0.833333" y="0.675439" />
                                 </collision-poly>
                             </frame>
                         </animation>
@@ -1697,6 +1763,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder name="Loading" />
         <object-type name="btn_Select" sid="587870514108402">
             <plugin id="Sprite" />
             <behaviors>
@@ -2074,6 +2141,56 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Text_Starter" sid="155800385342892">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="logo_studio" sid="797463204591237">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="947938397772776">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="162257670564857" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\studio.png">
+                        <collision-poly>
+                            <point x="0.14561" y="0.367568" />
+                            <point x="0.5" y="0.240541" />
+                            <point x="0.832976" y="0.421622" />
+                            <point x="0.85546" y="0.5" />
+                            <point x="0.836188" y="0.586486" />
+                            <point x="0.5" y="0.775676" />
+                            <point x="0.138116" y="0.651351" />
+                            <point x="0.0802998" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="logo_amikom" sid="564639637514896">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="438276854583770">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="655049774981430" speed="5">
+                    <frame duration="1" hotspotX="0.500615" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\Universitas AMIKOM Yogyakarta [www.blogovector.com].png">
+                        <collision-poly>
+                            <point x="0.0602706" y="0.163333" />
+                            <point x="0.499385" y="0.14" />
+                            <point x="0.99631" y="0.01" />
+                            <point x="0.99139" y="0.976667" />
+                            <point x="0.499385" y="0.97" />
+                            <point x="0.0455105" y="0.876667" />
+                            <point x="0.00861009" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -2089,6 +2206,7 @@
         <layout>MainMenu.xml</layout>
         <layout>WorldMap.xml</layout>
         <layout>Starter.xml</layout>
+        <layout>Intro.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>MainMenu_Event.xml</event-sheet>
@@ -2097,6 +2215,7 @@
         <event-sheet>Loading_Event.xml</event-sheet>
         <event-sheet>GameControl_Event.xml</event-sheet>
         <event-sheet>Starter_Event.xml</event-sheet>
+        <event-sheet>Intro_Event.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Function" uid="2" />

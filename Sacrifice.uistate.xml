@@ -11,7 +11,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout active="1" order="1">MainMenu</layout>
-        <event-sheet order="2">MainMenu_Event</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -23,13 +22,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/System/" />
-        <folder expanded="1" path="object-folder/Background/" />
-        <folder expanded="1" path="object-folder/Background/MainMenu/" />
+        <folder expanded="0" path="object-folder/Background/" />
+        <folder expanded="0" path="object-folder/Background/MainMenu/" />
         <folder expanded="0" path="object-folder/Text/" />
         <folder expanded="0" path="object-folder/Button/" />
         <folder expanded="0" path="object-folder/Sprites/" />
+        <folder expanded="1" path="object-folder/Loading/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="layout-folder/Stage/" />
+        <folder expanded="0" path="layout-folder/Stage/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
@@ -45,6 +45,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/bg_sun/" />
         <folder expanded="1" path="animation-folder/main_chara/" />
         <folder expanded="1" path="animation-folder/logo_title/" />
+        <folder expanded="1" path="animation-folder/cloud_1/" />
+        <folder expanded="1" path="animation-folder/cloud_2/" />
+        <folder expanded="1" path="animation-folder/cloud_3/" />
+        <folder expanded="1" path="animation-folder/cloud_4/" />
         <folder expanded="1" path="animation-folder/area/" />
         <folder expanded="1" path="animation-folder/worldMap/" />
         <folder expanded="1" path="animation-folder/fog/" />
@@ -95,5 +99,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/start_bar/" />
         <folder expanded="1" path="animation-folder/btn_difficulty_hard/" />
         <folder expanded="1" path="animation-folder/btn_difficulty_normal/" />
+        <folder expanded="1" path="animation-folder/logo_studio/" />
+        <folder expanded="1" path="animation-folder/logo_amikom/" />
     </folders-expanded>
 </c2uistate>
