@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>SaveGame_Event</name>
     <events>
+        <include>Sound_Event</include>
         <variable constant="0" name="saved_game" sid="607039955341509" static="0" type="number">0</variable>
         <comment>Game</comment>
         <variable constant="0" name="gold" sid="673577673543886" static="0" type="number">0</variable>
@@ -30,6 +31,23 @@
                     <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="868019991299447">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="682002076906291" type="System">
+                            <param id="0" name="Variable">difficulty</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="990908949542254" type="System">
+                            <param id="0" name="Variable">difficulty</param>
+                            <param id="1" name="Value">&quot;Normal&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="467336822416256">
             <conditions>
@@ -203,18 +221,50 @@
             </conditions>
             <actions>
                 <action id="0" name="Set item" sid="418640214278567" type="LocalStorage">
-                    <param id="0" name="Key">&quot;music&quot;</param>
-                    <param id="1" name="Value">sound_music</param>
+                    <param id="0" name="Key">&quot;volume_music&quot;</param>
+                    <param id="1" name="Value">VolumeMusic*-10</param>
                 </action>
                 <action id="0" name="Set item" sid="616906707974187" type="LocalStorage">
-                    <param id="0" name="Key">&quot;sfx&quot;</param>
-                    <param id="1" name="Value">sound_sfx</param>
+                    <param id="0" name="Key">&quot;volume_sfx&quot;</param>
+                    <param id="1" name="Value">VolumeSFX*-10</param>
                 </action>
                 <action id="0" name="Set item" sid="547589306827837" type="LocalStorage">
                     <param id="0" name="Key">&quot;difficulty&quot;</param>
                     <param id="1" name="Value">difficulty</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="403164368820528">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="330063619433277" type="tuner">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;music&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set item" sid="302778250498847" type="LocalStorage">
+                            <param id="0" name="Key">&quot;pos_tuner_music&quot;</param>
+                            <param id="1" name="Value">tuner.X</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="924306790531045">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="586042891847220" type="tuner">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;sfx&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set item" sid="296533666292348" type="LocalStorage">
+                            <param id="0" name="Key">&quot;pos_tuner_sfx&quot;</param>
+                            <param id="1" name="Value">tuner.X</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="144156445573172">
             <conditions>
@@ -227,13 +277,19 @@
                     <param id="0" name="Key">&quot;saved_game&quot;</param>
                 </action>
                 <action id="5" name="Check item exists" sid="481968954451907" type="LocalStorage">
-                    <param id="0" name="Key">&quot;music&quot;</param>
+                    <param id="0" name="Key">&quot;volume_music&quot;</param>
                 </action>
                 <action id="5" name="Check item exists" sid="811653355288656" type="LocalStorage">
-                    <param id="0" name="Key">&quot;sfx&quot;</param>
+                    <param id="0" name="Key">&quot;volume_sfx&quot;</param>
                 </action>
                 <action id="5" name="Check item exists" sid="554757320839445" type="LocalStorage">
                     <param id="0" name="Key">&quot;difficulty&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="938638351083651" type="LocalStorage">
+                    <param id="0" name="Key">&quot;pos_tuner_music&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="400924153967271" type="LocalStorage">
+                    <param id="0" name="Key">&quot;pos_tuner_sfx&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -256,27 +312,83 @@
         </event-block>
         <event-block sid="270846062188078">
             <conditions>
-                <condition id="9" name="On item exists" sid="953303157507468" type="LocalStorage">
-                    <param id="0" name="Key">&quot;music&quot;</param>
+                <condition id="-7" name="Compare instance variable" sid="991104819858833" type="tuner">
+                    <param id="0" name="Instance variable">type</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;music&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="593679137484941">
+                    <conditions>
+                        <condition id="9" name="On item exists" sid="953303157507468" type="LocalStorage">
+                            <param id="0" name="Key">&quot;pos_tuner_music&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="155298899044375" type="tuner">
+                            <param id="0" name="X">LocalStorage.ItemValue</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="330232414443432">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="103980601214830" type="tuner">
+                    <param id="0" name="Instance variable">type</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;sfx&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="688413346975272">
+                    <conditions>
+                        <condition id="9" name="On item exists" sid="312032292584129" type="LocalStorage">
+                            <param id="0" name="Key">&quot;pos_tuner_sfx&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="893304752805177" type="tuner">
+                            <param id="0" name="X">LocalStorage.ItemValue</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="578448404986078">
+            <conditions>
+                <condition id="9" name="On item exists" sid="770239394946529" type="LocalStorage">
+                    <param id="0" name="Key">&quot;volume_music&quot;</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Set value" sid="155298899044375" type="System">
-                    <param id="0" name="Variable">sound_music</param>
-                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                <action id="-9" name="Set value" sid="337645882765408" type="System">
+                    <param id="0" name="Variable">VolumeMusic</param>
+                    <param id="1" name="Value">-(int(LocalStorage.ItemValue)/10)</param>
+                </action>
+                <action id="3" name="Set volume" sid="684500783459218" type="Audio">
+                    <param id="0" name="Tag">&quot;bgm&quot;</param>
+                    <param id="1" name="dB">VolumeMusic</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="167031337922175">
             <conditions>
                 <condition id="9" name="On item exists" sid="103517728018405" type="LocalStorage">
-                    <param id="0" name="Key">&quot;sfx&quot;</param>
+                    <param id="0" name="Key">&quot;volume_sfx&quot;</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="896219694843531" type="System">
-                    <param id="0" name="Variable">sound_sfx</param>
-                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                    <param id="0" name="Variable">VolumeSFX</param>
+                    <param id="1" name="Value">-(int(LocalStorage.ItemValue)/10)</param>
+                </action>
+                <action id="3" name="Set volume" sid="692357972392274" type="Audio">
+                    <param id="0" name="Tag">&quot;sfx&quot;</param>
+                    <param id="1" name="dB">VolumeMusic</param>
                 </action>
             </actions>
         </event-block>

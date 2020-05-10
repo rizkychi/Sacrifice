@@ -5,50 +5,64 @@
     <events>
         <include>Loading_Event</include>
         <include>SaveGame_Event</include>
+        <variable constant="0" name="selected_menu" sid="400337251306604" static="0" type="number">1</variable>
         <variable constant="0" name="canvas_width" sid="810359835436184" static="0" type="number">1280</variable>
         <variable constant="0" name="canvas_height" sid="270031639976141" static="0" type="number">720</variable>
-        <variable constant="0" name="selected_menu" sid="400337251306604" static="0" type="number">1</variable>
-        <variable constant="0" name="menu_pos_x" sid="115651717605931" static="0" type="number">2240</variable>
-        <variable constant="0" name="menu_pos_y" sid="942998579979188" static="0" type="number">1170</variable>
         <variable constant="0" name="mouse_vel_y" sid="370209843661181" static="0" type="number">0</variable>
         <variable constant="0" name="mouse_pos_y" sid="398069381512139" static="0" type="number">0</variable>
-        <event-block sid="350440106561632">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="823111593882079" type="System" />
-            </conditions>
-            <actions>
-                <action id="-5" name="Scroll to X" sid="559463050376691" type="System">
-                    <param id="0" name="X">canvas_width * 1.5</param>
-                </action>
-                <action id="-2" name="Set Y" sid="627002585324420" type="camera_core">
-                    <param id="0" name="Y">canvas_height * 1.5</param>
-                </action>
-            </actions>
-            <sub-events>
-                <event-block sid="415366883465481">
-                    <conditions />
-                    <actions>
-                        <action id="-16" name="Set opacity" sid="826328716944822" type="btn_difficulty_hard">
-                            <param id="0" name="Opacity">0</param>
-                        </action>
-                        <action id="-16" name="Set opacity" sid="383970345326736" type="btn_difficulty_normal">
-                            <param id="0" name="Opacity">0</param>
-                        </action>
-                        <action id="-16" name="Set opacity" sid="294350583417062" type="btn_check">
-                            <param id="0" name="Opacity">0</param>
-                        </action>
-                        <action id="-16" name="Set opacity" sid="675664698556270" type="btn_close">
-                            <param id="0" name="Opacity">0</param>
-                        </action>
-                        <action id="-16" name="Set opacity" sid="772600162622427" type="bg_popup">
-                            <param id="0" name="Opacity">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
         <event-group description="" sid="953504148835317" title="Main Menu">
             <sub-events>
+                <variable constant="0" name="menu_pos_x" sid="115651717605931" static="0" type="number">2240</variable>
+                <variable constant="0" name="menu_pos_y" sid="942998579979188" static="0" type="number">1170</variable>
+                <event-block sid="350440106561632">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="823111593882079" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="415366883465481">
+                            <conditions />
+                            <actions>
+                                <action id="-5" name="Scroll to X" sid="559463050376691" type="System">
+                                    <param id="0" name="X">canvas_width * 1.5</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="627002585324420" type="camera_core">
+                                    <param id="0" name="Y">canvas_height * 1.5</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="826328716944822" type="btn_difficulty_hard">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="383970345326736" type="btn_difficulty_normal">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="294350583417062" type="btn_check">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="675664698556270" type="btn_close">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="772600162622427" type="bg_popup">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="904022205968996">
+                            <conditions>
+                                <condition id="5" inverted="1" name="Is tag playing" sid="893031359267664" type="Audio">
+                                    <param id="0" name="Tag">&quot;bgm&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="362676973202991" type="Audio">
+                                    <param id="0" name="Audio file">Main menu  2 (PerituneMaterial_World_OP)</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;bgm&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <comment>Debug</comment>
                 <event-block sid="332299183091666">
                     <conditions>
@@ -56,7 +70,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="654842321307695" type="tes_music">
-                            <param id="0" name="Text">&quot;music: &quot;&amp;sound_music&amp;&quot;, sfx: &quot;&amp;sound_sfx</param>
+                            <param id="0" name="Text">&quot;music: &quot;&amp;VolumeMusic&amp;&quot;, sfx: &quot;&amp;VolumeSFX</param>
                         </action>
                     </actions>
                 </event-block>
@@ -157,58 +171,22 @@
                                     <param id="1" name="Value">Mouse.AbsoluteY - mouse_pos_y</param>
                                 </action>
                             </actions>
-                        </event-block>
-                        <event-block sid="856628650356657">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="695555249348024" type="System">
-                                    <param id="0" name="Variable">sound_music</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="155749985377928" type="btn_music">
-                                    <param id="0" name="Animation">&quot;SoundOff&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="534344514535293">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="416185540852457" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="867096678385557" type="btn_music">
-                                    <param id="0" name="Animation">&quot;SoundOn&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="175188002126786">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="717814103737929" type="System">
-                                    <param id="0" name="Variable">sound_sfx</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="135773088353741" type="btn_sfx">
-                                    <param id="0" name="Animation">&quot;SoundOff&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="603888833221469">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="205596979876457" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="283145547987988" type="btn_sfx">
-                                    <param id="0" name="Animation">&quot;SoundOn&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                            </actions>
+                            <sub-events>
+                                <event-block sid="808439188563837">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="513278138953880" type="SpriteFont_NormalText">
+                                            <param id="0" name="Instance variable">layout</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;difficulty_text&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="908252260250946" type="SpriteFont_NormalText">
+                                            <param id="0" name="Text">&quot;( &quot;&amp;difficulty&amp;&quot; )&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="655311428265455">
                             <conditions>
@@ -507,6 +485,10 @@
                                                     <param id="0" name="Name">&quot;difficulty_show&quot;</param>
                                                     <param id="1" name="Parameter {n}"></param>
                                                 </action>
+                                                <action id="-10" name="Set value" sid="538998353847680" type="SpriteFont_PopupText">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Value">&quot;difficulty_startgame&quot;</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                     </sub-events>
@@ -621,29 +603,56 @@
                             <sub-events>
                                 <event-block sid="166742999093758">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" sid="158238912780597" type="System">
-                                            <param id="0" name="Variable">sound_music</param>
+                                        <condition id="-7" name="Compare instance variable" sid="820125787394820" type="tuner">
+                                            <param id="0" name="Instance variable">type</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">0</param>
+                                            <param id="2" name="Value">&quot;music&quot;</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-9" name="Set value" sid="703889133953829" type="System">
-                                            <param id="0" name="Variable">sound_music</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="693808176892533">
-                                    <conditions>
-                                        <condition id="-22" name="Else" sid="440678894461796" type="System" />
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Set value" sid="444829806092591" type="System">
-                                            <param id="0" name="Variable">sound_music</param>
-                                            <param id="1" name="Value">0</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="489020079967316">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="158238912780597" type="System">
+                                                    <param id="0" name="Variable">VolumeMusic</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">-20</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="703889133953829" type="System">
+                                                    <param id="0" name="Variable">VolumeMusic</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-1" name="Set X" sid="579094672769477" type="tuner">
+                                                    <param id="0" name="X">MaxVolume</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="693808176892533">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="440678894461796" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="444829806092591" type="System">
+                                                    <param id="0" name="Variable">VolumeMusic</param>
+                                                    <param id="1" name="Value">-20</param>
+                                                </action>
+                                                <action id="-1" name="Set X" sid="154191155431054" type="tuner">
+                                                    <param id="0" name="X">MinVolume</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="260047922783714">
+                                            <conditions />
+                                            <actions>
+                                                <action id="3" name="Set volume" sid="777025481237204" type="Audio">
+                                                    <param id="0" name="Tag">&quot;bgm&quot;</param>
+                                                    <param id="1" name="dB">VolumeMusic</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -670,33 +679,112 @@
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block sid="913581323145422">
+                                <event-block sid="132325473310596">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" sid="521416959229165" type="System">
-                                            <param id="0" name="Variable">sound_sfx</param>
+                                        <condition id="-7" name="Compare instance variable" sid="695612343792367" type="tuner">
+                                            <param id="0" name="Instance variable">type</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">0</param>
+                                            <param id="2" name="Value">&quot;sfx&quot;</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-9" name="Set value" sid="736741780035060" type="System">
-                                            <param id="0" name="Variable">sound_sfx</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="432556809819500">
-                                    <conditions>
-                                        <condition id="-22" name="Else" sid="927602175037238" type="System" />
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Set value" sid="958388082797211" type="System">
-                                            <param id="0" name="Variable">sound_sfx</param>
-                                            <param id="1" name="Value">0</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="558192528528942">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="822010501288086" type="System">
+                                                    <param id="0" name="Variable">VolumeSFX</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">-20</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="364770150901981" type="System">
+                                                    <param id="0" name="Variable">VolumeSFX</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-1" name="Set X" sid="105354728010688" type="tuner">
+                                                    <param id="0" name="X">MaxVolume</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="964903681337634">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="831351024995612" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="693320458704729" type="System">
+                                                    <param id="0" name="Variable">VolumeSFX</param>
+                                                    <param id="1" name="Value">-20</param>
+                                                </action>
+                                                <action id="-1" name="Set X" sid="600495305863800" type="tuner">
+                                                    <param id="0" name="X">MinVolume</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="263024098818835">
+                                            <conditions />
+                                            <actions>
+                                                <action id="3" name="Set volume" sid="828862025740802" type="Audio">
+                                                    <param id="0" name="Tag">&quot;sfx&quot;</param>
+                                                    <param id="1" name="dB">VolumeSFX</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
+                        </event-block>
+                        <event-block sid="315464460759746">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="114576492219977" type="System">
+                                    <param id="0" name="Variable">VolumeMusic</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">-20</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="844117577443183" type="btn_music">
+                                    <param id="0" name="Animation">&quot;SoundOff&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="547505506590662">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="640289565386678" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="981317231834174" type="btn_music">
+                                    <param id="0" name="Animation">&quot;SoundOn&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="366217072692050">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="560214392612798" type="System">
+                                    <param id="0" name="Variable">VolumeSFX</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">-20</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="448574841391880" type="btn_sfx">
+                                    <param id="0" name="Animation">&quot;SoundOff&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="891735748766004">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="222441085707157" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="904100612793764" type="btn_sfx">
+                                    <param id="0" name="Animation">&quot;SoundOn&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
                         </event-block>
                         <event-block any="1" sid="714553194190836">
                             <conditions>
@@ -1055,7 +1143,7 @@
                                         </action>
                                         <action id="-9" name="Set value" sid="817161946698728" type="System">
                                             <param id="0" name="Variable">difficulty</param>
-                                            <param id="1" name="Value">&quot;normal&quot;</param>
+                                            <param id="1" name="Value">&quot;Normal&quot;</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="273259753246607" type="System">
                                             <param id="0" name="Seconds">0.2</param>
@@ -1065,6 +1153,10 @@
                                         </action>
                                         <action id="0" name="Call function" sid="968228756473699" type="Function">
                                             <param id="0" name="Name">&quot;difficulty_hide&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="913490074915448" type="Function">
+                                            <param id="0" name="Name">&quot;options_save&quot;</param>
                                             <param id="1" name="Parameter {n}"></param>
                                         </action>
                                     </actions>
@@ -1113,7 +1205,7 @@
                                         </action>
                                         <action id="-9" name="Set value" sid="910284214411699" type="System">
                                             <param id="0" name="Variable">difficulty</param>
-                                            <param id="1" name="Value">&quot;hard&quot;</param>
+                                            <param id="1" name="Value">&quot;Hard&quot;</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="778574673420108" type="System">
                                             <param id="0" name="Seconds">0.2</param>
@@ -1123,6 +1215,10 @@
                                         </action>
                                         <action id="0" name="Call function" sid="516478816355521" type="Function">
                                             <param id="0" name="Name">&quot;difficulty_hide&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="621824118125443" type="Function">
+                                            <param id="0" name="Name">&quot;options_save&quot;</param>
                                             <param id="1" name="Parameter {n}"></param>
                                         </action>
                                     </actions>

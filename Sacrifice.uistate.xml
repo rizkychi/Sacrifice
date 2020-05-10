@@ -10,7 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="1">MainMenu</layout>
+        <layout order="1">MainMenu</layout>
+        <event-sheet active="1" order="2">MainMenu_Event</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -25,7 +26,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Background/" />
         <folder expanded="0" path="object-folder/Background/MainMenu/" />
         <folder expanded="0" path="object-folder/Text/" />
-        <folder expanded="0" path="object-folder/Button/" />
+        <folder expanded="1" path="object-folder/Button/" />
         <folder expanded="0" path="object-folder/Sprites/" />
         <folder expanded="1" path="object-folder/Loading/" />
         <folder expanded="1" path="layout-folder/" />
@@ -101,5 +102,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/btn_difficulty_normal/" />
         <folder expanded="1" path="animation-folder/logo_studio/" />
         <folder expanded="1" path="animation-folder/logo_amikom/" />
+        <folder expanded="1" path="animation-folder/tuner/" />
     </folders-expanded>
 </c2uistate>

@@ -5,10 +5,10 @@
     <events>
         <include>Loading_Event</include>
         <include>SaveGame_Event</include>
-        <variable constant="0" name="selected_page" sid="851738443290280" static="0" type="number">0</variable>
         <variable constant="1" name="price_inc" sid="883665851247848" static="0" type="number">750</variable>
         <variable constant="1" name="price_init" sid="796704678919319" static="0" type="number">2000</variable>
         <variable constant="0" name="icon_ready" sid="487593616460646" static="0" type="number">0</variable>
+        <variable constant="0" name="selected_page" sid="851738443290280" static="0" type="number">0</variable>
         <event-block sid="436666058311991">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="589140174644452" type="System" />

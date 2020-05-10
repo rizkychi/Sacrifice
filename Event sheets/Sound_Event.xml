@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Sound_Event</name>
+    <events>
+        <variable constant="0" name="VolumeMusic" sid="189267008058384" static="0" type="number">0</variable>
+        <variable constant="0" name="VolumeSFX" sid="982058821600647" static="0" type="number">0</variable>
+        <variable constant="0" name="VolumeBarSize" sid="970298704292545" static="0" type="number">0</variable>
+        <variable constant="0" name="MaxVolume" sid="223288904169835" static="0" type="number">0</variable>
+        <variable constant="0" name="MinVolume" sid="514278205059549" static="0" type="number">0</variable>
+        <variable constant="0" name="setTuner_music" sid="745833136139701" static="0" type="number">0</variable>
+        <variable constant="0" name="setTuner_sfx" sid="564611528587365" static="0" type="number">0</variable>
+        <event-group description="" sid="368222472077397" title="VolumeConfig">
+            <sub-events>
+                <event-block sid="103176511977975">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="387372473644864" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="236250483105377" type="System">
+                            <param id="0" name="Variable">MinVolume</param>
+                            <param id="1" name="Value">volumeBar.X</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="648888383204380" type="System">
+                            <param id="0" name="Variable">MaxVolume</param>
+                            <param id="1" name="Value">volumeBar.X+volumeBar.Width</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="492024170813359" type="System">
+                            <param id="0" name="Variable">VolumeBarSize</param>
+                            <param id="1" name="Value">volumeBar.Width/3</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="429451150474944">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="420617094730828" type="tuner">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;music&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="912622036403936" type="tuner">
+                                    <param id="0" name="X">MaxVolume</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="103743103973471">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="413816334680595" type="tuner">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;sfx&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="769352373397875" type="tuner">
+                                    <param id="0" name="X">MaxVolume</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="139704851342031">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="447602125380980" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">tuner</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="359103023257854" type="tuner">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="923504011598618">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="619969890376489" type="tuner">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;music&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="380812987308161" type="System">
+                                    <param id="0" name="Variable">setTuner_music</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="402244223328629">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="699841107366322" type="tuner">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;sfx&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="838032130492426" type="System">
+                                    <param id="0" name="Variable">setTuner_sfx</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="332304868927920">
+                    <conditions>
+                        <condition id="3" name="On button released" sid="231622051506021" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="872906806379281" type="tuner">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="274263983961093" type="System">
+                            <param id="0" name="Variable">setTuner_music</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="196359498132571" type="System">
+                            <param id="0" name="Variable">setTuner_sfx</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="634445292633005">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="229769616301710" type="tuner">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;music&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="979113406224084" type="System">
+                            <param id="0" name="Variable">setTuner_music</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="265203333366439" type="tuner">
+                            <param id="0" name="X">clamp(round(Mouse.X),MinVolume,MaxVolume)</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="464933711397424" type="System">
+                            <param id="0" name="Variable">VolumeMusic</param>
+                            <param id="1" name="Value">-(int(VolumeBarSize-(tuner.X-MinVolume)/3)/5)</param>
+                        </action>
+                        <action id="3" name="Set volume" sid="486013662911577" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                            <param id="1" name="dB">VolumeMusic</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="767318786048066">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="914775085858513" type="tuner">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;sfx&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="227898396754522" type="System">
+                            <param id="0" name="Variable">setTuner_sfx</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="271141572866552" type="tuner">
+                            <param id="0" name="X">clamp(round(Mouse.X),MinVolume,MaxVolume)</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="349431788249634" type="System">
+                            <param id="0" name="Variable">VolumeSFX</param>
+                            <param id="1" name="Value">-(int(VolumeBarSize-(tuner.X-MinVolume)/3)/5)</param>
+                        </action>
+                        <action id="3" name="Set volume" sid="894284481911289" type="Audio">
+                            <param id="0" name="Tag">&quot;sfx&quot;</param>
+                            <param id="1" name="dB">VolumeSFX</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="940156786133518">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="387244240624782" type="System">
+                            <param id="0" name="Variable">VolumeMusic</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">-20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set muted" sid="724366131396895" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="479007867278148">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="633697288254081" type="System">
+                            <param id="0" name="Variable">VolumeMusic</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">-19</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set muted" sid="793902868594533" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="504318126525152">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="371825863342066" type="System">
+                            <param id="0" name="Variable">VolumeSFX</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">-20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set muted" sid="247138745897878" type="Audio">
+                            <param id="0" name="Tag">&quot;sfx&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="220596891517686">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="213022419251300" type="System">
+                            <param id="0" name="Variable">VolumeSFX</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">-19</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set muted" sid="161886923355937" type="Audio">
+                            <param id="0" name="Tag">&quot;sfx&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
