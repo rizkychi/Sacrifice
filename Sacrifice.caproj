@@ -1262,6 +1262,115 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="btn_credits" sid="874681069343474">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="419982169520182" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\GUI\btn_credits_standby.png">
+                            <collision-poly>
+                                <point x="0.0444444" y="0.145455" />
+                                <point x="0.5" y="0.0181818" />
+                                <point x="0.95" y="0.163636" />
+                                <point x="0.983333" y="0.490909" />
+                                <point x="0.95" y="0.836364" />
+                                <point x="0.5" y="0.981818" />
+                                <point x="0.0444444" y="0.854545" />
+                                <point x="0.0111111" y="0.490909" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\GUI\btn_credits_pressed.png">
+                            <collision-poly>
+                                <point x="0.05" y="0.163636" />
+                                <point x="0.5" y="0.0545455" />
+                                <point x="0.944444" y="0.181818" />
+                                <point x="0.983333" y="0.490909" />
+                                <point x="0.95" y="0.836364" />
+                                <point x="0.5" y="0.981818" />
+                                <point x="0.0444444" y="0.854545" />
+                                <point x="0.0111111" y="0.490909" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btn_difficulty_hard" sid="281741189572701">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="FadeIn" sid="856264720650932">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                    <behavior-type name="FadeOut" sid="532621048675040">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="363458528439175" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="C:\Users\Rizky\Downloads\btn_hard_standby.png">
+                            <collision-poly>
+                                <point x="0.0444444" y="0.145455" />
+                                <point x="0.5" y="0.0181818" />
+                                <point x="0.95" y="0.163636" />
+                                <point x="0.983333" y="0.490909" />
+                                <point x="0.95" y="0.836364" />
+                                <point x="0.5" y="0.981818" />
+                                <point x="0.0444444" y="0.854545" />
+                                <point x="0.0111111" y="0.490909" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="C:\Users\Rizky\Downloads\btn_hard_pressed.png">
+                            <collision-poly>
+                                <point x="0.05" y="0.163636" />
+                                <point x="0.5" y="0.0545455" />
+                                <point x="0.944444" y="0.181818" />
+                                <point x="0.983333" y="0.490909" />
+                                <point x="0.95" y="0.836364" />
+                                <point x="0.5" y="0.981818" />
+                                <point x="0.0444444" y="0.854545" />
+                                <point x="0.0111111" y="0.490909" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btn_difficulty_normal" sid="167445365166243">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="FadeIn" sid="532448506106421">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                    <behavior-type name="FadeOut" sid="177733444747070">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="534905321206282" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="C:\Users\Rizky\Downloads\btn_normal_standby.png">
+                            <collision-poly>
+                                <point x="0.0444444" y="0.145455" />
+                                <point x="0.5" y="0.0181818" />
+                                <point x="0.95" y="0.163636" />
+                                <point x="0.983333" y="0.490909" />
+                                <point x="0.95" y="0.836364" />
+                                <point x="0.5" y="0.981818" />
+                                <point x="0.0444444" y="0.854545" />
+                                <point x="0.0111111" y="0.490909" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="C:\Users\Rizky\Downloads\btn_normal_pressed.png">
+                            <collision-poly>
+                                <point x="0.05" y="0.163636" />
+                                <point x="0.5" y="0.0545455" />
+                                <point x="0.944444" y="0.181818" />
+                                <point x="0.983333" y="0.490909" />
+                                <point x="0.95" y="0.836364" />
+                                <point x="0.5" y="0.981818" />
+                                <point x="0.0444444" y="0.854545" />
+                                <point x="0.0111111" y="0.490909" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Sprites">
             <object-type name="icon_back" sid="249166188651431">
@@ -2068,84 +2177,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="btn_difficulty_hard" sid="281741189572701">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="FadeIn" sid="856264720650932">
-                    <behavior id="Fade" />
-                </behavior-type>
-                <behavior-type name="FadeOut" sid="532621048675040">
-                    <behavior id="Fade" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="363458528439175" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="C:\Users\Rizky\Downloads\btn_hard_standby.png">
-                        <collision-poly>
-                            <point x="0.0444444" y="0.145455" />
-                            <point x="0.5" y="0.0181818" />
-                            <point x="0.95" y="0.163636" />
-                            <point x="0.983333" y="0.490909" />
-                            <point x="0.95" y="0.836364" />
-                            <point x="0.5" y="0.981818" />
-                            <point x="0.0444444" y="0.854545" />
-                            <point x="0.0111111" y="0.490909" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="C:\Users\Rizky\Downloads\btn_hard_pressed.png">
-                        <collision-poly>
-                            <point x="0.05" y="0.163636" />
-                            <point x="0.5" y="0.0545455" />
-                            <point x="0.944444" y="0.181818" />
-                            <point x="0.983333" y="0.490909" />
-                            <point x="0.95" y="0.836364" />
-                            <point x="0.5" y="0.981818" />
-                            <point x="0.0444444" y="0.854545" />
-                            <point x="0.0111111" y="0.490909" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="btn_difficulty_normal" sid="167445365166243">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="FadeIn" sid="532448506106421">
-                    <behavior id="Fade" />
-                </behavior-type>
-                <behavior-type name="FadeOut" sid="177733444747070">
-                    <behavior id="Fade" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="534905321206282" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="C:\Users\Rizky\Downloads\btn_normal_standby.png">
-                        <collision-poly>
-                            <point x="0.0444444" y="0.145455" />
-                            <point x="0.5" y="0.0181818" />
-                            <point x="0.95" y="0.163636" />
-                            <point x="0.983333" y="0.490909" />
-                            <point x="0.95" y="0.836364" />
-                            <point x="0.5" y="0.981818" />
-                            <point x="0.0444444" y="0.854545" />
-                            <point x="0.0111111" y="0.490909" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="C:\Users\Rizky\Downloads\btn_normal_pressed.png">
-                        <collision-poly>
-                            <point x="0.05" y="0.163636" />
-                            <point x="0.5" y="0.0545455" />
-                            <point x="0.944444" y="0.181818" />
-                            <point x="0.983333" y="0.490909" />
-                            <point x="0.95" y="0.836364" />
-                            <point x="0.5" y="0.981818" />
-                            <point x="0.0444444" y="0.854545" />
-                            <point x="0.0111111" y="0.490909" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Text_Starter" sid="155800385342892">
             <plugin id="Text" />
         </object-type>
@@ -2212,8 +2243,242 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
+        <object-type name="volumeBar_yellow" sid="270988509863772">
+            <plugin id="TiledBg" />
+            <instance-variables>
+                <instance-variable name="type" sid="118215394040861" type="string" />
+            </instance-variables>
+            <texture />
+        </object-type>
+        <object-type name="key_input" sid="407624330254462">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="17" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="286919227704144" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\GUI\KEY\key_1.png">
+                        <collision-poly>
+                            <point x="0.0466667" y="0.0466667" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.953333" y="0.0466667" />
+                            <point x="0.986667" y="0.5" />
+                            <point x="0.96" y="0.96" />
+                            <point x="0.5" y="0.986667" />
+                            <point x="0.0466667" y="0.953333" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\GUI\KEY\key_2.png">
+                        <collision-poly>
+                            <point x="0.0466667" y="0.0466667" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.953333" y="0.0466667" />
+                            <point x="0.986667" y="0.5" />
+                            <point x="0.96" y="0.96" />
+                            <point x="0.5" y="0.986667" />
+                            <point x="0.0466667" y="0.953333" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\GUI\KEY\key_3.png">
+                        <collision-poly>
+                            <point x="0.0466667" y="0.0466667" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.953333" y="0.0466667" />
+                            <point x="0.986667" y="0.5" />
+                            <point x="0.96" y="0.96" />
+                            <point x="0.5" y="0.986667" />
+                            <point x="0.0466667" y="0.953333" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\GUI\KEY\key_4.png">
+                        <collision-poly>
+                            <point x="0.0466667" y="0.0466667" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.953333" y="0.0466667" />
+                            <point x="0.986667" y="0.5" />
+                            <point x="0.96" y="0.96" />
+                            <point x="0.5" y="0.986667" />
+                            <point x="0.0466667" y="0.953333" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\GUI\KEY\key_W.png">
+                        <collision-poly>
+                            <point x="0.0466667" y="0.0466667" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.953333" y="0.0466667" />
+                            <point x="0.986667" y="0.5" />
+                            <point x="0.96" y="0.96" />
+                            <point x="0.5" y="0.986667" />
+                            <point x="0.0466667" y="0.953333" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\GUI\KEY\key_A.png">
+                        <collision-poly>
+                            <point x="0.0466667" y="0.0466667" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.953333" y="0.0466667" />
+                            <point x="0.986667" y="0.5" />
+                            <point x="0.96" y="0.96" />
+                            <point x="0.5" y="0.986667" />
+                            <point x="0.0466667" y="0.953333" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\GUI\KEY\key_S.png">
+                        <collision-poly>
+                            <point x="0.0466667" y="0.0466667" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.953333" y="0.0466667" />
+                            <point x="0.986667" y="0.5" />
+                            <point x="0.96" y="0.96" />
+                            <point x="0.5" y="0.986667" />
+                            <point x="0.0466667" y="0.953333" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\GUI\KEY\key_D.png">
+                        <collision-poly>
+                            <point x="0.0466667" y="0.0466667" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.953333" y="0.0466667" />
+                            <point x="0.986667" y="0.5" />
+                            <point x="0.96" y="0.96" />
+                            <point x="0.5" y="0.986667" />
+                            <point x="0.0466667" y="0.953333" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\GUI\KEY\key_down.png">
+                        <collision-poly>
+                            <point x="0.0466667" y="0.0466667" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.953333" y="0.0466667" />
+                            <point x="0.986667" y="0.5" />
+                            <point x="0.96" y="0.96" />
+                            <point x="0.5" y="0.986667" />
+                            <point x="0.0466667" y="0.953333" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\GUI\KEY\key_left.png">
+                        <collision-poly>
+                            <point x="0.0466667" y="0.0466667" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.953333" y="0.0466667" />
+                            <point x="0.986667" y="0.5" />
+                            <point x="0.96" y="0.96" />
+                            <point x="0.5" y="0.986667" />
+                            <point x="0.0466667" y="0.953333" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\GUI\KEY\key_up.png">
+                        <collision-poly>
+                            <point x="0.0466667" y="0.0466667" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.953333" y="0.0466667" />
+                            <point x="0.986667" y="0.5" />
+                            <point x="0.96" y="0.96" />
+                            <point x="0.5" y="0.986667" />
+                            <point x="0.0466667" y="0.953333" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\GUI\KEY\key_right.png">
+                        <collision-poly>
+                            <point x="0.0466667" y="0.0466667" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.953333" y="0.0466667" />
+                            <point x="0.986667" y="0.5" />
+                            <point x="0.96" y="0.96" />
+                            <point x="0.5" y="0.986667" />
+                            <point x="0.0466667" y="0.953333" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\GUI\KEY\key_E.png">
+                        <collision-poly>
+                            <point x="0.0466667" y="0.0466667" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.953333" y="0.0466667" />
+                            <point x="0.986667" y="0.5" />
+                            <point x="0.96" y="0.96" />
+                            <point x="0.5" y="0.986667" />
+                            <point x="0.0466667" y="0.953333" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\GUI\KEY\key_Q.png">
+                        <collision-poly>
+                            <point x="0.0466667" y="0.0466667" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.953333" y="0.0466667" />
+                            <point x="0.986667" y="0.5" />
+                            <point x="0.96" y="0.96" />
+                            <point x="0.5" y="0.986667" />
+                            <point x="0.0466667" y="0.953333" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\GUI\KEY\key_esc.png">
+                        <collision-poly>
+                            <point x="0.0466667" y="0.0466667" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.953333" y="0.0466667" />
+                            <point x="0.986667" y="0.5" />
+                            <point x="0.96" y="0.96" />
+                            <point x="0.5" y="0.986667" />
+                            <point x="0.0466667" y="0.953333" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\GUI\KEY\key_shift.png">
+                        <collision-poly>
+                            <point x="0.0184211" y="0.0466667" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.981579" y="0.0466667" />
+                            <point x="0.984211" y="0.96" />
+                            <point x="0.5" y="0.986667" />
+                            <point x="0.0184211" y="0.953333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\GUI\KEY\key_space.png">
+                        <collision-poly>
+                            <point x="0.0184211" y="0.0466667" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.981579" y="0.0466667" />
+                            <point x="0.984211" y="0.96" />
+                            <point x="0.5" y="0.986667" />
+                            <point x="0.0184211" y="0.953333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
-    <families />
+    <families>
+        <family name="Button" plugin-id="Sprite" sid="823175343801405">
+            <members>
+                <member>arrow_left</member>
+                <member>arrow_right</member>
+                <member>btn_change_difficult</member>
+                <member>btn_close</member>
+                <member>btn_credits</member>
+                <member>btn_music</member>
+                <member>btn_sfx</member>
+                <member>btn_upgrade</member>
+                <member>icon_back</member>
+                <member>icon_book</member>
+                <member>icon_cart</member>
+                <member>icon_close</member>
+                <member>price_2250</member>
+                <member>price_500</member>
+                <member>tuner</member>
+            </members>
+        </family>
+    </families>
     <layout-folder>
         <layout-folder name="Stage">
             <layout>Stage 1 - Svartalfheim.xml</layout>
@@ -2260,7 +2525,19 @@
             </properties>
         </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="GUI_Select_30 1.m4a" />
+        <file name="GUI_Select_30 1.ogg" />
+        <file name="GUI_Select_26 1.m4a" />
+        <file name="GUI_Select_26 1.ogg" />
+        <file name="GUI Sound Effects_002.m4a" />
+        <file name="GUI Sound Effects_002.ogg" />
+        <file name="button_press_plastic_click_001.ogg" />
+        <file name="tick_01.ogg" />
+        <file name="select_01.ogg" />
+        <file name="select_02.m4a" />
+        <file name="select_02.ogg" />
+    </sounds-folder>
     <music-folder>
         <file name="Main menu  2 (PerituneMaterial_World_OP).ogg" />
     </music-folder>

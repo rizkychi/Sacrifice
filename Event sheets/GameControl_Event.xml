@@ -4,5 +4,21 @@
     <name>GameControl_Event</name>
     <events>
         <include>Loading_Event</include>
+        <event-block sid="338087547733029">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="959840316467250" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="680436768343747">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="396893417976013" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
     </events>
 </c2eventsheet>

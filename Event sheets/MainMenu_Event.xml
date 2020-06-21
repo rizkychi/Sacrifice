@@ -186,6 +186,44 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="236343776035900">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="452609603787757" type="tuner">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;music&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="587359158981119" type="volumeBar_yellow">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;music&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-5" name="Set width" sid="265794084656906" type="volumeBar_yellow">
+                                            <param id="0" name="Width">tuner.X-MinVolume</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="259191520752019">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="796855325079392" type="tuner">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;sfx&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="218653366352555" type="volumeBar_yellow">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;sfx&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-5" name="Set width" sid="984937218442744" type="volumeBar_yellow">
+                                            <param id="0" name="Width">tuner.X-MinVolume</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-block>
                         <event-block sid="655311428265455">
@@ -198,6 +236,12 @@
                                 <action id="-9" name="Set value" sid="933573477874068" type="System">
                                     <param id="0" name="Variable">mouse_vel_y</param>
                                     <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="422790924867969" type="Audio">
+                                    <param id="0" name="Audio file">tick_01</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -266,6 +310,12 @@
                                 <action id="-9" name="Set value" sid="167714460609002" type="System">
                                     <param id="0" name="Variable">mouse_vel_y</param>
                                     <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="118829435438393" type="Audio">
+                                    <param id="0" name="Audio file">tick_01</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -338,6 +388,19 @@
                             </conditions>
                             <actions />
                             <sub-events>
+                                <event-block sid="102464786984160">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="225588371792933" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="633437784455256" type="Audio">
+                                            <param id="0" name="Audio file">tick_01</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                                 <event-block sid="411265024738997">
                                     <conditions>
                                         <condition id="-14" name="Compare variable" sid="671693495596761" type="System">
@@ -410,6 +473,12 @@
                                 <action behavior="clicked" id="10" name="Start" sid="268094297731435" type="btn_Select">
                                     <param id="0" name="Start Mode">0</param>
                                     <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="337044268116511" type="Audio">
+                                    <param id="0" name="Audio file">GUI_Select_26 1</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="290781380327177" type="System">
                                     <param id="0" name="Seconds">0.2</param>
@@ -823,6 +892,29 @@
                                     </actions>
                                 </event-block>
                             </sub-events>
+                        </event-block>
+                        <event-block any="1" sid="486503356288862">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="994192992483144" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">btn_credits</param>
+                                </condition>
+                                <condition id="0" name="On key pressed" sid="447848104381945" type="Keyboard">
+                                    <param id="0" name="Key">67</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="941761866724914" type="btn_credits">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="349193676489864" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="999626766851426" type="btn_credits">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-block>

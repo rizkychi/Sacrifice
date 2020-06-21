@@ -233,38 +233,6 @@
                     <param id="1" name="Value">difficulty</param>
                 </action>
             </actions>
-            <sub-events>
-                <event-block sid="403164368820528">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="330063619433277" type="tuner">
-                            <param id="0" name="Instance variable">type</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;music&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set item" sid="302778250498847" type="LocalStorage">
-                            <param id="0" name="Key">&quot;pos_tuner_music&quot;</param>
-                            <param id="1" name="Value">tuner.X</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="924306790531045">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="586042891847220" type="tuner">
-                            <param id="0" name="Instance variable">type</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;sfx&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set item" sid="296533666292348" type="LocalStorage">
-                            <param id="0" name="Key">&quot;pos_tuner_sfx&quot;</param>
-                            <param id="1" name="Value">tuner.X</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
         </event-block>
         <event-block sid="144156445573172">
             <conditions>
@@ -285,12 +253,6 @@
                 <action id="5" name="Check item exists" sid="554757320839445" type="LocalStorage">
                     <param id="0" name="Key">&quot;difficulty&quot;</param>
                 </action>
-                <action id="5" name="Check item exists" sid="938638351083651" type="LocalStorage">
-                    <param id="0" name="Key">&quot;pos_tuner_music&quot;</param>
-                </action>
-                <action id="5" name="Check item exists" sid="400924153967271" type="LocalStorage">
-                    <param id="0" name="Key">&quot;pos_tuner_sfx&quot;</param>
-                </action>
             </actions>
         </event-block>
         <event-block sid="721266165569374">
@@ -310,54 +272,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="270846062188078">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="991104819858833" type="tuner">
-                    <param id="0" name="Instance variable">type</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">&quot;music&quot;</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="593679137484941">
-                    <conditions>
-                        <condition id="9" name="On item exists" sid="953303157507468" type="LocalStorage">
-                            <param id="0" name="Key">&quot;pos_tuner_music&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="155298899044375" type="tuner">
-                            <param id="0" name="X">LocalStorage.ItemValue</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="330232414443432">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="103980601214830" type="tuner">
-                    <param id="0" name="Instance variable">type</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">&quot;sfx&quot;</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="688413346975272">
-                    <conditions>
-                        <condition id="9" name="On item exists" sid="312032292584129" type="LocalStorage">
-                            <param id="0" name="Key">&quot;pos_tuner_sfx&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="893304752805177" type="tuner">
-                            <param id="0" name="X">LocalStorage.ItemValue</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
         <event-block sid="578448404986078">
             <conditions>
                 <condition id="9" name="On item exists" sid="770239394946529" type="LocalStorage">
@@ -374,6 +288,22 @@
                     <param id="1" name="dB">VolumeMusic</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="396998698476095">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="559462374640812" type="tuner">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;music&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="924895590211744" type="tuner">
+                            <param id="0" name="X">MaxVolume+VolumeMusic*15</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="167031337922175">
             <conditions>
@@ -391,6 +321,22 @@
                     <param id="1" name="dB">VolumeMusic</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="433936995144725">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="851682962286851" type="tuner">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;sfx&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="343008590400846" type="tuner">
+                            <param id="0" name="X">MaxVolume+VolumeSFX*15</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="345723290009908">
             <conditions>
