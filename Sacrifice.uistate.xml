@@ -10,8 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <event-sheet order="1">MainMenu_Event</event-sheet>
-        <event-sheet active="1" order="2">Sound_Event</event-sheet>
+        <layout active="1" order="1">Stage 1 - Svartalfheim</layout>
+        <event-sheet order="2">GameControl_Event</event-sheet>
+        <event-sheet order="3">Stage 1 - Svartalfheim</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -19,7 +20,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="1">
+    <families-expanded root="0">
         <family expanded="0" name="Button" />
     </families-expanded>
     <folders-expanded>
@@ -27,16 +28,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/System/" />
         <folder expanded="0" path="object-folder/Background/" />
         <folder expanded="0" path="object-folder/Background/MainMenu/" />
-        <folder expanded="0" path="object-folder/Text/" />
+        <folder expanded="1" path="object-folder/Text/" />
         <folder expanded="0" path="object-folder/Button/" />
         <folder expanded="0" path="object-folder/Sprites/" />
-        <folder expanded="1" path="object-folder/Loading/" />
+        <folder expanded="0" path="object-folder/Loading/" />
+        <folder expanded="0" path="object-folder/UI/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Stage/" />
         <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="event-folder/Stage/" />
         <folder expanded="0" path="file-folder/" />
-        <folder expanded="1" path="sound-folder/" />
-        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="sound-folder/" />
+        <folder expanded="0" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/bg_1/" />
         <folder expanded="1" path="animation-folder/bg_2/" />
@@ -69,6 +72,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/btn_credits/" />
         <folder expanded="1" path="animation-folder/btn_difficulty_hard/" />
         <folder expanded="1" path="animation-folder/btn_difficulty_normal/" />
+        <folder expanded="1" path="animation-folder/key_input/" />
+        <folder expanded="1" path="animation-folder/tuner/" />
         <folder expanded="1" path="animation-folder/icon_back/" />
         <folder expanded="1" path="animation-folder/icon_book/" />
         <folder expanded="1" path="animation-folder/icon_cart/" />
@@ -87,25 +92,32 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/icon_treasure/" />
         <folder expanded="1" path="animation-folder/icon_mana/" />
         <folder expanded="1" path="animation-folder/book_items/" />
-        <folder expanded="1" path="animation-folder/btn_Select/" />
-        <folder expanded="1" path="animation-folder/fade_popup/" />
-        <folder expanded="1" path="animation-folder/bg_popup/" />
-        <folder expanded="1" path="animation-folder/faded_background/" />
-        <folder expanded="1" path="animation-folder/title_bar/" />
-        <folder expanded="1" path="animation-folder/camera/" />
-        <folder expanded="1" path="animation-folder/camera_core/" />
-        <folder expanded="1" path="animation-folder/faded_background_icon/" />
-        <folder expanded="1" path="animation-folder/bg_shop/" />
-        <folder expanded="1" path="animation-folder/bar_coin_white/" />
-        <folder expanded="1" path="animation-folder/bar_white_small/" />
         <folder expanded="1" path="animation-folder/loading_bg/" />
         <folder expanded="1" path="animation-folder/loading_logo/" />
         <folder expanded="1" path="animation-folder/Loading_text/" />
-        <folder expanded="1" path="animation-folder/start_bg/" />
-        <folder expanded="1" path="animation-folder/start_bar/" />
-        <folder expanded="1" path="animation-folder/logo_studio/" />
         <folder expanded="1" path="animation-folder/logo_amikom/" />
-        <folder expanded="1" path="animation-folder/tuner/" />
-        <folder expanded="1" path="animation-folder/key_input/" />
+        <folder expanded="1" path="animation-folder/logo_studio/" />
+        <folder expanded="1" path="animation-folder/bar_coin_white/" />
+        <folder expanded="1" path="animation-folder/bar_hpmp_box/" />
+        <folder expanded="1" path="animation-folder/bar_hpmp_round/" />
+        <folder expanded="1" path="animation-folder/bar_white_small/" />
+        <folder expanded="1" path="animation-folder/bg_popup/" />
+        <folder expanded="1" path="animation-folder/bg_shop/" />
+        <folder expanded="1" path="animation-folder/btn_Select/" />
+        <folder expanded="1" path="animation-folder/fade_popup/" />
+        <folder expanded="1" path="animation-folder/faded_background/" />
+        <folder expanded="1" path="animation-folder/faded_background_icon/" />
+        <folder expanded="1" path="animation-folder/start_bar/" />
+        <folder expanded="1" path="animation-folder/start_bg/" />
+        <folder expanded="1" path="animation-folder/title_bar/" />
+        <folder expanded="1" path="animation-folder/circle_white/" />
+        <folder expanded="1" path="animation-folder/camera/" />
+        <folder expanded="1" path="animation-folder/camera_core/" />
+        <folder expanded="1" path="animation-folder/Player_Evans/" />
+        <folder expanded="1" path="animation-folder/tesTile/" />
+        <folder expanded="1" path="animation-folder/player_head/" />
+        <folder expanded="1" path="animation-folder/Sleipnir/" />
+        <folder expanded="1" path="animation-folder/warpmask/" />
+        <folder expanded="1" path="animation-folder/water/" />
     </folders-expanded>
 </c2uistate>

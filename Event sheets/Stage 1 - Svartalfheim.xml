@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Stage 1 - Svartalfheim</name>
+    <events>
+        <include>GameControl_Event</include>
+        <event-block sid="765760275017159">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="371952218390600" type="System">
+                    <param id="0" name="Interval (seconds)">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="836830220916509" type="Sleipnir">
+                    <param id="0" name="Animation">&quot;Attack&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="791437432405721">
+            <conditions>
+                <condition id="4" name="On finished" sid="815231044680041" type="Sleipnir">
+                    <param id="0" name="Animation">&quot;Attack&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="711116490263460" type="Sleipnir">
+                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="559769450385962">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="533701098559874" type="System" />
+                <condition id="-3" name="Is on-screen" sid="390164784565191" type="Sleipnir" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="267084281214739" type="camera">
+                    <param id="0" name="X">lerp(Self.X, Sleipnir.X-300, 0.05)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -28,9 +28,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layer locked="1" name="Background" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Menu" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Fog" parallax-in-editor="0" visible="0" />
-        <layer locked="0" name="Shop" parallax-in-editor="0" visible="0" />
-        <layer locked="0" name="Skills" parallax-in-editor="0" visible="0" />
-        <layer locked="0" name="Book" parallax-in-editor="0" visible="0" />
+        <layer locked="1" name="Shop" parallax-in-editor="0" visible="0" />
+        <layer locked="1" name="Skills" parallax-in-editor="0" visible="0" />
+        <layer locked="1" name="Book" parallax-in-editor="0" visible="0" />
         <layer locked="0" name="Loading" parallax-in-editor="0" visible="0" />
     </layers>
 </c2uistate>
