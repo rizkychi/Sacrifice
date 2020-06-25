@@ -23,6 +23,7 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra, Alex Hanson-White" id="PinPlus" version="1">Pin+</behavior>
@@ -2574,6 +2575,7 @@
             <animation-folder>
                 <animation framecount="22" loop="1" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="186044453936559" speed="20">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00000.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2582,6 +2584,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00001.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2590,6 +2593,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00002.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2598,6 +2602,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00003.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2606,6 +2611,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00004.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2614,6 +2620,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00005.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2622,6 +2629,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00006.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2630,6 +2638,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00007.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2638,6 +2647,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00008.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2646,6 +2656,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00009.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2654,6 +2665,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00010.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2662,6 +2674,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00011.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2670,6 +2683,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00012.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2678,6 +2692,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00013.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2686,6 +2701,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00014.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2694,6 +2710,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00015.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2702,6 +2719,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00016.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2710,6 +2728,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00017.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2718,6 +2737,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00018.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2726,6 +2746,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00019.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2734,6 +2755,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00020.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2742,6 +2764,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00021.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2751,7 +2774,8 @@
                     </frame>
                 </animation>
                 <animation framecount="9" loop="1" name="Run" pingpong="1" repeatcount="1" repeatto="0" sid="275115928119250" speed="30">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\run_00000.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\coba\run_00000.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2759,7 +2783,8 @@
                             <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\run_00001.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\coba\run_00001.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2767,7 +2792,8 @@
                             <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\run_00002.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\coba\run_00002.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2775,7 +2801,8 @@
                             <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\run_00003.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\coba\run_00003.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2783,7 +2810,8 @@
                             <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\run_00004.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\coba\run_00004.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2791,7 +2819,8 @@
                             <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\run_00005.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\coba\run_00005.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2799,7 +2828,8 @@
                             <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\run_00006.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\coba\run_00006.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2807,7 +2837,8 @@
                             <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\run_00007.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\coba\run_00007.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2815,7 +2846,8 @@
                             <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\run_00008.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\coba\run_00008.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2826,6 +2858,7 @@
                 </animation>
                 <animation framecount="16" loop="0" name="Dead" pingpong="0" repeatcount="1" repeatto="0" sid="867588059804349" speed="30">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00000.png">
+                        <image-point name="Bow" x="1.00152" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2834,6 +2867,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00001.png">
+                        <image-point name="Bow" x="1.00152" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2842,6 +2876,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00002.png">
+                        <image-point name="Bow" x="1.00152" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2850,6 +2885,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00003.png">
+                        <image-point name="Bow" x="1.00152" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2858,6 +2894,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00004.png">
+                        <image-point name="Bow" x="1.00152" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2866,6 +2903,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00005.png">
+                        <image-point name="Bow" x="1.00152" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2874,6 +2912,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00006.png">
+                        <image-point name="Bow" x="1.00152" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2882,6 +2921,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00007.png">
+                        <image-point name="Bow" x="1.00152" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2890,6 +2930,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00008.png">
+                        <image-point name="Bow" x="1.00152" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2898,6 +2939,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00009.png">
+                        <image-point name="Bow" x="1.00152" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2906,6 +2948,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00010.png">
+                        <image-point name="Bow" x="1.00152" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2914,6 +2957,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00011.png">
+                        <image-point name="Bow" x="1.00152" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2922,6 +2966,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00012.png">
+                        <image-point name="Bow" x="1.00152" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2930,6 +2975,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00013.png">
+                        <image-point name="Bow" x="1.00152" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2938,6 +2984,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00014.png">
+                        <image-point name="Bow" x="1.00152" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2946,6 +2993,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00015.png">
+                        <image-point name="Bow" x="1.00152" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2956,6 +3004,7 @@
                 </animation>
                 <animation framecount="9" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="239927051223844" speed="50">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\jump\jump_00000.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2964,6 +3013,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\jump\jump_00001.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2972,6 +3022,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\jump\jump_00002.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2980,6 +3031,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\jump\jump_00003.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2988,6 +3040,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\jump\jump_00004.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -2996,6 +3049,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\jump\jump_00005.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3004,6 +3058,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\jump\jump_00006.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3012,6 +3067,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\jump\jump_00007.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3020,6 +3076,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\jump\jump_00008.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3030,6 +3087,7 @@
                 </animation>
                 <animation framecount="15" loop="0" name="Fall" pingpong="0" repeatcount="1" repeatto="0" sid="375738260320661" speed="35">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000000.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3038,6 +3096,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000001.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3046,6 +3105,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000002.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3054,6 +3114,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000003.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3062,6 +3123,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000004.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3070,6 +3132,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000005.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3078,6 +3141,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000007.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3086,6 +3150,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000008.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3094,6 +3159,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000009.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3102,6 +3168,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000010.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3110,6 +3177,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000011.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3118,6 +3186,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000012.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3126,6 +3195,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000013.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3134,6 +3204,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000014.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3142,6 +3213,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000006.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3152,6 +3224,7 @@
                 </animation>
                 <animation framecount="16" loop="0" name="AttackSword" pingpong="0" repeatcount="1" repeatto="0" sid="630691559119553" speed="60">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0000.png">
+                        <image-point name="Bow" x="1.00132" y="0.519728" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3160,6 +3233,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0001.png">
+                        <image-point name="Bow" x="1.00132" y="0.519728" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3168,6 +3242,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0002.png">
+                        <image-point name="Bow" x="1.00132" y="0.519728" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3176,6 +3251,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0003.png">
+                        <image-point name="Bow" x="1.00132" y="0.519728" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3184,6 +3260,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0004.png">
+                        <image-point name="Bow" x="1.00132" y="0.519728" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3192,6 +3269,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0005.png">
+                        <image-point name="Bow" x="1.00132" y="0.519728" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3200,6 +3278,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0006.png">
+                        <image-point name="Bow" x="1.00132" y="0.519728" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3208,6 +3287,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0007.png">
+                        <image-point name="Bow" x="1.00132" y="0.519728" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3216,6 +3296,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0008.png">
+                        <image-point name="Bow" x="1.00132" y="0.519728" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3224,6 +3305,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0009.png">
+                        <image-point name="Bow" x="1.00132" y="0.519728" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3232,6 +3314,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0010.png">
+                        <image-point name="Bow" x="1.00132" y="0.519728" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3240,6 +3323,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0011.png">
+                        <image-point name="Bow" x="1.00132" y="0.519728" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3248,6 +3332,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0012.png">
+                        <image-point name="Bow" x="1.00132" y="0.519728" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3256,6 +3341,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0013.png">
+                        <image-point name="Bow" x="1.00132" y="0.519728" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3264,6 +3350,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0014.png">
+                        <image-point name="Bow" x="1.00132" y="0.519728" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3272,6 +3359,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0015.png">
+                        <image-point name="Bow" x="1.00132" y="0.519728" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -3280,133 +3368,295 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="16" loop="0" name="AttackBow" pingpong="0" repeatcount="1" repeatto="0" sid="260786654673651" speed="30">
+                <animation framecount="16" loop="0" name="AttackBow" pingpong="0" repeatcount="1" repeatto="0" sid="260786654673651" speed="60">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00000.png">
+                        <image-point name="Bow" x="1.00147" y="0.519766" />
                         <collision-poly>
-                            <point x="0.391563" y="0.0915694" />
-                            <point x="0.618203" y="0.0947" />
-                            <point x="0.615703" y="0.944021" />
-                            <point x="0.391719" y="0.938333" />
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00001.png">
+                        <image-point name="Bow" x="1.00147" y="0.519766" />
                         <collision-poly>
-                            <point x="0.391563" y="0.0915694" />
-                            <point x="0.618203" y="0.0947" />
-                            <point x="0.615703" y="0.944021" />
-                            <point x="0.391719" y="0.938333" />
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00002.png">
+                        <image-point name="Bow" x="1.00147" y="0.519766" />
                         <collision-poly>
-                            <point x="0.391563" y="0.0915694" />
-                            <point x="0.618203" y="0.0947" />
-                            <point x="0.615703" y="0.944021" />
-                            <point x="0.391719" y="0.938333" />
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00003.png">
+                        <image-point name="Bow" x="1.00147" y="0.519766" />
                         <collision-poly>
-                            <point x="0.391563" y="0.0915694" />
-                            <point x="0.618203" y="0.0947" />
-                            <point x="0.615703" y="0.944021" />
-                            <point x="0.391719" y="0.938333" />
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00004.png">
+                        <image-point name="Bow" x="1.00147" y="0.519766" />
                         <collision-poly>
-                            <point x="0.391563" y="0.0915694" />
-                            <point x="0.618203" y="0.0947" />
-                            <point x="0.615703" y="0.944021" />
-                            <point x="0.391719" y="0.938333" />
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00005.png">
+                        <image-point name="Bow" x="1.00147" y="0.519766" />
                         <collision-poly>
-                            <point x="0.391563" y="0.0915694" />
-                            <point x="0.618203" y="0.0947" />
-                            <point x="0.615703" y="0.944021" />
-                            <point x="0.391719" y="0.938333" />
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00006.png">
+                        <image-point name="Bow" x="1.00147" y="0.519766" />
                         <collision-poly>
-                            <point x="0.391563" y="0.0915694" />
-                            <point x="0.618203" y="0.0947" />
-                            <point x="0.615703" y="0.944021" />
-                            <point x="0.391719" y="0.938333" />
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00007.png">
+                        <image-point name="Bow" x="1.00147" y="0.519766" />
                         <collision-poly>
-                            <point x="0.391563" y="0.0915694" />
-                            <point x="0.618203" y="0.0947" />
-                            <point x="0.615703" y="0.944021" />
-                            <point x="0.391719" y="0.938333" />
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00008.png">
+                        <image-point name="Bow" x="1.00147" y="0.519766" />
                         <collision-poly>
-                            <point x="0.391563" y="0.0915694" />
-                            <point x="0.618203" y="0.0947" />
-                            <point x="0.615703" y="0.944021" />
-                            <point x="0.391719" y="0.938333" />
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00009.png">
+                        <image-point name="Bow" x="1.00147" y="0.519766" />
                         <collision-poly>
-                            <point x="0.391563" y="0.0915694" />
-                            <point x="0.618203" y="0.0947" />
-                            <point x="0.615703" y="0.944021" />
-                            <point x="0.391719" y="0.938333" />
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00010.png">
+                        <image-point name="Bow" x="1.00147" y="0.519766" />
                         <collision-poly>
-                            <point x="0.391563" y="0.0915694" />
-                            <point x="0.618203" y="0.0947" />
-                            <point x="0.615703" y="0.944021" />
-                            <point x="0.391719" y="0.938333" />
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00011.png">
+                        <image-point name="Bow" x="1.00147" y="0.519766" />
                         <collision-poly>
-                            <point x="0.391563" y="0.0915694" />
-                            <point x="0.618203" y="0.0947" />
-                            <point x="0.615703" y="0.944021" />
-                            <point x="0.391719" y="0.938333" />
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00012.png">
+                        <image-point name="Bow" x="1.00147" y="0.519766" />
                         <collision-poly>
-                            <point x="0.391563" y="0.0915694" />
-                            <point x="0.618203" y="0.0947" />
-                            <point x="0.615703" y="0.944021" />
-                            <point x="0.391719" y="0.938333" />
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00013.png">
+                        <image-point name="Bow" x="1.00147" y="0.519766" />
                         <collision-poly>
-                            <point x="0.391563" y="0.0915694" />
-                            <point x="0.618203" y="0.0947" />
-                            <point x="0.615703" y="0.944021" />
-                            <point x="0.391719" y="0.938333" />
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00014.png">
+                        <image-point name="Bow" x="1.00147" y="0.519766" />
                         <collision-poly>
-                            <point x="0.391563" y="0.0915694" />
-                            <point x="0.618203" y="0.0947" />
-                            <point x="0.615703" y="0.944021" />
-                            <point x="0.391719" y="0.938333" />
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00015.png">
+                        <image-point name="Bow" x="1.00147" y="0.519766" />
                         <collision-poly>
-                            <point x="0.391563" y="0.0915694" />
-                            <point x="0.618203" y="0.0947" />
-                            <point x="0.615703" y="0.944021" />
-                            <point x="0.391719" y="0.938333" />
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="16" loop="0" name="Defend" pingpong="0" repeatcount="1" repeatto="0" sid="927042380191549" speed="60">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00000.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00001.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00002.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00003.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00004.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00005.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00006.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00007.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00008.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00009.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00010.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00011.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00012.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00013.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00014.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00015.png">
+                        <image-point name="Bow" x="1.00195" y="0.519766" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.133236" />
+                            <point x="0.658203" y="0.1347" />
+                            <point x="0.658203" y="0.910688" />
+                            <point x="0.355469" y="0.910688" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -3871,6 +4121,28 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="291056935945329" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="arrow" sid="102100321704879">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="982146845039215">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="199849888167375" speed="5">
+                    <frame duration="1" hotspotX="0.500589" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\arrow.png">
+                        <collision-poly>
+                            <point x="0.941107" y="0.510204" />
+                            <point x="0.937574" y="0.5" />
+                            <point x="0.959953" y="0.653061" />
+                            <point x="0.499411" y="0.683673" />
+                            <point x="0.04947" y="0.571429" />
+                            <point x="0.0530035" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

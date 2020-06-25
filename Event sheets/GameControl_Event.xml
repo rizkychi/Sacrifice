@@ -5,7 +5,8 @@
     <events>
         <include>Loading_Event</include>
         <variable constant="0" name="attack_sword" sid="990305244945250" static="0" type="number">0</variable>
-        <variable constant="0" name="attack_arrow" sid="781948582415978" static="0" type="number">0</variable>
+        <variable constant="0" name="attack_bow" sid="781948582415978" static="0" type="number">0</variable>
+        <variable constant="0" name="defend" sid="947583623621859" static="0" type="number">0</variable>
         <variable constant="0" name="temp_hp" sid="645397107881112" static="0" type="number">0</variable>
         <variable constant="0" name="temp_mp" sid="668947951898672" static="0" type="number">0</variable>
         <event-group description="" sid="449830121261773" title="Game Property">
@@ -387,6 +388,41 @@
             <sub-events>
                 <variable constant="0" name="stealth" sid="505718910814375" static="1" type="number">0</variable>
                 <variable constant="0" name="enrage" sid="628613301854393" static="1" type="number">0</variable>
+                <comment>Ignore input</comment>
+                <event-block sid="609168144157301">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="818356361240387" type="System">
+                            <param id="0" name="Variable">attack_sword</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="782084405116225" type="System">
+                            <param id="0" name="Variable">attack_bow</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="208492539949329" type="System">
+                            <param id="0" name="Variable">defend</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="574618367264065" type="Player_Evans">
+                            <param id="0" name="Input">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="967241253766989">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="651582706160349" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="228389435291779" type="Player_Evans">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="279016941261663">
                     <conditions>
                         <condition id="2" inverted="1" name="Is playing" sid="820850912020325" type="Player_Evans">
@@ -394,6 +430,16 @@
                         </condition>
                         <condition id="-14" name="Compare variable" sid="922066211525559" type="System">
                             <param id="0" name="Variable">attack_sword</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="647839235088364" type="System">
+                            <param id="0" name="Variable">attack_bow</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="952389426718359" type="System">
+                            <param id="0" name="Variable">defend</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
@@ -472,9 +518,12 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="338087547733029">
+                        <event-block any="1" sid="338087547733029">
                             <conditions>
                                 <condition id="0" name="On key pressed" sid="959840316467250" type="Keyboard">
+                                    <param id="0" name="Key">39</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="213602096522197" type="Keyboard">
                                     <param id="0" name="Key">39</param>
                                 </condition>
                             </conditions>
@@ -484,9 +533,12 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="680436768343747">
+                        <event-block any="1" sid="680436768343747">
                             <conditions>
                                 <condition id="0" name="On key pressed" sid="396893417976013" type="Keyboard">
+                                    <param id="0" name="Key">37</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="644274588213747" type="Keyboard">
                                     <param id="0" name="Key">37</param>
                                 </condition>
                             </conditions>
@@ -498,6 +550,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <comment>Item used</comment>
                 <event-block sid="532295738032157">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="596924633700833" type="Keyboard">
@@ -586,6 +639,7 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>Skill Stealth</comment>
                 <event-block sid="329576015533878">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="602383294090966" type="Keyboard">
@@ -626,6 +680,7 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>Skill Enrage</comment>
                 <event-block sid="685687238660875">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="142315528429756" type="Keyboard">
@@ -676,6 +731,7 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>Skill Sword</comment>
                 <event-block sid="481085649729646">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="745940653798151" type="Keyboard">
@@ -686,8 +742,18 @@
                             <param id="1" name="Comparison">5</param>
                             <param id="2" name="Value">5</param>
                         </condition>
-                        <condition id="-14" name="Compare variable" sid="289676401587146" type="System">
+                        <condition id="-14" name="Compare variable" sid="640166608349858" type="System">
                             <param id="0" name="Variable">attack_sword</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="696366411701037" type="System">
+                            <param id="0" name="Variable">attack_bow</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="502632348063103" type="System">
+                            <param id="0" name="Variable">defend</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
@@ -705,15 +771,22 @@
                             <param id="0" name="Animation">&quot;AttackSword&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="-16" name="Wait" sid="978745027100166" type="System">
-                            <param id="0" name="Seconds">0.25</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="692153199127201" type="System">
+                    </actions>
+                </event-block>
+                <event-block sid="441872574470162">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="922584901255168" type="Player_Evans">
+                            <param id="0" name="Animation">&quot;AttackSword&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="125132335468152" type="System">
                             <param id="0" name="Variable">attack_sword</param>
                             <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
+                <comment>Skill CrossBow</comment>
                 <event-block sid="389230010597461">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="323850303124364" type="Keyboard">
@@ -724,15 +797,25 @@
                             <param id="1" name="Comparison">5</param>
                             <param id="2" name="Value">5</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="806077839157433" type="System">
+                            <param id="0" name="Variable">attack_sword</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                         <condition id="-14" name="Compare variable" sid="942346946390052" type="System">
-                            <param id="0" name="Variable">attack_arrow</param>
+                            <param id="0" name="Variable">attack_bow</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="111659743279411" type="System">
+                            <param id="0" name="Variable">defend</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="693543979342644" type="System">
-                            <param id="0" name="Variable">attack_arrow</param>
+                            <param id="0" name="Variable">attack_bow</param>
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="-12" name="Subtract from" sid="141251721353000" type="Player_Evans">
@@ -743,39 +826,118 @@
                             <param id="0" name="Animation">&quot;AttackBow&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="-16" name="Wait" sid="860325059276799" type="System">
+                        <action id="-16" name="Wait" sid="120527677506670" type="System">
                             <param id="0" name="Seconds">0.25</param>
                         </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="370947351355829">
+                            <conditions>
+                                <condition id="7" name="Is mirrored" sid="379102546260830" type="Player_Evans" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="192401591372336" type="Player_Evans">
+                                    <param id="0" name="Object">arrow</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="828777494242399" type="arrow">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="642918140208256">
+                            <conditions>
+                                <condition id="7" inverted="1" name="Is mirrored" sid="702228321860509" type="Player_Evans" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="894597059668378" type="Player_Evans">
+                                    <param id="0" name="Object">arrow</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="418640962607181">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="494828652601859" type="Player_Evans">
+                            <param id="0" name="Animation">&quot;AttackBow&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
                         <action id="-9" name="Set value" sid="574028799095659" type="System">
-                            <param id="0" name="Variable">attack_arrow</param>
+                            <param id="0" name="Variable">attack_bow</param>
                             <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="609168144157301">
+                <event-block sid="843902570866704">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="818356361240387" type="System">
+                        <condition id="-4" name="Is outside layout" sid="782664864564044" type="arrow" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="899278406720996" type="arrow" />
+                    </actions>
+                </event-block>
+                <comment>Skill Defend</comment>
+                <event-block sid="318059775826069">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="573301048688058" type="Keyboard">
+                            <param id="0" name="Key">65</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="513300396926590" type="System">
                             <param id="0" name="Variable">attack_sword</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="549519729185324" type="System">
+                            <param id="0" name="Variable">attack_bow</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="844142101251370" type="System">
+                            <param id="0" name="Variable">defend</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Platform" id="0" name="Set ignoring input" sid="574618367264065" type="Player_Evans">
-                            <param id="0" name="Input">1</param>
+                        <action id="-9" name="Set value" sid="367226302447617" type="System">
+                            <param id="0" name="Variable">defend</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="728864320760697" type="Player_Evans">
+                            <param id="0" name="Animation">&quot;Defend&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="967241253766989">
+                <event-block sid="141225772033541">
                     <conditions>
-                        <condition id="-22" name="Else" sid="651582706160349" type="System" />
+                        <condition id="4" name="On finished" sid="171473977768490" type="Player_Evans">
+                            <param id="0" name="Animation">&quot;Defend&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Platform" id="0" name="Set ignoring input" sid="228389435291779" type="Player_Evans">
-                            <param id="0" name="Input">0</param>
+                        <action id="2" name="Stop" sid="726223198668402" type="Player_Evans" />
+                    </actions>
+                </event-block>
+                <event-block sid="449357860220162">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="662618322232603" type="Keyboard">
+                            <param id="0" name="Key">65</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="347977179911631" type="System">
+                            <param id="0" name="Variable">defend</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
+                <comment>Pause</comment>
                 <event-block sid="545314356409868">
                     <conditions>
                         <condition id="3" name="On key released" sid="226631799924476" type="Keyboard">

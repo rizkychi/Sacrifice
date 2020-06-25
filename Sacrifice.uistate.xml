@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="1">Stage 1 - Svartalfheim</layout>
-        <event-sheet order="2">GameControl_Event</event-sheet>
+        <layout order="1">Stage 1 - Svartalfheim</layout>
+        <event-sheet active="1" order="2">GameControl_Event</event-sheet>
         <event-sheet order="3">Stage 1 - Svartalfheim</event-sheet>
     </open-tabs>
     <properties>
@@ -119,5 +119,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sleipnir/" />
         <folder expanded="1" path="animation-folder/warpmask/" />
         <folder expanded="1" path="animation-folder/water/" />
+        <folder expanded="1" path="animation-folder/arrow/" />
     </folders-expanded>
 </c2uistate>
