@@ -2527,6 +2527,190 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder name="Area">
+            <object-folder name="Svartalheim">
+                <object-type name="tileset" sid="775885378785046">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="527089449313571">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="36" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="358960883456034" speed="0">
+                            <frame duration="0" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\grassHalf.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.5" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="0.985714" y="0.5" />
+                                    <point x="0.571429" y="0.571429" />
+                                    <point x="0.428571" y="0.571429" />
+                                    <point x="0.0142857" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\grassHalfLeft.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.5" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.571429" y="0.571429" />
+                                    <point x="0.428571" y="0.571429" />
+                                    <point x="0.0142857" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\grassHalfMid.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.571429" y="0.571429" />
+                                    <point x="0.428571" y="0.571429" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\grassHalfRight.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.5" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="0.985714" y="0.5" />
+                                    <point x="0.571429" y="0.571429" />
+                                    <point x="0.428571" y="0.571429" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice01_01.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice02_02.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice03_03.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice04_04.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice05_05.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice06_06.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice07_07.png">
+                                <collision-poly>
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice12_12.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="0.332143" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice13_13.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.335714" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice14_14.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0.246429" y="0.792857" />
+                                    <point x="0" y="0.3875" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice15_15.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.475" />
+                                    <point x="0.660715" y="0.853571" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice16_16.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice17_17.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice18_18.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice19_19.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice20_20.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice21_21.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice22_22.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice23_23.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice24_24.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice25_25.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice26_26.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice27_27.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice28_28.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice29_29.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice30_30.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice31_31.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice32_32.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice33_33.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice34_34.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice35_35.png">
+                                <collision-poly>
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice36_36.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="properties" sid="333140637178020">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="9" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="256287201752600" speed="0">
+                            <frame duration="1" hotspotX="0.501229" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\tree 1.png">
+                                <collision-poly>
+                                    <point x="0.228501" y="0.352273" />
+                                    <point x="0.218673" y="0" />
+                                    <point x="1" y="0.743506" />
+                                    <point x="0.572482" y="0.811688" />
+                                    <point x="0.601966" y="1" />
+                                    <point x="0.405405" y="0.996753" />
+                                    <point x="0.46683" y="0.818183" />
+                                    <point x="0.00982801" y="0.737013" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.501155" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\tree 2.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\bush 1.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\cactus (1).png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\cactus 2 (1).png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\cactus 2.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\cactus.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\flower (1).png" />
+                            <frame duration="1" hotspotX="0.509434" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\TombStone (2).png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+        </object-folder>
         <object-type name="camera" sid="335349714748180">
             <plugin id="Sprite" />
             <behaviors>

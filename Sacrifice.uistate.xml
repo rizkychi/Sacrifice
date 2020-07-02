@@ -10,9 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Stage 1 - Svartalfheim</layout>
-        <event-sheet active="1" order="2">GameControl_Event</event-sheet>
-        <event-sheet order="3">Stage 1 - Svartalfheim</event-sheet>
+        <layout active="1" order="0">Stage 1 - Svartalfheim</layout>
+        <event-sheet order="1">GameControl_Event</event-sheet>
+        <event-sheet order="2">Stage 1 - Svartalfheim</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -28,19 +28,21 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/System/" />
         <folder expanded="0" path="object-folder/Background/" />
         <folder expanded="0" path="object-folder/Background/MainMenu/" />
-        <folder expanded="1" path="object-folder/Text/" />
+        <folder expanded="0" path="object-folder/Text/" />
         <folder expanded="0" path="object-folder/Button/" />
         <folder expanded="0" path="object-folder/Sprites/" />
         <folder expanded="0" path="object-folder/Loading/" />
         <folder expanded="0" path="object-folder/UI/" />
+        <folder expanded="1" path="object-folder/Area/" />
+        <folder expanded="1" path="object-folder/Area/Svartalheim/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="layout-folder/Stage/" />
+        <folder expanded="0" path="layout-folder/Stage/" />
         <folder expanded="1" path="event-folder/" />
-        <folder expanded="1" path="event-folder/Stage/" />
+        <folder expanded="0" path="event-folder/Stage/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />
-        <folder expanded="1" path="file-folder/Icons/" />
+        <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/bg_1/" />
         <folder expanded="1" path="animation-folder/bg_2/" />
         <folder expanded="1" path="animation-folder/bg_3/" />
@@ -111,6 +113,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/start_bg/" />
         <folder expanded="1" path="animation-folder/title_bar/" />
         <folder expanded="1" path="animation-folder/circle_white/" />
+        <folder expanded="1" path="animation-folder/tileset/" />
+        <folder expanded="1" path="animation-folder/properties/" />
         <folder expanded="1" path="animation-folder/camera/" />
         <folder expanded="1" path="animation-folder/camera_core/" />
         <folder expanded="1" path="animation-folder/Player_Evans/" />
