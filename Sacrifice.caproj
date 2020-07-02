@@ -299,6 +299,14 @@
                         </animation>
                     </animation-folder>
                 </object-type>
+                <object-type name="Sprite" sid="560645005805546">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="774928871713996" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Background\BG (1).png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
             </object-folder>
             <object-type name="area" sid="967984546240023">
                 <plugin id="Sprite" />
@@ -2528,7 +2536,7 @@
             </object-type>
         </object-folder>
         <object-folder name="Area">
-            <object-folder name="Svartalheim">
+            <object-folder name="Stage 1 - Svartalheim">
                 <object-type name="tileset" sid="775885378785046">
                     <plugin id="Sprite" />
                     <behaviors>
@@ -2706,6 +2714,236 @@
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\cactus.png" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\flower (1).png" />
                             <frame duration="1" hotspotX="0.509434" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\TombStone (2).png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Stage 2 - Alfheim">
+                <object-type name="tileset2" sid="230944213134839">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="899503945329059">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="23" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="351590159389325" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\Grass.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\GrassCliffLeft.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\GrassCliffMid.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\GrassCliffRight.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\GrassJoinHillLeft&amp;Right.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\GrassJoinHillLeft.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\GrassJoinHillLeft2 WithDropShadow.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\GrassJoinHillLeft2&amp;Right2 WithDropShadow.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\GrassJoinHillLeft2.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\GrassJoinHillRight WithDropShadow.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\GrassJoinHillRight.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\GrassJoinHillRight2&amp;Left2.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\GrassJoinHillRight2.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\GrassLeft.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\GrassMid.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\GrassRight.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\HillLeft.png">
+                                <collision-poly>
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0.136719" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\HillLeft2 WithDropShadow.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="0.136719" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\HillLeft2.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="0.136719" y="0" />
+                                    <point x="0.996094" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\HillRight.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="0.863281" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\HillRight2 WithDropShadow.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.863281" y="0" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\HillRight2.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.863281" y="0" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\nograss.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="properties2" sid="671602706930332">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="30" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="324137476397846" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.505747" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\ArrowSign.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Bush (1).png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Bush (2).png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\bush 1.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\cactus (1).png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\cactus 2 (1).png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\cactus 2.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\cactus.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Crate.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\DeadBush.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\flower (1).png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\flower.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Pad_1_3.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Pad_1_4.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.503268" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Pad_2_3.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Pad_2_4.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504425" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Pad_3_3.png" />
+                            <frame duration="1" hotspotX="0.501199" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Pad_3_4.png" />
+                            <frame duration="1" hotspotX="0.501188" hotspotY="0.503937" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Pad_4_3.png" />
+                            <frame duration="1" hotspotX="0.501176" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Pad_4_4.png" />
+                            <frame duration="1" hotspotX="0.500917" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\rock 1.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\rocks 1.png" />
+                            <frame duration="1" hotspotX="0.50237" hotspotY="0.506329" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\rocks 2.png" />
+                            <frame duration="1" hotspotX="0.505495" hotspotY="0.505376" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Sign.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Skeleton.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\TombStone (1).png" />
+                            <frame duration="1" hotspotX="0.509434" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\TombStone (2).png" />
+                            <frame duration="1" hotspotX="0.501229" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\tree 1.png" />
+                            <frame duration="1" hotspotX="0.501155" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\tree 2.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.502092" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Tree.png" />
                         </animation>
                     </animation-folder>
                 </object-type>
@@ -4370,15 +4608,16 @@
     <event-folder>
         <event-folder name="Stage">
             <event-sheet>Stage 1 - Svartalfheim.xml</event-sheet>
+            <event-sheet>Stage 2 - Alfheim.xml</event-sheet>
         </event-folder>
         <event-sheet>MainMenu_Event.xml</event-sheet>
         <event-sheet>WorldMap_Event.xml</event-sheet>
         <event-sheet>SaveGame_Event.xml</event-sheet>
         <event-sheet>Loading_Event.xml</event-sheet>
-        <event-sheet>GameControl_Event.xml</event-sheet>
         <event-sheet>Starter_Event.xml</event-sheet>
         <event-sheet>Intro_Event.xml</event-sheet>
         <event-sheet>Sound_Event.xml</event-sheet>
+        <event-sheet>GameControl_Event.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Function" uid="2" />
