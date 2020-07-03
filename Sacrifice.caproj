@@ -704,6 +704,14 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="Sprite3" sid="647291855602022">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="567717467308452" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\cavebackground.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Text">
             <object-type name="SpriteFont_Menu" sid="884395245772662">
@@ -2948,6 +2956,1191 @@
                     </animation-folder>
                 </object-type>
             </object-folder>
+            <object-folder name="Stage 3 - Niddhavellir">
+                <object-type name="Sprite2" sid="940585965872116">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="338850944771830">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="38" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="864614919965859" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\Grass.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\GrassCliffLeft.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\GrassCliffMid.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\GrassCliffRight.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\GrassJoinHillLeft&amp;Right.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\GrassJoinHillLeft.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\GrassJoinHillLeft2 WithDropShadow.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\GrassJoinHillLeft2&amp;Right2 WithDropShadow.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\GrassJoinHillLeft2.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\GrassJoinHillRight WithDropShadow.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\GrassJoinHillRight.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\GrassJoinHillRight2&amp;Left2.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\GrassJoinHillRight2.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\GrassLeft.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\GrassMid.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\GrassRight.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\HillLeft.png">
+                                <collision-poly>
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0.136719" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\HillLeft2 WithDropShadow.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="0.136719" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\HillLeft2.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="0.136719" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\HillRight.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="0.863281" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\HillRight2 WithDropShadow.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.863281" y="0" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\HillRight2.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.863281" y="0" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\nograss.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice36_36.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice25_25.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice26_26.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice27_27.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice20_20.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice21_21.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice22_22.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice23_23.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice24_24.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice28_28.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice29_29.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice30_30.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice31_31.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice32_32.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\grassHalf.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.342857" />
+                                    <point x="0" y="0.335714" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+        </object-folder>
+        <object-folder name="Boss">
+            <object-type name="Sleipnir" sid="956316928954124">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="793490333102673">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="30" loop="1" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="385157534983083" speed="35">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00000.png">
+                            <collision-poly>
+                                <point x="0.281333" y="0.281333" />
+                                <point x="0.5" y="0.462667" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.860667" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.685333" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.296" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00001.png">
+                            <collision-poly>
+                                <point x="0.278667" y="0.278667" />
+                                <point x="0.5" y="0.462667" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.856667" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.685333" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.296" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00002.png">
+                            <collision-poly>
+                                <point x="0.278" y="0.278" />
+                                <point x="0.5" y="0.463333" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.853333" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.685333" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.295333" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00003.png">
+                            <collision-poly>
+                                <point x="0.277333" y="0.277333" />
+                                <point x="0.5" y="0.463333" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.850667" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.295333" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00004.png">
+                            <collision-poly>
+                                <point x="0.276667" y="0.276667" />
+                                <point x="0.5" y="0.463333" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.848" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.295333" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00005.png">
+                            <collision-poly>
+                                <point x="0.276" y="0.276" />
+                                <point x="0.5" y="0.464" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.843333" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.294667" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00006.png">
+                            <collision-poly>
+                                <point x="0.275333" y="0.275333" />
+                                <point x="0.5" y="0.464" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.838667" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.294667" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00007.png">
+                            <collision-poly>
+                                <point x="0.274" y="0.274" />
+                                <point x="0.5" y="0.464667" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.834667" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.294667" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00008.png">
+                            <collision-poly>
+                                <point x="0.270667" y="0.270667" />
+                                <point x="0.5" y="0.464667" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.830667" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686667" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.294" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00009.png">
+                            <collision-poly>
+                                <point x="0.267333" y="0.267333" />
+                                <point x="0.5" y="0.464667" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.827333" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686667" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.294" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00010.png">
+                            <collision-poly>
+                                <point x="0.264667" y="0.264667" />
+                                <point x="0.5" y="0.465333" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.824" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686667" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.294" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00011.png">
+                            <collision-poly>
+                                <point x="0.262" y="0.262" />
+                                <point x="0.5" y="0.465333" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.82" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686667" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.293333" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00012.png">
+                            <collision-poly>
+                                <point x="0.258667" y="0.258667" />
+                                <point x="0.5" y="0.465333" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.816667" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686667" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.293333" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00013.png">
+                            <collision-poly>
+                                <point x="0.256" y="0.256" />
+                                <point x="0.5" y="0.466" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.813333" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686667" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.293333" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00014.png">
+                            <collision-poly>
+                                <point x="0.254" y="0.254" />
+                                <point x="0.5" y="0.466" />
+                                <point x="0.538" y="0.462" />
+                                <point x="0.810667" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686667" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.293333" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00015.png">
+                            <collision-poly>
+                                <point x="0.252" y="0.252" />
+                                <point x="0.5" y="0.466" />
+                                <point x="0.538" y="0.462" />
+                                <point x="0.808" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.687333" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.292667" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00016.png">
+                            <collision-poly>
+                                <point x="0.254" y="0.254" />
+                                <point x="0.5" y="0.466" />
+                                <point x="0.538" y="0.462" />
+                                <point x="0.810667" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686667" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.293333" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00017.png">
+                            <collision-poly>
+                                <point x="0.256667" y="0.256667" />
+                                <point x="0.5" y="0.466" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.814" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686667" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.293333" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00018.png">
+                            <collision-poly>
+                                <point x="0.259333" y="0.259333" />
+                                <point x="0.5" y="0.465333" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.818" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686667" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.293333" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00019.png">
+                            <collision-poly>
+                                <point x="0.262667" y="0.262667" />
+                                <point x="0.5" y="0.465333" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.821333" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686667" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.293333" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00020.png">
+                            <collision-poly>
+                                <point x="0.265333" y="0.265333" />
+                                <point x="0.5" y="0.465333" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.826" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686667" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.294" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00021.png">
+                            <collision-poly>
+                                <point x="0.268667" y="0.268667" />
+                                <point x="0.5" y="0.464667" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.829333" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686667" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.294" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00022.png">
+                            <collision-poly>
+                                <point x="0.274667" y="0.274667" />
+                                <point x="0.5" y="0.464667" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.833333" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686667" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.294" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00023.png">
+                            <collision-poly>
+                                <point x="0.275333" y="0.275333" />
+                                <point x="0.5" y="0.464667" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.838" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.294667" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00024.png">
+                            <collision-poly>
+                                <point x="0.276667" y="0.276667" />
+                                <point x="0.5" y="0.464" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.842667" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.294667" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00025.png">
+                            <collision-poly>
+                                <point x="0.277333" y="0.277333" />
+                                <point x="0.5" y="0.464" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.848667" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.294667" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00026.png">
+                            <collision-poly>
+                                <point x="0.278" y="0.278" />
+                                <point x="0.5" y="0.463333" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.851333" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.295333" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00027.png">
+                            <collision-poly>
+                                <point x="0.278667" y="0.278667" />
+                                <point x="0.5" y="0.463333" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.854667" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.295333" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00028.png">
+                            <collision-poly>
+                                <point x="0.28" y="0.28" />
+                                <point x="0.5" y="0.463333" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.858667" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.686" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.296" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00029.png">
+                            <collision-poly>
+                                <point x="0.282667" y="0.282667" />
+                                <point x="0.5" y="0.462667" />
+                                <point x="0.537333" y="0.462667" />
+                                <point x="0.862667" y="0.5" />
+                                <point x="0.753333" y="0.753333" />
+                                <point x="0.5" y="0.685333" />
+                                <point x="0.271333" y="0.728667" />
+                                <point x="0.296" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="30" loop="0" name="Attack" pingpong="0" repeatcount="1" repeatto="0" sid="679898986987143" speed="35">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00001.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00002.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00003.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00004.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00005.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00006.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00007.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00008.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00009.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00010.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00011.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00012.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00013.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00014.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00015.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00016.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00017.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00018.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00019.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00020.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00021.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00022.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00023.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00024.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00025.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00026.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00027.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00028.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00029.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite4" sid="544588873514240">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Platform" sid="554481689294409">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="15" loop="1" name="stand" pingpong="1" repeatcount="1" repeatto="0" sid="636518203640740" speed="20">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\stand\stand_00000.png">
+                            <collision-poly>
+                                <point x="0.228516" y="0.130859" />
+                                <point x="0.5" y="0.101563" />
+                                <point x="0.652344" y="0.347656" />
+                                <point x="0.869141" y="0.570313" />
+                                <point x="0.753906" y="0.753906" />
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.105469" y="0.941406" />
+                                <point x="0.294922" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\stand\stand_00001.png">
+                            <collision-poly>
+                                <point x="0.228516" y="0.130859" />
+                                <point x="0.5" y="0.101563" />
+                                <point x="0.652344" y="0.347656" />
+                                <point x="0.869141" y="0.570313" />
+                                <point x="0.753906" y="0.753906" />
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.105469" y="0.941406" />
+                                <point x="0.294922" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\stand\stand_00002.png">
+                            <collision-poly>
+                                <point x="0.228516" y="0.130859" />
+                                <point x="0.5" y="0.101563" />
+                                <point x="0.652344" y="0.347656" />
+                                <point x="0.869141" y="0.570313" />
+                                <point x="0.753906" y="0.753906" />
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.105469" y="0.941406" />
+                                <point x="0.294922" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\stand\stand_00003.png">
+                            <collision-poly>
+                                <point x="0.228516" y="0.130859" />
+                                <point x="0.5" y="0.101563" />
+                                <point x="0.652344" y="0.347656" />
+                                <point x="0.869141" y="0.570313" />
+                                <point x="0.753906" y="0.753906" />
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.105469" y="0.941406" />
+                                <point x="0.294922" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\stand\stand_00004.png">
+                            <collision-poly>
+                                <point x="0.228516" y="0.130859" />
+                                <point x="0.5" y="0.101563" />
+                                <point x="0.652344" y="0.347656" />
+                                <point x="0.869141" y="0.570313" />
+                                <point x="0.753906" y="0.753906" />
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.105469" y="0.941406" />
+                                <point x="0.294922" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\stand\stand_00005.png">
+                            <collision-poly>
+                                <point x="0.228516" y="0.130859" />
+                                <point x="0.5" y="0.101563" />
+                                <point x="0.652344" y="0.347656" />
+                                <point x="0.869141" y="0.570313" />
+                                <point x="0.753906" y="0.753906" />
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.105469" y="0.941406" />
+                                <point x="0.294922" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\stand\stand_00006.png">
+                            <collision-poly>
+                                <point x="0.228516" y="0.130859" />
+                                <point x="0.5" y="0.101563" />
+                                <point x="0.652344" y="0.347656" />
+                                <point x="0.869141" y="0.570313" />
+                                <point x="0.753906" y="0.753906" />
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.105469" y="0.941406" />
+                                <point x="0.294922" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\stand\stand_00007.png">
+                            <collision-poly>
+                                <point x="0.228516" y="0.130859" />
+                                <point x="0.5" y="0.101563" />
+                                <point x="0.652344" y="0.347656" />
+                                <point x="0.869141" y="0.570313" />
+                                <point x="0.753906" y="0.753906" />
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.105469" y="0.941406" />
+                                <point x="0.294922" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\stand\stand_00008.png">
+                            <collision-poly>
+                                <point x="0.228516" y="0.130859" />
+                                <point x="0.5" y="0.101563" />
+                                <point x="0.652344" y="0.347656" />
+                                <point x="0.869141" y="0.570313" />
+                                <point x="0.753906" y="0.753906" />
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.105469" y="0.941406" />
+                                <point x="0.294922" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\stand\stand_00009.png">
+                            <collision-poly>
+                                <point x="0.228516" y="0.130859" />
+                                <point x="0.5" y="0.101563" />
+                                <point x="0.652344" y="0.347656" />
+                                <point x="0.869141" y="0.570313" />
+                                <point x="0.753906" y="0.753906" />
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.105469" y="0.941406" />
+                                <point x="0.294922" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\stand\stand_00010.png">
+                            <collision-poly>
+                                <point x="0.228516" y="0.130859" />
+                                <point x="0.5" y="0.101563" />
+                                <point x="0.652344" y="0.347656" />
+                                <point x="0.869141" y="0.570313" />
+                                <point x="0.753906" y="0.753906" />
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.105469" y="0.941406" />
+                                <point x="0.294922" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\stand\stand_00011.png">
+                            <collision-poly>
+                                <point x="0.228516" y="0.130859" />
+                                <point x="0.5" y="0.101563" />
+                                <point x="0.652344" y="0.347656" />
+                                <point x="0.869141" y="0.570313" />
+                                <point x="0.753906" y="0.753906" />
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.105469" y="0.941406" />
+                                <point x="0.294922" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\stand\stand_00012.png">
+                            <collision-poly>
+                                <point x="0.228516" y="0.130859" />
+                                <point x="0.5" y="0.101563" />
+                                <point x="0.652344" y="0.347656" />
+                                <point x="0.869141" y="0.570313" />
+                                <point x="0.753906" y="0.753906" />
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.105469" y="0.941406" />
+                                <point x="0.294922" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\stand\stand_00013.png">
+                            <collision-poly>
+                                <point x="0.228516" y="0.130859" />
+                                <point x="0.5" y="0.101563" />
+                                <point x="0.652344" y="0.347656" />
+                                <point x="0.869141" y="0.570313" />
+                                <point x="0.753906" y="0.753906" />
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.105469" y="0.941406" />
+                                <point x="0.294922" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\stand\stand_00014.png">
+                            <collision-poly>
+                                <point x="0.228516" y="0.130859" />
+                                <point x="0.5" y="0.101563" />
+                                <point x="0.652344" y="0.347656" />
+                                <point x="0.869141" y="0.570313" />
+                                <point x="0.753906" y="0.753906" />
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.105469" y="0.941406" />
+                                <point x="0.294922" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="37" loop="0" name="attack" pingpong="0" repeatcount="1" repeatto="0" sid="738913257964878" speed="20">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00000.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00001.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00002.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00003.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00004.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00005.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00006.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00007.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00008.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00009.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00010.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00011.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00012.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00013.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00014.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00015.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00016.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00017.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00018.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00019.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00020.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00021.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00022.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00023.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00024.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00025.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00026.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.211914" y="0.113281" />
+                                <point x="0.429199" y="0.078125" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00027.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00028.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00029.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00030.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00031.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00032.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00033.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00034.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00035.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00036.png">
+                            <collision-poly>
+                                <point x="0.707031" y="0.941406" />
+                                <point x="0.373047" y="0.941406" />
+                                <point x="0.242188" y="0.744141" />
+                                <point x="0.25293" y="0.201172" />
+                                <point x="0.481934" y="0.138672" />
+                                <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-type name="camera" sid="335349714748180">
             <plugin id="Sprite" />
@@ -4116,410 +5309,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sleipnir" sid="956316928954124">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Sine" sid="793490333102673">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="30" loop="1" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="385157534983083" speed="35">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00000.png">
-                        <collision-poly>
-                            <point x="0.281333" y="0.281333" />
-                            <point x="0.5" y="0.462667" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.860667" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.685333" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.296" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00001.png">
-                        <collision-poly>
-                            <point x="0.278667" y="0.278667" />
-                            <point x="0.5" y="0.462667" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.856667" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.685333" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.296" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00002.png">
-                        <collision-poly>
-                            <point x="0.278" y="0.278" />
-                            <point x="0.5" y="0.463333" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.853333" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.685333" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.295333" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00003.png">
-                        <collision-poly>
-                            <point x="0.277333" y="0.277333" />
-                            <point x="0.5" y="0.463333" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.850667" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.295333" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00004.png">
-                        <collision-poly>
-                            <point x="0.276667" y="0.276667" />
-                            <point x="0.5" y="0.463333" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.848" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.295333" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00005.png">
-                        <collision-poly>
-                            <point x="0.276" y="0.276" />
-                            <point x="0.5" y="0.464" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.843333" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.294667" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00006.png">
-                        <collision-poly>
-                            <point x="0.275333" y="0.275333" />
-                            <point x="0.5" y="0.464" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.838667" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.294667" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00007.png">
-                        <collision-poly>
-                            <point x="0.274" y="0.274" />
-                            <point x="0.5" y="0.464667" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.834667" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.294667" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00008.png">
-                        <collision-poly>
-                            <point x="0.270667" y="0.270667" />
-                            <point x="0.5" y="0.464667" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.830667" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686667" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.294" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00009.png">
-                        <collision-poly>
-                            <point x="0.267333" y="0.267333" />
-                            <point x="0.5" y="0.464667" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.827333" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686667" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.294" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00010.png">
-                        <collision-poly>
-                            <point x="0.264667" y="0.264667" />
-                            <point x="0.5" y="0.465333" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.824" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686667" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.294" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00011.png">
-                        <collision-poly>
-                            <point x="0.262" y="0.262" />
-                            <point x="0.5" y="0.465333" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.82" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686667" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.293333" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00012.png">
-                        <collision-poly>
-                            <point x="0.258667" y="0.258667" />
-                            <point x="0.5" y="0.465333" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.816667" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686667" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.293333" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00013.png">
-                        <collision-poly>
-                            <point x="0.256" y="0.256" />
-                            <point x="0.5" y="0.466" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.813333" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686667" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.293333" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00014.png">
-                        <collision-poly>
-                            <point x="0.254" y="0.254" />
-                            <point x="0.5" y="0.466" />
-                            <point x="0.538" y="0.462" />
-                            <point x="0.810667" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686667" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.293333" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00015.png">
-                        <collision-poly>
-                            <point x="0.252" y="0.252" />
-                            <point x="0.5" y="0.466" />
-                            <point x="0.538" y="0.462" />
-                            <point x="0.808" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.687333" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.292667" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00016.png">
-                        <collision-poly>
-                            <point x="0.254" y="0.254" />
-                            <point x="0.5" y="0.466" />
-                            <point x="0.538" y="0.462" />
-                            <point x="0.810667" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686667" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.293333" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00017.png">
-                        <collision-poly>
-                            <point x="0.256667" y="0.256667" />
-                            <point x="0.5" y="0.466" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.814" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686667" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.293333" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00018.png">
-                        <collision-poly>
-                            <point x="0.259333" y="0.259333" />
-                            <point x="0.5" y="0.465333" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.818" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686667" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.293333" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00019.png">
-                        <collision-poly>
-                            <point x="0.262667" y="0.262667" />
-                            <point x="0.5" y="0.465333" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.821333" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686667" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.293333" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00020.png">
-                        <collision-poly>
-                            <point x="0.265333" y="0.265333" />
-                            <point x="0.5" y="0.465333" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.826" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686667" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.294" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00021.png">
-                        <collision-poly>
-                            <point x="0.268667" y="0.268667" />
-                            <point x="0.5" y="0.464667" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.829333" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686667" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.294" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00022.png">
-                        <collision-poly>
-                            <point x="0.274667" y="0.274667" />
-                            <point x="0.5" y="0.464667" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.833333" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686667" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.294" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00023.png">
-                        <collision-poly>
-                            <point x="0.275333" y="0.275333" />
-                            <point x="0.5" y="0.464667" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.838" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.294667" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00024.png">
-                        <collision-poly>
-                            <point x="0.276667" y="0.276667" />
-                            <point x="0.5" y="0.464" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.842667" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.294667" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00025.png">
-                        <collision-poly>
-                            <point x="0.277333" y="0.277333" />
-                            <point x="0.5" y="0.464" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.848667" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.294667" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00026.png">
-                        <collision-poly>
-                            <point x="0.278" y="0.278" />
-                            <point x="0.5" y="0.463333" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.851333" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.295333" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00027.png">
-                        <collision-poly>
-                            <point x="0.278667" y="0.278667" />
-                            <point x="0.5" y="0.463333" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.854667" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.295333" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00028.png">
-                        <collision-poly>
-                            <point x="0.28" y="0.28" />
-                            <point x="0.5" y="0.463333" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.858667" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.686" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.296" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\stand\stand_00029.png">
-                        <collision-poly>
-                            <point x="0.282667" y="0.282667" />
-                            <point x="0.5" y="0.462667" />
-                            <point x="0.537333" y="0.462667" />
-                            <point x="0.862667" y="0.5" />
-                            <point x="0.753333" y="0.753333" />
-                            <point x="0.5" y="0.685333" />
-                            <point x="0.271333" y="0.728667" />
-                            <point x="0.296" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="30" loop="0" name="Attack" pingpong="0" repeatcount="1" repeatto="0" sid="679898986987143" speed="35">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00000.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00001.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00002.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00003.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00004.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00005.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00006.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00007.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00008.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00009.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00010.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00011.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00012.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00013.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00014.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00015.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00016.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00017.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00018.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00019.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00020.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00021.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00022.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00023.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00024.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00025.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00026.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00027.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00028.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Lake\attack\attack_00029.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="warpmask" sid="370087113907585">
             <plugin id="Sprite" />
             <effects>
@@ -4609,6 +5398,7 @@
         <event-folder name="Stage">
             <event-sheet>Stage 1 - Svartalfheim.xml</event-sheet>
             <event-sheet>Stage 2 - Alfheim.xml</event-sheet>
+            <event-sheet>Stage 3.xml</event-sheet>
         </event-folder>
         <event-sheet>MainMenu_Event.xml</event-sheet>
         <event-sheet>WorldMap_Event.xml</event-sheet>
