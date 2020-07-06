@@ -111,6 +111,10 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="591819501651763">
+                            <conditions />
+                            <actions />
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="125849635398417">

@@ -4,6 +4,69 @@
     <name>Stage 1 - Svartalfheim</name>
     <events>
         <include>GameControl_Event</include>
+        <event-block sid="542927351098285">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="176754406045438" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="361493603980079">
+                    <conditions>
+                        <condition id="5" name="Is tag playing" sid="577077334907897" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </condition>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="556490534597113" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="574286484994579" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="801796607633234" type="Audio">
+                            <param id="0" name="Audio file">Level 1 - Svartalfheim (PerituneMaterial_Exotic_loop)</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">VolumeMusic</param>
+                            <param id="1" name="Tag (optional)">&quot;bgm&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="785966260782359">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="462586132072320" type="Lake_tile">
+                    <param id="0" name="Instance variable">hidden</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="391201804784733">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="816980930477079" type="Player_Evans">
+                            <param id="0" name="Object">Lake_tile</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="279417810870623" type="Lake_tile">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="802296541607017">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="578653456032314" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="442033783911022" type="Lake_tile">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
         <event-block sid="765760275017159">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="371952218390600" type="System">
@@ -27,17 +90,6 @@
                 <action id="4" name="Set animation" sid="711116490263460" type="Sleipnir">
                     <param id="0" name="Animation">&quot;Stand&quot;</param>
                     <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block disabled="1" sid="559769450385962">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="533701098559874" type="System" />
-                <condition id="-3" name="Is on-screen" sid="390164784565191" type="Sleipnir" />
-            </conditions>
-            <actions>
-                <action id="-1" name="Set X" sid="267084281214739" type="camera">
-                    <param id="0" name="X">lerp(Self.X, Sleipnir.X-300, 0.05)</param>
                 </action>
             </actions>
         </event-block>

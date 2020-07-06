@@ -10,8 +10,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Stage 4 - Asgard</layout>
-        <event-sheet order="1">stage 4</event-sheet>
+        <layout active="1" order="0">Stage 2 - Alfheim</layout>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -26,19 +25,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/System/" />
         <folder expanded="0" path="object-folder/Background/" />
-        <folder expanded="0" path="object-folder/Background/MainMenu/" />
+        <folder expanded="1" path="object-folder/Background/MainMenu/" />
         <folder expanded="0" path="object-folder/Text/" />
         <folder expanded="0" path="object-folder/Button/" />
         <folder expanded="0" path="object-folder/Sprites/" />
         <folder expanded="0" path="object-folder/Loading/" />
         <folder expanded="0" path="object-folder/UI/" />
         <folder expanded="1" path="object-folder/Area/" />
-        <folder expanded="0" path="object-folder/Area/Stage 1 - Svartalheim/" />
+        <folder expanded="1" path="object-folder/Area/Stage 1 - Svartalheim/" />
         <folder expanded="0" path="object-folder/Area/Stage 2 - Alfheim/" />
         <folder expanded="0" path="object-folder/Area/Stage 3 - Niddhavellir/" />
-        <folder expanded="1" path="object-folder/Area/Stage 4 - Asgard/" />
-        <folder expanded="1" path="object-folder/Boss/" />
-        <folder expanded="0" path="layout-folder/" />
+        <folder expanded="0" path="object-folder/Area/Stage 4 - Asgard/" />
+        <folder expanded="0" path="object-folder/Boss/" />
+        <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Stage/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="event-folder/Stage/" />
@@ -118,8 +117,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/start_bg/" />
         <folder expanded="1" path="animation-folder/title_bar/" />
         <folder expanded="1" path="animation-folder/circle_white/" />
-        <folder expanded="1" path="animation-folder/tileset/" />
-        <folder expanded="1" path="animation-folder/properties/" />
+        <folder expanded="1" path="animation-folder/Lake_tileset/" />
+        <folder expanded="1" path="animation-folder/Lake_properties/" />
         <folder expanded="1" path="animation-folder/tileset2/" />
         <folder expanded="1" path="animation-folder/properties2/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />

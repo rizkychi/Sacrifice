@@ -2545,7 +2545,7 @@
         </object-folder>
         <object-folder name="Area">
             <object-folder name="Stage 1 - Svartalheim">
-                <object-type name="tileset" sid="775885378785046">
+                <object-type name="Lake_tileset" sid="775885378785046">
                     <plugin id="Sprite" />
                     <behaviors>
                         <behavior-type name="Solid" sid="527089449313571">
@@ -2698,7 +2698,7 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="properties" sid="333140637178020">
+                <object-type name="Lake_properties" sid="333140637178020">
                     <plugin id="Sprite" />
                     <animation-folder>
                         <animation framecount="9" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="256287201752600" speed="0">
@@ -2724,6 +2724,29 @@
                             <frame duration="1" hotspotX="0.509434" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\TombStone (2).png" />
                         </animation>
                     </animation-folder>
+                </object-type>
+                <object-type name="Lake_4" sid="406960819819838">
+                    <plugin id="TiledBg" />
+                    <texture original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Lake\4.png" />
+                </object-type>
+                <object-type name="Lake_tile" sid="823678964840786">
+                    <plugin id="TiledBg" />
+                    <instance-variables>
+                        <instance-variable name="hidden" sid="801568672057359" type="number" />
+                    </instance-variables>
+                    <texture original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Area\lake\PNG Grass\slice33_33.png" />
+                </object-type>
+                <object-type name="Lake_3" sid="663662776234840">
+                    <plugin id="TiledBg" />
+                    <texture original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Lake\3.png" />
+                </object-type>
+                <object-type name="Lake_1" sid="295272076220126">
+                    <plugin id="TiledBg" />
+                    <texture original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Lake\1.png" />
+                </object-type>
+                <object-type name="Lake_2" sid="430176588522052">
+                    <plugin id="TiledBg" />
+                    <texture original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Lake\2.png" />
                 </object-type>
             </object-folder>
             <object-folder name="Stage 2 - Alfheim">
@@ -5750,6 +5773,26 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="TiledBackground" sid="561558318069254">
+            <plugin id="TiledBg" />
+            <texture original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Forest\1.png" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="379262033883168">
+            <plugin id="TiledBg" />
+            <texture original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Forest\2.png" />
+        </object-type>
+        <object-type name="Forest_3" sid="652223719363532">
+            <plugin id="TiledBg" />
+            <texture original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Forest\3.png" />
+        </object-type>
+        <object-type name="Forest_4" sid="100087695358366">
+            <plugin id="TiledBg" />
+            <texture original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Forest\4.png" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="618949078684292">
+            <plugin id="TiledBg" />
+            <texture original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Forest\5.png" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Button" plugin-id="Sprite" sid="823175343801405">
@@ -5791,8 +5834,8 @@
         <event-folder name="Stage">
             <event-sheet>Stage 1 - Svartalfheim.xml</event-sheet>
             <event-sheet>Stage 2 - Alfheim.xml</event-sheet>
-            <event-sheet>Stage 3.xml</event-sheet>
-            <event-sheet>stage 4.xml</event-sheet>
+            <event-sheet>Stage 3 - Niddhavellir.xml</event-sheet>
+            <event-sheet>stage 4 - Asgard.xml</event-sheet>
         </event-folder>
         <event-sheet>MainMenu_Event.xml</event-sheet>
         <event-sheet>WorldMap_Event.xml</event-sheet>
@@ -5839,6 +5882,14 @@
     </sounds-folder>
     <music-folder>
         <file name="Main menu  2 (PerituneMaterial_World_OP).ogg" />
+        <file name="Level 1 - Svartalfheim (PerituneMaterial_Exotic_loop).ogg" />
+        <file name="Level 2 - Alfheim (PerituneMaterial_Deep_Woods3_loop).ogg" />
+        <file name="Level 3 - Niddhavellir (Background Music Epic Tension and Mysterious).ogg" />
+        <file name="Level 4 - Asgard (PerituneMaterial_Lost_place2_loop).ogg" />
+        <file name="Level 5 - Vanaheim (PerituneMaterial_Desert_loop).ogg" />
+        <file name="Level 6 - Muspellheim (PerituneMaterial_Havoc_loop).ogg" />
+        <file name="Level 7 - Nilfheim (PerituneMaterial_Snowy_Day2_loop).ogg" />
+        <file name="World map (PerituneMaterial_Bazaar_loop).ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">
