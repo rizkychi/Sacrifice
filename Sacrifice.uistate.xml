@@ -10,7 +10,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Stage 2 - Alfheim</layout>
+        <layout active="1" order="0">Stage 4 - Asgard</layout>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -25,18 +25,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/System/" />
         <folder expanded="0" path="object-folder/Background/" />
-        <folder expanded="1" path="object-folder/Background/MainMenu/" />
+        <folder expanded="0" path="object-folder/Background/MainMenu/" />
         <folder expanded="0" path="object-folder/Text/" />
         <folder expanded="0" path="object-folder/Button/" />
         <folder expanded="0" path="object-folder/Sprites/" />
         <folder expanded="0" path="object-folder/Loading/" />
         <folder expanded="0" path="object-folder/UI/" />
         <folder expanded="1" path="object-folder/Area/" />
-        <folder expanded="1" path="object-folder/Area/Stage 1 - Svartalheim/" />
+        <folder expanded="0" path="object-folder/Area/Stage 1 - Svartalheim/" />
         <folder expanded="0" path="object-folder/Area/Stage 2 - Alfheim/" />
         <folder expanded="0" path="object-folder/Area/Stage 3 - Niddhavellir/" />
         <folder expanded="0" path="object-folder/Area/Stage 4 - Asgard/" />
-        <folder expanded="0" path="object-folder/Boss/" />
+        <folder expanded="1" path="object-folder/Boss/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Stage/" />
         <folder expanded="1" path="event-folder/" />
@@ -59,11 +59,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/cloud_2/" />
         <folder expanded="1" path="animation-folder/cloud_3/" />
         <folder expanded="1" path="animation-folder/cloud_4/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/area/" />
         <folder expanded="1" path="animation-folder/worldMap/" />
         <folder expanded="1" path="animation-folder/fog/" />
-        <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/btn_back/" />
         <folder expanded="1" path="animation-folder/btn_check/" />
         <folder expanded="1" path="animation-folder/btn_close/" />
@@ -119,13 +117,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/circle_white/" />
         <folder expanded="1" path="animation-folder/Lake_tileset/" />
         <folder expanded="1" path="animation-folder/Lake_properties/" />
-        <folder expanded="1" path="animation-folder/tileset2/" />
-        <folder expanded="1" path="animation-folder/properties2/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
-        <folder expanded="1" path="animation-folder/tileset3/" />
-        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/Forest_tileset/" />
+        <folder expanded="1" path="animation-folder/Forest_properties/" />
+        <folder expanded="1" path="animation-folder/Cave_tileset/" />
+        <folder expanded="1" path="animation-folder/Mount_tileset/" />
+        <folder expanded="1" path="animation-folder/Mount_tile/" />
         <folder expanded="1" path="animation-folder/Sleipnir/" />
-        <folder expanded="1" path="animation-folder/cave/" />
+        <folder expanded="1" path="animation-folder/Fafnir/" />
         <folder expanded="1" path="animation-folder/jungle/" />
         <folder expanded="1" path="animation-folder/camera/" />
         <folder expanded="1" path="animation-folder/camera_core/" />
@@ -135,5 +133,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/warpmask/" />
         <folder expanded="1" path="animation-folder/water/" />
         <folder expanded="1" path="animation-folder/arrow/" />
+        <folder expanded="1" path="animation-folder/stand_/" />
     </folders-expanded>
 </c2uistate>

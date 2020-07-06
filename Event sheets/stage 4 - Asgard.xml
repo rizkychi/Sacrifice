@@ -4,5 +4,34 @@
     <name>stage 4 - Asgard</name>
     <events>
         <include>GameControl_Event</include>
+        <event-block sid="386005695134371">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="528677030646065" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="855241554473895">
+                    <conditions>
+                        <condition id="5" name="Is tag playing" sid="938989855962738" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </condition>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="394439887816537" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="106157460653881" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="330184930421840" type="Audio">
+                            <param id="0" name="Audio file">Level 4 - Asgard (PerituneMaterial_Lost_place2_loop)</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">VolumeMusic</param>
+                            <param id="1" name="Tag (optional)">&quot;bgm&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>

@@ -4,6 +4,39 @@
     <name>Stage 3 - Niddhavellir</name>
     <events>
         <include>GameControl_Event</include>
+        <event-block sid="617491609342861">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="918906677951895" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="451356479009085" type="Fafnir">
+                    <param id="0" name="Input">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block any="1" sid="121635772025605">
+                    <conditions>
+                        <condition id="5" name="Is tag playing" sid="347643556826370" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </condition>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="289353231330385" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="846774316894014" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="121613487326129" type="Audio">
+                            <param id="0" name="Audio file">Level 3 - Niddhavellir (Background Music Epic Tension and Mysterious)</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">VolumeMusic</param>
+                            <param id="1" name="Tag (optional)">&quot;bgm&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
         <event-block sid="633661138084418">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="913333886389489" type="System">
@@ -11,23 +44,23 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="121867672844446" type="cave">
+                <action id="4" name="Set animation" sid="121867672844446" type="Fafnir">
                     <param id="0" name="Animation">&quot;attack&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action behavior="Platform" id="7" name="Simulate control" sid="862145118157075" type="cave">
+                <action behavior="Platform" id="7" name="Simulate control" sid="862145118157075" type="Fafnir">
                     <param id="0" name="Control">2</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="653863023184875">
             <conditions>
-                <condition id="4" name="On finished" sid="513986111945970" type="cave">
+                <condition id="4" name="On finished" sid="513986111945970" type="Fafnir">
                     <param id="0" name="Animation">&quot;attack&quot;</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="978063680727277" type="cave">
+                <action id="4" name="Set animation" sid="978063680727277" type="Fafnir">
                     <param id="0" name="Animation">&quot;stand&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>

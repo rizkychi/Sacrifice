@@ -4,6 +4,35 @@
     <name>Stage 2 - Alfheim</name>
     <events>
         <include>GameControl_Event</include>
+        <event-block sid="687039750773689">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="287584873948234" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="555295230267795">
+                    <conditions>
+                        <condition id="5" name="Is tag playing" sid="390644723321824" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </condition>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="778893401847101" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="969138622145539" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="533954350624638" type="Audio">
+                            <param id="0" name="Audio file">Level 2 - Alfheim (PerituneMaterial_Deep_Woods3_loop)</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">VolumeMusic</param>
+                            <param id="1" name="Tag (optional)">&quot;bgm&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
         <event-block sid="863172423274088">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="165510537791600" type="System">

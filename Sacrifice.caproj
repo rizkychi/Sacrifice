@@ -299,14 +299,6 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="Sprite" sid="560645005805546">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="774928871713996" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Background\BG (1).png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
             </object-folder>
             <object-type name="area" sid="967984546240023">
                 <plugin id="Sprite" />
@@ -701,14 +693,6 @@
                                 <point x="0.290323" y="0.493671" />
                             </collision-poly>
                         </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite3" sid="647291855602022">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="567717467308452" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\cavebackground.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -2750,7 +2734,7 @@
                 </object-type>
             </object-folder>
             <object-folder name="Stage 2 - Alfheim">
-                <object-type name="tileset2" sid="230944213134839">
+                <object-type name="Forest_tileset" sid="230944213134839">
                     <plugin id="Sprite" />
                     <behaviors>
                         <behavior-type name="Solid" sid="899503945329059">
@@ -2941,7 +2925,7 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="properties2" sid="671602706930332">
+                <object-type name="Forest_properties" sid="671602706930332">
                     <plugin id="Sprite" />
                     <animation-folder>
                         <animation framecount="30" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="324137476397846" speed="0">
@@ -2978,9 +2962,29 @@
                         </animation>
                     </animation-folder>
                 </object-type>
+                <object-type name="Forest_1" sid="561558318069254">
+                    <plugin id="TiledBg" />
+                    <texture original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Forest\1.png" />
+                </object-type>
+                <object-type name="Forest_2" sid="696142327248689">
+                    <plugin id="TiledBg" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Forest\2.png" />
+                </object-type>
+                <object-type name="Forest_3" sid="652223719363532">
+                    <plugin id="TiledBg" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Forest\3.png" />
+                </object-type>
+                <object-type name="Forest_4" sid="100087695358366">
+                    <plugin id="TiledBg" />
+                    <texture original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Forest\4.png" />
+                </object-type>
+                <object-type name="Forest_5" sid="618949078684292">
+                    <plugin id="TiledBg" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Forest\5.png" />
+                </object-type>
             </object-folder>
             <object-folder name="Stage 3 - Niddhavellir">
-                <object-type name="Sprite2" sid="940585965872116">
+                <object-type name="Cave_tileset" sid="940585965872116">
                     <plugin id="Sprite" />
                     <behaviors>
                         <behavior-type name="Solid" sid="338850944771830">
@@ -3193,9 +3197,21 @@
                         </animation>
                     </animation-folder>
                 </object-type>
+                <object-type name="Cave_1" sid="375769153828455">
+                    <plugin id="TiledBg" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Cave\1.png" />
+                </object-type>
+                <object-type name="Cave_2" sid="607537831246500">
+                    <plugin id="TiledBg" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Cave\2_2.png" />
+                </object-type>
+                <object-type name="Cave_3" sid="186162724575918">
+                    <plugin id="TiledBg" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Cave\3_2.png" />
+                </object-type>
             </object-folder>
             <object-folder name="Stage 4 - Asgard">
-                <object-type name="tileset3" sid="936920574958248">
+                <object-type name="Mount_tileset" sid="936920574958248">
                     <plugin id="Sprite" />
                     <behaviors>
                         <behavior-type name="Solid" sid="868123202531417">
@@ -3357,13 +3373,33 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="Sprite4" sid="565049654910605">
+                <object-type name="Mount_tile" sid="565049654910605">
                     <plugin id="Sprite" />
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="768910538407764" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\nograss.png" />
                         </animation>
                     </animation-folder>
+                </object-type>
+                <object-type name="Mount_1" sid="812171473926778">
+                    <plugin id="TiledBg" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Mountain\1.png" />
+                </object-type>
+                <object-type name="Mount_2" sid="434488298068897">
+                    <plugin id="TiledBg" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Mountain\2.png" />
+                </object-type>
+                <object-type name="Mount_3" sid="360674623051247">
+                    <plugin id="TiledBg" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Mountain\3.png" />
+                </object-type>
+                <object-type name="Mount_4" sid="706068863465510">
+                    <plugin id="TiledBg" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Mountain\4.png" />
+                </object-type>
+                <object-type name="Mount_5" sid="814490362816395">
+                    <plugin id="TiledBg" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Mountain\6.png" />
                 </object-type>
             </object-folder>
         </object-folder>
@@ -3772,7 +3808,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="cave" sid="544588873514240">
+            <object-type name="Fafnir" sid="544588873514240">
                 <plugin id="Sprite" />
                 <behaviors>
                     <behavior-type name="Platform" sid="554481689294409">
@@ -3780,7 +3816,7 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="15" loop="1" name="stand" pingpong="1" repeatcount="1" repeatto="0" sid="636518203640740" speed="20">
+                    <animation framecount="15" loop="1" name="stand" pingpong="1" repeatcount="1" repeatto="0" sid="636518203640740" speed="30">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\stand\stand_00000.png">
                             <collision-poly>
                                 <point x="0.228516" y="0.130859" />
@@ -3962,7 +3998,7 @@
                             </collision-poly>
                         </frame>
                     </animation>
-                    <animation framecount="37" loop="0" name="attack" pingpong="0" repeatcount="1" repeatto="0" sid="738913257964878" speed="20">
+                    <animation framecount="37" loop="0" name="attack" pingpong="0" repeatcount="1" repeatto="0" sid="738913257964878" speed="30">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00000.png">
                             <collision-poly>
                                 <point x="0.707031" y="0.941406" />
@@ -5773,25 +5809,284 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TiledBackground" sid="561558318069254">
-            <plugin id="TiledBg" />
-            <texture original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Forest\1.png" />
-        </object-type>
-        <object-type name="TiledBackground2" sid="379262033883168">
-            <plugin id="TiledBg" />
-            <texture original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Forest\2.png" />
-        </object-type>
-        <object-type name="Forest_3" sid="652223719363532">
-            <plugin id="TiledBg" />
-            <texture original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Forest\3.png" />
-        </object-type>
-        <object-type name="Forest_4" sid="100087695358366">
-            <plugin id="TiledBg" />
-            <texture original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Forest\4.png" />
-        </object-type>
-        <object-type name="TiledBackground3" sid="618949078684292">
-            <plugin id="TiledBg" />
-            <texture original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Forest\5.png" />
+        <object-type name="stand_" sid="388618896393078">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="23" loop="1" name="Standby" pingpong="0" repeatcount="1" repeatto="0" sid="867326634636257" speed="30">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00000.png">
+                        <collision-poly>
+                            <point x="0.439333" y="0.439333" />
+                            <point x="0.5" y="0.168" />
+                            <point x="0.896667" y="0.103333" />
+                            <point x="0.533333" y="0.5" />
+                            <point x="0.746" y="0.746" />
+                            <point x="0.5" y="0.702" />
+                            <point x="0.352667" y="0.647333" />
+                            <point x="0.224667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00001.png">
+                        <collision-poly>
+                            <point x="0.439333" y="0.439333" />
+                            <point x="0.5" y="0.167333" />
+                            <point x="0.895333" y="0.104667" />
+                            <point x="0.533333" y="0.5" />
+                            <point x="0.733333" y="0.733333" />
+                            <point x="0.5" y="0.701333" />
+                            <point x="0.352667" y="0.647333" />
+                            <point x="0.224667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00002.png">
+                        <collision-poly>
+                            <point x="0.438667" y="0.438667" />
+                            <point x="0.5" y="0.167333" />
+                            <point x="0.882667" y="0.117333" />
+                            <point x="0.532" y="0.5" />
+                            <point x="0.72" y="0.72" />
+                            <point x="0.5" y="0.699333" />
+                            <point x="0.354" y="0.646" />
+                            <point x="0.224667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00003.png">
+                        <collision-poly>
+                            <point x="0.438667" y="0.438667" />
+                            <point x="0.5" y="0.177333" />
+                            <point x="0.850667" y="0.149333" />
+                            <point x="0.543333" y="0.5" />
+                            <point x="0.705333" y="0.705333" />
+                            <point x="0.5" y="0.680667" />
+                            <point x="0.355333" y="0.644667" />
+                            <point x="0.224667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00004.png">
+                        <collision-poly>
+                            <point x="0.439333" y="0.439333" />
+                            <point x="0.5" y="0.203333" />
+                            <point x="0.823333" y="0.176667" />
+                            <point x="0.566667" y="0.5" />
+                            <point x="0.627333" y="0.627333" />
+                            <point x="0.5" y="0.678" />
+                            <point x="0.357333" y="0.642667" />
+                            <point x="0.223333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00005.png">
+                        <collision-poly>
+                            <point x="0.442" y="0.442" />
+                            <point x="0.5" y="0.261333" />
+                            <point x="0.822" y="0.178" />
+                            <point x="0.563333" y="0.5" />
+                            <point x="0.62" y="0.62" />
+                            <point x="0.5" y="0.674667" />
+                            <point x="0.359333" y="0.640667" />
+                            <point x="0.218" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00006.png">
+                        <collision-poly>
+                            <point x="0.446667" y="0.446667" />
+                            <point x="0.571333" y="0.428667" />
+                            <point x="0.712" y="0.5" />
+                            <point x="0.615333" y="0.615333" />
+                            <point x="0.5" y="0.671333" />
+                            <point x="0.361333" y="0.638667" />
+                            <point x="0.209333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00007.png">
+                        <collision-poly>
+                            <point x="0.452" y="0.452" />
+                            <point x="0.5" y="0.456667" />
+                            <point x="0.53" y="0.47" />
+                            <point x="0.715333" y="0.5" />
+                            <point x="0.657333" y="0.657333" />
+                            <point x="0.5" y="0.667333" />
+                            <point x="0.364" y="0.636" />
+                            <point x="0.208" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00008.png">
+                        <collision-poly>
+                            <point x="0.450667" y="0.450667" />
+                            <point x="0.5" y="0.452667" />
+                            <point x="0.534667" y="0.465333" />
+                            <point x="0.734" y="0.5" />
+                            <point x="0.692" y="0.692" />
+                            <point x="0.5" y="0.664" />
+                            <point x="0.367333" y="0.632667" />
+                            <point x="0.206" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00009.png">
+                        <collision-poly>
+                            <point x="0.448667" y="0.448667" />
+                            <point x="0.5" y="0.449333" />
+                            <point x="0.538667" y="0.461333" />
+                            <point x="0.744667" y="0.5" />
+                            <point x="0.723333" y="0.723333" />
+                            <point x="0.37" y="0.63" />
+                            <point x="0.2" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00010.png">
+                        <collision-poly>
+                            <point x="0.446667" y="0.446667" />
+                            <point x="0.5" y="0.445333" />
+                            <point x="0.542667" y="0.457333" />
+                            <point x="0.746667" y="0.5" />
+                            <point x="0.735333" y="0.735333" />
+                            <point x="0.5" y="0.672667" />
+                            <point x="0.372667" y="0.627333" />
+                            <point x="0.190667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00011.png">
+                        <collision-poly>
+                            <point x="0.444667" y="0.444667" />
+                            <point x="0.5" y="0.441333" />
+                            <point x="0.532" y="0.468" />
+                            <point x="0.777333" y="0.5" />
+                            <point x="0.737333" y="0.737333" />
+                            <point x="0.5" y="0.673333" />
+                            <point x="0.375333" y="0.624667" />
+                            <point x="0.192" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00012.png">
+                        <collision-poly>
+                            <point x="0.446667" y="0.446667" />
+                            <point x="0.5" y="0.444667" />
+                            <point x="0.542" y="0.458" />
+                            <point x="0.806" y="0.5" />
+                            <point x="0.718" y="0.718" />
+                            <point x="0.372667" y="0.627333" />
+                            <point x="0.200667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00013.png">
+                        <collision-poly>
+                            <point x="0.448" y="0.448" />
+                            <point x="0.5" y="0.448667" />
+                            <point x="0.539333" y="0.460667" />
+                            <point x="0.827333" y="0.5" />
+                            <point x="0.670667" y="0.670667" />
+                            <point x="0.5" y="0.662" />
+                            <point x="0.37" y="0.63" />
+                            <point x="0.206" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00014.png">
+                        <collision-poly>
+                            <point x="0.45" y="0.45" />
+                            <point x="0.5" y="0.452667" />
+                            <point x="0.534667" y="0.465333" />
+                            <point x="0.866667" y="0.5" />
+                            <point x="0.5" y="0.664" />
+                            <point x="0.367333" y="0.632667" />
+                            <point x="0.209333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00015.png">
+                        <collision-poly>
+                            <point x="0.452" y="0.452" />
+                            <point x="0.5" y="0.456667" />
+                            <point x="0.53" y="0.47" />
+                            <point x="0.715333" y="0.5" />
+                            <point x="0.611333" y="0.611333" />
+                            <point x="0.5" y="0.667333" />
+                            <point x="0.364" y="0.636" />
+                            <point x="0.208667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00016.png">
+                        <collision-poly>
+                            <point x="0.454" y="0.454" />
+                            <point x="0.5" y="0.436667" />
+                            <point x="0.570667" y="0.429333" />
+                            <point x="0.56" y="0.5" />
+                            <point x="0.616" y="0.616" />
+                            <point x="0.5" y="0.671333" />
+                            <point x="0.361333" y="0.638667" />
+                            <point x="0.212667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00017.png">
+                        <collision-poly>
+                            <point x="0.449333" y="0.449333" />
+                            <point x="0.5" y="0.396667" />
+                            <point x="0.634" y="0.366" />
+                            <point x="0.563333" y="0.5" />
+                            <point x="0.620667" y="0.620667" />
+                            <point x="0.5" y="0.674667" />
+                            <point x="0.359333" y="0.640667" />
+                            <point x="0.223333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00018.png">
+                        <collision-poly>
+                            <point x="0.417333" y="0.417333" />
+                            <point x="0.5" y="0.348667" />
+                            <point x="0.703333" y="0.296667" />
+                            <point x="0.566667" y="0.5" />
+                            <point x="0.634" y="0.634" />
+                            <point x="0.5" y="0.678" />
+                            <point x="0.357333" y="0.642667" />
+                            <point x="0.224" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00019.png">
+                        <collision-poly>
+                            <point x="0.45" y="0.45" />
+                            <point x="0.5" y="0.303333" />
+                            <point x="0.77" y="0.23" />
+                            <point x="0.544" y="0.5" />
+                            <point x="0.706" y="0.706" />
+                            <point x="0.5" y="0.680667" />
+                            <point x="0.355333" y="0.644667" />
+                            <point x="0.224667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00020.png">
+                        <collision-poly>
+                            <point x="0.445333" y="0.445333" />
+                            <point x="0.5" y="0.264" />
+                            <point x="0.829333" y="0.170667" />
+                            <point x="0.532" y="0.5" />
+                            <point x="0.718667" y="0.718667" />
+                            <point x="0.5" y="0.699333" />
+                            <point x="0.354" y="0.646" />
+                            <point x="0.224667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00021.png">
+                        <collision-poly>
+                            <point x="0.442667" y="0.442667" />
+                            <point x="0.5" y="0.224667" />
+                            <point x="0.876" y="0.124" />
+                            <point x="0.533333" y="0.5" />
+                            <point x="0.730667" y="0.730667" />
+                            <point x="0.5" y="0.701333" />
+                            <point x="0.352667" y="0.647333" />
+                            <point x="0.224667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\stand\stand_00022.png">
+                        <collision-poly>
+                            <point x="0.44" y="0.44" />
+                            <point x="0.5" y="0.185333" />
+                            <point x="0.896667" y="0.103333" />
+                            <point x="0.533333" y="0.5" />
+                            <point x="0.740667" y="0.740667" />
+                            <point x="0.5" y="0.702" />
+                            <point x="0.352667" y="0.647333" />
+                            <point x="0.224667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>
