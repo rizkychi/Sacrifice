@@ -10,10 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Stage 3 - Niddhavellir</layout>
-        <layout order="1">Stage 2 - Alfheim</layout>
-        <event-sheet order="2">Stage 3</event-sheet>
-        <event-sheet order="3">Stage 1 - Svartalfheim</event-sheet>
+        <layout active="1" order="0">Stage 4 - Asgard</layout>
+        <event-sheet order="1">stage 4</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -25,9 +23,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="0" name="Button" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/System/" />
-        <folder expanded="1" path="object-folder/Background/" />
+        <folder expanded="0" path="object-folder/Background/" />
         <folder expanded="0" path="object-folder/Background/MainMenu/" />
         <folder expanded="0" path="object-folder/Text/" />
         <folder expanded="0" path="object-folder/Button/" />
@@ -37,7 +35,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/Area/" />
         <folder expanded="0" path="object-folder/Area/Stage 1 - Svartalheim/" />
         <folder expanded="0" path="object-folder/Area/Stage 2 - Alfheim/" />
-        <folder expanded="1" path="object-folder/Area/Stage 3 - Niddhavellir/" />
+        <folder expanded="0" path="object-folder/Area/Stage 3 - Niddhavellir/" />
+        <folder expanded="1" path="object-folder/Area/Stage 4 - Asgard/" />
         <folder expanded="1" path="object-folder/Boss/" />
         <folder expanded="0" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Stage/" />
@@ -124,8 +123,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/tileset2/" />
         <folder expanded="1" path="animation-folder/properties2/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
-        <folder expanded="1" path="animation-folder/Sleipnir/" />
+        <folder expanded="1" path="animation-folder/tileset3/" />
         <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/Sleipnir/" />
+        <folder expanded="1" path="animation-folder/cave/" />
+        <folder expanded="1" path="animation-folder/jungle/" />
         <folder expanded="1" path="animation-folder/camera/" />
         <folder expanded="1" path="animation-folder/camera_core/" />
         <folder expanded="1" path="animation-folder/Player_Evans/" />

@@ -11,23 +11,23 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="121867672844446" type="Sprite4">
+                <action id="4" name="Set animation" sid="121867672844446" type="cave">
                     <param id="0" name="Animation">&quot;attack&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action behavior="Platform" id="7" name="Simulate control" sid="862145118157075" type="Sprite4">
+                <action behavior="Platform" id="7" name="Simulate control" sid="862145118157075" type="cave">
                     <param id="0" name="Control">2</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="653863023184875">
             <conditions>
-                <condition id="4" name="On finished" sid="513986111945970" type="Sprite4">
+                <condition id="4" name="On finished" sid="513986111945970" type="cave">
                     <param id="0" name="Animation">&quot;attack&quot;</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="978063680727277" type="Sprite4">
+                <action id="4" name="Set animation" sid="978063680727277" type="cave">
                     <param id="0" name="Animation">&quot;stand&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>

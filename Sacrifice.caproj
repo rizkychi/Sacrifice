@@ -3171,6 +3171,178 @@
                     </animation-folder>
                 </object-type>
             </object-folder>
+            <object-folder name="Stage 4 - Asgard">
+                <object-type name="tileset3" sid="936920574958248">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="868123202531417">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="18" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="443384442647565" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\mountain\tileset\Grass.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="0.578125" />
+                                    <point x="0" y="0.578125" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\mountain\tileset\GrassCliffLeft.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="0.578125" />
+                                    <point x="0" y="0.578125" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\mountain\tileset\GrassCliffMid.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="0.578125" />
+                                    <point x="0" y="0.578125" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\mountain\tileset\GrassCliffRight.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="0.578125" />
+                                    <point x="0" y="0.578125" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\mountain\tileset\GrassHillLeft.png">
+                                <collision-poly>
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="0.578125" />
+                                    <point x="0.585938" y="1" />
+                                    <point x="0.136719" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\mountain\tileset\GrassHillLeft2.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="0.136719" y="0" />
+                                    <point x="0.59375" y="0" />
+                                    <point x="0" y="0.59375" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\mountain\tileset\GrassHillRight.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="0.863281" y="1" />
+                                    <point x="0.414063" y="1" />
+                                    <point x="0" y="0.591797" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\mountain\tileset\GrassHillRight2.png">
+                                <collision-poly>
+                                    <point x="0.414063" y="0" />
+                                    <point x="0.863281" y="0" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="0.578125" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\mountain\tileset\GrassJoinHillLeft.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="0.578125" />
+                                    <point x="0" y="0.578125" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\mountain\tileset\GrassJoinHillLeft2.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="0.578125" />
+                                    <point x="0" y="0.578125" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\mountain\tileset\GrassJoinHillRight&amp;Left.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="0.578125" />
+                                    <point x="0" y="0.578125" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\mountain\tileset\GrassJoinHillRight.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="0.578125" />
+                                    <point x="0" y="0.578125" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\mountain\tileset\GrassJoinHillRight2&amp;Left2.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="0.5" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\mountain\tileset\GrassJoinHillRight2.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="0.5" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\mountain\tileset\GrassLeft.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="0.5" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\mountain\tileset\GrassMid.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="0.5" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\mountain\tileset\GrassRight.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="0.5" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\mountain\tileset\GrassSample_2.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="0.5" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Sprite4" sid="565049654910605">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="768910538407764" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\nograss.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
         </object-folder>
         <object-folder name="Boss">
             <object-type name="Sleipnir" sid="956316928954124">
@@ -3577,7 +3749,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Sprite4" sid="544588873514240">
+            <object-type name="cave" sid="544588873514240">
                 <plugin id="Sprite" />
                 <behaviors>
                     <behavior-type name="Platform" sid="554481689294409">
@@ -4136,6 +4308,227 @@
                                 <point x="0.25293" y="0.201172" />
                                 <point x="0.481934" y="0.138672" />
                                 <point x="0.873047" y="0.519531" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="jungle" sid="464095155645524">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Platform" sid="359722062001048">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="19" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="805697741581415" speed="15">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00000.png">
+                            <collision-poly>
+                                <point x="0.265625" y="0.265625" />
+                                <point x="0.5" y="0.26875" />
+                                <point x="0.639844" y="0.360156" />
+                                <point x="0.742969" y="0.5" />
+                                <point x="0.846458" y="0.818125" />
+                                <point x="0.200417" y="0.822917" />
+                                <point x="0.272656" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00001.png">
+                            <collision-poly>
+                                <point x="0.265625" y="0.265625" />
+                                <point x="0.5" y="0.26875" />
+                                <point x="0.639844" y="0.360156" />
+                                <point x="0.742969" y="0.5" />
+                                <point x="0.846458" y="0.818125" />
+                                <point x="0.200417" y="0.822917" />
+                                <point x="0.272656" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00002.png">
+                            <collision-poly>
+                                <point x="0.265625" y="0.265625" />
+                                <point x="0.5" y="0.26875" />
+                                <point x="0.639844" y="0.360156" />
+                                <point x="0.742969" y="0.5" />
+                                <point x="0.846458" y="0.818125" />
+                                <point x="0.200417" y="0.822917" />
+                                <point x="0.272656" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00003.png">
+                            <collision-poly>
+                                <point x="0.265625" y="0.265625" />
+                                <point x="0.5" y="0.26875" />
+                                <point x="0.639844" y="0.360156" />
+                                <point x="0.742969" y="0.5" />
+                                <point x="0.846458" y="0.818125" />
+                                <point x="0.200417" y="0.822917" />
+                                <point x="0.272656" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00004.png">
+                            <collision-poly>
+                                <point x="0.265625" y="0.265625" />
+                                <point x="0.5" y="0.26875" />
+                                <point x="0.639844" y="0.360156" />
+                                <point x="0.742969" y="0.5" />
+                                <point x="0.846458" y="0.818125" />
+                                <point x="0.200417" y="0.822917" />
+                                <point x="0.272656" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00005.png">
+                            <collision-poly>
+                                <point x="0.265625" y="0.265625" />
+                                <point x="0.5" y="0.26875" />
+                                <point x="0.639844" y="0.360156" />
+                                <point x="0.742969" y="0.5" />
+                                <point x="0.846458" y="0.818125" />
+                                <point x="0.200417" y="0.822917" />
+                                <point x="0.272656" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00006.png">
+                            <collision-poly>
+                                <point x="0.265625" y="0.265625" />
+                                <point x="0.5" y="0.26875" />
+                                <point x="0.639844" y="0.360156" />
+                                <point x="0.742969" y="0.5" />
+                                <point x="0.846458" y="0.818125" />
+                                <point x="0.200417" y="0.822917" />
+                                <point x="0.272656" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00007.png">
+                            <collision-poly>
+                                <point x="0.265625" y="0.265625" />
+                                <point x="0.5" y="0.26875" />
+                                <point x="0.639844" y="0.360156" />
+                                <point x="0.742969" y="0.5" />
+                                <point x="0.846458" y="0.818125" />
+                                <point x="0.200417" y="0.822917" />
+                                <point x="0.272656" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00008.png">
+                            <collision-poly>
+                                <point x="0.265625" y="0.265625" />
+                                <point x="0.5" y="0.26875" />
+                                <point x="0.639844" y="0.360156" />
+                                <point x="0.742969" y="0.5" />
+                                <point x="0.846458" y="0.818125" />
+                                <point x="0.200417" y="0.822917" />
+                                <point x="0.272656" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00009.png">
+                            <collision-poly>
+                                <point x="0.265625" y="0.265625" />
+                                <point x="0.5" y="0.26875" />
+                                <point x="0.639844" y="0.360156" />
+                                <point x="0.742969" y="0.5" />
+                                <point x="0.846458" y="0.818125" />
+                                <point x="0.200417" y="0.822917" />
+                                <point x="0.272656" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00010.png">
+                            <collision-poly>
+                                <point x="0.265625" y="0.265625" />
+                                <point x="0.5" y="0.26875" />
+                                <point x="0.639844" y="0.360156" />
+                                <point x="0.742969" y="0.5" />
+                                <point x="0.846458" y="0.818125" />
+                                <point x="0.200417" y="0.822917" />
+                                <point x="0.272656" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00011.png">
+                            <collision-poly>
+                                <point x="0.265625" y="0.265625" />
+                                <point x="0.5" y="0.26875" />
+                                <point x="0.639844" y="0.360156" />
+                                <point x="0.742969" y="0.5" />
+                                <point x="0.846458" y="0.818125" />
+                                <point x="0.200417" y="0.822917" />
+                                <point x="0.272656" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00012.png">
+                            <collision-poly>
+                                <point x="0.265625" y="0.265625" />
+                                <point x="0.5" y="0.26875" />
+                                <point x="0.639844" y="0.360156" />
+                                <point x="0.742969" y="0.5" />
+                                <point x="0.846458" y="0.818125" />
+                                <point x="0.200417" y="0.822917" />
+                                <point x="0.272656" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00013.png">
+                            <collision-poly>
+                                <point x="0.265625" y="0.265625" />
+                                <point x="0.5" y="0.26875" />
+                                <point x="0.639844" y="0.360156" />
+                                <point x="0.742969" y="0.5" />
+                                <point x="0.846458" y="0.818125" />
+                                <point x="0.200417" y="0.822917" />
+                                <point x="0.272656" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00014.png">
+                            <collision-poly>
+                                <point x="0.265625" y="0.265625" />
+                                <point x="0.5" y="0.26875" />
+                                <point x="0.639844" y="0.360156" />
+                                <point x="0.742969" y="0.5" />
+                                <point x="0.846458" y="0.818125" />
+                                <point x="0.200417" y="0.822917" />
+                                <point x="0.272656" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00015.png">
+                            <collision-poly>
+                                <point x="0.265625" y="0.265625" />
+                                <point x="0.5" y="0.26875" />
+                                <point x="0.639844" y="0.360156" />
+                                <point x="0.742969" y="0.5" />
+                                <point x="0.846458" y="0.818125" />
+                                <point x="0.200417" y="0.822917" />
+                                <point x="0.272656" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00016.png">
+                            <collision-poly>
+                                <point x="0.265625" y="0.265625" />
+                                <point x="0.5" y="0.26875" />
+                                <point x="0.639844" y="0.360156" />
+                                <point x="0.742969" y="0.5" />
+                                <point x="0.846458" y="0.818125" />
+                                <point x="0.200417" y="0.822917" />
+                                <point x="0.272656" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00017.png">
+                            <collision-poly>
+                                <point x="0.265625" y="0.265625" />
+                                <point x="0.5" y="0.26875" />
+                                <point x="0.639844" y="0.360156" />
+                                <point x="0.742969" y="0.5" />
+                                <point x="0.846458" y="0.818125" />
+                                <point x="0.200417" y="0.822917" />
+                                <point x="0.272656" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00018.png">
+                            <collision-poly>
+                                <point x="0.265625" y="0.265625" />
+                                <point x="0.5" y="0.26875" />
+                                <point x="0.639844" y="0.360156" />
+                                <point x="0.742969" y="0.5" />
+                                <point x="0.846458" y="0.818125" />
+                                <point x="0.200417" y="0.822917" />
+                                <point x="0.272656" y="0.5" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -5399,6 +5792,7 @@
             <event-sheet>Stage 1 - Svartalfheim.xml</event-sheet>
             <event-sheet>Stage 2 - Alfheim.xml</event-sheet>
             <event-sheet>Stage 3.xml</event-sheet>
+            <event-sheet>stage 4.xml</event-sheet>
         </event-folder>
         <event-sheet>MainMenu_Event.xml</event-sheet>
         <event-sheet>WorldMap_Event.xml</event-sheet>
