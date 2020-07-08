@@ -62,7 +62,7 @@
                                 <action id="0" name="Play" sid="362676973202991" type="Audio">
                                     <param id="0" name="Audio file">Main menu  2 (PerituneMaterial_World_OP)</param>
                                     <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">0</param>
+                                    <param id="3" name="Volume">VolumeMusic</param>
                                     <param id="1" name="Tag (optional)">&quot;bgm&quot;</param>
                                 </action>
                             </actions>
@@ -246,7 +246,7 @@
                                 <action id="0" name="Play" sid="422790924867969" type="Audio">
                                     <param id="0" name="Audio file">tick_01</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
+                                    <param id="3" name="Volume">VolumeSFX</param>
                                     <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
                                 </action>
                             </actions>
@@ -320,7 +320,7 @@
                                 <action id="0" name="Play" sid="118829435438393" type="Audio">
                                     <param id="0" name="Audio file">tick_01</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
+                                    <param id="3" name="Volume">VolumeSFX</param>
                                     <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
                                 </action>
                             </actions>
@@ -483,7 +483,7 @@
                                 <action id="0" name="Play" sid="337044268116511" type="Audio">
                                     <param id="0" name="Audio file">GUI_Select_26 1</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
+                                    <param id="3" name="Volume">VolumeSFX</param>
                                     <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="290781380327177" type="System">

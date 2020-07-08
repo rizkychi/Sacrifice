@@ -805,7 +805,7 @@
                         <behavior id="Fade" />
                     </behavior-type>
                 </behaviors>
-                <texture original-source="C:\Users\Rizky\Desktop\font\SpriteFont_KGBlankSpaceSolid_Regular_(14)_[1,1,1,1]_19x22.png" />
+                <texture original-source="C:\Users\Rizky\Desktop\font\SpriteFont_KGBlankSpaceSolid_Regular_(14)_[1,1,1,1]_23x26.png" />
             </object-type>
         </object-folder>
         <object-folder name="Button">
@@ -7786,17 +7786,13 @@
         </global-instance>
     </global-instances>
     <sounds-folder>
-        <file name="GUI_Select_30 1.m4a" />
-        <file name="GUI_Select_30 1.ogg" />
-        <file name="GUI_Select_26 1.m4a" />
         <file name="GUI_Select_26 1.ogg" />
-        <file name="GUI Sound Effects_002.m4a" />
-        <file name="GUI Sound Effects_002.ogg" />
-        <file name="button_press_plastic_click_001.ogg" />
         <file name="tick_01.ogg" />
-        <file name="select_01.ogg" />
-        <file name="select_02.m4a" />
         <file name="select_02.ogg" />
+        <file name="bow_sfx.ogg" />
+        <file name="rage_sfx.ogg" />
+        <file name="sneak_sfx.ogg" />
+        <file name="sword_sfx.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="Main menu  2 (PerituneMaterial_World_OP).ogg" />

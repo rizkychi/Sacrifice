@@ -1509,6 +1509,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="209050922079824" type="Audio">
+                            <param id="0" name="Audio file">sneak_sfx</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">VolumeSFX</param>
+                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                        </action>
                         <action id="-9" name="Set value" sid="578369894968778" type="System">
                             <param id="0" name="Variable">stealth</param>
                             <param id="1" name="Value">1</param>
@@ -1550,6 +1556,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="344974853041200" type="Audio">
+                            <param id="0" name="Audio file">rage_sfx</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">VolumeSFX</param>
+                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                        </action>
                         <action id="-9" name="Set value" sid="217638392390735" type="System">
                             <param id="0" name="Variable">enrage</param>
                             <param id="1" name="Value">1</param>
@@ -1611,6 +1623,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="627179078724732" type="Audio">
+                            <param id="0" name="Audio file">sword_sfx</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">VolumeSFX</param>
+                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                        </action>
                         <action id="-9" name="Set value" sid="435547597397900" type="System">
                             <param id="0" name="Variable">attack_sword</param>
                             <param id="1" name="Value">1</param>
@@ -1680,6 +1698,12 @@
                         </action>
                         <action id="-16" name="Wait" sid="120527677506670" type="System">
                             <param id="0" name="Seconds">0.25</param>
+                        </action>
+                        <action id="0" name="Play" sid="767800181870227" type="Audio">
+                            <param id="0" name="Audio file">bow_sfx</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">VolumeSFX</param>
+                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
                         </action>
                     </actions>
                     <sub-events>

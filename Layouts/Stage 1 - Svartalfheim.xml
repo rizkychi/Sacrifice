@@ -380,7 +380,7 @@
                         <y>-66.837516785</y>
                         <z>0</z>
                         <width>45</width>
-                        <height>9</height>
+                        <height>10</height>
                         <depth>0</depth>
                         <hotspotX>0.500588953</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -16908,19 +16908,19 @@
                 </instance>
                 <instance type="SpriteFont_Damage" uid="240">
                     <properties>
-                        <character-width>19</character-width>
-                        <character-height>22</character-height>
+                        <character-width>23</character-width>
+                        <character-height>26</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>Text</text>
+                        <text>1234567890</text>
                         <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
-                        <character-spacing>0</character-spacing>
+                        <character-spacing>-5</character-spacing>
                         <line-height>0</line-height>
-                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,14,1],&quot;&quot;data&quot;&quot;:[[[4],[5],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;l1&apos;|`&quot;&quot;],[&quot;&quot;i.,;:!&quot;&quot;],[&quot;&quot;()[]°&quot;&quot;],[&quot;&quot;-_+=&lt;&gt;&quot;&quot;],[&quot;&quot;JLjt\&quot;&quot;\\/%&quot;&quot;],[&quot;&quot;EFISTrsz7~#$£&quot;&quot;],[&quot;&quot;BCUZacdfhnoqux235689?*&quot;&quot;],[&quot;&quot;DGHKPRYbegkpvy04&amp;€&quot;&quot;],[&quot;&quot;ANVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;Wmw&quot;&quot;],[&quot;&quot;M&quot;&quot;]]]}</char-width-json>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,14,1],&quot;&quot;data&quot;&quot;:[[[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[21]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;l1&apos;|`&quot;&quot;],[&quot;&quot;i.,;:!&quot;&quot;],[&quot;&quot;()[]°&quot;&quot;],[&quot;&quot;-_+=&lt;&gt;&quot;&quot;],[&quot;&quot;JLjt~\&quot;&quot;\\/%&quot;&quot;],[&quot;&quot;EFISTrsz7#*$£&quot;&quot;],[&quot;&quot;BCUZacdfhnoqux235689?&quot;&quot;],[&quot;&quot;DGHKPRYbegkpvy04&amp;€&quot;&quot;],[&quot;&quot;ANVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;Wmw&quot;&quot;],[&quot;&quot;M&quot;&quot;]]]}</char-width-json>
                         <space-char-width>-1</space-char-width>
                     </properties>
                     <behavior-instances>
@@ -16947,10 +16947,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>360</x>
+                        <x>365</x>
                         <y>-70</y>
                         <z>0</z>
-                        <width>90</width>
+                        <width>100</width>
                         <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
