@@ -10,7 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Stage 4 - Asgard</layout>
+        <layout order="1">Stage 1 - Svartalfheim</layout>
+        <event-sheet active="1" order="2">GameControl_Event</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -18,25 +19,31 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="0">
+    <families-expanded root="1">
         <family expanded="0" name="Button" />
+        <family expanded="1" name="Monster" />
+        <family expanded="0" name="Item" />
+        <family expanded="0" name="Boss" />
+        <family expanded="0" name="Enemy_Bullet" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/System/" />
         <folder expanded="0" path="object-folder/Background/" />
         <folder expanded="0" path="object-folder/Background/MainMenu/" />
-        <folder expanded="0" path="object-folder/Text/" />
+        <folder expanded="1" path="object-folder/Text/" />
         <folder expanded="0" path="object-folder/Button/" />
         <folder expanded="0" path="object-folder/Sprites/" />
+        <folder expanded="0" path="object-folder/Sprites/item/" />
         <folder expanded="0" path="object-folder/Loading/" />
         <folder expanded="0" path="object-folder/UI/" />
-        <folder expanded="1" path="object-folder/Area/" />
+        <folder expanded="0" path="object-folder/Area/" />
         <folder expanded="0" path="object-folder/Area/Stage 1 - Svartalheim/" />
         <folder expanded="0" path="object-folder/Area/Stage 2 - Alfheim/" />
         <folder expanded="0" path="object-folder/Area/Stage 3 - Niddhavellir/" />
         <folder expanded="0" path="object-folder/Area/Stage 4 - Asgard/" />
-        <folder expanded="1" path="object-folder/Boss/" />
+        <folder expanded="0" path="object-folder/Boss/" />
+        <folder expanded="0" path="object-folder/Monster/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Stage/" />
         <folder expanded="1" path="event-folder/" />
@@ -78,6 +85,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/btn_difficulty_normal/" />
         <folder expanded="1" path="animation-folder/key_input/" />
         <folder expanded="1" path="animation-folder/tuner/" />
+        <folder expanded="1" path="animation-folder/item_gold_coin/" />
+        <folder expanded="1" path="animation-folder/item_hp_large/" />
+        <folder expanded="1" path="animation-folder/item_hp_small/" />
+        <folder expanded="1" path="animation-folder/item_mp_large/" />
+        <folder expanded="1" path="animation-folder/item_mp_small/" />
+        <folder expanded="1" path="animation-folder/item_gems/" />
         <folder expanded="1" path="animation-folder/icon_back/" />
         <folder expanded="1" path="animation-folder/icon_book/" />
         <folder expanded="1" path="animation-folder/icon_cart/" />
@@ -96,6 +109,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/icon_treasure/" />
         <folder expanded="1" path="animation-folder/icon_mana/" />
         <folder expanded="1" path="animation-folder/book_items/" />
+        <folder expanded="1" path="animation-folder/player_head/" />
         <folder expanded="1" path="animation-folder/loading_bg/" />
         <folder expanded="1" path="animation-folder/loading_logo/" />
         <folder expanded="1" path="animation-folder/Loading_text/" />
@@ -103,7 +117,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/logo_studio/" />
         <folder expanded="1" path="animation-folder/bar_coin_white/" />
         <folder expanded="1" path="animation-folder/bar_hpmp_box/" />
-        <folder expanded="1" path="animation-folder/bar_hpmp_round/" />
         <folder expanded="1" path="animation-folder/bar_white_small/" />
         <folder expanded="1" path="animation-folder/bg_popup/" />
         <folder expanded="1" path="animation-folder/bg_shop/" />
@@ -125,14 +138,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sleipnir/" />
         <folder expanded="1" path="animation-folder/Fafnir/" />
         <folder expanded="1" path="animation-folder/jungle/" />
+        <folder expanded="1" path="animation-folder/Valkyrie/" />
+        <folder expanded="1" path="animation-folder/Goblin/" />
         <folder expanded="1" path="animation-folder/camera/" />
         <folder expanded="1" path="animation-folder/camera_core/" />
         <folder expanded="1" path="animation-folder/Player_Evans/" />
         <folder expanded="1" path="animation-folder/tesTile/" />
-        <folder expanded="1" path="animation-folder/player_head/" />
         <folder expanded="1" path="animation-folder/warpmask/" />
         <folder expanded="1" path="animation-folder/water/" />
         <folder expanded="1" path="animation-folder/arrow/" />
-        <folder expanded="1" path="animation-folder/stand_/" />
+        <folder expanded="1" path="animation-folder/Border/" />
+        <folder expanded="1" path="animation-folder/water_bullet/" />
+        <folder expanded="1" path="animation-folder/Gate/" />
+        <folder expanded="1" path="animation-folder/Block/" />
     </folders-expanded>
 </c2uistate>

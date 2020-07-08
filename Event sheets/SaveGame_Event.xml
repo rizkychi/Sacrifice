@@ -606,7 +606,7 @@
                         <action id="3" name="Set at XY" sid="959636597686423" type="Array_book">
                             <param id="0" name="X">1</param>
                             <param id="1" name="Y">2</param>
-                            <param id="2" name="Value">&quot;-&quot;</param>
+                            <param id="2" name="Value">&quot;Sleipnir&quot;</param>
                         </action>
                         <action id="3" name="Set at XY" sid="100617926787929" type="Array_book">
                             <param id="0" name="X">2</param>
@@ -616,22 +616,22 @@
                         <action id="3" name="Set at XY" sid="150988349889771" type="Array_book">
                             <param id="0" name="X">3</param>
                             <param id="1" name="Y">2</param>
-                            <param id="2" name="Value">&quot;Golem&quot;</param>
+                            <param id="2" name="Value">&quot;Fafnir&quot;</param>
                         </action>
                         <action id="3" name="Set at XY" sid="574419192274280" type="Array_book">
                             <param id="0" name="X">4</param>
                             <param id="1" name="Y">2</param>
-                            <param id="2" name="Value">&quot;-&quot;</param>
+                            <param id="2" name="Value">&quot;Valkyrie&quot;</param>
                         </action>
                         <action id="3" name="Set at XY" sid="504575258107201" type="Array_book">
                             <param id="0" name="X">5</param>
                             <param id="1" name="Y">2</param>
-                            <param id="2" name="Value">&quot;-&quot;</param>
+                            <param id="2" name="Value">&quot;Jormungandr&quot;</param>
                         </action>
                         <action id="3" name="Set at XY" sid="217254062039203" type="Array_book">
                             <param id="0" name="X">6</param>
                             <param id="1" name="Y">2</param>
-                            <param id="2" name="Value">&quot;-&quot;</param>
+                            <param id="2" name="Value">&quot;Cerberus&quot;</param>
                         </action>
                         <action id="3" name="Set at XY" sid="691571628277322" type="Array_book">
                             <param id="0" name="X">7</param>

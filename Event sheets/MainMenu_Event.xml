@@ -46,13 +46,19 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="904022205968996">
+                        <event-block any="1" sid="904022205968996">
                             <conditions>
                                 <condition id="5" inverted="1" name="Is tag playing" sid="893031359267664" type="Audio">
                                     <param id="0" name="Tag">&quot;bgm&quot;</param>
                                 </condition>
+                                <condition id="5" name="Is tag playing" sid="983220042924585" type="Audio">
+                                    <param id="0" name="Tag">&quot;bgm&quot;</param>
+                                </condition>
                             </conditions>
                             <actions>
+                                <action id="6" name="Stop" sid="691480172472171" type="Audio">
+                                    <param id="0" name="Tag">&quot;bgm&quot;</param>
+                                </action>
                                 <action id="0" name="Play" sid="362676973202991" type="Audio">
                                     <param id="0" name="Audio file">Main menu  2 (PerituneMaterial_World_OP)</param>
                                     <param id="2" name="Loop">1</param>

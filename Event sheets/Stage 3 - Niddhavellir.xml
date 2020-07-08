@@ -66,5 +66,17 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="415994032125527">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="468959579578990" type="System">
+                    <param id="0" name="Interval (seconds)">0.2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="110005059558514" type="Fafnir">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

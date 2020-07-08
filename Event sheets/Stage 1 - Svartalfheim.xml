@@ -31,6 +31,22 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="862461081925674">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="334499302095540" type="Lake_tileset">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Jumpthru" id="0" name="Set enabled" sid="968234735199116" type="Lake_tileset">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="660392827007530" type="Lake_tileset">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-block>
         <event-block sid="785966260782359">
@@ -72,6 +88,11 @@
                 <condition id="-6" name="Every X seconds" sid="371952218390600" type="System">
                     <param id="0" name="Interval (seconds)">4</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="338191210450025" type="System">
+                    <param id="0" name="Variable">stealth</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="836830220916509" type="Sleipnir">
@@ -92,6 +113,38 @@
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="345350296666516">
+            <conditions>
+                <condition id="2" name="Is playing" sid="401015636186523" type="Sleipnir">
+                    <param id="0" name="Animation">&quot;Attack&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="461826401073527">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="825948089427118" type="Sleipnir">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">21</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="551151570171704" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="138693686251558" type="Sleipnir">
+                            <param id="0" name="Object">water_bullet</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="642398776372939" type="water_bullet">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="254505553669962" type="water_bullet">
+                            <param id="0" name="Angle">180+angle(Player_Evans.X,Player_Evans.Y-50,water_bullet.X,water_bullet.Y)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

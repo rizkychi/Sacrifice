@@ -3,11 +3,15 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GameControl_Event</name>
     <events>
+        <include>SaveGame_Event</include>
         <include>Loading_Event</include>
         <variable constant="0" name="attack_sword" sid="990305244945250" static="0" type="number">0</variable>
         <variable constant="0" name="attack_bow" sid="781948582415978" static="0" type="number">0</variable>
         <variable constant="0" name="defend" sid="947583623621859" static="0" type="number">0</variable>
+        <variable constant="0" name="stealth" sid="998999985492032" static="0" type="number">0</variable>
+        <variable constant="0" name="enrage" sid="171746611697380" static="0" type="number">0</variable>
         <variable constant="0" name="temp_hp" sid="645397107881112" static="0" type="number">0</variable>
+        <variable constant="0" name="temp_hp_boss" sid="507302622849784" static="0" type="number">0</variable>
         <variable constant="0" name="temp_mp" sid="668947951898672" static="0" type="number">0</variable>
         <event-group description="" sid="449830121261773" title="Game Property">
             <sub-events>
@@ -16,6 +20,26 @@
                         <condition id="-2" name="On start of layout" sid="456425510968773" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-27" name="Set effect enabled" sid="358194060237910" type="Player_Evans">
+                            <param id="0" name="Mode">0</param>
+                            <param id="1" name="Effect">&quot;AdjustHSL&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="503449684551715" type="Player_Evans">
+                            <param id="0" name="Instance variable">ATK</param>
+                            <param id="1" name="Value">Player_Evans.ATK+((level_atk*10/100)*Player_Evans.ATK)</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="440710460542852" type="Player_Evans">
+                            <param id="0" name="Instance variable">DEF</param>
+                            <param id="1" name="Value">level_def*5</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="836762341276289" type="Player_Evans">
+                            <param id="0" name="Instance variable">HP</param>
+                            <param id="1" name="Value">Player_Evans.HP+((level_health*10/100)*Player_Evans.HP)</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="454399245865995" type="Player_Evans">
+                            <param id="0" name="Instance variable">MP</param>
+                            <param id="1" name="Value">Player_Evans.MP+((level_mana*10/100)*Player_Evans.MP)</param>
+                        </action>
                         <action id="-9" name="Set value" sid="597083914013628" type="System">
                             <param id="0" name="Variable">temp_hp</param>
                             <param id="1" name="Value">Player_Evans.HP</param>
@@ -24,15 +48,95 @@
                             <param id="0" name="Variable">temp_mp</param>
                             <param id="1" name="Value">Player_Evans.MP</param>
                         </action>
-                        <action id="-27" name="Set effect enabled" sid="358194060237910" type="Player_Evans">
-                            <param id="0" name="Mode">0</param>
-                            <param id="1" name="Effect">&quot;AdjustHSL&quot;</param>
+                        <action id="-9" name="Set value" sid="524305363387221" type="System">
+                            <param id="0" name="Variable">temp_hp_boss</param>
+                            <param id="1" name="Value">Boss.HP</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="502821640246702" type="System">
+                            <param id="0" name="Variable">attack_sword</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="383678543121277" type="System">
+                            <param id="0" name="Variable">attack_bow</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="975776923278569" type="System">
+                            <param id="0" name="Variable">defend</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="934804698588322" type="System">
+                            <param id="0" name="Variable">stealth</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="407988587914873" type="System">
+                            <param id="0" name="Variable">enrage</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block any="1" sid="335283706113375">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="481484422745213" type="bar_hpmp_box">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;hp_blank&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="563854832273973" type="bar_hpmp_box">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;hp&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-5" name="Set width" sid="480344120641883" type="bar_hpmp_box">
+                                    <param id="0" name="Width">150+(level_health*5)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="748041812659525">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="738664073252768" type="bar_hpmp_box">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;mp_blank&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="468753415609343" type="bar_hpmp_box">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;mp&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-5" name="Set width" sid="160773585834596" type="bar_hpmp_box">
+                                    <param id="0" name="Width">100+(level_mana*5)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="853117251141594">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="265516845967330" type="SpriteFont_PopupText">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;boss_name&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="520657742591447" type="SpriteFont_PopupText">
+                                    <param id="0" name="Text">Array_book.At(stage+1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
+                <variable constant="0" name="cam_focus" sid="895563673748959" static="1" type="number">0</variable>
                 <event-block sid="987162724785526">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="462739324092400" type="System" />
+                        <condition id="-14" name="Compare variable" sid="723010429013928" type="System">
+                            <param id="0" name="Variable">cam_focus</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-3" name="Set position" sid="988839942389449" type="camera">
@@ -40,126 +144,755 @@
                             <param id="1" name="Y">lerp(Self.Y, Player_Evans.Y-200, 0.05)</param>
                         </action>
                     </actions>
+                </event-block>
+                <event-block sid="450222852977280">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="762921299049468" type="Player_Evans">
+                            <param id="0" name="Object">Gate</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="567042179049387" type="System">
+                            <param id="0" name="Variable">cam_focus</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="130970404756559">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="439012870217580" type="System">
+                            <param id="0" name="Variable">cam_focus</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="861772610914855" type="camera">
+                            <param id="0" name="X">lerp(Self.X, Boss.X-700, 0.025)</param>
+                            <param id="1" name="Y">lerp(Self.Y, Player_Evans.Y-200, 0.05)</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="639203006977352" type="Block">
+                            <param id="0" name="X">camera.X-(canvas_width/2)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="985339027503750" title="Item Property">
                     <sub-events>
-                        <event-block sid="990167420538875">
+                        <event-block sid="745594750052692">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="275116160072169" type="SpriteFont_HUD_Potion">
-                                    <param id="0" name="Instance variable">type</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;hp_small&quot;</param>
+                                <condition id="0" name="On collision with another object" sid="580934377088710" type="Item">
+                                    <param id="0" name="Object">Player_Evans</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="775184268299790" type="SpriteFont_HUD_Potion">
-                                    <param id="0" name="Text">hp_potion_small</param>
-                                </action>
+                                <action id="-9" name="Destroy" sid="338331196995924" type="Item" />
                             </actions>
-                        </event-block>
-                        <event-block sid="372827966613859">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="849512726467758" type="SpriteFont_HUD_Potion">
-                                    <param id="0" name="Instance variable">type</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;hp_large&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Set text" sid="285790340176228" type="SpriteFont_HUD_Potion">
-                                    <param id="0" name="Text">hp_potion_large</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="934606309169832">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="560577086037177" type="SpriteFont_HUD_Potion">
-                                    <param id="0" name="Instance variable">type</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;mp_small&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Set text" sid="245411274216319" type="SpriteFont_HUD_Potion">
-                                    <param id="0" name="Text">mp_potion_small</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="370970317208272">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="250892315261149" type="SpriteFont_HUD_Potion">
-                                    <param id="0" name="Instance variable">type</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;mp_large&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Set text" sid="184405516337947" type="SpriteFont_HUD_Potion">
-                                    <param id="0" name="Text">mp_potion_large</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="578761554247783">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="982618512755219" type="SpriteFont_Coins">
-                                    <param id="0" name="Instance variable">type</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;gold&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Set text" sid="174266732952225" type="SpriteFont_Coins">
-                                    <param id="0" name="Text">gold</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="591819501651763">
-                            <conditions />
-                            <actions />
+                            <sub-events>
+                                <event-block sid="150514677288716">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="654135459493551" type="Item">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;gold&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="265523837175986" type="System">
+                                            <param id="0" name="Variable">gold</param>
+                                            <param id="1" name="Value">Item.amount+((level_gold*10/100)*Item.amount)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="653453410953673">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="755012847723143" type="Item">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;hp_small&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="895984961390217" type="System">
+                                            <param id="0" name="Variable">hp_potion_small</param>
+                                            <param id="1" name="Value">Item.amount</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="785394420596455">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="226907513512172" type="Item">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;hp_large&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="455249915299530" type="System">
+                                            <param id="0" name="Variable">hp_potion_large</param>
+                                            <param id="1" name="Value">Item.amount</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="719390233567357">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="311255507978510" type="Item">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;mp_small&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="442204416389081" type="System">
+                                            <param id="0" name="Variable">mp_potion_small</param>
+                                            <param id="1" name="Value">Item.amount</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="432858057688698">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="287143528227748" type="Item">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;mp_large&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="469303590079945" type="System">
+                                            <param id="0" name="Variable">mp_potion_large</param>
+                                            <param id="1" name="Value">Item.amount</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
-                </event-block>
-                <event-block sid="125849635398417">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="776238941757223" type="System">
-                            <param id="0" name="Interval (seconds)">10</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-11" name="Add to" sid="631707618304003" type="Player_Evans">
-                            <param id="0" name="Instance variable">MP</param>
-                            <param id="1" name="Value">5</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="257935677239826">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="354772910138621" type="Player_Evans">
-                            <param id="0" name="Instance variable">HP</param>
-                            <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">temp_hp</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="396476705118553" type="Player_Evans">
-                            <param id="0" name="Instance variable">HP</param>
-                            <param id="1" name="Value">temp_hp</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="536569988803013">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="685936843886077" type="Player_Evans">
-                            <param id="0" name="Instance variable">MP</param>
-                            <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">temp_mp</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="390802571852979" type="Player_Evans">
-                            <param id="0" name="Instance variable">MP</param>
-                            <param id="1" name="Value">temp_mp</param>
-                        </action>
-                    </actions>
-                </event-block>
+                </event-group>
+                <event-group description="" sid="646768883068133" title="Player Property">
+                    <sub-events>
+                        <event-block sid="125849635398417">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="776238941757223" type="System">
+                                    <param id="0" name="Interval (seconds)">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="631707618304003" type="Player_Evans">
+                                    <param id="0" name="Instance variable">MP</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="257935677239826">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="354772910138621" type="Player_Evans">
+                                    <param id="0" name="Instance variable">HP</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">temp_hp</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="396476705118553" type="Player_Evans">
+                                    <param id="0" name="Instance variable">HP</param>
+                                    <param id="1" name="Value">temp_hp</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="536569988803013">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="685936843886077" type="Player_Evans">
+                                    <param id="0" name="Instance variable">MP</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">temp_mp</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="390802571852979" type="Player_Evans">
+                                    <param id="0" name="Instance variable">MP</param>
+                                    <param id="1" name="Value">temp_mp</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="808248626613394">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="912029663181004" type="Player_Evans">
+                                    <param id="0" name="Object">water</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="242040903529510" type="Player_Evans">
+                                    <param id="0" name="Instance variable">HP</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="309292301359687">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="691229537503065" type="Player_Evans">
+                                    <param id="0" name="Instance variable">HP</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="383069371204431" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="838622656755640" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement &amp; Control&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="407327785182448" type="Player_Evans">
+                                    <param id="0" name="Animation">&quot;Dead&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="758016324214072">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="425315958028804" type="Player_Evans">
+                                    <param id="0" name="Instance variable">MP</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="784011065397263" type="Player_Evans">
+                                    <param id="0" name="Instance variable">MP</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="419875709563609">
+                            <conditions>
+                                <condition id="4" name="On finished" sid="914190114721656" type="Player_Evans">
+                                    <param id="0" name="Animation">&quot;Dead&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="949517258260194" type="Function">
+                                    <param id="0" name="Name">&quot;popup_show&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;gameover&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <variable constant="1" name="OFFSET_ATK" sid="842347437391921" static="1" type="number">30</variable>
+                        <event-block sid="767054234821130">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="570047180236072" type="Player_Evans">
+                                    <param id="0" name="Animation">&quot;AttackSword&quot;</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="455645305235729" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="943624300401215" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="315792534252078">
+                                    <conditions>
+                                        <condition id="7" name="Is mirrored" sid="509719947436906" type="Player_Evans" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="122950485466439">
+                                            <conditions>
+                                                <condition id="9" name="Is overlapping at offset" sid="749272562595842" type="Monster">
+                                                    <param id="0" name="Object">Player_Evans</param>
+                                                    <param id="1" name="Offset X">OFFSET_ATK</param>
+                                                    <param id="2" name="Offset Y">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Subtract from" sid="688127800504985" type="Monster">
+                                                    <param id="0" name="Instance variable">HP</param>
+                                                    <param id="1" name="Value">Player_Evans.ATK</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="863743279748279" type="Monster">
+                                                    <param id="0" name="Object">SpriteFont_Damage</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="Image point">&quot;Damage&quot;</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="758094773793915" type="SpriteFont_Damage">
+                                                    <param id="0" name="Text">Player_Evans.ATK</param>
+                                                </action>
+                                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="657622000427388" type="SpriteFont_Damage">
+                                                    <param id="0" name="Angle">270</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="474499760746687">
+                                            <conditions>
+                                                <condition id="9" name="Is overlapping at offset" sid="397576664330174" type="Boss">
+                                                    <param id="0" name="Object">Player_Evans</param>
+                                                    <param id="1" name="Offset X">OFFSET_ATK</param>
+                                                    <param id="2" name="Offset Y">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Subtract from" sid="257507873261563" type="Boss">
+                                                    <param id="0" name="Instance variable">HP</param>
+                                                    <param id="1" name="Value">Player_Evans.ATK</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="260732908596373" type="Boss">
+                                                    <param id="0" name="Object">SpriteFont_Damage</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="Image point">&quot;Damage&quot;</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="247899567901840" type="SpriteFont_Damage">
+                                                    <param id="0" name="Text">Player_Evans.ATK</param>
+                                                </action>
+                                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="108293770835882" type="SpriteFont_Damage">
+                                                    <param id="0" name="Angle">270</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="447118152968798">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="852569262719190" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="576742058331025">
+                                            <conditions>
+                                                <condition id="9" name="Is overlapping at offset" sid="789378672702188" type="Monster">
+                                                    <param id="0" name="Object">Player_Evans</param>
+                                                    <param id="1" name="Offset X">-OFFSET_ATK</param>
+                                                    <param id="2" name="Offset Y">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Subtract from" sid="626129420624265" type="Monster">
+                                                    <param id="0" name="Instance variable">HP</param>
+                                                    <param id="1" name="Value">Player_Evans.ATK</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="324146305060965" type="Monster">
+                                                    <param id="0" name="Object">SpriteFont_Damage</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="Image point">&quot;Damage&quot;</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="297305368691159" type="SpriteFont_Damage">
+                                                    <param id="0" name="Text">Player_Evans.ATK</param>
+                                                </action>
+                                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="608921775750795" type="SpriteFont_Damage">
+                                                    <param id="0" name="Angle">270</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="812287961249464">
+                                            <conditions>
+                                                <condition id="9" name="Is overlapping at offset" sid="267936569430034" type="Boss">
+                                                    <param id="0" name="Object">Player_Evans</param>
+                                                    <param id="1" name="Offset X">-OFFSET_ATK</param>
+                                                    <param id="2" name="Offset Y">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Subtract from" sid="517537948123391" type="Boss">
+                                                    <param id="0" name="Instance variable">HP</param>
+                                                    <param id="1" name="Value">Player_Evans.ATK</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="527478542132344" type="Boss">
+                                                    <param id="0" name="Object">SpriteFont_Damage</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="Image point">&quot;Damage&quot;</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="712268044001594" type="SpriteFont_Damage">
+                                                    <param id="0" name="Text">Player_Evans.ATK</param>
+                                                </action>
+                                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="468569028721786" type="SpriteFont_Damage">
+                                                    <param id="0" name="Angle">270</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="570511091455166">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="439518283790136" type="System">
+                                    <param id="0" name="Variable">defend</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="0" name="Set ignoring input" sid="497213878919869" type="Monster">
+                                    <param id="0" name="Input">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="385159344373964">
+                                    <conditions>
+                                        <condition id="1" name="Is overlapping another object" sid="179732102483643" type="Player_Evans">
+                                            <param id="0" name="Object">Monster</param>
+                                        </condition>
+                                        <condition id="-10" name="Compare opacity" sid="479640944827344" type="Monster">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Opacity">100</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="236708728221732" type="System">
+                                            <param id="0" name="Variable">stealth</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="384054747727452">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="397470522572619" type="System">
+                                                    <param id="0" name="Interval (seconds)">0.75</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Subtract from" sid="881945597050691" type="Player_Evans">
+                                                    <param id="0" name="Instance variable">HP</param>
+                                                    <param id="1" name="Value">Monster.Attack-((Player_Evans.DEF/100)*Monster.Attack)</param>
+                                                </action>
+                                                <action behavior="Flash" id="0" name="Flash" sid="746942989685114" type="Player_Evans">
+                                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                                    <param id="2" name="Duration">0.3</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="261907771657325" type="Player_Evans">
+                                                    <param id="0" name="Object">SpriteFont_Damage</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="Image point">&quot;Damage&quot;</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="610857368527362" type="SpriteFont_Damage">
+                                                    <param id="0" name="Text">Monster.Attack-((Player_Evans.DEF/100)*Monster.Attack)</param>
+                                                </action>
+                                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="268876633562802" type="SpriteFont_Damage">
+                                                    <param id="0" name="Angle">270</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="220986507441309">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="200703881436170" type="Player_Evans">
+                                            <param id="0" name="Object">Enemy_Bullet</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="980916001913860" type="Enemy_Bullet" />
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="797350519854422">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="102645388712199" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Subtract from" sid="741440315142794" type="Player_Evans">
+                                                    <param id="0" name="Instance variable">HP</param>
+                                                    <param id="1" name="Value">Boss.Attack-((Player_Evans.DEF/100)*Boss.Attack)</param>
+                                                </action>
+                                                <action behavior="Flash" id="0" name="Flash" sid="414643463629878" type="Player_Evans">
+                                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                                    <param id="2" name="Duration">0.3</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="949192722041772" type="Player_Evans">
+                                                    <param id="0" name="Object">SpriteFont_Damage</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="Image point">&quot;Damage&quot;</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="310190635397880" type="SpriteFont_Damage">
+                                                    <param id="0" name="Text">Boss.Attack-((Player_Evans.DEF/100)*Boss.Attack)</param>
+                                                </action>
+                                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="660924871668757" type="SpriteFont_Damage">
+                                                    <param id="0" name="Angle">270</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="111822790085240">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="252954746233774" type="System">
+                                    <param id="0" name="Variable">defend</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="246820881853755">
+                                    <conditions>
+                                        <condition id="7" name="Is mirrored" sid="378760376018166" type="Player_Evans" />
+                                        <condition id="-14" name="Compare variable" sid="944959599651958" type="System">
+                                            <param id="0" name="Variable">stealth</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="974389874030613">
+                                            <conditions>
+                                                <condition id="9" name="Is overlapping at offset" sid="408757445451216" type="Player_Evans">
+                                                    <param id="0" name="Object">Monster</param>
+                                                    <param id="1" name="Offset X">-(OFFSET_ATK-10)</param>
+                                                    <param id="2" name="Offset Y">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Platform" id="0" name="Set ignoring input" sid="848924971151100" type="Monster">
+                                                    <param id="0" name="Input">1</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="345827608499543">
+                                                    <conditions>
+                                                        <condition id="-6" name="Every X seconds" sid="541206803593737" type="System">
+                                                            <param id="0" name="Interval (seconds)">0.75</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-12" name="Subtract from" sid="757618590357844" type="Player_Evans">
+                                                            <param id="0" name="Instance variable">MP</param>
+                                                            <param id="1" name="Value">(Monster.Attack-((Player_Evans.DEF/100)*Monster.Attack))/10</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="414475880292090">
+                                    <conditions>
+                                        <condition id="7" inverted="1" name="Is mirrored" sid="470469624077674" type="Player_Evans" />
+                                        <condition id="-14" name="Compare variable" sid="412692335530561" type="System">
+                                            <param id="0" name="Variable">stealth</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="178683246765902">
+                                            <conditions>
+                                                <condition id="9" name="Is overlapping at offset" sid="694151625596914" type="Player_Evans">
+                                                    <param id="0" name="Object">Monster</param>
+                                                    <param id="1" name="Offset X">OFFSET_ATK-10</param>
+                                                    <param id="2" name="Offset Y">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Platform" id="0" name="Set ignoring input" sid="481828824138553" type="Monster">
+                                                    <param id="0" name="Input">1</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="587305991725444">
+                                                    <conditions>
+                                                        <condition id="-6" name="Every X seconds" sid="645025578178908" type="System">
+                                                            <param id="0" name="Interval (seconds)">0.75</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-12" name="Subtract from" sid="635650838142170" type="Player_Evans">
+                                                            <param id="0" name="Instance variable">MP</param>
+                                                            <param id="1" name="Value">(Monster.Attack-((Player_Evans.DEF/100)*Monster.Attack))/10</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="658576584710272">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="904633032995115" type="Player_Evans">
+                                            <param id="0" name="Object">Enemy_Bullet</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="983921923796522" type="Enemy_Bullet" />
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="629595990324592">
+                                            <conditions>
+                                                <condition id="-1" name="Compare X" sid="190861462046974" type="Enemy_Bullet">
+                                                    <param id="0" name="Comparison">4</param>
+                                                    <param id="1" name="X co-ordinate">Player_Evans.X</param>
+                                                </condition>
+                                                <condition id="7" inverted="1" name="Is mirrored" sid="108103322163190" type="Player_Evans" />
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="374752492496739">
+                                                    <conditions>
+                                                        <condition id="-4" name="Trigger once while true" sid="760965911992341" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-12" name="Subtract from" sid="148635936671840" type="Player_Evans">
+                                                            <param id="0" name="Instance variable">MP</param>
+                                                            <param id="1" name="Value">(Boss.Attack-((Player_Evans.DEF/100)*Boss.Attack))/10</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="962855240368251">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="865634370258573" type="System" />
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="313267137311809">
+                                                    <conditions>
+                                                        <condition id="-4" name="Trigger once while true" sid="408747089034094" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-12" name="Subtract from" sid="259059972883574" type="Player_Evans">
+                                                            <param id="0" name="Instance variable">HP</param>
+                                                            <param id="1" name="Value">Boss.Attack-((Player_Evans.DEF/100)*Boss.Attack)</param>
+                                                        </action>
+                                                        <action behavior="Flash" id="0" name="Flash" sid="689138644167270" type="Player_Evans">
+                                                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                                                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                                            <param id="2" name="Duration">0.3</param>
+                                                        </action>
+                                                        <action id="0" name="Spawn another object" sid="384810797926080" type="Player_Evans">
+                                                            <param id="0" name="Object">SpriteFont_Damage</param>
+                                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                            <param id="2" name="Image point">&quot;Damage&quot;</param>
+                                                        </action>
+                                                        <action id="0" name="Set text" sid="129583959225146" type="SpriteFont_Damage">
+                                                            <param id="0" name="Text">Boss.Attack-((Player_Evans.DEF/100)*Boss.Attack)</param>
+                                                        </action>
+                                                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="973771407487143" type="SpriteFont_Damage">
+                                                            <param id="0" name="Angle">270</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="579740122833323" title="Monster Property">
+                    <sub-events>
+                        <event-block sid="575467136728366">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="150802353295478" type="Monster">
+                                    <param id="0" name="Instance variable">HP</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="0" name="Set ignoring input" sid="486218436726612" type="Monster">
+                                    <param id="0" name="Input">1</param>
+                                </action>
+                                <action id="2" name="Stop" sid="485205735676949" type="Monster" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="801423549674669" type="Monster" />
+                            </actions>
+                            <sub-events>
+                                <event-block sid="917816161017220">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="765620248065152" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="969105758389594" type="System">
+                                            <param id="0" name="Variable">gold</param>
+                                            <param id="1" name="Value">Monster.Gold+((level_gold*10/100)*Monster.Gold)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="634614359673934">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="495923948165200" type="Monster">
+                                    <param id="0" name="Object">arrow</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="594849666950722" type="arrow" />
+                                <action id="-12" name="Subtract from" sid="427731979698491" type="Monster">
+                                    <param id="0" name="Instance variable">HP</param>
+                                    <param id="1" name="Value">Player_Evans.ATK/2</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="387439398516681" type="Monster">
+                                    <param id="0" name="Object">SpriteFont_Damage</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">&quot;Damage&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="322607994665002" type="SpriteFont_Damage">
+                                    <param id="0" name="Text">Player_Evans.ATK/2</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="943868339499549" type="SpriteFont_Damage">
+                                    <param id="0" name="Angle">270</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="234978036555858" title="Boss Property">
+                    <sub-events>
+                        <event-block sid="963788695792835">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="462304804767141" type="Boss">
+                                    <param id="0" name="Instance variable">HP</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Stop" sid="509604960778545" type="Boss" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="343003636407995" type="Boss" />
+                            </actions>
+                            <sub-events>
+                                <event-block sid="303003170898056">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="701889450239660" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="614273314130635" type="System">
+                                            <param id="0" name="Variable">gold</param>
+                                            <param id="1" name="Value">Monster.Gold+((level_gold*10/100)*Monster.Gold)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="284313049188833">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="534532687256917" type="Boss">
+                                    <param id="0" name="Object">arrow</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="378568860245914" type="arrow" />
+                                <action id="-12" name="Subtract from" sid="326998114609492" type="Boss">
+                                    <param id="0" name="Instance variable">HP</param>
+                                    <param id="1" name="Value">Player_Evans.ATK/2</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="912224394943078" type="Boss">
+                                    <param id="0" name="Object">SpriteFont_Damage</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">&quot;Damage&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="562910426856329" type="SpriteFont_Damage">
+                                    <param id="0" name="Text">Player_Evans.ATK/2</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="904192021926175" type="SpriteFont_Damage">
+                                    <param id="0" name="Angle">270</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
         </event-group>
         <event-group description="" sid="118061429592505" title="HUD">
@@ -180,7 +913,7 @@
                             </conditions>
                             <actions>
                                 <action id="-5" name="Set width" sid="397957022156932" type="bar_hpmp_box">
-                                    <param id="0" name="Width">(Player_Evans.HP/temp_hp)*100*1.4</param>
+                                    <param id="0" name="Width">(Player_Evans.HP/temp_hp)*100*(1.5 + (level_health*5/100))</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -194,45 +927,91 @@
                             </conditions>
                             <actions>
                                 <action id="-5" name="Set width" sid="645027224912028" type="bar_hpmp_box">
-                                    <param id="0" name="Width">(Player_Evans.MP/temp_mp)*100*1.0</param>
+                                    <param id="0" name="Width">(Player_Evans.MP/temp_mp)*100*(1 + (level_mana*5/100))</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="360901586722122">
+                        <event-block sid="541554780396639">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="641724350839571" type="bar_hpmp_round">
+                                <condition id="-7" name="Compare instance variable" sid="523139270730630" type="bar_hpmp_box">
                                     <param id="0" name="Instance variable">type</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;hp_end&quot;</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="485799415205988" type="bar_hpmp_box">
-                                    <param id="0" name="Instance variable">type</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;hp&quot;</param>
+                                    <param id="2" name="Value">&quot;hp_boss&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-1" name="Set X" sid="161433111917563" type="bar_hpmp_round">
-                                    <param id="0" name="X">bar_hpmp_box.ImagePointX(&quot;last&quot;)-0.35</param>
+                                <action id="-5" name="Set width" sid="786376445601741" type="bar_hpmp_box">
+                                    <param id="0" name="Width">(Boss.HP/temp_hp_boss)*100*4.4</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="252473293982322">
+                        <event-block sid="990167420538875">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="382441039989697" type="bar_hpmp_round">
+                                <condition id="-7" name="Compare instance variable" sid="275116160072169" type="SpriteFont_HUD">
                                     <param id="0" name="Instance variable">type</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;mp_end&quot;</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="454159665778654" type="bar_hpmp_box">
-                                    <param id="0" name="Instance variable">type</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;mp&quot;</param>
+                                    <param id="2" name="Value">&quot;hp_small&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-1" name="Set X" sid="205399152032718" type="bar_hpmp_round">
-                                    <param id="0" name="X">bar_hpmp_box.ImagePointX(&quot;last&quot;)-0.35</param>
+                                <action id="0" name="Set text" sid="775184268299790" type="SpriteFont_HUD">
+                                    <param id="0" name="Text">hp_potion_small</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="372827966613859">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="849512726467758" type="SpriteFont_HUD">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;hp_large&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="285790340176228" type="SpriteFont_HUD">
+                                    <param id="0" name="Text">hp_potion_large</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="934606309169832">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="560577086037177" type="SpriteFont_HUD">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;mp_small&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="245411274216319" type="SpriteFont_HUD">
+                                    <param id="0" name="Text">mp_potion_small</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="370970317208272">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="250892315261149" type="SpriteFont_HUD">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;mp_large&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="184405516337947" type="SpriteFont_HUD">
+                                    <param id="0" name="Text">mp_potion_large</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="578761554247783">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="982618512755219" type="SpriteFont_Coins">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;gold&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="174266732952225" type="SpriteFont_Coins">
+                                    <param id="0" name="Text">gold</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -250,16 +1029,6 @@
                     <sub-events>
                         <event-block any="1" sid="815084276613320">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="261245629794005" type="bar_hpmp_round">
-                                    <param id="0" name="Instance variable">type</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;hp_start&quot;</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="845405394254022" type="bar_hpmp_round">
-                                    <param id="0" name="Instance variable">type</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;hp_end&quot;</param>
-                                </condition>
                                 <condition id="-7" name="Compare instance variable" sid="527661317026686" type="bar_hpmp_box">
                                     <param id="0" name="Instance variable">type</param>
                                     <param id="1" name="Comparison">0</param>
@@ -268,9 +1037,6 @@
                             </conditions>
                             <actions>
                                 <action id="-15" name="Set visible" sid="954826614981475" type="bar_hpmp_box">
-                                    <param id="0" name="Visibility">0</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="341377963293969" type="bar_hpmp_round">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
                             </actions>
@@ -285,16 +1051,6 @@
                     <sub-events>
                         <event-block any="1" sid="156501043445074">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="632538050843797" type="bar_hpmp_round">
-                                    <param id="0" name="Instance variable">type</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;hp_start&quot;</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="181990028479575" type="bar_hpmp_round">
-                                    <param id="0" name="Instance variable">type</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;hp_end&quot;</param>
-                                </condition>
                                 <condition id="-7" name="Compare instance variable" sid="144417139173948" type="bar_hpmp_box">
                                     <param id="0" name="Instance variable">type</param>
                                     <param id="1" name="Comparison">0</param>
@@ -303,9 +1059,6 @@
                             </conditions>
                             <actions>
                                 <action id="-15" name="Set visible" sid="619316035013831" type="bar_hpmp_box">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="391563004827220" type="bar_hpmp_round">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
                             </actions>
@@ -324,16 +1077,6 @@
                     <sub-events>
                         <event-block any="1" sid="283858163355659">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="217443098940067" type="bar_hpmp_round">
-                                    <param id="0" name="Instance variable">type</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;mp_start&quot;</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="716602887642198" type="bar_hpmp_round">
-                                    <param id="0" name="Instance variable">type</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;mp_end&quot;</param>
-                                </condition>
                                 <condition id="-7" name="Compare instance variable" sid="740591375710477" type="bar_hpmp_box">
                                     <param id="0" name="Instance variable">type</param>
                                     <param id="1" name="Comparison">0</param>
@@ -342,9 +1085,6 @@
                             </conditions>
                             <actions>
                                 <action id="-15" name="Set visible" sid="557150852056566" type="bar_hpmp_box">
-                                    <param id="0" name="Visibility">0</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="183345974466767" type="bar_hpmp_round">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
                             </actions>
@@ -359,16 +1099,6 @@
                     <sub-events>
                         <event-block any="1" sid="136705659802372">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="202280733893727" type="bar_hpmp_round">
-                                    <param id="0" name="Instance variable">type</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;mp_start&quot;</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="714988626291117" type="bar_hpmp_round">
-                                    <param id="0" name="Instance variable">type</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;mp_end&quot;</param>
-                                </condition>
                                 <condition id="-7" name="Compare instance variable" sid="678070566718990" type="bar_hpmp_box">
                                     <param id="0" name="Instance variable">type</param>
                                     <param id="1" name="Comparison">0</param>
@@ -379,8 +1109,128 @@
                                 <action id="-15" name="Set visible" sid="729825215074721" type="bar_hpmp_box">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="333915713429932" type="bar_hpmp_round">
-                                    <param id="0" name="Visibility">1</param>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="267995290448073" title="Monster Movement">
+            <sub-events>
+                <comment>Monster Movement</comment>
+                <event-block sid="411970186516565">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="230939621858403" type="Monster">
+                            <param id="0" name="Instance variable">Patrol</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="562868079901078" type="Monster">
+                            <param id="0" name="Animation">&quot;Run&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="824396862982548" type="Monster">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="291206134286931" type="Monster">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="360819362383735">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="394795848347054" type="Monster">
+                            <param id="0" name="Instance variable">Patrol</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="799108439240983" type="Monster">
+                            <param id="0" name="Animation">&quot;Run&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="433142151483606" type="Monster">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="487364877722440" type="Monster">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="184263467865545">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="164729403466520" type="Monster">
+                            <param id="0" name="Object">Border</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="996242919319323">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="976130693672484" type="Monster">
+                                    <param id="0" name="Instance variable">Patrol</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="538211650596355" type="Monster">
+                                    <param id="0" name="Instance variable">Patrol</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="622195016193558">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="550803354851711" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="579079499930789" type="Monster">
+                                    <param id="0" name="Instance variable">Patrol</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="184550625109422">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="314554760887552" type="Monster">
+                            <param id="0" name="Object">Player_Evans</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="915162885336254" type="System">
+                            <param id="0" name="Variable">stealth</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="983957679530217">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="512504143847815" type="Player_Evans">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">Monster.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="641579608545718" type="Monster">
+                                    <param id="0" name="Instance variable">Patrol</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="840421521408146">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="437079888126842" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="952581324651473" type="Monster">
+                                    <param id="0" name="Instance variable">Patrol</param>
+                                    <param id="1" name="Value">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -388,10 +1238,8 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="323076362773935" title="Movement">
+        <event-group description="" sid="323076362773935" title="Player Movement &amp; Control">
             <sub-events>
-                <variable constant="0" name="stealth" sid="505718910814375" static="1" type="number">0</variable>
-                <variable constant="0" name="enrage" sid="628613301854393" static="1" type="number">0</variable>
                 <comment>Ignore input</comment>
                 <event-block sid="609168144157301">
                     <conditions>
@@ -719,7 +1567,7 @@
                             <param id="1" name="Effect">&quot;AdjustHSL&quot;</param>
                         </action>
                         <action id="-16" name="Wait" sid="661184654382844" type="System">
-                            <param id="0" name="Seconds">5</param>
+                            <param id="0" name="Seconds">8</param>
                         </action>
                         <action id="-27" name="Set effect enabled" sid="755099863083144" type="Player_Evans">
                             <param id="0" name="Mode">0</param>
@@ -906,6 +1754,11 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
+                        <condition id="-7" name="Compare instance variable" sid="890090521660148" type="Player_Evans">
+                            <param id="0" name="Instance variable">MP</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="367226302447617" type="System">
@@ -941,6 +1794,24 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="453134470273767">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="308811375777643" type="Player_Evans">
+                            <param id="0" name="Instance variable">MP</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="992053874922662" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="536127554417216" type="System">
+                            <param id="0" name="Variable">defend</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <comment>Pause</comment>
                 <event-block sid="545314356409868">
                     <conditions>
@@ -954,60 +1825,112 @@
                     <actions>
                         <action id="0" name="Call function" sid="247297073019857" type="Function">
                             <param id="0" name="Name">&quot;popup_show&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
-                        <action id="0" name="Set text" sid="590928873903111" type="SpriteFont_PopupText">
-                            <param id="0" name="Text">&quot;Game paused.&quot;&amp;newline&amp;&quot;Back to world map?&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;pause&quot;</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="386734166594141" title="Popup_game">
+        <event-group description="" sid="386734166594141" title="Popup game">
             <sub-events>
+                <variable constant="0" name="type" sid="301639905986275" static="1" type="text"></variable>
                 <event-block sid="809824306522589">
                     <conditions>
                         <condition id="0" name="On function" sid="871571862465460" type="Function">
                             <param id="0" name="Name">&quot;popup_show&quot;</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-4" name="Set layer visible" sid="893583726639804" type="System">
-                            <param id="0" name="Layer">&quot;Popup&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action behavior="FadeIn" id="0" name="Restart fade" sid="259678421254714" type="fade_popup" />
-                        <action behavior="FadeIn" id="0" name="Restart fade" sid="732391030851968" type="SpriteFont_PopupText" />
-                        <action behavior="FadeIn" id="0" name="Restart fade" sid="116811520910465" type="btn_check" />
-                        <action behavior="FadeIn" id="0" name="Restart fade" sid="879866139037964" type="btn_close" />
-                        <action id="-7" name="Set size" sid="396760152713730" type="bg_popup">
-                            <param id="0" name="Width">0</param>
-                            <param id="1" name="Height">180</param>
-                        </action>
-                        <action behavior="LiteTween" id="10" name="Start" sid="868556981153949" type="bg_popup">
-                            <param id="0" name="Start Mode">0</param>
-                            <param id="1" name="Force use current">0</param>
-                        </action>
-                        <action behavior="LiteTween" id="5" name="Set easing" sid="926370223358857" type="bg_popup">
-                            <param id="0" name="Function">17</param>
-                        </action>
-                        <action behavior="LiteTween" id="3" name="Set target" sid="839300319086135" type="bg_popup">
-                            <param id="0" name="Target is">4</param>
-                            <param id="1" name="Relativity">0</param>
-                            <param id="2" name="Value">1040</param>
-                        </action>
-                        <action behavior="FadeIn" id="0" name="Restart fade" sid="637569676747330" type="bg_popup" />
-                        <action id="-16" name="Wait" sid="525960927429199" type="System">
-                            <param id="0" name="Seconds">0.18</param>
-                        </action>
-                        <action id="-13" name="Set time scale" sid="654435725170454" type="System">
-                            <param id="0" name="Time scale">0</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="179191209332140" type="System">
-                            <param id="0" name="Group name">&quot;Movement&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="417925931362302">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="170769329853993" type="SpriteFont_PopupText">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">&quot;boss_name&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="298566892433885">
+                                    <conditions>
+                                        <condition id="1" name="Compare parameter" sid="723629139145668" type="Function">
+                                            <param id="0" name="Index">0</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;pause&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="590928873903111" type="SpriteFont_PopupText">
+                                            <param id="0" name="Text">&quot;Game paused.&quot;&amp;newline&amp;&quot;Back to world map?&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="188559136926372" type="System">
+                                            <param id="0" name="Variable">type</param>
+                                            <param id="1" name="Value">&quot;pause&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="363823427755986">
+                                    <conditions>
+                                        <condition id="1" name="Compare parameter" sid="290204764466152" type="Function">
+                                            <param id="0" name="Index">0</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;gameover&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="680942684056297" type="SpriteFont_PopupText">
+                                            <param id="0" name="Text">&quot;Game over.&quot;&amp;newline&amp;&quot;Retry?&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="129490520553497" type="System">
+                                            <param id="0" name="Variable">type</param>
+                                            <param id="1" name="Value">&quot;gameover&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="350843054435296">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-4" name="Set layer visible" sid="893583726639804" type="System">
+                                            <param id="0" name="Layer">&quot;Pops&quot;</param>
+                                            <param id="1" name="Visibility">1</param>
+                                        </action>
+                                        <action behavior="FadeIn" id="0" name="Restart fade" sid="259678421254714" type="fade_popup" />
+                                        <action behavior="FadeIn" id="0" name="Restart fade" sid="732391030851968" type="SpriteFont_PopupText" />
+                                        <action behavior="FadeIn" id="0" name="Restart fade" sid="116811520910465" type="btn_check" />
+                                        <action behavior="FadeIn" id="0" name="Restart fade" sid="879866139037964" type="btn_close" />
+                                        <action id="-7" name="Set size" sid="396760152713730" type="bg_popup">
+                                            <param id="0" name="Width">0</param>
+                                            <param id="1" name="Height">180</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="868556981153949" type="bg_popup">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="5" name="Set easing" sid="926370223358857" type="bg_popup">
+                                            <param id="0" name="Function">17</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="839300319086135" type="bg_popup">
+                                            <param id="0" name="Target is">4</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">1040</param>
+                                        </action>
+                                        <action behavior="FadeIn" id="0" name="Restart fade" sid="637569676747330" type="bg_popup" />
+                                        <action id="-16" name="Wait" sid="525960927429199" type="System">
+                                            <param id="0" name="Seconds">0.18</param>
+                                        </action>
+                                        <action id="-13" name="Set time scale" sid="654435725170454" type="System">
+                                            <param id="0" name="Time scale">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="447322283562534" type="System">
+                                            <param id="0" name="Group name">&quot;Player Movement &amp; Control&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="593789739589740">
                     <conditions>
@@ -1015,44 +1938,56 @@
                             <param id="0" name="Name">&quot;popup_hide&quot;</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action behavior="FadeOut" id="0" name="Restart fade" sid="239756759695524" type="fade_popup" />
-                        <action behavior="FadeOut" id="1" name="Start fade" sid="899146679358784" type="SpriteFont_PopupText" />
-                        <action behavior="FadeOut" id="1" name="Start fade" sid="187140009776380" type="btn_check" />
-                        <action behavior="FadeOut" id="1" name="Start fade" sid="916204936471654" type="btn_close" />
-                        <action behavior="LiteTween" id="10" name="Start" sid="502112459337757" type="bg_popup">
-                            <param id="0" name="Start Mode">0</param>
-                            <param id="1" name="Force use current">0</param>
-                        </action>
-                        <action behavior="LiteTween" id="5" name="Set easing" sid="495232133212731" type="bg_popup">
-                            <param id="0" name="Function">16</param>
-                        </action>
-                        <action behavior="LiteTween" id="3" name="Set target" sid="834535423602535" type="bg_popup">
-                            <param id="0" name="Target is">4</param>
-                            <param id="1" name="Relativity">0</param>
-                            <param id="2" name="Value">0</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="147694482797008" type="System">
-                            <param id="0" name="Seconds">0.18</param>
-                        </action>
-                        <action behavior="FadeOut" id="0" name="Restart fade" sid="380344322004103" type="bg_popup" />
-                        <action id="-16" name="Wait" sid="924189753560909" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="914906752063264" type="System">
-                            <param id="0" name="Layer">&quot;Popup&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="479299921010305" type="System">
-                            <param id="0" name="Group name">&quot;Movement&quot;</param>
-                            <param id="1" name="State">1</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="823294622966147">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="147697846810447" type="SpriteFont_PopupText">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">&quot;boss_name&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="808360810956500" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement &amp; Control&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action behavior="FadeOut" id="0" name="Restart fade" sid="239756759695524" type="fade_popup" />
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="899146679358784" type="SpriteFont_PopupText" />
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="187140009776380" type="btn_check" />
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="916204936471654" type="btn_close" />
+                                <action behavior="LiteTween" id="10" name="Start" sid="502112459337757" type="bg_popup">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="5" name="Set easing" sid="495232133212731" type="bg_popup">
+                                    <param id="0" name="Function">16</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="834535423602535" type="bg_popup">
+                                    <param id="0" name="Target is">4</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="147694482797008" type="System">
+                                    <param id="0" name="Seconds">0.18</param>
+                                </action>
+                                <action behavior="FadeOut" id="0" name="Restart fade" sid="380344322004103" type="bg_popup" />
+                                <action id="-16" name="Wait" sid="924189753560909" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="914906752063264" type="System">
+                                    <param id="0" name="Layer">&quot;Pops&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="146483136815896">
                     <conditions>
                         <condition id="-9" name="Layer is visible" sid="775884310843744" type="System">
-                            <param id="0" name="Layer">&quot;Popup&quot;</param>
+                            <param id="0" name="Layer">&quot;Pops&quot;</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -1086,6 +2021,29 @@
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="336268178408721">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="492150543606425" type="System">
+                                            <param id="0" name="Variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;gameover&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="713444247317674" type="Function">
+                                            <param id="0" name="Name">&quot;loading_show&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="122197533638705" type="System">
+                                            <param id="0" name="Seconds">LOADING_TIME</param>
+                                        </action>
+                                        <action id="-2" name="Go to layout" sid="635442527351795" type="System">
+                                            <param id="0" name="Layout">WorldMap</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block any="1" sid="431168011385750">
                             <conditions>
@@ -1118,7 +2076,13 @@
                             </actions>
                             <sub-events>
                                 <event-block sid="689735817542142">
-                                    <conditions />
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="315541121743763" type="System">
+                                            <param id="0" name="Variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;pause&quot;</param>
+                                        </condition>
+                                    </conditions>
                                     <actions>
                                         <action id="0" name="Call function" sid="738058383516000" type="Function">
                                             <param id="0" name="Name">&quot;loading_show&quot;</param>
@@ -1130,6 +2094,25 @@
                                         <action id="-2" name="Go to layout" sid="889818318554043" type="System">
                                             <param id="0" name="Layout">WorldMap</param>
                                         </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="294845531979072">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="895704724820617" type="System">
+                                            <param id="0" name="Variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;gameover&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="335828066839154" type="Function">
+                                            <param id="0" name="Name">&quot;loading_show&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="391532322734212" type="System">
+                                            <param id="0" name="Seconds">LOADING_TIME</param>
+                                        </action>
+                                        <action id="-26" name="Restart layout" sid="981967063611314" type="System" />
                                     </actions>
                                 </event-block>
                             </sub-events>

@@ -28757,6 +28757,12 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <effect-instances>
                         <effect-instance type="AdjustHSL">
@@ -28782,7 +28788,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="stand_" uid="3501">
+                <instance type="Valkyrie" uid="3501">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
