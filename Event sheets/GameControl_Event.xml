@@ -176,6 +176,79 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <variable constant="0" name="MULTIPLIER" sid="605448101457535" static="1" type="number">1</variable>
+                        <event-block sid="546861589395459">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="115526020112485" type="System">
+                                    <param id="0" name="Variable">difficulty</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Hard&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="804703329452057" type="System">
+                                    <param id="0" name="Variable">MULTIPLIER</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="939335213632250">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="705324346171590" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="979685608342327" type="System">
+                                    <param id="0" name="Variable">MULTIPLIER</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="881934485590237">
+                            <conditions />
+                            <actions>
+                                <action id="-10" name="Set value" sid="227044329226663" type="Boss">
+                                    <param id="0" name="Instance variable">Gold</param>
+                                    <param id="1" name="Value">Self.Gold*MULTIPLIER</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="825219830513960" type="Boss">
+                                    <param id="0" name="Instance variable">HP</param>
+                                    <param id="1" name="Value">Self.HP*MULTIPLIER</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="354257130752889" type="Boss">
+                                    <param id="0" name="Instance variable">Attack</param>
+                                    <param id="1" name="Value">Self.Attack*MULTIPLIER</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="773622241338194" type="Monster">
+                                    <param id="0" name="Instance variable">Gold</param>
+                                    <param id="1" name="Value">Self.Attack*MULTIPLIER</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="701495649780676" type="Monster">
+                                    <param id="0" name="Instance variable">HP</param>
+                                    <param id="1" name="Value">Self.Attack*MULTIPLIER</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="766955079163866" type="Monster">
+                                    <param id="0" name="Instance variable">Attack</param>
+                                    <param id="1" name="Value">Self.Attack*MULTIPLIER</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="240987775359433">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="743443108961224" type="Item">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;gold&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="870726959777707" type="Item">
+                                            <param id="0" name="Instance variable">amount</param>
+                                            <param id="1" name="Value">Self.amount*MULTIPLIER</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <variable constant="0" name="cam_focus" sid="895563673748959" static="1" type="number">0</variable>
