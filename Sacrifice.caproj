@@ -17,6 +17,7 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Chris Kent" id="SpriteFontPlus" version="1">SpriteFont+</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -1780,6 +1781,11 @@
                 </object-type>
                 <object-type name="item_gems" sid="720533632320289">
                     <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Platform" sid="274233436220461">
+                            <behavior id="Platform" />
+                        </behavior-type>
+                    </behaviors>
                     <animation-folder>
                         <animation framecount="8" loop="0" name="Unlocked" pingpong="0" repeatcount="1" repeatto="0" sid="473328549929138" speed="0">
                             <frame duration="1" hotspotX="0.501901" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\Gems\potion_purple.png" />
@@ -2535,6 +2541,11 @@
                 <instance-variables>
                     <instance-variable name="type" sid="670735525141159" type="string" />
                 </instance-variables>
+                <behaviors>
+                    <behavior-type name="Pin" sid="789898665500071">
+                        <behavior id="PinPlus" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="660126291594948" speed="0">
                         <frame duration="1" hotspotX="0" hotspotY="0.533333">
@@ -2658,6 +2669,14 @@
             </object-type>
             <object-type name="faded_background" sid="988845423567811">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="type" sid="286536011800027" type="string" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Pin" sid="188766063505978">
+                        <behavior id="PinPlus" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="554780535146779" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Downloads\faded_background.png">
@@ -6196,6 +6215,36 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder name="Particles">
+            <object-type name="Particles_attack" sid="378573316988832">
+                <plugin id="Particles" />
+                <texture />
+            </object-type>
+            <object-type name="Particles_Health" sid="695610179549002">
+                <plugin id="Particles" />
+                <texture />
+            </object-type>
+            <object-type name="Particles_Mana" sid="307889226996877">
+                <plugin id="Particles" />
+                <texture />
+            </object-type>
+            <object-type name="Particles_water_bullet" sid="645924543515781">
+                <plugin id="Particles" />
+                <texture />
+            </object-type>
+            <object-type name="Particles_water_splash" sid="366323172853959">
+                <plugin id="Particles" />
+                <texture />
+            </object-type>
+            <object-type name="Particles_Health2" sid="797493005724701">
+                <plugin id="Particles" />
+                <texture />
+            </object-type>
+            <object-type name="Particles_Health3" sid="253444398664021">
+                <plugin id="Particles" />
+                <texture />
+            </object-type>
+        </object-folder>
         <object-type name="camera" sid="335349714748180">
             <plugin id="Sprite" />
             <behaviors>
@@ -6252,6 +6301,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00000.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6262,6 +6313,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00001.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6272,6 +6325,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00002.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6282,6 +6337,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00003.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6292,6 +6349,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00004.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6302,6 +6361,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00005.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6312,6 +6373,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00006.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6322,6 +6385,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00007.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6332,6 +6397,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00008.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6342,6 +6409,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00009.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6352,6 +6421,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00010.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6362,6 +6433,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00011.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6372,6 +6445,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00012.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6382,6 +6457,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00013.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6392,6 +6469,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00014.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6402,6 +6481,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00015.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6412,6 +6493,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00016.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6422,6 +6505,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00017.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6432,6 +6517,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00018.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6442,6 +6529,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00019.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6452,6 +6541,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00020.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6462,6 +6553,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\stand\stand_00021.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6474,6 +6567,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\coba\run_00000.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6484,6 +6579,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\coba\run_00001.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6494,6 +6591,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\coba\run_00002.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6504,6 +6603,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\coba\run_00003.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6514,6 +6615,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\coba\run_00004.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6524,6 +6627,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\coba\run_00005.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6534,6 +6639,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\coba\run_00006.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6544,6 +6651,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\coba\run_00007.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6554,6 +6663,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\run\coba\run_00008.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6566,6 +6677,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00000.png">
                         <image-point name="Bow" x="1.00152" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.586364" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6576,6 +6689,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00001.png">
                         <image-point name="Bow" x="1.00152" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.586364" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6586,6 +6701,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00002.png">
                         <image-point name="Bow" x="1.00152" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.586364" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6596,6 +6713,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00003.png">
                         <image-point name="Bow" x="1.00152" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.586364" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6606,6 +6725,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00004.png">
                         <image-point name="Bow" x="1.00152" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.586364" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6616,6 +6737,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00005.png">
                         <image-point name="Bow" x="1.00152" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.586364" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6626,6 +6749,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00006.png">
                         <image-point name="Bow" x="1.00152" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.586364" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6636,6 +6761,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00007.png">
                         <image-point name="Bow" x="1.00152" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.586364" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6646,6 +6773,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00008.png">
                         <image-point name="Bow" x="1.00152" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.586364" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6656,6 +6785,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00009.png">
                         <image-point name="Bow" x="1.00152" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.586364" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6666,6 +6797,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00010.png">
                         <image-point name="Bow" x="1.00152" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.586364" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6676,6 +6809,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00011.png">
                         <image-point name="Bow" x="1.00152" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.586364" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6686,6 +6821,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00012.png">
                         <image-point name="Bow" x="1.00152" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.586364" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6696,6 +6833,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00013.png">
                         <image-point name="Bow" x="1.00152" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.586364" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6706,6 +6845,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00014.png">
                         <image-point name="Bow" x="1.00152" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.586364" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6716,6 +6857,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\dead\dead_00015.png">
                         <image-point name="Bow" x="1.00152" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.586364" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6728,6 +6871,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\jump\jump_00000.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6738,6 +6883,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\jump\jump_00001.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6748,6 +6895,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\jump\jump_00002.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6758,6 +6907,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\jump\jump_00003.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6768,6 +6919,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\jump\jump_00004.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6778,6 +6931,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\jump\jump_00005.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6788,6 +6943,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\jump\jump_00006.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6798,6 +6955,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\jump\jump_00007.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6808,6 +6967,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\jump\jump_00008.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6820,6 +6981,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000000.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6830,6 +6993,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000001.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6840,6 +7005,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000002.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6850,6 +7017,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000003.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6860,6 +7029,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000004.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6870,6 +7041,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000005.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6880,6 +7053,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000007.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6890,6 +7065,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000008.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6900,6 +7077,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000009.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6910,6 +7089,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000010.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6920,6 +7101,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000011.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6930,6 +7113,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000012.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6940,6 +7125,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000013.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6950,6 +7137,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000014.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6960,6 +7149,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\fall\fall_000006.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6972,6 +7163,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0000.png">
                         <image-point name="Bow" x="1.00132" y="0.519728" />
                         <image-point name="Damage" x="0.5" y="0.146939" />
+                        <image-point name="Bullet" x="0.585526" y="0.50068" />
+                        <image-point name="Center" x="0.5" y="0.50068" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6982,6 +7175,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0001.png">
                         <image-point name="Bow" x="1.00132" y="0.519728" />
                         <image-point name="Damage" x="0.5" y="0.146939" />
+                        <image-point name="Bullet" x="0.585526" y="0.50068" />
+                        <image-point name="Center" x="0.5" y="0.50068" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -6992,6 +7187,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0002.png">
                         <image-point name="Bow" x="1.00132" y="0.519728" />
                         <image-point name="Damage" x="0.5" y="0.146939" />
+                        <image-point name="Bullet" x="0.585526" y="0.50068" />
+                        <image-point name="Center" x="0.5" y="0.50068" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7002,6 +7199,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0003.png">
                         <image-point name="Bow" x="1.00132" y="0.519728" />
                         <image-point name="Damage" x="0.5" y="0.146939" />
+                        <image-point name="Bullet" x="0.585526" y="0.50068" />
+                        <image-point name="Center" x="0.5" y="0.50068" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7012,6 +7211,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0004.png">
                         <image-point name="Bow" x="1.00132" y="0.519728" />
                         <image-point name="Damage" x="0.5" y="0.146939" />
+                        <image-point name="Bullet" x="0.585526" y="0.50068" />
+                        <image-point name="Center" x="0.5" y="0.50068" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7022,6 +7223,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0005.png">
                         <image-point name="Bow" x="1.00132" y="0.519728" />
                         <image-point name="Damage" x="0.5" y="0.146939" />
+                        <image-point name="Bullet" x="0.585526" y="0.50068" />
+                        <image-point name="Center" x="0.5" y="0.50068" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7032,6 +7235,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0006.png">
                         <image-point name="Bow" x="1.00132" y="0.519728" />
                         <image-point name="Damage" x="0.5" y="0.146939" />
+                        <image-point name="Bullet" x="0.585526" y="0.50068" />
+                        <image-point name="Center" x="0.5" y="0.50068" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7042,6 +7247,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0007.png">
                         <image-point name="Bow" x="1.00132" y="0.519728" />
                         <image-point name="Damage" x="0.5" y="0.146939" />
+                        <image-point name="Bullet" x="0.585526" y="0.50068" />
+                        <image-point name="Center" x="0.5" y="0.50068" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7052,6 +7259,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0008.png">
                         <image-point name="Bow" x="1.00132" y="0.519728" />
                         <image-point name="Damage" x="0.5" y="0.146939" />
+                        <image-point name="Bullet" x="0.585526" y="0.50068" />
+                        <image-point name="Center" x="0.5" y="0.50068" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7062,6 +7271,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0009.png">
                         <image-point name="Bow" x="1.00132" y="0.519728" />
                         <image-point name="Damage" x="0.5" y="0.146939" />
+                        <image-point name="Bullet" x="0.585526" y="0.50068" />
+                        <image-point name="Center" x="0.5" y="0.50068" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7072,6 +7283,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0010.png">
                         <image-point name="Bow" x="1.00132" y="0.519728" />
                         <image-point name="Damage" x="0.5" y="0.146939" />
+                        <image-point name="Bullet" x="0.585526" y="0.50068" />
+                        <image-point name="Center" x="0.5" y="0.50068" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7082,6 +7295,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0011.png">
                         <image-point name="Bow" x="1.00132" y="0.519728" />
                         <image-point name="Damage" x="0.5" y="0.146939" />
+                        <image-point name="Bullet" x="0.585526" y="0.50068" />
+                        <image-point name="Center" x="0.5" y="0.50068" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7092,6 +7307,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0012.png">
                         <image-point name="Bow" x="1.00132" y="0.519728" />
                         <image-point name="Damage" x="0.5" y="0.146939" />
+                        <image-point name="Bullet" x="0.585526" y="0.50068" />
+                        <image-point name="Center" x="0.5" y="0.50068" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7102,6 +7319,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0013.png">
                         <image-point name="Bow" x="1.00132" y="0.519728" />
                         <image-point name="Damage" x="0.5" y="0.146939" />
+                        <image-point name="Bullet" x="0.585526" y="0.50068" />
+                        <image-point name="Center" x="0.5" y="0.50068" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7112,6 +7331,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0014.png">
                         <image-point name="Bow" x="1.00132" y="0.519728" />
                         <image-point name="Damage" x="0.5" y="0.146939" />
+                        <image-point name="Bullet" x="0.585526" y="0.50068" />
+                        <image-point name="Center" x="0.5" y="0.50068" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7122,6 +7343,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack stand\coba\attack_sword0015.png">
                         <image-point name="Bow" x="1.00132" y="0.519728" />
                         <image-point name="Damage" x="0.5" y="0.146939" />
+                        <image-point name="Bullet" x="0.585526" y="0.50068" />
+                        <image-point name="Center" x="0.5" y="0.50068" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7134,6 +7357,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00000.png">
                         <image-point name="Bow" x="1.00147" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585294" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7144,6 +7369,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00001.png">
                         <image-point name="Bow" x="1.00147" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585294" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7154,6 +7381,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00002.png">
                         <image-point name="Bow" x="1.00147" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585294" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7164,6 +7393,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00003.png">
                         <image-point name="Bow" x="1.00147" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585294" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7174,6 +7405,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00004.png">
                         <image-point name="Bow" x="1.00147" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585294" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7184,6 +7417,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00005.png">
                         <image-point name="Bow" x="1.00147" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585294" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7194,6 +7429,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00006.png">
                         <image-point name="Bow" x="1.00147" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585294" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7204,6 +7441,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00007.png">
                         <image-point name="Bow" x="1.00147" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585294" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7214,6 +7453,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00008.png">
                         <image-point name="Bow" x="1.00147" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585294" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7224,6 +7465,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00009.png">
                         <image-point name="Bow" x="1.00147" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585294" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7234,6 +7477,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00010.png">
                         <image-point name="Bow" x="1.00147" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585294" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7244,6 +7489,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00011.png">
                         <image-point name="Bow" x="1.00147" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585294" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7254,6 +7501,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00012.png">
                         <image-point name="Bow" x="1.00147" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585294" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7264,6 +7513,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00013.png">
                         <image-point name="Bow" x="1.00147" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585294" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7274,6 +7525,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00014.png">
                         <image-point name="Bow" x="1.00147" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585294" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7284,6 +7537,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\attack crossbow\crossbow_00015.png">
                         <image-point name="Bow" x="1.00147" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585294" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7296,6 +7551,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00000.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7306,6 +7563,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00001.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7316,6 +7575,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00002.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7326,6 +7587,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00003.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7336,6 +7599,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00004.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7346,6 +7611,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00005.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7356,6 +7623,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00006.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7366,6 +7635,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00007.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7376,6 +7647,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00008.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7386,6 +7659,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00009.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7396,6 +7671,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00010.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7406,6 +7683,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00011.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7416,6 +7695,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00012.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7426,6 +7707,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00013.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7436,6 +7719,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00014.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7446,6 +7731,8 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Player\shield\shield_00015.png">
                         <image-point name="Bow" x="1.00195" y="0.519766" />
                         <image-point name="Damage" x="0.5" y="0.146413" />
+                        <image-point name="Bullet" x="0.585938" y="0.500732" />
+                        <image-point name="Center" x="0.5" y="0.500732" />
                         <collision-poly>
                             <point x="0.351563" y="0.133236" />
                             <point x="0.658203" y="0.1347" />
@@ -7786,13 +8073,24 @@
         </global-instance>
     </global-instances>
     <sounds-folder>
-        <file name="GUI_Select_26 1.ogg" />
-        <file name="tick_01.ogg" />
-        <file name="select_02.ogg" />
+        <file name="gui_select.ogg" />
+        <file name="gui_tick.ogg" />
+        <file name="get_coin.ogg" />
         <file name="bow_sfx.ogg" />
         <file name="rage_sfx.ogg" />
         <file name="sneak_sfx.ogg" />
         <file name="sword_sfx.ogg" />
+        <file name="shop_sfx.ogg" />
+        <file name="book_swipe_sfx.ogg" />
+        <file name="book_open_sfx.ogg" />
+        <file name="water_bullet.ogg" />
+        <file name="water_splash_bullet.ogg" />
+        <file name="water_splash_player.ogg" />
+        <file name="get_potion.ogg" />
+        <file name="use_potion.ogg" />
+        <file name="level_complete.ogg" />
+        <file name="level_failed.ogg" />
+        <file name="bow_hit.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="Main menu  2 (PerituneMaterial_World_OP).ogg" />

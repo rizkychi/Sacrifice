@@ -72,6 +72,10 @@
                             <param id="0" name="Variable">enrage</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="-9" name="Set value" sid="880760106011022" type="System">
+                            <param id="0" name="Variable">cam_focus</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block any="1" sid="335283706113375">
@@ -121,10 +125,56 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-16" name="Set opacity" sid="328853799852274" type="SpriteFont_PopupText">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
                                 <action id="0" name="Set text" sid="520657742591447" type="SpriteFont_PopupText">
-                                    <param id="0" name="Text">Array_book.At(stage+1,2)</param>
+                                    <param id="0" name="Text">Array_book.At(item_gems.AnimationFrame,2)</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block any="1" sid="459026032446365">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="350883740753695" type="bar_hpmp_box">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;hp_boss&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="933353002798570" type="bar_hpmp_box">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;hp_boss_blank&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pin" id="8" name="pinOpacity" sid="650761064589943" type="bar_hpmp_box">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="872394398587453" type="bar_hpmp_box">
+                                            <param id="0" name="Pin to">SpriteFont_PopupText</param>
+                                            <param id="1" name="Mode">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="911804614986752">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="188567312098763" type="faded_background">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;bg_boss&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pin" id="8" name="pinOpacity" sid="566539118194416" type="faded_background">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="710281366335879" type="faded_background">
+                                            <param id="0" name="Pin to">SpriteFont_PopupText</param>
+                                            <param id="1" name="Mode">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -158,6 +208,7 @@
                         </action>
                     </actions>
                 </event-block>
+                <variable constant="0" name="temp_cam_position" sid="846599973075935" static="1" type="number">0</variable>
                 <event-block sid="130970404756559">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="439012870217580" type="System">
@@ -167,14 +218,62 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Set position" sid="861772610914855" type="camera">
-                            <param id="0" name="X">lerp(Self.X, Boss.X-700, 0.025)</param>
-                            <param id="1" name="Y">lerp(Self.Y, Player_Evans.Y-200, 0.05)</param>
-                        </action>
                         <action id="-1" name="Set X" sid="639203006977352" type="Block">
                             <param id="0" name="X">camera.X-(canvas_width/2)</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="898240422206730">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="780431401933948" type="Boss">
+                                    <param id="0" name="Instance variable">HP</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="861772610914855" type="camera">
+                                    <param id="0" name="X">lerp(Self.X, Boss.X-700, 0.025)</param>
+                                    <param id="1" name="Y">lerp(Self.Y, Player_Evans.Y-200, 0.05)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="858723299084323">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="813197154452951" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="684040858964409" type="camera">
+                                    <param id="0" name="X">lerp(Self.X, temp_cam_position, 0.025)</param>
+                                    <param id="1" name="Y">lerp(Self.Y, Player_Evans.Y-200, 0.05)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="802410926514484">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="597254487769899" type="SpriteFont_PopupText">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;boss_name&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="FadeIn" id="1" name="Start fade" sid="370706904823339" type="SpriteFont_PopupText" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="607108357534956">
+                            <conditions />
+                            <actions>
+                                <action id="-16" name="Wait" sid="457119661350514" type="System">
+                                    <param id="0" name="Seconds">5</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="379946066070184" type="System">
+                                    <param id="0" name="Variable">temp_cam_position</param>
+                                    <param id="1" name="Value">camera.X</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-group description="" sid="985339027503750" title="Item Property">
                     <sub-events>
@@ -197,6 +296,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="247217990216694" type="Audio">
+                                            <param id="0" name="Audio file">get_coin</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">VolumeSFX</param>
+                                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                        </action>
                                         <action id="-10" name="Add to" sid="265523837175986" type="System">
                                             <param id="0" name="Variable">gold</param>
                                             <param id="1" name="Value">Item.amount+((level_gold*10/100)*Item.amount)</param>
@@ -212,6 +317,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="133631170137025" type="Audio">
+                                            <param id="0" name="Audio file">get_potion</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">VolumeSFX</param>
+                                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                        </action>
                                         <action id="-10" name="Add to" sid="895984961390217" type="System">
                                             <param id="0" name="Variable">hp_potion_small</param>
                                             <param id="1" name="Value">Item.amount</param>
@@ -227,6 +338,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="116118451436901" type="Audio">
+                                            <param id="0" name="Audio file">get_potion</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">VolumeSFX</param>
+                                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                        </action>
                                         <action id="-10" name="Add to" sid="455249915299530" type="System">
                                             <param id="0" name="Variable">hp_potion_large</param>
                                             <param id="1" name="Value">Item.amount</param>
@@ -242,6 +359,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="848279990207850" type="Audio">
+                                            <param id="0" name="Audio file">get_potion</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">VolumeSFX</param>
+                                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                        </action>
                                         <action id="-10" name="Add to" sid="442204416389081" type="System">
                                             <param id="0" name="Variable">mp_potion_small</param>
                                             <param id="1" name="Value">Item.amount</param>
@@ -257,11 +380,59 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="909269906041078" type="Audio">
+                                            <param id="0" name="Audio file">get_potion</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">VolumeSFX</param>
+                                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                        </action>
                                         <action id="-10" name="Add to" sid="469303590079945" type="System">
                                             <param id="0" name="Variable">mp_potion_large</param>
                                             <param id="1" name="Value">Item.amount</param>
                                         </action>
                                     </actions>
+                                </event-block>
+                                <event-block sid="406312450236011">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="282982874363229" type="Item">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;gems&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="470888048458052">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="444422751232161" type="System" />
+                                                <condition id="3" name="Compare frame" sid="786685382535588" type="item_gems">
+                                                    <param id="0" name="Comparison">4</param>
+                                                    <param id="1" name="Number">stage</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="477709976512389" type="System">
+                                                    <param id="0" name="Variable">stage</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="105204425578713">
+                                            <conditions />
+                                            <actions>
+                                                <action id="0" name="Play" sid="525825704841782" type="Audio">
+                                                    <param id="0" name="Audio file">level_complete</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">VolumeSFX</param>
+                                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                                </action>
+                                                <action id="0" name="Call function" sid="612978428377723" type="Function">
+                                                    <param id="0" name="Name">&quot;popup_show&quot;</param>
+                                                    <param id="1" name="Parameter {n}">&quot;gems&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -319,6 +490,17 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="111627852427812" type="Audio">
+                                    <param id="0" name="Audio file">water_splash_player</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">VolumeSFX</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="328568159636198" type="Player_Evans">
+                                    <param id="0" name="Object">Particles_water_splash</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
                                 <action id="-10" name="Set value" sid="242040903529510" type="Player_Evans">
                                     <param id="0" name="Instance variable">HP</param>
                                     <param id="1" name="Value">0</param>
@@ -367,13 +549,19 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="341081593321594" type="Audio">
+                                    <param id="0" name="Audio file">level_failed</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">VolumeSFX</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                </action>
                                 <action id="0" name="Call function" sid="949517258260194" type="Function">
                                     <param id="0" name="Name">&quot;popup_show&quot;</param>
                                     <param id="1" name="Parameter {n}">&quot;gameover&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <variable constant="1" name="OFFSET_ATK" sid="842347437391921" static="1" type="number">30</variable>
+                        <variable constant="1" name="OFFSET_ATK" sid="842347437391921" static="1" type="number">50</variable>
                         <event-block sid="767054234821130">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="570047180236072" type="Player_Evans">
@@ -578,6 +766,17 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="972352246914139" type="Audio">
+                                            <param id="0" name="Audio file">water_splash_bullet</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">VolumeSFX</param>
+                                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="568939096365199" type="Player_Evans">
+                                            <param id="0" name="Object">Particles_water_bullet</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="Image point">&quot;Bullet&quot;</param>
+                                        </action>
                                         <action id="-9" name="Destroy" sid="980916001913860" type="Enemy_Bullet" />
                                     </actions>
                                     <sub-events>
@@ -724,7 +923,19 @@
                                                 </condition>
                                                 <condition id="7" inverted="1" name="Is mirrored" sid="108103322163190" type="Player_Evans" />
                                             </conditions>
-                                            <actions />
+                                            <actions>
+                                                <action id="0" name="Play" sid="395385670662123" type="Audio">
+                                                    <param id="0" name="Audio file">water_splash_bullet</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">VolumeSFX</param>
+                                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="190952671051723" type="Player_Evans">
+                                                    <param id="0" name="Object">Particles_water_bullet</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="Image point">&quot;Bow&quot;</param>
+                                                </action>
+                                            </actions>
                                             <sub-events>
                                                 <event-block sid="374752492496739">
                                                     <conditions>
@@ -743,7 +954,19 @@
                                             <conditions>
                                                 <condition id="-22" name="Else" sid="865634370258573" type="System" />
                                             </conditions>
-                                            <actions />
+                                            <actions>
+                                                <action id="0" name="Play" sid="659772863847256" type="Audio">
+                                                    <param id="0" name="Audio file">water_splash_bullet</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">VolumeSFX</param>
+                                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="945726961393864" type="Player_Evans">
+                                                    <param id="0" name="Object">Particles_water_bullet</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="Image point">&quot;Bullet&quot;</param>
+                                                </action>
+                                            </actions>
                                             <sub-events>
                                                 <event-block sid="313267137311809">
                                                     <conditions>
@@ -818,6 +1041,17 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="230366779541686" type="Audio">
+                                    <param id="0" name="Audio file">bow_hit</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">VolumeSFX</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="531315356371539" type="arrow">
+                                    <param id="0" name="Object">Particles_attack</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
                                 <action id="-9" name="Destroy" sid="594849666950722" type="arrow" />
                                 <action id="-12" name="Subtract from" sid="427731979698491" type="Monster">
                                     <param id="0" name="Instance variable">HP</param>
@@ -849,6 +1083,10 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-10" name="Set value" sid="586434286662824" type="Boss">
+                                    <param id="0" name="Instance variable">HP</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
                                 <action id="2" name="Stop" sid="509604960778545" type="Boss" />
                                 <action behavior="Fade" id="1" name="Start fade" sid="343003636407995" type="Boss" />
                             </actions>
@@ -860,7 +1098,12 @@
                                     <actions>
                                         <action id="-10" name="Add to" sid="614273314130635" type="System">
                                             <param id="0" name="Variable">gold</param>
-                                            <param id="1" name="Value">Monster.Gold+((level_gold*10/100)*Monster.Gold)</param>
+                                            <param id="1" name="Value">boss.Gold+((level_gold*10/100)*Boss.Gold)</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="441571475847834" type="camera">
+                                            <param id="0" name="Object">item_gems</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="Image point">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -873,6 +1116,17 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="440996777828654" type="Audio">
+                                    <param id="0" name="Audio file">bow_hit</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">VolumeSFX</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="638509482172538" type="arrow">
+                                    <param id="0" name="Object">Particles_attack</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
                                 <action id="-9" name="Destroy" sid="378568860245914" type="arrow" />
                                 <action id="-12" name="Subtract from" sid="326998114609492" type="Boss">
                                     <param id="0" name="Instance variable">HP</param>
@@ -1415,6 +1669,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="229516372434133" type="Audio">
+                            <param id="0" name="Audio file">use_potion</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">VolumeSFX</param>
+                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                        </action>
                         <action id="-11" name="Subtract from" sid="864502068706642" type="System">
                             <param id="0" name="Variable">hp_potion_small</param>
                             <param id="1" name="Value">1</param>
@@ -1422,6 +1682,15 @@
                         <action id="-11" name="Add to" sid="371005531284280" type="Player_Evans">
                             <param id="0" name="Instance variable">HP</param>
                             <param id="1" name="Value">100</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="103382199388259" type="Player_Evans">
+                            <param id="0" name="Object">Particles_Health</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="Image point">&quot;Center&quot;</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="551668165728951" type="Particles_Health">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Object">Player_Evans</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1437,6 +1706,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="133783609184993" type="Audio">
+                            <param id="0" name="Audio file">use_potion</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">VolumeSFX</param>
+                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                        </action>
                         <action id="-11" name="Subtract from" sid="620457620094564" type="System">
                             <param id="0" name="Variable">hp_potion_large</param>
                             <param id="1" name="Value">1</param>
@@ -1444,6 +1719,15 @@
                         <action id="-11" name="Add to" sid="916872023147127" type="Player_Evans">
                             <param id="0" name="Instance variable">HP</param>
                             <param id="1" name="Value">500</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="184935116965913" type="Player_Evans">
+                            <param id="0" name="Object">Particles_Health</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="Image point">&quot;Center&quot;</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="674692885074784" type="Particles_Health">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Object">Player_Evans</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1459,6 +1743,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="337028637667946" type="Audio">
+                            <param id="0" name="Audio file">use_potion</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">VolumeSFX</param>
+                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                        </action>
                         <action id="-11" name="Subtract from" sid="384103932435732" type="System">
                             <param id="0" name="Variable">mp_potion_small</param>
                             <param id="1" name="Value">1</param>
@@ -1466,6 +1756,15 @@
                         <action id="-11" name="Add to" sid="920514368214979" type="Player_Evans">
                             <param id="0" name="Instance variable">MP</param>
                             <param id="1" name="Value">10</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="539096472415142" type="Player_Evans">
+                            <param id="0" name="Object">Particles_Mana</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="Image point">&quot;Center&quot;</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="972731582636187" type="Particles_Mana">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Object">Player_Evans</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1481,6 +1780,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="318332862753313" type="Audio">
+                            <param id="0" name="Audio file">use_potion</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">VolumeSFX</param>
+                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                        </action>
                         <action id="-11" name="Subtract from" sid="269891076075084" type="System">
                             <param id="0" name="Variable">mp_potion_large</param>
                             <param id="1" name="Value">1</param>
@@ -1488,6 +1793,15 @@
                         <action id="-11" name="Add to" sid="324102874341357" type="Player_Evans">
                             <param id="0" name="Instance variable">MP</param>
                             <param id="1" name="Value">50</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="838738412743378" type="Player_Evans">
+                            <param id="0" name="Object">Particles_Mana</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="Image point">&quot;Center&quot;</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="351929172220339" type="Particles_Mana">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Object">Player_Evans</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1592,6 +1906,26 @@
                         <action id="-10" name="Set value" sid="743285067640420" type="Player_Evans">
                             <param id="0" name="Instance variable">ATK</param>
                             <param id="1" name="Value">Player_Evans.ATK * 1/2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="325594592886642">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="696706873755361" type="System">
+                            <param id="0" name="Variable">enrage</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="678490939925928" type="Player_Evans">
+                            <param id="0" name="Object">Particles_Health3</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="Image point">&quot;Center&quot;</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="953291281670754" type="Particles_Health3">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Object">Player_Evans</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1836,6 +2170,12 @@
                         </action>
                     </actions>
                 </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="386734166594141" title="Popup game">
+            <sub-events>
+                <variable constant="0" name="type" sid="301639905986275" static="1" type="text"></variable>
+                <variable constant="0" name="pop_ready" sid="460805816153488" static="1" type="number">0</variable>
                 <comment>Pause</comment>
                 <event-block sid="545314356409868">
                     <conditions>
@@ -1843,7 +2183,15 @@
                             <param id="0" name="Key">27</param>
                         </condition>
                         <condition id="-9" inverted="1" name="Layer is visible" sid="836068169868846" type="System">
-                            <param id="0" name="Layer">&quot;Popup&quot;</param>
+                            <param id="0" name="Layer">&quot;Pops&quot;</param>
+                        </condition>
+                        <condition id="-9" inverted="1" name="Layer is visible" sid="764034061435969" type="System">
+                            <param id="0" name="Layer">&quot;Loading&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="347078181140568" type="System">
+                            <param id="0" name="Variable">pop_ready</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1853,11 +2201,6 @@
                         </action>
                     </actions>
                 </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="386734166594141" title="Popup game">
-            <sub-events>
-                <variable constant="0" name="type" sid="301639905986275" static="1" type="text"></variable>
                 <event-block sid="809824306522589">
                     <conditions>
                         <condition id="0" name="On function" sid="871571862465460" type="Function">
@@ -1904,11 +2247,29 @@
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Set text" sid="680942684056297" type="SpriteFont_PopupText">
-                                            <param id="0" name="Text">&quot;Game over.&quot;&amp;newline&amp;&quot;Retry?&quot;</param>
+                                            <param id="0" name="Text">&quot;You die!&quot;&amp;newline&amp;&quot;Retry?&quot;</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="129490520553497" type="System">
                                             <param id="0" name="Variable">type</param>
                                             <param id="1" name="Value">&quot;gameover&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="530819192435512">
+                                    <conditions>
+                                        <condition id="1" name="Compare parameter" sid="866390753292845" type="Function">
+                                            <param id="0" name="Index">0</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;gems&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="395420106784249" type="SpriteFont_PopupText">
+                                            <param id="0" name="Text">&quot;Congratulation!&quot;&amp;newline&amp;&quot;You got &quot;&amp;Array_book.At(stage,0)</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="852321697812379" type="System">
+                                            <param id="0" name="Variable">type</param>
+                                            <param id="1" name="Value">&quot;gems&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1918,6 +2279,29 @@
                                         <action id="-4" name="Set layer visible" sid="893583726639804" type="System">
                                             <param id="0" name="Layer">&quot;Pops&quot;</param>
                                             <param id="1" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-13" name="Set time scale" sid="654435725170454" type="System">
+                                            <param id="0" name="Time scale">0</param>
+                                        </action>
+                                        <action id="-14" name="Set object time scale" sid="992901304242418" type="System">
+                                            <param id="0" name="Object">bg_popup</param>
+                                            <param id="1" name="Time scale">1.0</param>
+                                        </action>
+                                        <action id="-14" name="Set object time scale" sid="566443588660131" type="System">
+                                            <param id="0" name="Object">btn_check</param>
+                                            <param id="1" name="Time scale">1.0</param>
+                                        </action>
+                                        <action id="-14" name="Set object time scale" sid="949774914631643" type="System">
+                                            <param id="0" name="Object">btn_close</param>
+                                            <param id="1" name="Time scale">1.0</param>
+                                        </action>
+                                        <action id="-14" name="Set object time scale" sid="392201567551770" type="System">
+                                            <param id="0" name="Object">SpriteFont_PopupText</param>
+                                            <param id="1" name="Time scale">1.0</param>
+                                        </action>
+                                        <action id="-14" name="Set object time scale" sid="343605808634872" type="System">
+                                            <param id="0" name="Object">fade_popup</param>
+                                            <param id="1" name="Time scale">1.0</param>
                                         </action>
                                         <action behavior="FadeIn" id="0" name="Restart fade" sid="259678421254714" type="fade_popup" />
                                         <action behavior="FadeIn" id="0" name="Restart fade" sid="732391030851968" type="SpriteFont_PopupText" />
@@ -1940,15 +2324,13 @@
                                             <param id="2" name="Value">1040</param>
                                         </action>
                                         <action behavior="FadeIn" id="0" name="Restart fade" sid="637569676747330" type="bg_popup" />
-                                        <action id="-16" name="Wait" sid="525960927429199" type="System">
-                                            <param id="0" name="Seconds">0.18</param>
-                                        </action>
-                                        <action id="-13" name="Set time scale" sid="654435725170454" type="System">
-                                            <param id="0" name="Time scale">0</param>
-                                        </action>
                                         <action id="-12" name="Set group active" sid="447322283562534" type="System">
                                             <param id="0" name="Group name">&quot;Player Movement &amp; Control&quot;</param>
                                             <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="269123355350856" type="System">
+                                            <param id="0" name="Variable">pop_ready</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2010,8 +2392,13 @@
                 </event-block>
                 <event-block sid="146483136815896">
                     <conditions>
-                        <condition id="-9" name="Layer is visible" sid="775884310843744" type="System">
+                        <condition id="-9" name="Layer is visible" sid="578112092768616" type="System">
                             <param id="0" name="Layer">&quot;Pops&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="658820194945385" type="System">
+                            <param id="0" name="Variable">pop_ready</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -2027,45 +2414,62 @@
                                     <param id="0" name="Key">27</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-13" name="Set time scale" sid="366627829140267" type="System">
-                                    <param id="0" name="Time scale">1</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="171927821401551" type="btn_close">
-                                    <param id="0" name="Frame number">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="152860672654568" type="System">
-                                    <param id="0" name="Seconds">0.2</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="174657755213918" type="btn_close">
-                                    <param id="0" name="Frame number">0</param>
-                                </action>
-                                <action id="0" name="Call function" sid="120886853221393" type="Function">
-                                    <param id="0" name="Name">&quot;popup_hide&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
-                                </action>
-                            </actions>
+                            <actions />
                             <sub-events>
-                                <event-block sid="336268178408721">
+                                <event-block sid="920863806443824">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" sid="492150543606425" type="System">
-                                            <param id="0" name="Variable">type</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;gameover&quot;</param>
-                                        </condition>
+                                        <condition id="-9" name="Is visible" sid="168615712999695" type="btn_close" />
+                                        <condition id="-4" name="Trigger once while true" sid="191134087080469" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Call function" sid="713444247317674" type="Function">
-                                            <param id="0" name="Name">&quot;loading_show&quot;</param>
+                                        <action id="-13" name="Set time scale" sid="366627829140267" type="System">
+                                            <param id="0" name="Time scale">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="485478356818335" type="System">
+                                            <param id="0" name="Variable">pop_ready</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="171927821401551" type="btn_close">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="152860672654568" type="System">
+                                            <param id="0" name="Seconds">0.2</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="174657755213918" type="btn_close">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="120886853221393" type="Function">
+                                            <param id="0" name="Name">&quot;popup_hide&quot;</param>
                                             <param id="1" name="Parameter {n}"></param>
                                         </action>
-                                        <action id="-16" name="Wait" sid="122197533638705" type="System">
-                                            <param id="0" name="Seconds">LOADING_TIME</param>
-                                        </action>
-                                        <action id="-2" name="Go to layout" sid="635442527351795" type="System">
-                                            <param id="0" name="Layout">WorldMap</param>
-                                        </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="336268178408721">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="492150543606425" type="System">
+                                                    <param id="0" name="Variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;gameover&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Call function" sid="713444247317674" type="Function">
+                                                    <param id="0" name="Name">&quot;loading_show&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                                <action id="0" name="Call function" sid="206394061461508" type="Function">
+                                                    <param id="0" name="Name">&quot;game_save&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="122197533638705" type="System">
+                                                    <param id="0" name="Seconds">LOADING_TIME</param>
+                                                </action>
+                                                <action id="-2" name="Go to layout" sid="635442527351795" type="System">
+                                                    <param id="0" name="Layout">WorldMap</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -2080,66 +2484,134 @@
                                     <param id="0" name="Key">13</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-13" name="Set time scale" sid="527395351381784" type="System">
-                                    <param id="0" name="Time scale">1</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="294982862750860" type="btn_check">
-                                    <param id="0" name="Frame number">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="486142089848150" type="System">
-                                    <param id="0" name="Seconds">0.2</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="459845310130387" type="btn_check">
-                                    <param id="0" name="Frame number">0</param>
-                                </action>
-                                <action id="0" name="Call function" sid="513087111865600" type="Function">
-                                    <param id="0" name="Name">&quot;popup_hide&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
-                                </action>
-                            </actions>
+                            <actions />
                             <sub-events>
-                                <event-block sid="689735817542142">
+                                <event-block sid="305272769181888">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" sid="315541121743763" type="System">
-                                            <param id="0" name="Variable">type</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;pause&quot;</param>
-                                        </condition>
+                                        <condition id="-9" name="Is visible" sid="948048495571732" type="btn_check" />
+                                        <condition id="-4" name="Trigger once while true" sid="556891230805583" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Call function" sid="738058383516000" type="Function">
-                                            <param id="0" name="Name">&quot;loading_show&quot;</param>
+                                        <action id="-13" name="Set time scale" sid="527395351381784" type="System">
+                                            <param id="0" name="Time scale">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="531851805811435" type="System">
+                                            <param id="0" name="Variable">pop_ready</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="294982862750860" type="btn_check">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="486142089848150" type="System">
+                                            <param id="0" name="Seconds">0.2</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="459845310130387" type="btn_check">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="513087111865600" type="Function">
+                                            <param id="0" name="Name">&quot;popup_hide&quot;</param>
                                             <param id="1" name="Parameter {n}"></param>
                                         </action>
-                                        <action id="-16" name="Wait" sid="717616805432166" type="System">
-                                            <param id="0" name="Seconds">LOADING_TIME</param>
-                                        </action>
-                                        <action id="-2" name="Go to layout" sid="889818318554043" type="System">
-                                            <param id="0" name="Layout">WorldMap</param>
-                                        </action>
                                     </actions>
-                                </event-block>
-                                <event-block sid="294845531979072">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="895704724820617" type="System">
-                                            <param id="0" name="Variable">type</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;gameover&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Call function" sid="335828066839154" type="Function">
-                                            <param id="0" name="Name">&quot;loading_show&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                        <action id="-16" name="Wait" sid="391532322734212" type="System">
-                                            <param id="0" name="Seconds">LOADING_TIME</param>
-                                        </action>
-                                        <action id="-26" name="Restart layout" sid="981967063611314" type="System" />
-                                    </actions>
+                                    <sub-events>
+                                        <event-block any="1" sid="689735817542142">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="315541121743763" type="System">
+                                                    <param id="0" name="Variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;pause&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Call function" sid="738058383516000" type="Function">
+                                                    <param id="0" name="Name">&quot;loading_show&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="717616805432166" type="System">
+                                                    <param id="0" name="Seconds">LOADING_TIME</param>
+                                                </action>
+                                                <action id="-2" name="Go to layout" sid="889818318554043" type="System">
+                                                    <param id="0" name="Layout">WorldMap</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="294845531979072">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="895704724820617" type="System">
+                                                    <param id="0" name="Variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;gameover&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Call function" sid="335828066839154" type="Function">
+                                                    <param id="0" name="Name">&quot;loading_show&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="391532322734212" type="System">
+                                                    <param id="0" name="Seconds">LOADING_TIME</param>
+                                                </action>
+                                                <action id="-26" name="Restart layout" sid="981967063611314" type="System" />
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="632279732332231">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="290352933460310" type="System">
+                                                    <param id="0" name="Variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;gems&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Call function" sid="152107813557992" type="Function">
+                                                    <param id="0" name="Name">&quot;loading_show&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                                <action id="0" name="Call function" sid="645767141418899" type="Function">
+                                                    <param id="0" name="Name">&quot;game_save&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="833417256023005" type="System">
+                                                    <param id="0" name="Seconds">LOADING_TIME</param>
+                                                </action>
+                                                <action id="-2" name="Go to layout" sid="336997936884217" type="System">
+                                                    <param id="0" name="Layout">WorldMap</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
+                        </event-block>
+                        <event-block sid="990179058917086">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="302637810465629" type="System">
+                                    <param id="0" name="Variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;gems&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="888320769641539" type="btn_check">
+                                    <param id="0" name="X">canvas_width/2</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="645996698594982" type="btn_close">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="844661345235428">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="339029218578253" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="511910065826695" type="btn_check">
+                                    <param id="0" name="X">720</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="465935001022179" type="btn_close">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-block>

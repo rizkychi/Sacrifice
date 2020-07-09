@@ -83,23 +83,35 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="765760275017159">
+        <event-block sid="776613472610722">
             <conditions>
-                <condition id="-6" name="Every X seconds" sid="371952218390600" type="System">
-                    <param id="0" name="Interval (seconds)">4</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="338191210450025" type="System">
-                    <param id="0" name="Variable">stealth</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
+                <condition id="-3" name="Is on-screen" sid="832379968762778" type="Sleipnir" />
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="836830220916509" type="Sleipnir">
-                    <param id="0" name="Animation">&quot;Attack&quot;</param>
-                    <param id="1" name="From">1</param>
+                <action id="-16" name="Wait" sid="810825182207812" type="System">
+                    <param id="0" name="Seconds">5</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="765760275017159">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="371952218390600" type="System">
+                            <param id="0" name="Interval (seconds)">5</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="338191210450025" type="System">
+                            <param id="0" name="Variable">stealth</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="836830220916509" type="Sleipnir">
+                            <param id="0" name="Animation">&quot;Attack&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="791437432405721">
             <conditions>
@@ -131,6 +143,12 @@
                         <condition id="-4" name="Trigger once while true" sid="551151570171704" type="System" />
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="795116317905941" type="Audio">
+                            <param id="0" name="Audio file">water_bullet</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">VolumeSFX</param>
+                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                        </action>
                         <action id="0" name="Spawn another object" sid="138693686251558" type="Sleipnir">
                             <param id="0" name="Object">water_bullet</param>
                             <param id="1" name="Layer">&quot;Game&quot;</param>

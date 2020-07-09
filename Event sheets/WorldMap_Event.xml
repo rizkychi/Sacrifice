@@ -1595,6 +1595,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="481483643942764" type="Audio">
+                            <param id="0" name="Audio file">book_swipe_sfx</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">VolumeSFX</param>
+                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                        </action>
                         <action id="-4" name="Set layer visible" sid="451478333184850" type="System">
                             <param id="0" name="Layer">&quot;Shop&quot;</param>
                             <param id="1" name="Visibility">1</param>
@@ -1633,6 +1639,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="885089775509330" type="Audio">
+                            <param id="0" name="Audio file">book_swipe_sfx</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">VolumeSFX</param>
+                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                        </action>
                         <action behavior="LiteTween" id="10" name="Start" sid="747811551676062" type="SpriteFont_NormalText">
                             <param id="0" name="Start Mode">0</param>
                             <param id="1" name="Force use current">0</param>
@@ -1678,6 +1690,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="993755713546391" type="Audio">
+                            <param id="0" name="Audio file">book_swipe_sfx</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">VolumeSFX</param>
+                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                        </action>
                         <action id="-4" name="Set layer visible" sid="879176724527686" type="System">
                             <param id="0" name="Layer">&quot;Skills&quot;</param>
                             <param id="1" name="Visibility">1</param>
@@ -1716,6 +1734,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="242293903336989" type="Audio">
+                            <param id="0" name="Audio file">book_swipe_sfx</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">VolumeSFX</param>
+                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                        </action>
                         <action behavior="LiteTween" id="10" name="Start" sid="648709851767832" type="SpriteFont_NormalText">
                             <param id="0" name="Start Mode">0</param>
                             <param id="1" name="Force use current">0</param>
@@ -1761,6 +1785,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="752900100514552" type="Audio">
+                            <param id="0" name="Audio file">book_open_sfx</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">VolumeSFX</param>
+                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                        </action>
                         <action id="-4" name="Set layer visible" sid="317421818395663" type="System">
                             <param id="0" name="Layer">&quot;Book&quot;</param>
                             <param id="1" name="Visibility">1</param>
@@ -1802,6 +1832,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="157658905216014" type="Audio">
+                            <param id="0" name="Audio file">book_open_sfx</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">VolumeSFX</param>
+                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                        </action>
                         <action behavior="LiteTween" id="10" name="Start" sid="180927403425508" type="book_items">
                             <param id="0" name="Start Mode">0</param>
                             <param id="1" name="Force use current">0</param>
@@ -1853,6 +1889,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="656070438605168" type="Audio">
+                                    <param id="0" name="Audio file">book_swipe_sfx</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">VolumeSFX</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                </action>
                                 <action id="5" name="Set frame" sid="846387798322117" type="arrow_left">
                                     <param id="0" name="Frame number">1</param>
                                 </action>
@@ -1930,6 +1972,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="636637252373014" type="Audio">
+                                    <param id="0" name="Audio file">book_swipe_sfx</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">VolumeSFX</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                </action>
                                 <action id="5" name="Set frame" sid="131746965652556" type="arrow_right">
                                     <param id="0" name="Frame number">1</param>
                                 </action>
@@ -2149,6 +2197,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="493898000945942" type="Audio">
+                                            <param id="0" name="Audio file">shop_sfx</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">VolumeSFX</param>
+                                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                        </action>
                                         <action id="-11" name="Subtract from" sid="273155565475358" type="System">
                                             <param id="0" name="Variable">gold</param>
                                             <param id="1" name="Value">potion_blue_small.price</param>
@@ -2246,6 +2300,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="499816543344713" type="Audio">
+                                            <param id="0" name="Audio file">shop_sfx</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">VolumeSFX</param>
+                                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                        </action>
                                         <action id="-11" name="Subtract from" sid="167437915248035" type="System">
                                             <param id="0" name="Variable">gold</param>
                                             <param id="1" name="Value">potion_blue_large.price</param>
@@ -2369,6 +2429,12 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
+                                                <action id="0" name="Play" sid="278207772398974" type="Audio">
+                                                    <param id="0" name="Audio file">shop_sfx</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">VolumeSFX</param>
+                                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                                </action>
                                                 <action id="-11" name="Subtract from" sid="706370062827165" type="System">
                                                     <param id="0" name="Variable">gold</param>
                                                     <param id="1" name="Value">PRICE_INIT+(level_atk*PRICE_INC)</param>
@@ -2458,6 +2524,12 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
+                                                <action id="0" name="Play" sid="773659774413523" type="Audio">
+                                                    <param id="0" name="Audio file">shop_sfx</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">VolumeSFX</param>
+                                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                                </action>
                                                 <action id="-11" name="Subtract from" sid="911796350876419" type="System">
                                                     <param id="0" name="Variable">gold</param>
                                                     <param id="1" name="Value">PRICE_INIT+(level_def*PRICE_INC)</param>
@@ -2547,6 +2619,12 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
+                                                <action id="0" name="Play" sid="883595536394488" type="Audio">
+                                                    <param id="0" name="Audio file">shop_sfx</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">VolumeSFX</param>
+                                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                                </action>
                                                 <action id="-11" name="Subtract from" sid="944642196980656" type="System">
                                                     <param id="0" name="Variable">gold</param>
                                                     <param id="1" name="Value">PRICE_INIT+(level_gold*PRICE_INC)</param>
@@ -2636,6 +2714,12 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
+                                                <action id="0" name="Play" sid="195266162190689" type="Audio">
+                                                    <param id="0" name="Audio file">shop_sfx</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">VolumeSFX</param>
+                                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                                </action>
                                                 <action id="-11" name="Subtract from" sid="571679521285517" type="System">
                                                     <param id="0" name="Variable">gold</param>
                                                     <param id="1" name="Value">PRICE_INIT+(level_health*PRICE_INC)</param>
@@ -2725,6 +2809,12 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
+                                                <action id="0" name="Play" sid="356074176665636" type="Audio">
+                                                    <param id="0" name="Audio file">shop_sfx</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">VolumeSFX</param>
+                                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                                </action>
                                                 <action id="-11" name="Subtract from" sid="354247685004889" type="System">
                                                     <param id="0" name="Variable">gold</param>
                                                     <param id="1" name="Value">PRICE_INIT+(level_mana*PRICE_INC)</param>

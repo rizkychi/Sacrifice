@@ -935,6 +935,33 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <type></type>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin">
+                            <properties>
+                                <x>Disabled</x>
+                                <y>Disabled</y>
+                                <zindex>Disabled</zindex>
+                                <angle>Disabled</angle>
+                                <width>Disabled</width>
+                                <height>Disabled</height>
+                                <opacity>Disabled</opacity>
+                                <visibility>Disabled</visibility>
+                                <collisions-enabled>Disabled</collisions-enabled>
+                                <timescale>Disabled</timescale>
+                                <hotspot-x>Disabled</hotspot-x>
+                                <hotspot-y>Disabled</hotspot-y>
+                                <imagepoint>0</imagepoint>
+                                <animation>Disabled</animation>
+                                <frame>Disabled</frame>
+                                <mirror>Disabled</mirror>
+                                <flip>Disabled</flip>
+                                <destroy>Disabled</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1246,6 +1273,33 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <type></type>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin">
+                            <properties>
+                                <x>Disabled</x>
+                                <y>Disabled</y>
+                                <zindex>Disabled</zindex>
+                                <angle>Disabled</angle>
+                                <width>Disabled</width>
+                                <height>Disabled</height>
+                                <opacity>Disabled</opacity>
+                                <visibility>Disabled</visibility>
+                                <collisions-enabled>Disabled</collisions-enabled>
+                                <timescale>Disabled</timescale>
+                                <hotspot-x>Disabled</hotspot-x>
+                                <hotspot-y>Disabled</hotspot-y>
+                                <imagepoint>0</imagepoint>
+                                <animation>Disabled</animation>
+                                <frame>Disabled</frame>
+                                <mirror>Disabled</mirror>
+                                <flip>Disabled</flip>
+                                <destroy>Disabled</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>

@@ -6360,7 +6360,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>5510</x>
+                        <x>5500</x>
                         <y>300</y>
                         <z>0</z>
                         <width>70</width>
@@ -8128,7 +8128,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>7670</x>
+                        <x>7680</x>
                         <y>880</y>
                         <z>0</z>
                         <width>70</width>
@@ -8162,7 +8162,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>7670</x>
+                        <x>7680</x>
                         <y>810</y>
                         <z>0</z>
                         <width>70</width>
@@ -8196,7 +8196,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>7670</x>
+                        <x>7680</x>
                         <y>740</y>
                         <z>0</z>
                         <width>70</width>
@@ -8230,7 +8230,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>7670</x>
+                        <x>7680</x>
                         <y>670</y>
                         <z>0</z>
                         <width>70</width>
@@ -8808,7 +8808,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>9050</x>
+                        <x>9041</x>
                         <y>880</y>
                         <z>0</z>
                         <width>70</width>
@@ -8842,7 +8842,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>9050</x>
+                        <x>9041</x>
                         <y>810</y>
                         <z>0</z>
                         <width>70</width>
@@ -8876,7 +8876,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>9050</x>
+                        <x>9041</x>
                         <y>740</y>
                         <z>0</z>
                         <width>70</width>
@@ -8910,7 +8910,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>9050</x>
+                        <x>9041</x>
                         <y>670</y>
                         <z>0</z>
                         <width>70</width>
@@ -15744,8 +15744,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>14090</x>
-                        <y>770</y>
+                        <x>14080</x>
+                        <y>771</y>
                         <z>0</z>
                         <width>70</width>
                         <height>70</height>
@@ -15928,7 +15928,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>7670</x>
+                        <x>7680</x>
                         <y>1090</y>
                         <z>0</z>
                         <width>70</width>
@@ -16043,7 +16043,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>9050</x>
+                        <x>9041</x>
                         <y>1090</y>
                         <z>0</z>
                         <width>70</width>
@@ -16409,52 +16409,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Lake_tile" uid="3489">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Center</hotspot>
-                    </properties>
-                    <instance-variables>
-                        <hidden>1</hidden>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>6000</x>
-                        <y>775</y>
-                        <z>0</z>
-                        <width>490</width>
-                        <height>140</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Lake_tile" uid="3490">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Center</hotspot>
-                    </properties>
-                    <instance-variables>
-                        <hidden>1</hidden>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>5860</x>
-                        <y>635</y>
-                        <z>0</z>
-                        <width>210</width>
-                        <height>140</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Border" uid="3503">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
@@ -16465,10 +16419,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>580</x>
-                        <y>650</y>
+                        <x>1520</x>
+                        <y>740</y>
                         <z>0</z>
-                        <width>50</width>
+                        <width>20</width>
                         <height>250</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -16487,10 +16441,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1240</x>
-                        <y>650</y>
+                        <x>2080</x>
+                        <y>740</y>
                         <z>0</z>
-                        <width>50</width>
+                        <width>20</width>
                         <height>250</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -16513,8 +16467,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>470</x>
-                        <y>710</y>
+                        <x>1140</x>
+                        <y>740</y>
                         <z>0</z>
                         <width>50</width>
                         <height>50</height>
@@ -16539,8 +16493,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>660</x>
-                        <y>690</y>
+                        <x>500</x>
+                        <y>-60</y>
                         <z>0</z>
                         <width>30.046485901</width>
                         <height>49.922641754</height>
@@ -16565,8 +16519,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>700</x>
-                        <y>690</y>
+                        <x>540</x>
+                        <y>-60</y>
                         <z>0</z>
                         <width>9.912279129</width>
                         <height>50.442489624</height>
@@ -16591,8 +16545,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>740</x>
-                        <y>690</y>
+                        <x>580</x>
+                        <y>-60</y>
                         <z>0</z>
                         <width>30.045999527</width>
                         <height>49.923000336</height>
@@ -16617,8 +16571,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>780</x>
-                        <y>690</y>
+                        <x>620</x>
+                        <y>-60</y>
                         <z>0</z>
                         <width>9.911999702</width>
                         <height>50.442001343</height>
@@ -16643,8 +16597,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>420</x>
-                        <y>710</y>
+                        <x>1080</x>
+                        <y>740</y>
                         <z>0</z>
                         <width>50</width>
                         <height>50</height>
@@ -16666,11 +16620,27 @@
                         <amount>1</amount>
                         <type>gems</type>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>330</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>872.518920898</x>
-                        <y>692.93548584</y>
+                        <x>14830</x>
+                        <y>-80</y>
                         <z>0</z>
                         <width>39.130550385</width>
                         <height>61.333152771</height>
@@ -16749,65 +16719,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Player_Evans" uid="235">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <HP>1000</HP>
-                        <MP>100</MP>
-                        <ATK>100</ATK>
-                        <DEF>0</DEF>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>400</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>Yes</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Flash" />
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Disabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="AdjustHSL">
-                            <parameters>
-                                <hue>0.9</hue>
-                                <luminosity>1</luminosity>
-                                <saturation>1</saturation>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>13460</x>
-                        <y>790</y>
-                        <z>0</z>
-                        <width>93.808067322</width>
-                        <height>125.138496399</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>1</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Goblin" uid="3502">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -16857,8 +16768,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1030</x>
-                        <y>730</y>
+                        <x>1650</x>
+                        <y>870</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -17010,6 +16921,2516 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Particles_water_bullet" uid="245">
+                    <properties>
+                        <rate>30</rate>
+                        <spray-cone>140</spray-cone>
+                        <type>One-shot</type>
+                        <initial-particle-properties></initial-particle-properties>
+                        <speed>200</speed>
+                        <size>20</size>
+                        <opacity>100</opacity>
+                        <grow-rate>10</grow-rate>
+                        <x-randomiser>0</x-randomiser>
+                        <y-randomiser>0</y-randomiser>
+                        <speed-randomiser->30</speed-randomiser->
+                        <size-randomiser>40</size-randomiser>
+                        <grow-rate-randomiser>0</grow-rate-randomiser>
+                        <particle-lifetime-properties></particle-lifetime-properties>
+                        <acceleration>-150</acceleration>
+                        <gravity>0</gravity>
+                        <angle-randomiser>0</angle-randomiser>
+                        <speed-randomiser>800</speed-randomiser>
+                        <opacity-randomiser>0</opacity-randomiser>
+                        <destroy-mode>Fade to invisible</destroy-mode>
+                        <timeout>1</timeout>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>14280</x>
+                        <y>-110</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Particles_water_splash" uid="248">
+                    <properties>
+                        <rate>80</rate>
+                        <spray-cone>140</spray-cone>
+                        <type>One-shot</type>
+                        <initial-particle-properties></initial-particle-properties>
+                        <speed>250</speed>
+                        <size>16</size>
+                        <opacity>100</opacity>
+                        <grow-rate>0</grow-rate>
+                        <x-randomiser>20</x-randomiser>
+                        <y-randomiser>0</y-randomiser>
+                        <speed-randomiser->20</speed-randomiser->
+                        <size-randomiser>30</size-randomiser>
+                        <grow-rate-randomiser>0</grow-rate-randomiser>
+                        <particle-lifetime-properties></particle-lifetime-properties>
+                        <acceleration>100</acceleration>
+                        <gravity>400</gravity>
+                        <angle-randomiser>180</angle-randomiser>
+                        <speed-randomiser>800</speed-randomiser>
+                        <opacity-randomiser>0</opacity-randomiser>
+                        <destroy-mode>Fade to invisible</destroy-mode>
+                        <timeout>1</timeout>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>14130</x>
+                        <y>-60</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>-1.57079649</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Particles_attack" uid="249">
+                    <properties>
+                        <rate>30</rate>
+                        <spray-cone>360</spray-cone>
+                        <type>One-shot</type>
+                        <initial-particle-properties></initial-particle-properties>
+                        <speed>140</speed>
+                        <size>10</size>
+                        <opacity>100</opacity>
+                        <grow-rate>0</grow-rate>
+                        <x-randomiser>0</x-randomiser>
+                        <y-randomiser>0</y-randomiser>
+                        <speed-randomiser->30</speed-randomiser->
+                        <size-randomiser>20</size-randomiser>
+                        <grow-rate-randomiser>0</grow-rate-randomiser>
+                        <particle-lifetime-properties></particle-lifetime-properties>
+                        <acceleration>-150</acceleration>
+                        <gravity>0</gravity>
+                        <angle-randomiser>0</angle-randomiser>
+                        <speed-randomiser>800</speed-randomiser>
+                        <opacity-randomiser>80</opacity-randomiser>
+                        <destroy-mode>Fade to invisible</destroy-mode>
+                        <timeout>0.5</timeout>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>13860</x>
+                        <y>-130</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="251">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1200</x>
+                        <y>740</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="252">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1260</x>
+                        <y>740</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3517">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1320</x>
+                        <y>740</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3518">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1620</x>
+                        <y>620</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3519">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1560</x>
+                        <y>620</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3520">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1920</x>
+                        <y>520</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3521">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1860</x>
+                        <y>520</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3522">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2220</x>
+                        <y>420</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3523">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2160</x>
+                        <y>420</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3524">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2540</x>
+                        <y>320</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3525">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2480</x>
+                        <y>320</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_hp_small" uid="3526">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>1</amount>
+                        <type>hp_small</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2260</x>
+                        <y>720</y>
+                        <z>0</z>
+                        <width>9.912279129</width>
+                        <height>50.442489624</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501587331</hotspotX>
+                        <hotspotY>0.500311911</hotspotY>
+                        <angle>0.261799395</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Lake_properties" uid="3527">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>1</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4680</x>
+                        <y>485</y>
+                        <z>0</z>
+                        <width>207.544662476</width>
+                        <height>454.3934021</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501154721</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Lake_properties" uid="3528">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>2</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>7077.991699219</x>
+                        <y>803.367004395</y>
+                        <z>0</z>
+                        <width>115.036300659</width>
+                        <height>108.32585907</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Lake_properties" uid="3529">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>9900</x>
+                        <y>509</y>
+                        <z>0</z>
+                        <width>195.082397461</width>
+                        <height>295.259857178</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501228511</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Lake_properties" uid="3530">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>1</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>12680</x>
+                        <y>490</y>
+                        <z>0</z>
+                        <width>207.544662476</width>
+                        <height>454.3934021</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501154721</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3531">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3320</x>
+                        <y>580</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3532">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3260</x>
+                        <y>580</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3533">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3380</x>
+                        <y>580</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3534">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3440</x>
+                        <y>580</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3535">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3500</x>
+                        <y>580</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Border" uid="3536">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4080</x>
+                        <y>580</y>
+                        <z>0</z>
+                        <width>20</width>
+                        <height>250</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Border" uid="3537">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4640</x>
+                        <y>580</y>
+                        <z>0</z>
+                        <width>20</width>
+                        <height>250</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Goblin" uid="3538">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Patrol>0</Patrol>
+                        <Attack>100</Attack>
+                        <HP>100</HP>
+                        <Gold>500</Gold>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>150</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Custom</obstacles>
+                                <range>200</range>
+                                <cone-of-view>360</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4200</x>
+                        <y>720</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3539">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4780</x>
+                        <y>660</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3540">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4720</x>
+                        <y>660</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_mp_small" uid="3541">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>1</amount>
+                        <type>mp_small</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5520</x>
+                        <y>540</y>
+                        <z>0</z>
+                        <width>9.911999702</width>
+                        <height>50.442001343</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501587331</hotspotX>
+                        <hotspotY>0.500311911</hotspotY>
+                        <angle>0.261799395</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3542">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5200</x>
+                        <y>880</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3543">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5140</x>
+                        <y>880</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3544">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5260</x>
+                        <y>880</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3545">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5320</x>
+                        <y>880</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3546">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5380</x>
+                        <y>880</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3547">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5160</x>
+                        <y>500</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3548">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5500</x>
+                        <y>220</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3549">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5500</x>
+                        <y>740</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3550">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5960</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3551">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5900</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3552">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6020</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3553">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6080</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3554">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6140</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_hp_large" uid="3555">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>1</amount>
+                        <type>hp_large</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5820</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>30.046485901</width>
+                        <height>49.922641754</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500406861</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0.261799395</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_hp_large" uid="3556">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>1</amount>
+                        <type>hp_large</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5820</x>
+                        <y>640</y>
+                        <z>0</z>
+                        <width>30.046485901</width>
+                        <height>49.922641754</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500406861</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0.261799395</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_mp_large" uid="3557">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>1</amount>
+                        <type>mp_large</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5900</x>
+                        <y>640</y>
+                        <z>0</z>
+                        <width>30.045999527</width>
+                        <height>49.923000336</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500406861</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0.261799395</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Lake_tile" uid="3489">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Center</hotspot>
+                    </properties>
+                    <instance-variables>
+                        <hidden>1</hidden>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6000</x>
+                        <y>775</y>
+                        <z>0</z>
+                        <width>490</width>
+                        <height>140</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Lake_tile" uid="3490">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Center</hotspot>
+                    </properties>
+                    <instance-variables>
+                        <hidden>1</hidden>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5860</x>
+                        <y>635</y>
+                        <z>0</z>
+                        <width>210</width>
+                        <height>140</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_hp_small" uid="3558">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>1</amount>
+                        <type>hp_small</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6080</x>
+                        <y>460</y>
+                        <z>0</z>
+                        <width>9.912279129</width>
+                        <height>50.442489624</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501587331</hotspotX>
+                        <hotspotY>0.500311911</hotspotY>
+                        <angle>0.261799395</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3559">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5720</x>
+                        <y>180</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3560">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5660</x>
+                        <y>180</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3561">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6460</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3562">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6400</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3563">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6520</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3564">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6580</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3565">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6640</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3566">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6760</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3567">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6700</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3568">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6820</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3569">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6880</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3570">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6940</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Border" uid="3571">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>10540</x>
+                        <y>540</y>
+                        <z>0</z>
+                        <width>20</width>
+                        <height>250</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Border" uid="3572">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>11100</x>
+                        <y>540</y>
+                        <z>0</z>
+                        <width>20</width>
+                        <height>250</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Goblin" uid="3573">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Patrol>0</Patrol>
+                        <Attack>100</Attack>
+                        <HP>100</HP>
+                        <Gold>500</Gold>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>150</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Custom</obstacles>
+                                <range>200</range>
+                                <cone-of-view>360</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>10680</x>
+                        <y>660</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3574">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>7680</x>
+                        <y>600</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3575">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>7940</x>
+                        <y>600</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3576">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>8220</x>
+                        <y>600</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3577">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>8500</x>
+                        <y>600</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3578">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>8780</x>
+                        <y>600</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3579">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>9040</x>
+                        <y>600</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3580">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>10140</x>
+                        <y>620</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3581">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>10080</x>
+                        <y>620</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3582">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>9720</x>
+                        <y>620</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3583">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>9660</x>
+                        <y>620</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_mp_small" uid="3584">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>1</amount>
+                        <type>mp_small</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>12140</x>
+                        <y>680</y>
+                        <z>0</z>
+                        <width>9.911999702</width>
+                        <height>50.442001343</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501587331</hotspotX>
+                        <hotspotY>0.500311911</hotspotY>
+                        <angle>0.261799395</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3585">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>11460</x>
+                        <y>480</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3586">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>11400</x>
+                        <y>480</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3587">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>13520</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3588">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>13460</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Border" uid="3589">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>12620</x>
+                        <y>600</y>
+                        <z>0</z>
+                        <width>20</width>
+                        <height>250</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Border" uid="3590">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>13200</x>
+                        <y>740</y>
+                        <z>0</z>
+                        <width>20</width>
+                        <height>250</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Goblin" uid="3591">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Patrol>0</Patrol>
+                        <Attack>100</Attack>
+                        <HP>100</HP>
+                        <Gold>500</Gold>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>150</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Custom</obstacles>
+                                <range>200</range>
+                                <cone-of-view>360</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>12760</x>
+                        <y>720</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3592">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>12040</x>
+                        <y>340</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3593">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>11980</x>
+                        <y>340</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3594">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>13920</x>
+                        <y>580</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="item_gold_coin" uid="3595">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <amount>100</amount>
+                        <type>gold</type>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>14080</x>
+                        <y>700</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Particles_Mana" uid="3596">
+                    <properties>
+                        <rate>50</rate>
+                        <spray-cone>360</spray-cone>
+                        <type>One-shot</type>
+                        <initial-particle-properties></initial-particle-properties>
+                        <speed>50</speed>
+                        <size>20</size>
+                        <opacity>100</opacity>
+                        <grow-rate>20</grow-rate>
+                        <x-randomiser>0</x-randomiser>
+                        <y-randomiser>0</y-randomiser>
+                        <speed-randomiser->0</speed-randomiser->
+                        <size-randomiser>60</size-randomiser>
+                        <grow-rate-randomiser>0</grow-rate-randomiser>
+                        <particle-lifetime-properties></particle-lifetime-properties>
+                        <acceleration>0</acceleration>
+                        <gravity>0</gravity>
+                        <angle-randomiser>0</angle-randomiser>
+                        <speed-randomiser>300</speed-randomiser>
+                        <opacity-randomiser>50</opacity-randomiser>
+                        <destroy-mode>Fade to invisible</destroy-mode>
+                        <timeout>1</timeout>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>720</x>
+                        <y>-80</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Player_Evans" uid="235">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <HP>1000</HP>
+                        <MP>100</MP>
+                        <ATK>100</ATK>
+                        <DEF>0</DEF>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>400</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>Yes</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="AdjustHSL">
+                            <parameters>
+                                <hue>0.9</hue>
+                                <luminosity>1</luminosity>
+                                <saturation>1</saturation>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>250</x>
+                        <y>660</y>
+                        <z>0</z>
+                        <width>93.808067322</width>
+                        <height>125.138496399</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Particles_Health" uid="3597">
+                    <properties>
+                        <rate>50</rate>
+                        <spray-cone>360</spray-cone>
+                        <type>One-shot</type>
+                        <initial-particle-properties></initial-particle-properties>
+                        <speed>50</speed>
+                        <size>20</size>
+                        <opacity>100</opacity>
+                        <grow-rate>20</grow-rate>
+                        <x-randomiser>0</x-randomiser>
+                        <y-randomiser>0</y-randomiser>
+                        <speed-randomiser->0</speed-randomiser->
+                        <size-randomiser>60</size-randomiser>
+                        <grow-rate-randomiser>0</grow-rate-randomiser>
+                        <particle-lifetime-properties></particle-lifetime-properties>
+                        <acceleration>0</acceleration>
+                        <gravity>0</gravity>
+                        <angle-randomiser>0</angle-randomiser>
+                        <speed-randomiser>300</speed-randomiser>
+                        <opacity-randomiser>50</opacity-randomiser>
+                        <destroy-mode>Fade to invisible</destroy-mode>
+                        <timeout>1</timeout>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>940</x>
+                        <y>-80</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Particles_Health3" uid="3598">
+                    <properties>
+                        <rate>3</rate>
+                        <spray-cone>360</spray-cone>
+                        <type>One-shot</type>
+                        <initial-particle-properties></initial-particle-properties>
+                        <speed>50</speed>
+                        <size>20</size>
+                        <opacity>100</opacity>
+                        <grow-rate>20</grow-rate>
+                        <x-randomiser>50</x-randomiser>
+                        <y-randomiser>50</y-randomiser>
+                        <speed-randomiser->0</speed-randomiser->
+                        <size-randomiser>60</size-randomiser>
+                        <grow-rate-randomiser>0</grow-rate-randomiser>
+                        <particle-lifetime-properties></particle-lifetime-properties>
+                        <acceleration>0</acceleration>
+                        <gravity>0</gravity>
+                        <angle-randomiser>0</angle-randomiser>
+                        <speed-randomiser>300</speed-randomiser>
+                        <opacity-randomiser>50</opacity-randomiser>
+                        <destroy-mode>Fade to invisible</destroy-mode>
+                        <timeout>1</timeout>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1180</x>
+                        <y>-80</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -17036,6 +19457,33 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <type></type>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin">
+                            <properties>
+                                <x>Disabled</x>
+                                <y>Disabled</y>
+                                <zindex>Disabled</zindex>
+                                <angle>Disabled</angle>
+                                <width>Disabled</width>
+                                <height>Disabled</height>
+                                <opacity>Disabled</opacity>
+                                <visibility>Disabled</visibility>
+                                <collisions-enabled>Disabled</collisions-enabled>
+                                <timescale>Disabled</timescale>
+                                <hotspot-x>Disabled</hotspot-x>
+                                <hotspot-y>Disabled</hotspot-y>
+                                <imagepoint>0</imagepoint>
+                                <animation>Disabled</animation>
+                                <frame>Disabled</frame>
+                                <mirror>Disabled</mirror>
+                                <flip>Disabled</flip>
+                                <destroy>Disabled</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -17083,6 +19531,30 @@
                     <instance-variables>
                         <type>hp_blank</type>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin">
+                            <properties>
+                                <x>Disabled</x>
+                                <y>Disabled</y>
+                                <zindex>Disabled</zindex>
+                                <angle>Disabled</angle>
+                                <width>Disabled</width>
+                                <height>Disabled</height>
+                                <opacity>Disabled</opacity>
+                                <visibility>Disabled</visibility>
+                                <collisions-enabled>Disabled</collisions-enabled>
+                                <timescale>Disabled</timescale>
+                                <hotspot-x>Disabled</hotspot-x>
+                                <hotspot-y>Disabled</hotspot-y>
+                                <imagepoint>0</imagepoint>
+                                <animation>Disabled</animation>
+                                <frame>Disabled</frame>
+                                <mirror>Disabled</mirror>
+                                <flip>Disabled</flip>
+                                <destroy>Disabled</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -17108,6 +19580,30 @@
                     <instance-variables>
                         <type>hp</type>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin">
+                            <properties>
+                                <x>Disabled</x>
+                                <y>Disabled</y>
+                                <zindex>Disabled</zindex>
+                                <angle>Disabled</angle>
+                                <width>Disabled</width>
+                                <height>Disabled</height>
+                                <opacity>Disabled</opacity>
+                                <visibility>Disabled</visibility>
+                                <collisions-enabled>Disabled</collisions-enabled>
+                                <timescale>Disabled</timescale>
+                                <hotspot-x>Disabled</hotspot-x>
+                                <hotspot-y>Disabled</hotspot-y>
+                                <imagepoint>0</imagepoint>
+                                <animation>Disabled</animation>
+                                <frame>Disabled</frame>
+                                <mirror>Disabled</mirror>
+                                <flip>Disabled</flip>
+                                <destroy>Disabled</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -17133,6 +19629,30 @@
                     <instance-variables>
                         <type>mp_blank</type>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin">
+                            <properties>
+                                <x>Disabled</x>
+                                <y>Disabled</y>
+                                <zindex>Disabled</zindex>
+                                <angle>Disabled</angle>
+                                <width>Disabled</width>
+                                <height>Disabled</height>
+                                <opacity>Disabled</opacity>
+                                <visibility>Disabled</visibility>
+                                <collisions-enabled>Disabled</collisions-enabled>
+                                <timescale>Disabled</timescale>
+                                <hotspot-x>Disabled</hotspot-x>
+                                <hotspot-y>Disabled</hotspot-y>
+                                <imagepoint>0</imagepoint>
+                                <animation>Disabled</animation>
+                                <frame>Disabled</frame>
+                                <mirror>Disabled</mirror>
+                                <flip>Disabled</flip>
+                                <destroy>Disabled</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -17158,6 +19678,30 @@
                     <instance-variables>
                         <type>mp</type>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin">
+                            <properties>
+                                <x>Disabled</x>
+                                <y>Disabled</y>
+                                <zindex>Disabled</zindex>
+                                <angle>Disabled</angle>
+                                <width>Disabled</width>
+                                <height>Disabled</height>
+                                <opacity>Disabled</opacity>
+                                <visibility>Disabled</visibility>
+                                <collisions-enabled>Disabled</collisions-enabled>
+                                <timescale>Disabled</timescale>
+                                <hotspot-x>Disabled</hotspot-x>
+                                <hotspot-y>Disabled</hotspot-y>
+                                <imagepoint>0</imagepoint>
+                                <animation>Disabled</animation>
+                                <frame>Disabled</frame>
+                                <mirror>Disabled</mirror>
+                                <flip>Disabled</flip>
+                                <destroy>Disabled</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -17794,6 +20338,33 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <type>bg_boss</type>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin">
+                            <properties>
+                                <x>Disabled</x>
+                                <y>Disabled</y>
+                                <zindex>Disabled</zindex>
+                                <angle>Disabled</angle>
+                                <width>Disabled</width>
+                                <height>Disabled</height>
+                                <opacity>Disabled</opacity>
+                                <visibility>Disabled</visibility>
+                                <collisions-enabled>Disabled</collisions-enabled>
+                                <timescale>Disabled</timescale>
+                                <hotspot-x>Disabled</hotspot-x>
+                                <hotspot-y>Disabled</hotspot-y>
+                                <imagepoint>0</imagepoint>
+                                <animation>Disabled</animation>
+                                <frame>Disabled</frame>
+                                <mirror>Disabled</mirror>
+                                <flip>Disabled</flip>
+                                <destroy>Disabled</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -17817,8 +20388,32 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <type></type>
+                        <type>hp_boss_blank</type>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin">
+                            <properties>
+                                <x>Disabled</x>
+                                <y>Disabled</y>
+                                <zindex>Disabled</zindex>
+                                <angle>Disabled</angle>
+                                <width>Disabled</width>
+                                <height>Disabled</height>
+                                <opacity>Disabled</opacity>
+                                <visibility>Disabled</visibility>
+                                <collisions-enabled>Disabled</collisions-enabled>
+                                <timescale>Disabled</timescale>
+                                <hotspot-x>Disabled</hotspot-x>
+                                <hotspot-y>Disabled</hotspot-y>
+                                <imagepoint>0</imagepoint>
+                                <animation>Disabled</animation>
+                                <frame>Disabled</frame>
+                                <mirror>Disabled</mirror>
+                                <flip>Disabled</flip>
+                                <destroy>Disabled</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -17899,6 +20494,30 @@
                     <instance-variables>
                         <type>hp_boss</type>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin">
+                            <properties>
+                                <x>Disabled</x>
+                                <y>Disabled</y>
+                                <zindex>Disabled</zindex>
+                                <angle>Disabled</angle>
+                                <width>Disabled</width>
+                                <height>Disabled</height>
+                                <opacity>Disabled</opacity>
+                                <visibility>Disabled</visibility>
+                                <collisions-enabled>Disabled</collisions-enabled>
+                                <timescale>Disabled</timescale>
+                                <hotspot-x>Disabled</hotspot-x>
+                                <hotspot-y>Disabled</hotspot-y>
+                                <imagepoint>0</imagepoint>
+                                <animation>Disabled</animation>
+                                <frame>Disabled</frame>
+                                <mirror>Disabled</mirror>
+                                <flip>Disabled</flip>
+                                <destroy>Disabled</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>

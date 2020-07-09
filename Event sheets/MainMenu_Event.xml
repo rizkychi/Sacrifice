@@ -244,7 +244,7 @@
                                     <param id="1" name="Value">0</param>
                                 </action>
                                 <action id="0" name="Play" sid="422790924867969" type="Audio">
-                                    <param id="0" name="Audio file">tick_01</param>
+                                    <param id="0" name="Audio file">gui_tick</param>
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">VolumeSFX</param>
                                     <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
@@ -318,7 +318,7 @@
                                     <param id="1" name="Value">0</param>
                                 </action>
                                 <action id="0" name="Play" sid="118829435438393" type="Audio">
-                                    <param id="0" name="Audio file">tick_01</param>
+                                    <param id="0" name="Audio file">gui_tick</param>
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">VolumeSFX</param>
                                     <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
@@ -400,7 +400,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Play" sid="633437784455256" type="Audio">
-                                            <param id="0" name="Audio file">tick_01</param>
+                                            <param id="0" name="Audio file">gui_tick</param>
                                             <param id="2" name="Loop">0</param>
                                             <param id="3" name="Volume">0</param>
                                             <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
@@ -481,7 +481,7 @@
                                     <param id="1" name="Force use current">0</param>
                                 </action>
                                 <action id="0" name="Play" sid="337044268116511" type="Audio">
-                                    <param id="0" name="Audio file">GUI_Select_26 1</param>
+                                    <param id="0" name="Audio file">gui_select</param>
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">VolumeSFX</param>
                                     <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>

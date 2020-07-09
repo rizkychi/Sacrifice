@@ -30,6 +30,10 @@
                     <param id="0" name="Name">&quot;options_load&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
                 </action>
+                <action id="0" name="Call function" sid="322464843287279" type="Function">
+                    <param id="0" name="Name">&quot;load_book&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="868019991299447">
@@ -206,10 +210,6 @@
                 </action>
                 <action id="5" name="Check item exists" sid="261554224947549" type="LocalStorage">
                     <param id="0" name="Key">&quot;level_mana&quot;</param>
-                </action>
-                <action id="0" name="Call function" sid="322464843287279" type="Function">
-                    <param id="0" name="Name">&quot;load_book&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>
         </event-block>
