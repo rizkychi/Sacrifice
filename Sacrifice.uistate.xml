@@ -10,9 +10,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Stage 1 - Svartalfheim</layout>
-        <layout order="3">Starter</layout>
-        <event-sheet active="1" order="2">GameControl_Event</event-sheet>
+        <layout order="1">Stage 2 - Alfheim</layout>
+        <layout active="1" order="3">Stage 7 - Niflheim</layout>
+        <event-sheet order="0">Stage 7 - Niflheim</event-sheet>
+        <event-sheet order="2">Stage 2 - Alfheim</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -28,7 +29,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="0" name="Enemy_Bullet" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/" />
         <folder expanded="0" path="object-folder/System/" />
         <folder expanded="0" path="object-folder/Background/" />
         <folder expanded="0" path="object-folder/Background/MainMenu/" />
@@ -39,16 +40,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Loading/" />
         <folder expanded="0" path="object-folder/UI/" />
         <folder expanded="0" path="object-folder/Area/" />
-        <folder expanded="1" path="object-folder/Area/Stage 1 - Svartalheim/" />
+        <folder expanded="0" path="object-folder/Area/Stage 1 - Svartalheim/" />
         <folder expanded="0" path="object-folder/Area/Stage 2 - Alfheim/" />
         <folder expanded="0" path="object-folder/Area/Stage 3 - Niddhavellir/" />
         <folder expanded="0" path="object-folder/Area/Stage 4 - Asgard/" />
+        <folder expanded="0" path="object-folder/Area/Stage 5 - Vanaheim/" />
+        <folder expanded="0" path="object-folder/Area/Stage 6 - Muspellheim/" />
+        <folder expanded="0" path="object-folder/Area/Stage 7 - Niflheim/" />
         <folder expanded="0" path="object-folder/Boss/" />
         <folder expanded="0" path="object-folder/Monster/" />
         <folder expanded="0" path="object-folder/Particles/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="0" path="layout-folder/Stage/" />
-        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="layout-folder/Stage/" />
+        <folder expanded="0" path="event-folder/" />
         <folder expanded="0" path="event-folder/Stage/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
@@ -137,10 +141,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Cave_tileset/" />
         <folder expanded="1" path="animation-folder/Mount_tileset/" />
         <folder expanded="1" path="animation-folder/Mount_tile/" />
+        <folder expanded="1" path="animation-folder/Desert_tileset/" />
+        <folder expanded="1" path="animation-folder/Desert_properties/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Lava_tileset/" />
+        <folder expanded="1" path="animation-folder/Snow_tileset/" />
         <folder expanded="1" path="animation-folder/Sleipnir/" />
         <folder expanded="1" path="animation-folder/Fafnir/" />
-        <folder expanded="1" path="animation-folder/jungle/" />
+        <folder expanded="1" path="animation-folder/Jungle/" />
         <folder expanded="1" path="animation-folder/Valkyrie/" />
+        <folder expanded="1" path="animation-folder/Dessert/" />
+        <folder expanded="1" path="animation-folder/Lava/" />
+        <folder expanded="1" path="animation-folder/Snow/" />
         <folder expanded="1" path="animation-folder/Goblin/" />
         <folder expanded="1" path="animation-folder/camera/" />
         <folder expanded="1" path="animation-folder/camera_core/" />

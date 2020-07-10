@@ -20438,7 +20438,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="jungle" uid="2249">
+                <instance type="Jungle" uid="2249">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -20464,8 +20464,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>15444</x>
-                        <y>696</y>
+                        <x>15490</x>
+                        <y>710</y>
                         <z>0</z>
                         <width>743.612792969</width>
                         <height>743.612792969</height>

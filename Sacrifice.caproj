@@ -37,6 +37,7 @@
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects>
+        <effect author="Scirra" id="brightness">Brightness</effect>
         <effect author="Scirra" id="hsladjust">Adjust HSL</effect>
         <effect author="Scirra" id="warpmask">Warp Mask</effect>
         <effect author="Viktor Korsun" id="water">Water</effect>
@@ -3647,6 +3648,395 @@
                     <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Mountain\6.png" />
                 </object-type>
             </object-folder>
+            <object-folder name="Stage 5 - Vanaheim">
+                <object-type name="Desert_tileset" sid="881463015228876">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="996480123537535">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="23" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="597392430837945" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\Grass.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\GrassCliffLeft.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\GrassCliffMid.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\GrassCliffRight.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\GrassJoinHillLeft&amp;Right.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\GrassJoinHillLeft.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\GrassJoinHillLeft2 WithDropShadow.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\GrassJoinHillLeft2&amp;Right2 WithDropShadow.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\GrassJoinHillLeft2.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\GrassJoinHillRight WithDropShadow.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\GrassJoinHillRight.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\GrassJoinHillRight2&amp;Left2.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\GrassJoinHillRight2.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\GrassLeft.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\GrassMid.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\GrassRight.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\HillLeft.png">
+                                <collision-poly>
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0.136719" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\HillLeft2 WithDropShadow.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="0.136719" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\HillLeft2.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="0.136719" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\HillRight.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="0.863281" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\HillRight2 WithDropShadow.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.863281" y="0" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Free Platform Game Assets\Update 1.9\Seasons Tiles (2.5D view)\Autumn\512x512\HillRight2.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.863281" y="0" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\nograss.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Desert_properties" sid="574845824922266">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="30" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="531909102017058" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.505747" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\ArrowSign.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Bush (1).png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Bush (2).png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\bush 1.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\cactus (1).png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\cactus 2 (1).png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\cactus 2.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\cactus.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Crate.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\DeadBush.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\flower (1).png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\flower.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Pad_1_3.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Pad_1_4.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.503268" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Pad_2_3.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Pad_2_4.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504425" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Pad_3_3.png" />
+                            <frame duration="1" hotspotX="0.501199" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Pad_3_4.png" />
+                            <frame duration="1" hotspotX="0.501188" hotspotY="0.503937" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Pad_4_3.png" />
+                            <frame duration="1" hotspotX="0.501176" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Pad_4_4.png" />
+                            <frame duration="1" hotspotX="0.500917" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\rock 1.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\rocks 1.png" />
+                            <frame duration="1" hotspotX="0.50237" hotspotY="0.506329" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\rocks 2.png" />
+                            <frame duration="1" hotspotX="0.505495" hotspotY="0.505376" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Sign.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Skeleton.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\TombStone (1).png" />
+                            <frame duration="1" hotspotX="0.509434" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\TombStone (2).png" />
+                            <frame duration="1" hotspotX="0.501229" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\tree 1.png" />
+                            <frame duration="1" hotspotX="0.501155" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\tree 2.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.502092" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\PROPERTY\Tree.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Desert_1" sid="817328097145945">
+                    <plugin id="TiledBg" />
+                    <texture original-source="C:\Users\Iqbal\Downloads\1.png" />
+                </object-type>
+                <object-type name="Sprite" sid="250105089443542">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="107665817095269" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Stage 6 - Muspellheim">
+                <object-type name="Lava_tileset" sid="616351289293212">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="275361313352835">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="21" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="494124236614933" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice03_03.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice05_05.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice06_06.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice07_07.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice12_12.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice13_13.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice14_14.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice15_15.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice17_17.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice18_18.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice19_19.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice20_20.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice21_21.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice22_22.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice23_23.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice24_24.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice25_25.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice26_26.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice33_33.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice34_34.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice35_35.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Lava_tileBackground" sid="108346730171263">
+                    <plugin id="TiledBg" />
+                    <effects>
+                        <effect-type name="Brightness">
+                            <effect id="brightness" />
+                        </effect-type>
+                    </effects>
+                    <texture original-source="C:\Users\Iqbal\Downloads\fire\slice33_33.png" />
+                </object-type>
+            </object-folder>
+            <object-folder name="Stage 7 - Niflheim">
+                <object-type name="Snow_tileset" sid="546301449247628">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="178853381833408">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="21" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="355054612076877" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice03_03.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice05_05.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice06_06.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice07_07.png">
+                                <collision-poly>
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice12_12.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="0.335714" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice13_13.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.335714" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice14_14.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="0.342857" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice15_15.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.346429" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice17_17.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice18_18.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice19_19.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice20_20.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice21_21.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice22_22.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice23_23.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice24_24.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice25_25.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice26_26.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice33_33.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice34_34.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice35_35.png">
+                                <collision-poly>
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="TiledBackground" sid="917988628398208">
+                    <plugin id="TiledBg" />
+                    <texture original-source="C:\Users\Iqbal\Downloads\1 (1).png" />
+                </object-type>
+            </object-folder>
         </object-folder>
         <object-folder name="Boss">
             <object-type name="Sleipnir" sid="956316928954124">
@@ -5460,7 +5850,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="jungle" sid="464095155645524">
+            <object-type name="Jungle" sid="464095155645524">
                 <plugin id="Sprite" />
                 <behaviors>
                     <behavior-type name="Platform" sid="359722062001048">
@@ -5957,6 +6347,508 @@
                                 <point x="0.224667" y="0.5" />
                             </collision-poly>
                         </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Dessert" sid="737858377720007">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="30" loop="1" name="stand" pingpong="0" repeatcount="1" repeatto="0" sid="119189132736198" speed="15">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00000.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00001.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00002.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00003.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00004.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00005.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00006.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00007.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00008.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00009.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00010.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00011.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00012.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00013.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00014.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00015.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00016.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00017.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00018.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00019.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00020.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00021.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00022.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00023.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00024.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00025.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00026.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00027.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00028.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00029.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Lava" sid="891442056172658">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="30" loop="1" name="stand" pingpong="0" repeatcount="1" repeatto="0" sid="778143906773309" speed="15">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00000.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00001.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00002.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00003.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00004.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00005.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00006.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00007.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00008.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00009.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00010.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00011.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00012.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00013.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00014.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00015.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00016.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00017.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00018.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00019.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00020.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00021.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00022.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00023.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00024.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00025.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00026.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00027.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00028.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00029.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Snow" sid="263839323754149">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="791967618946954" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -8041,6 +8933,9 @@
             <event-sheet>Stage 2 - Alfheim.xml</event-sheet>
             <event-sheet>Stage 3 - Niddhavellir.xml</event-sheet>
             <event-sheet>stage 4 - Asgard.xml</event-sheet>
+            <event-sheet>Stage 5 - Vanaheim.xml</event-sheet>
+            <event-sheet>Stage 6 - Muspellheim.xml</event-sheet>
+            <event-sheet>Stage 7 - Niflheim.xml</event-sheet>
         </event-folder>
         <event-sheet>MainMenu_Event.xml</event-sheet>
         <event-sheet>WorldMap_Event.xml</event-sheet>

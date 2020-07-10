@@ -40,7 +40,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="Platform" id="7" name="Simulate control" sid="389996743269489" type="jungle">
+                <action behavior="Platform" id="7" name="Simulate control" sid="389996743269489" type="Jungle">
                     <param id="0" name="Control">2</param>
                 </action>
             </actions>

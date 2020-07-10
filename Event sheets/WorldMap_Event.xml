@@ -1027,11 +1027,7 @@
                                             <param id="2" name="Value">7</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-2" name="Go to layout" sid="536783490870396" type="System">
-                                            <param id="0" name="Layout">Stage 7 - Niflheim</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
                                 </event-block>
                             </sub-events>
                         </event-block>
