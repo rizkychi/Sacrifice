@@ -3877,17 +3877,29 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="Desert_1" sid="817328097145945">
-                    <plugin id="TiledBg" />
-                    <texture original-source="C:\Users\Iqbal\Downloads\1.png" />
-                </object-type>
-                <object-type name="Sprite" sid="250105089443542">
+                <object-type name="Desert_1" sid="170282816462592">
                     <plugin id="Sprite" />
                     <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="107665817095269" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="457033682827143" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Desert\1.png" />
                         </animation>
                     </animation-folder>
+                </object-type>
+                <object-type name="Desert_2" sid="586217221935319">
+                    <plugin id="TiledBg" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Desert\2.png" />
+                </object-type>
+                <object-type name="Desert_3" sid="110305085836912">
+                    <plugin id="TiledBg" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Desert\3.png" />
+                </object-type>
+                <object-type name="Desert_4" sid="864132000295869">
+                    <plugin id="TiledBg" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Desert\4.png" />
+                </object-type>
+                <object-type name="Desert_5" sid="313164906943654">
+                    <plugin id="TiledBg" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Desert\5.png" />
                 </object-type>
             </object-folder>
             <object-folder name="Stage 6 - Muspellheim">
@@ -3902,8 +3914,20 @@
                         <animation framecount="21" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="494124236614933" speed="0">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice03_03.png" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice05_05.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice06_06.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice07_07.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice06_06.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice07_07.png">
+                                <collision-poly>
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice12_12.png" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice13_13.png" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice14_14.png" />
@@ -8830,6 +8854,42 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="323366269020668" speed="5">
                     <frame duration="1" hotspotX="1" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Ice_1" sid="336478740779175">
+            <plugin id="TiledBg" />
+            <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Ice\1.png" />
+        </object-type>
+        <object-type name="Ice_2" sid="954035723352177">
+            <plugin id="TiledBg" />
+            <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Ice\2_2.png" />
+        </object-type>
+        <object-type name="Ice_3" sid="626311094725747">
+            <plugin id="TiledBg" />
+            <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Ice\3_2.png" />
+        </object-type>
+        <object-type name="Lava_1" sid="954079787002597">
+            <plugin id="TiledBg" />
+            <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Lava\1.png" />
+        </object-type>
+        <object-type name="Lava_2" sid="366055479999377">
+            <plugin id="TiledBg" />
+            <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Lava\2.png" />
+        </object-type>
+        <object-type name="Lava_3" sid="315435454903791">
+            <plugin id="TiledBg" />
+            <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Lava\4.png" />
+        </object-type>
+        <object-type name="Lava_4" sid="493899131914681">
+            <plugin id="TiledBg" />
+            <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Lava\5.png" />
+        </object-type>
+        <object-type name="Sprite" sid="524293532790892">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="139257949524499" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Lava\7.png" />
                 </animation>
             </animation-folder>
         </object-type>
