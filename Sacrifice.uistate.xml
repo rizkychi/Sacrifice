@@ -9,7 +9,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         </active>
         <display name="HTML5" />
     </configurations>
-    <open-tabs />
+    <open-tabs>
+        <layout order="0">MainMenu</layout>
+        <layout order="1">Stage 7 - Niflheim</layout>
+        <layout order="2">Stage 6 - Muspellheim</layout>
+        <layout order="3">Stage 5 - Vanaheim</layout>
+        <layout order="4">Stage 4 - Asgard</layout>
+        <layout order="5">Stage 3 - Niddhavellir</layout>
+        <layout active="1" order="6">Stage 2 - Alfheim</layout>
+    </open-tabs>
     <properties>
         <property expanded="1" name="About" />
         <property expanded="1" name="Project settings" />
@@ -36,8 +44,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/UI/" />
         <folder expanded="1" path="object-folder/Area/" />
         <folder expanded="0" path="object-folder/Area/Stage 1 - Svartalheim/" />
-        <folder expanded="0" path="object-folder/Area/Stage 2 - Alfheim/" />
-        <folder expanded="0" path="object-folder/Area/Stage 3 - Niddhavellir/" />
+        <folder expanded="1" path="object-folder/Area/Stage 2 - Alfheim/" />
+        <folder expanded="1" path="object-folder/Area/Stage 3 - Niddhavellir/" />
         <folder expanded="0" path="object-folder/Area/Stage 4 - Asgard/" />
         <folder expanded="0" path="object-folder/Area/Stage 5 - Vanaheim/" />
         <folder expanded="0" path="object-folder/Area/Stage 6 - Muspellheim/" />

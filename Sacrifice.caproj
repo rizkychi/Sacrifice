@@ -3228,6 +3228,10 @@
                     <plugin id="TiledBg" />
                     <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Forest\5.png" />
                 </object-type>
+                <object-type name="Forest_tile" sid="325881033120494">
+                    <plugin id="TiledBg" />
+                    <texture original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\nograss.png" />
+                </object-type>
             </object-folder>
             <object-folder name="Stage 3 - Niddhavellir">
                 <object-type name="Cave_tileset" sid="940585965872116">
@@ -3238,7 +3242,7 @@
                         </behavior-type>
                     </behaviors>
                     <animation-folder>
-                        <animation framecount="38" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="864614919965859" speed="0">
+                        <animation framecount="41" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="864614919965859" speed="0">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\Grass.png">
                                 <collision-poly>
                                     <point x="0" y="0.136719" />
@@ -3440,6 +3444,16 @@
                                     <point x="0" y="0.335714" />
                                 </collision-poly>
                             </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\slice03_03.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <collision-poly>
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                </collision-poly>
+                            </frame>
                         </animation>
                     </animation-folder>
                 </object-type>
@@ -3454,6 +3468,10 @@
                 <object-type name="Cave_3" sid="186162724575918">
                     <plugin id="TiledBg" />
                     <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Cave\3_2.png" />
+                </object-type>
+                <object-type name="Cave_tile" sid="213504615861938">
+                    <plugin id="TiledBg" />
+                    <texture original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\nograss.png" />
                 </object-type>
             </object-folder>
             <object-folder name="Stage 4 - Asgard">
@@ -3901,6 +3919,10 @@
                     <plugin id="TiledBg" />
                     <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Desert\5.png" />
                 </object-type>
+                <object-type name="TiledBackground2" sid="528612500686024">
+                    <plugin id="TiledBg" />
+                    <texture original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\nograss.png" />
+                </object-type>
             </object-folder>
             <object-folder name="Stage 6 - Muspellheim">
                 <object-type name="Lava_tileset" sid="616351289293212">
@@ -3911,7 +3933,7 @@
                         </behavior-type>
                     </behaviors>
                     <animation-folder>
-                        <animation framecount="21" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="494124236614933" speed="0">
+                        <animation framecount="44" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="494124236614933" speed="0">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice03_03.png" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice05_05.png" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice06_06.png">
@@ -3945,6 +3967,55 @@
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice33_33.png" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice34_34.png" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice35_35.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice03_03.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice05_05.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice06_06.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice07_07.png">
+                                <collision-poly>
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice12_12.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="0.3" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice13_13.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.328571" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice14_14.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice15_15.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice16_16.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice17_17.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice18_18.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice19_19.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice20_20.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice21_21.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice22_22.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice23_23.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice24_24.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice25_25.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice26_26.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice33_33.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice34_34.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice35_35.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice36_36.png" />
                         </animation>
                     </animation-folder>
                 </object-type>
