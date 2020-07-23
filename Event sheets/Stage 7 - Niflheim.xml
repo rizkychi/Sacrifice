@@ -4,5 +4,142 @@
     <name>Stage 7 - Niflheim</name>
     <events>
         <include>GameControl_Event</include>
+        <event-block sid="734674917750373">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="470805110950343" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="13" name="Set double-jump" sid="994479229252189" type="Player_Evans">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Platform" id="1" name="Set max speed" sid="633737565158671" type="Snowie">
+                    <param id="0" name="Max Speed">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block any="1" sid="427417668368100">
+                    <conditions>
+                        <condition id="5" name="Is tag playing" sid="456711533632725" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </condition>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="941162885828624" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="403354321741364" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="777045249992234" type="Audio">
+                            <param id="0" name="Audio file">Level 7 - Nilfheim (PerituneMaterial_Snowy_Day2_loop)</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">VolumeMusic</param>
+                            <param id="1" name="Tag (optional)">&quot;bgm&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="680486789743152">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="790296020395265" type="Snow_tileset">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">6</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="775907505553713" type="Snow_tileset">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="962168949436347" type="Snow_tileset">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Jumpthru" id="0" name="Set enabled" sid="855892604274799" type="Snow_tileset">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="937941694926984">
+            <conditions>
+                <condition id="2" name="Is playing" sid="734233259471386" type="Player_Evans">
+                    <param id="0" name="Animation">&quot;Fall&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="702347862467317">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="258495164063772" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="6" name="Set max fall speed" sid="479010667850632" type="Player_Evans">
+                            <param id="0" name="Max fall speed">150</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="664406034452166">
+            <conditions>
+                <condition id="3" name="On key released" sid="515633153720901" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="6" name="Set max fall speed" sid="373689998608537" type="Player_Evans">
+                    <param id="0" name="Max fall speed">1000</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="381873761909889">
+            <conditions>
+                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="147654375773326" type="Snowie">
+                    <param id="0" name="Object">Player_Evans</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="985177390483675">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="388490021627095" type="System">
+                            <param id="0" name="Interval (seconds)">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="477825317981122" type="Snowie">
+                            <param id="0" name="Animation">&quot;Attack&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="389797487431911" type="System">
+                            <param id="0" name="Seconds">0.45</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="846925199467022" type="Snowie">
+                            <param id="0" name="Object">Snow_bullet</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="Image point">2</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="838055750751723" type="Snow_bullet">
+                            <param id="0" name="Angle">180+angle(Player_Evans.X,Player_Evans.Y-50,Self.X,Self.Y)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="864543817376624">
+            <conditions>
+                <condition id="4" name="On finished" sid="867159518369322" type="Snowie">
+                    <param id="0" name="Animation">&quot;Attack&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="669792854386021" type="Snowie">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

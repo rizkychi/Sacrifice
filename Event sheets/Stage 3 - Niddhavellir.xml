@@ -8,11 +8,7 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="918906677951895" type="System" />
             </conditions>
-            <actions>
-                <action behavior="Platform" id="0" name="Set ignoring input" sid="451356479009085" type="Fafnir">
-                    <param id="0" name="Input">1</param>
-                </action>
-            </actions>
+            <actions />
             <sub-events>
                 <event-block any="1" sid="121635772025605">
                     <conditions>
@@ -37,36 +33,86 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="633661138084418">
+        <event-block sid="108003092614765">
             <conditions>
-                <condition id="-6" name="Every X seconds" sid="913333886389489" type="System">
-                    <param id="0" name="Interval (seconds)">4</param>
+                <condition id="-7" name="Compare instance variable" sid="941626949172016" type="Cave_tile">
+                    <param id="0" name="Instance variable">hidden</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="121867672844446" type="Fafnir">
-                    <param id="0" name="Animation">&quot;attack&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action behavior="Platform" id="7" name="Simulate control" sid="862145118157075" type="Fafnir">
-                    <param id="0" name="Control">2</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="663414522403241">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="202247574036729" type="Player_Evans">
+                            <param id="0" name="Object">Cave_tile</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="121092301437130" type="Cave_tile">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="999132414064669">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="337547040796966" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="592190350693022" type="Cave_tile">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="964939688066661">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="905284714763707" type="Fafnir" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="633661138084418">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="913333886389489" type="System">
+                            <param id="0" name="Interval (seconds)">4</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="802950246396200" type="System">
+                            <param id="0" name="Variable">stealth</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="121867672844446" type="Fafnir">
+                            <param id="0" name="Animation">&quot;Attack&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="911556279046858" type="System">
+                            <param id="0" name="Seconds">0.25</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="862145118157075" type="Fafnir">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="653863023184875">
             <conditions>
                 <condition id="4" name="On finished" sid="513986111945970" type="Fafnir">
-                    <param id="0" name="Animation">&quot;attack&quot;</param>
+                    <param id="0" name="Animation">&quot;Attack&quot;</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="978063680727277" type="Fafnir">
-                    <param id="0" name="Animation">&quot;stand&quot;</param>
+                    <param id="0" name="Animation">&quot;Stand&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="415994032125527">
+        <event-block disabled="1" sid="415994032125527">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="468959579578990" type="System">
                     <param id="0" name="Interval (seconds)">0.2</param>

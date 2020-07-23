@@ -31,6 +31,7 @@
         <behavior author="Scirra, Alex Hanson-White" id="PinPlus" version="1">Pin+</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -795,6 +796,11 @@
                 <instance-variables>
                     <instance-variable name="type" sid="239813313203543" type="string" />
                 </instance-variables>
+                <behaviors>
+                    <behavior-type name="Timer" sid="175259882061953">
+                        <behavior id="Timer" />
+                    </behavior-type>
+                </behaviors>
                 <texture original-source="C:\Users\Rizky\Desktop\font\SpriteFont_KGBlankSpaceSolid_Regular_(14)_[1,1,1,1]_19x22.png" />
             </object-type>
             <object-type name="SpriteFont_Damage" sid="727410420374072">
@@ -2548,7 +2554,10 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="660126291594948" speed="0">
+                    <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="660126291594948" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0.533333">
+                            <image-point name="last" x="1" y="0.533333" />
+                        </frame>
                         <frame duration="1" hotspotX="0" hotspotY="0.533333">
                             <image-point name="last" x="1" y="0.533333" />
                         </frame>
@@ -2986,6 +2995,9 @@
                         <behavior-type name="Solid" sid="899503945329059">
                             <behavior id="solid" />
                         </behavior-type>
+                        <behavior-type name="Jumpthru" sid="615653098489559">
+                            <behavior id="jumpthru" />
+                        </behavior-type>
                     </behaviors>
                     <animation-folder>
                         <animation framecount="23" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="351590159389325" speed="0">
@@ -3222,7 +3234,7 @@
                 </object-type>
                 <object-type name="Forest_4" sid="100087695358366">
                     <plugin id="TiledBg" />
-                    <texture original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Forest\4.png" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Forest\4.png" />
                 </object-type>
                 <object-type name="Forest_5" sid="618949078684292">
                     <plugin id="TiledBg" />
@@ -3230,7 +3242,26 @@
                 </object-type>
                 <object-type name="Forest_tile" sid="325881033120494">
                     <plugin id="TiledBg" />
+                    <instance-variables>
+                        <instance-variable name="hidden" sid="310323139909075" type="number" />
+                    </instance-variables>
                     <texture original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\nograss.png" />
+                </object-type>
+                <object-type name="Forest_tileset_2" sid="955567390786753">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="362780684425362" speed="0">
+                            <frame duration="1" hotspotX="0.502924" hotspotY="0.595843" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\jungle\new tileset\GrassJoinHillLeft&amp;Right.png">
+                                <collision-poly>
+                                    <point x="0.00389864" y="0.166282" />
+                                    <point x="1" y="0.166282" />
+                                    <point x="1" y="1" />
+                                    <point x="0.00389864" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\nograss.png" />
+                        </animation>
+                    </animation-folder>
                 </object-type>
             </object-folder>
             <object-folder name="Stage 3 - Niddhavellir">
@@ -3423,8 +3454,26 @@
                             </frame>
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\nograss.png" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice36_36.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice25_25.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice26_26.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice25_25.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="0.648438" y="0.171875" />
+                                    <point x="0.53125" y="0.546875" />
+                                    <point x="0.1875" y="0.632813" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice26_26.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0.78125" y="0.625" />
+                                    <point x="0.46875" y="0.546875" />
+                                    <point x="0.328125" y="0.171875" />
+                                </collision-poly>
+                            </frame>
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice27_27.png" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice20_20.png" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice21_21.png" />
@@ -3471,6 +3520,9 @@
                 </object-type>
                 <object-type name="Cave_tile" sid="213504615861938">
                     <plugin id="TiledBg" />
+                    <instance-variables>
+                        <instance-variable name="hidden" sid="178160949391304" type="number" />
+                    </instance-variables>
                     <texture original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\nograss.png" />
                 </object-type>
             </object-folder>
@@ -3481,9 +3533,12 @@
                         <behavior-type name="Solid" sid="868123202531417">
                             <behavior id="solid" />
                         </behavior-type>
+                        <behavior-type name="Jumpthru" sid="743858987875071">
+                            <behavior id="jumpthru" />
+                        </behavior-type>
                     </behaviors>
                     <animation-folder>
-                        <animation framecount="18" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="443384442647565" speed="0">
+                        <animation framecount="19" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="443384442647565" speed="0">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\mountain\tileset\Grass.png">
                                 <collision-poly>
                                     <point x="0" y="0.136719" />
@@ -3634,14 +3689,7 @@
                                     <point x="0" y="1" />
                                 </collision-poly>
                             </frame>
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="Mount_tile" sid="565049654910605">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="768910538407764" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\nograss.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\tiles.png" />
                         </animation>
                     </animation-folder>
                 </object-type>
@@ -3665,6 +3713,13 @@
                     <plugin id="TiledBg" />
                     <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Mountain\6.png" />
                 </object-type>
+                <object-type name="Mount_tile" sid="338459846585167">
+                    <plugin id="TiledBg" />
+                    <instance-variables>
+                        <instance-variable name="hidden" sid="165668093187397" type="number" />
+                    </instance-variables>
+                    <texture original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\nograss.png" />
+                </object-type>
             </object-folder>
             <object-folder name="Stage 5 - Vanaheim">
                 <object-type name="Desert_tileset" sid="881463015228876">
@@ -3672,6 +3727,9 @@
                     <behaviors>
                         <behavior-type name="Solid" sid="996480123537535">
                             <behavior id="solid" />
+                        </behavior-type>
+                        <behavior-type name="Jumpthru" sid="610267282474712">
+                            <behavior id="jumpthru" />
                         </behavior-type>
                     </behaviors>
                     <animation-folder>
@@ -3919,9 +3977,16 @@
                     <plugin id="TiledBg" />
                     <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Desert\5.png" />
                 </object-type>
-                <object-type name="TiledBackground2" sid="528612500686024">
+                <object-type name="Desert_tile" sid="528612500686024">
                     <plugin id="TiledBg" />
+                    <instance-variables>
+                        <instance-variable name="hidden" sid="219878585037449" type="number" />
+                    </instance-variables>
                     <texture original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\nograss.png" />
+                </object-type>
+                <object-type name="Desert_5_1" sid="727813902912224">
+                    <plugin id="TiledBg" />
+                    <texture />
                 </object-type>
             </object-folder>
             <object-folder name="Stage 6 - Muspellheim">
@@ -3933,40 +3998,7 @@
                         </behavior-type>
                     </behaviors>
                     <animation-folder>
-                        <animation framecount="44" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="494124236614933" speed="0">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice03_03.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice05_05.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice06_06.png">
-                                <collision-poly>
-                                    <point x="0" y="0" />
-                                    <point x="1" y="1" />
-                                    <point x="0" y="1" />
-                                </collision-poly>
-                            </frame>
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice07_07.png">
-                                <collision-poly>
-                                    <point x="1" y="0" />
-                                    <point x="1" y="1" />
-                                    <point x="0" y="1" />
-                                </collision-poly>
-                            </frame>
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice12_12.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice13_13.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice14_14.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice15_15.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice17_17.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice18_18.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice19_19.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice20_20.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice21_21.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice22_22.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice23_23.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice24_24.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice25_25.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice26_26.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice33_33.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice34_34.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\snow\slice35_35.png" />
+                        <animation framecount="19" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="494124236614933" speed="0">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice03_03.png" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice05_05.png" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice06_06.png">
@@ -4001,7 +4033,6 @@
                             </frame>
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice14_14.png" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice15_15.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice16_16.png" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice17_17.png" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice18_18.png" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice19_19.png" />
@@ -4010,16 +4041,13 @@
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice22_22.png" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice23_23.png" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice24_24.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice25_25.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice26_26.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice33_33.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice34_34.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice35_35.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\fire\slice36_36.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Area\lake\PNG Grass\slice25_25.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Area\lake\PNG Grass\slice26_26.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Area\lake\PNG Grass\slice33_33.png" />
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="Lava_tileBackground" sid="108346730171263">
+                <object-type name="Lava_tile" sid="108346730171263">
                     <plugin id="TiledBg" />
                     <effects>
                         <effect-type name="Brightness">
@@ -4028,6 +4056,30 @@
                     </effects>
                     <texture original-source="C:\Users\Iqbal\Downloads\fire\slice33_33.png" />
                 </object-type>
+                <object-type name="Lava_1" sid="954079787002597">
+                    <plugin id="TiledBg" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Lava\1.png" />
+                </object-type>
+                <object-type name="Lava_3" sid="315435454903791">
+                    <plugin id="TiledBg" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Lava\4.png" />
+                </object-type>
+                <object-type name="Lava_4" sid="493899131914681">
+                    <plugin id="TiledBg" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Lava\5.png" />
+                </object-type>
+                <object-type name="Lava_2" sid="366055479999377">
+                    <plugin id="TiledBg" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Lava\2.png" />
+                </object-type>
+                <object-type name="Lava_term" sid="524293532790892">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="139257949524499" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Lava\7.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
             </object-folder>
             <object-folder name="Stage 7 - Niflheim">
                 <object-type name="Snow_tileset" sid="546301449247628">
@@ -4035,6 +4087,9 @@
                     <behaviors>
                         <behavior-type name="Solid" sid="178853381833408">
                             <behavior id="solid" />
+                        </behavior-type>
+                        <behavior-type name="Jumpthru" sid="599889570526235">
+                            <behavior id="jumpthru" />
                         </behavior-type>
                     </behaviors>
                     <animation-folder>
@@ -4127,9 +4182,21 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="TiledBackground" sid="917988628398208">
+                <object-type name="Ice_1" sid="336478740779175">
                     <plugin id="TiledBg" />
-                    <texture original-source="C:\Users\Iqbal\Downloads\1 (1).png" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Ice\1.png" />
+                </object-type>
+                <object-type name="Ice_2" sid="954035723352177">
+                    <plugin id="TiledBg" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Ice\2_2.png" />
+                </object-type>
+                <object-type name="Ice_3" sid="626311094725747">
+                    <plugin id="TiledBg" />
+                    <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Ice\3_2.png" />
+                </object-type>
+                <object-type name="Ice_1_1" sid="851838471659925">
+                    <plugin id="TiledBg" />
+                    <texture />
                 </object-type>
             </object-folder>
         </object-folder>
@@ -5389,7 +5456,7 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="15" loop="1" name="stand" pingpong="1" repeatcount="1" repeatto="0" sid="636518203640740" speed="30">
+                    <animation framecount="15" loop="1" name="Stand" pingpong="1" repeatcount="1" repeatto="0" sid="636518203640740" speed="30">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\stand\stand_00000.png">
                             <collision-poly>
                                 <point x="0.228516" y="0.130859" />
@@ -5571,7 +5638,7 @@
                             </collision-poly>
                         </frame>
                     </animation>
-                    <animation framecount="37" loop="0" name="attack" pingpong="0" repeatcount="1" repeatto="0" sid="738913257964878" speed="30">
+                    <animation framecount="22" loop="0" name="Attack" pingpong="0" repeatcount="1" repeatto="0" sid="738913257964878" speed="25">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00000.png">
                             <collision-poly>
                                 <point x="0.707031" y="0.941406" />
@@ -5672,96 +5739,6 @@
                                 <point x="0.873047" y="0.519531" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00010.png">
-                            <collision-poly>
-                                <point x="0.707031" y="0.941406" />
-                                <point x="0.373047" y="0.941406" />
-                                <point x="0.242188" y="0.744141" />
-                                <point x="0.25293" y="0.201172" />
-                                <point x="0.481934" y="0.138672" />
-                                <point x="0.873047" y="0.519531" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00011.png">
-                            <collision-poly>
-                                <point x="0.707031" y="0.941406" />
-                                <point x="0.373047" y="0.941406" />
-                                <point x="0.242188" y="0.744141" />
-                                <point x="0.25293" y="0.201172" />
-                                <point x="0.481934" y="0.138672" />
-                                <point x="0.873047" y="0.519531" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00012.png">
-                            <collision-poly>
-                                <point x="0.707031" y="0.941406" />
-                                <point x="0.373047" y="0.941406" />
-                                <point x="0.242188" y="0.744141" />
-                                <point x="0.25293" y="0.201172" />
-                                <point x="0.481934" y="0.138672" />
-                                <point x="0.873047" y="0.519531" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00013.png">
-                            <collision-poly>
-                                <point x="0.707031" y="0.941406" />
-                                <point x="0.373047" y="0.941406" />
-                                <point x="0.242188" y="0.744141" />
-                                <point x="0.25293" y="0.201172" />
-                                <point x="0.481934" y="0.138672" />
-                                <point x="0.873047" y="0.519531" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00014.png">
-                            <collision-poly>
-                                <point x="0.707031" y="0.941406" />
-                                <point x="0.373047" y="0.941406" />
-                                <point x="0.242188" y="0.744141" />
-                                <point x="0.25293" y="0.201172" />
-                                <point x="0.481934" y="0.138672" />
-                                <point x="0.873047" y="0.519531" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00015.png">
-                            <collision-poly>
-                                <point x="0.707031" y="0.941406" />
-                                <point x="0.373047" y="0.941406" />
-                                <point x="0.242188" y="0.744141" />
-                                <point x="0.25293" y="0.201172" />
-                                <point x="0.481934" y="0.138672" />
-                                <point x="0.873047" y="0.519531" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00016.png">
-                            <collision-poly>
-                                <point x="0.707031" y="0.941406" />
-                                <point x="0.373047" y="0.941406" />
-                                <point x="0.242188" y="0.744141" />
-                                <point x="0.25293" y="0.201172" />
-                                <point x="0.481934" y="0.138672" />
-                                <point x="0.873047" y="0.519531" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00017.png">
-                            <collision-poly>
-                                <point x="0.707031" y="0.941406" />
-                                <point x="0.373047" y="0.941406" />
-                                <point x="0.242188" y="0.744141" />
-                                <point x="0.25293" y="0.201172" />
-                                <point x="0.481934" y="0.138672" />
-                                <point x="0.873047" y="0.519531" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00018.png">
-                            <collision-poly>
-                                <point x="0.707031" y="0.941406" />
-                                <point x="0.373047" y="0.941406" />
-                                <point x="0.242188" y="0.744141" />
-                                <point x="0.25293" y="0.201172" />
-                                <point x="0.481934" y="0.138672" />
-                                <point x="0.873047" y="0.519531" />
-                            </collision-poly>
-                        </frame>
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00019.png">
                             <collision-poly>
                                 <point x="0.707031" y="0.941406" />
@@ -5793,66 +5770,6 @@
                             </collision-poly>
                         </frame>
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00022.png">
-                            <collision-poly>
-                                <point x="0.707031" y="0.941406" />
-                                <point x="0.373047" y="0.941406" />
-                                <point x="0.242188" y="0.744141" />
-                                <point x="0.25293" y="0.201172" />
-                                <point x="0.481934" y="0.138672" />
-                                <point x="0.873047" y="0.519531" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00023.png">
-                            <collision-poly>
-                                <point x="0.707031" y="0.941406" />
-                                <point x="0.373047" y="0.941406" />
-                                <point x="0.242188" y="0.744141" />
-                                <point x="0.25293" y="0.201172" />
-                                <point x="0.481934" y="0.138672" />
-                                <point x="0.873047" y="0.519531" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00024.png">
-                            <collision-poly>
-                                <point x="0.707031" y="0.941406" />
-                                <point x="0.373047" y="0.941406" />
-                                <point x="0.242188" y="0.744141" />
-                                <point x="0.25293" y="0.201172" />
-                                <point x="0.481934" y="0.138672" />
-                                <point x="0.873047" y="0.519531" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00025.png">
-                            <collision-poly>
-                                <point x="0.707031" y="0.941406" />
-                                <point x="0.373047" y="0.941406" />
-                                <point x="0.242188" y="0.744141" />
-                                <point x="0.25293" y="0.201172" />
-                                <point x="0.481934" y="0.138672" />
-                                <point x="0.873047" y="0.519531" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00026.png">
-                            <collision-poly>
-                                <point x="0.707031" y="0.941406" />
-                                <point x="0.373047" y="0.941406" />
-                                <point x="0.242188" y="0.744141" />
-                                <point x="0.211914" y="0.113281" />
-                                <point x="0.429199" y="0.078125" />
-                                <point x="0.873047" y="0.519531" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00027.png">
-                            <collision-poly>
-                                <point x="0.707031" y="0.941406" />
-                                <point x="0.373047" y="0.941406" />
-                                <point x="0.242188" y="0.744141" />
-                                <point x="0.25293" y="0.201172" />
-                                <point x="0.481934" y="0.138672" />
-                                <point x="0.873047" y="0.519531" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Cave\jump\jump_00028.png">
                             <collision-poly>
                                 <point x="0.707031" y="0.941406" />
                                 <point x="0.373047" y="0.941406" />
@@ -5940,227 +5857,6 @@
                                 <point x="0.25293" y="0.201172" />
                                 <point x="0.481934" y="0.138672" />
                                 <point x="0.873047" y="0.519531" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Jungle" sid="464095155645524">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Platform" sid="359722062001048">
-                        <behavior id="Platform" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="19" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="805697741581415" speed="15">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00000.png">
-                            <collision-poly>
-                                <point x="0.265625" y="0.265625" />
-                                <point x="0.5" y="0.26875" />
-                                <point x="0.639844" y="0.360156" />
-                                <point x="0.742969" y="0.5" />
-                                <point x="0.846458" y="0.818125" />
-                                <point x="0.200417" y="0.822917" />
-                                <point x="0.272656" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00001.png">
-                            <collision-poly>
-                                <point x="0.265625" y="0.265625" />
-                                <point x="0.5" y="0.26875" />
-                                <point x="0.639844" y="0.360156" />
-                                <point x="0.742969" y="0.5" />
-                                <point x="0.846458" y="0.818125" />
-                                <point x="0.200417" y="0.822917" />
-                                <point x="0.272656" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00002.png">
-                            <collision-poly>
-                                <point x="0.265625" y="0.265625" />
-                                <point x="0.5" y="0.26875" />
-                                <point x="0.639844" y="0.360156" />
-                                <point x="0.742969" y="0.5" />
-                                <point x="0.846458" y="0.818125" />
-                                <point x="0.200417" y="0.822917" />
-                                <point x="0.272656" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00003.png">
-                            <collision-poly>
-                                <point x="0.265625" y="0.265625" />
-                                <point x="0.5" y="0.26875" />
-                                <point x="0.639844" y="0.360156" />
-                                <point x="0.742969" y="0.5" />
-                                <point x="0.846458" y="0.818125" />
-                                <point x="0.200417" y="0.822917" />
-                                <point x="0.272656" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00004.png">
-                            <collision-poly>
-                                <point x="0.265625" y="0.265625" />
-                                <point x="0.5" y="0.26875" />
-                                <point x="0.639844" y="0.360156" />
-                                <point x="0.742969" y="0.5" />
-                                <point x="0.846458" y="0.818125" />
-                                <point x="0.200417" y="0.822917" />
-                                <point x="0.272656" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00005.png">
-                            <collision-poly>
-                                <point x="0.265625" y="0.265625" />
-                                <point x="0.5" y="0.26875" />
-                                <point x="0.639844" y="0.360156" />
-                                <point x="0.742969" y="0.5" />
-                                <point x="0.846458" y="0.818125" />
-                                <point x="0.200417" y="0.822917" />
-                                <point x="0.272656" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00006.png">
-                            <collision-poly>
-                                <point x="0.265625" y="0.265625" />
-                                <point x="0.5" y="0.26875" />
-                                <point x="0.639844" y="0.360156" />
-                                <point x="0.742969" y="0.5" />
-                                <point x="0.846458" y="0.818125" />
-                                <point x="0.200417" y="0.822917" />
-                                <point x="0.272656" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00007.png">
-                            <collision-poly>
-                                <point x="0.265625" y="0.265625" />
-                                <point x="0.5" y="0.26875" />
-                                <point x="0.639844" y="0.360156" />
-                                <point x="0.742969" y="0.5" />
-                                <point x="0.846458" y="0.818125" />
-                                <point x="0.200417" y="0.822917" />
-                                <point x="0.272656" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00008.png">
-                            <collision-poly>
-                                <point x="0.265625" y="0.265625" />
-                                <point x="0.5" y="0.26875" />
-                                <point x="0.639844" y="0.360156" />
-                                <point x="0.742969" y="0.5" />
-                                <point x="0.846458" y="0.818125" />
-                                <point x="0.200417" y="0.822917" />
-                                <point x="0.272656" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00009.png">
-                            <collision-poly>
-                                <point x="0.265625" y="0.265625" />
-                                <point x="0.5" y="0.26875" />
-                                <point x="0.639844" y="0.360156" />
-                                <point x="0.742969" y="0.5" />
-                                <point x="0.846458" y="0.818125" />
-                                <point x="0.200417" y="0.822917" />
-                                <point x="0.272656" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00010.png">
-                            <collision-poly>
-                                <point x="0.265625" y="0.265625" />
-                                <point x="0.5" y="0.26875" />
-                                <point x="0.639844" y="0.360156" />
-                                <point x="0.742969" y="0.5" />
-                                <point x="0.846458" y="0.818125" />
-                                <point x="0.200417" y="0.822917" />
-                                <point x="0.272656" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00011.png">
-                            <collision-poly>
-                                <point x="0.265625" y="0.265625" />
-                                <point x="0.5" y="0.26875" />
-                                <point x="0.639844" y="0.360156" />
-                                <point x="0.742969" y="0.5" />
-                                <point x="0.846458" y="0.818125" />
-                                <point x="0.200417" y="0.822917" />
-                                <point x="0.272656" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00012.png">
-                            <collision-poly>
-                                <point x="0.265625" y="0.265625" />
-                                <point x="0.5" y="0.26875" />
-                                <point x="0.639844" y="0.360156" />
-                                <point x="0.742969" y="0.5" />
-                                <point x="0.846458" y="0.818125" />
-                                <point x="0.200417" y="0.822917" />
-                                <point x="0.272656" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00013.png">
-                            <collision-poly>
-                                <point x="0.265625" y="0.265625" />
-                                <point x="0.5" y="0.26875" />
-                                <point x="0.639844" y="0.360156" />
-                                <point x="0.742969" y="0.5" />
-                                <point x="0.846458" y="0.818125" />
-                                <point x="0.200417" y="0.822917" />
-                                <point x="0.272656" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00014.png">
-                            <collision-poly>
-                                <point x="0.265625" y="0.265625" />
-                                <point x="0.5" y="0.26875" />
-                                <point x="0.639844" y="0.360156" />
-                                <point x="0.742969" y="0.5" />
-                                <point x="0.846458" y="0.818125" />
-                                <point x="0.200417" y="0.822917" />
-                                <point x="0.272656" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00015.png">
-                            <collision-poly>
-                                <point x="0.265625" y="0.265625" />
-                                <point x="0.5" y="0.26875" />
-                                <point x="0.639844" y="0.360156" />
-                                <point x="0.742969" y="0.5" />
-                                <point x="0.846458" y="0.818125" />
-                                <point x="0.200417" y="0.822917" />
-                                <point x="0.272656" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00016.png">
-                            <collision-poly>
-                                <point x="0.265625" y="0.265625" />
-                                <point x="0.5" y="0.26875" />
-                                <point x="0.639844" y="0.360156" />
-                                <point x="0.742969" y="0.5" />
-                                <point x="0.846458" y="0.818125" />
-                                <point x="0.200417" y="0.822917" />
-                                <point x="0.272656" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00017.png">
-                            <collision-poly>
-                                <point x="0.265625" y="0.265625" />
-                                <point x="0.5" y="0.26875" />
-                                <point x="0.639844" y="0.360156" />
-                                <point x="0.742969" y="0.5" />
-                                <point x="0.846458" y="0.818125" />
-                                <point x="0.200417" y="0.822917" />
-                                <point x="0.272656" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Boss\Jungle\stand\stand_00018.png">
-                            <collision-poly>
-                                <point x="0.265625" y="0.265625" />
-                                <point x="0.5" y="0.26875" />
-                                <point x="0.639844" y="0.360156" />
-                                <point x="0.742969" y="0.5" />
-                                <point x="0.846458" y="0.818125" />
-                                <point x="0.200417" y="0.822917" />
-                                <point x="0.272656" y="0.5" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -6443,12 +6139,40 @@
                             </collision-poly>
                         </frame>
                     </animation>
+                    <animation framecount="26" loop="0" name="Attack" pingpong="0" repeatcount="1" repeatto="0" sid="265798325178970" speed="30">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00001.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00002.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00003.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00004.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00005.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00006.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00007.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00008.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00009.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00010.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00011.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00012.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00013.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00014.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00015.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00016.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00017.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00018.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00019.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00020.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00021.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00022.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00023.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00024.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Mountain\fire attack\fire_00025.png" />
+                    </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Dessert" sid="737858377720007">
+            <object-type name="Jormungandr" sid="737858377720007">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="30" loop="1" name="stand" pingpong="0" repeatcount="1" repeatto="0" sid="119189132736198" speed="15">
+                    <animation framecount="30" loop="1" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="119189132736198" speed="20">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00000.png">
                             <collision-poly>
                                 <point x="1" y="1" />
@@ -6692,10 +6416,10 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Lava" sid="891442056172658">
+            <object-type name="Cerberus" sid="891442056172658">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="30" loop="1" name="stand" pingpong="0" repeatcount="1" repeatto="0" sid="778143906773309" speed="15">
+                    <animation framecount="30" loop="1" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="778143906773309" speed="20">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\lava boss\stand_00000.png">
                             <collision-poly>
                                 <point x="1" y="1" />
@@ -6947,13 +6671,562 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="Treant" sid="723455231075199">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="30" loop="1" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="182235225596312" speed="18">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00000.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00001.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00002.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00003.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00004.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00005.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00006.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00007.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00008.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00009.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00010.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00011.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00012.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00013.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00014.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00015.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00016.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00017.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00018.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00019.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00020.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00021.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00022.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00023.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00024.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00025.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00026.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00027.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00028.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\stand\stand_00029.png">
+                            <image-point name="Damage" x="0.484" y="0.354667" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="30" loop="0" name="Attack" pingpong="0" repeatcount="1" repeatto="0" sid="607402267445492" speed="30">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00000.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00001.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00002.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00003.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00004.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00005.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00006.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00007.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00008.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00009.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00010.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00011.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00012.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00013.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00014.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00015.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00016.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00017.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00018.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00019.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00020.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00021.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00022.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00023.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00024.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00025.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00026.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00027.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00028.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Boss\Jungle\new\atk\atk_00029.png">
+                            <image-point name="Damage" x="0.484118" y="0.354706" />
+                            <collision-poly>
+                                <point x="0.749333" y="0.837334" />
+                                <point x="0.271999" y="0.837334" />
+                                <point x="0.378666" y="0.2" />
+                                <point x="0.629333" y="0.2" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Monster">
             <object-type name="Goblin" sid="707213080535095">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="20" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="929270825082578" speed="30">
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\stand\stand_00000.png">
+                    <animation framecount="7" loop="1" name="Run" pingpong="1" repeatcount="1" repeatto="0" sid="858348266429962" speed="30">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\run\run_00000.png">
                             <image-point name="Damage" x="0.5" y="0.273438" />
                             <collision-poly>
                                 <point x="0.285156" y="0.230469" />
@@ -6962,7 +7235,7 @@
                                 <point x="0.289063" y="0.757813" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\stand\stand_00001.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\run\run_00001.png">
                             <image-point name="Damage" x="0.5" y="0.273438" />
                             <collision-poly>
                                 <point x="0.285156" y="0.230469" />
@@ -6971,7 +7244,7 @@
                                 <point x="0.289063" y="0.757813" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\stand\stand_00002.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\run\run_00002.png">
                             <image-point name="Damage" x="0.5" y="0.273438" />
                             <collision-poly>
                                 <point x="0.285156" y="0.230469" />
@@ -6980,7 +7253,7 @@
                                 <point x="0.289063" y="0.757813" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\stand\stand_00003.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\run\run_00003.png">
                             <image-point name="Damage" x="0.5" y="0.273438" />
                             <collision-poly>
                                 <point x="0.285156" y="0.230469" />
@@ -6989,7 +7262,7 @@
                                 <point x="0.289063" y="0.757813" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\stand\stand_00004.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\run\run_00004.png">
                             <image-point name="Damage" x="0.5" y="0.273438" />
                             <collision-poly>
                                 <point x="0.285156" y="0.230469" />
@@ -6998,7 +7271,7 @@
                                 <point x="0.289063" y="0.757813" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\stand\stand_00005.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\run\run_00005.png">
                             <image-point name="Damage" x="0.5" y="0.273438" />
                             <collision-poly>
                                 <point x="0.285156" y="0.230469" />
@@ -7007,124 +7280,7 @@
                                 <point x="0.289063" y="0.757813" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\stand\stand_00006.png">
-                            <image-point name="Damage" x="0.5" y="0.273438" />
-                            <collision-poly>
-                                <point x="0.285156" y="0.230469" />
-                                <point x="0.669922" y="0.226563" />
-                                <point x="0.667969" y="0.759766" />
-                                <point x="0.289063" y="0.757813" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\stand\stand_00007.png">
-                            <image-point name="Damage" x="0.5" y="0.273438" />
-                            <collision-poly>
-                                <point x="0.285156" y="0.230469" />
-                                <point x="0.669922" y="0.226563" />
-                                <point x="0.667969" y="0.759766" />
-                                <point x="0.289063" y="0.757813" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\stand\stand_00008.png">
-                            <image-point name="Damage" x="0.5" y="0.273438" />
-                            <collision-poly>
-                                <point x="0.285156" y="0.230469" />
-                                <point x="0.669922" y="0.226563" />
-                                <point x="0.667969" y="0.759766" />
-                                <point x="0.289063" y="0.757813" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\stand\stand_00009.png">
-                            <image-point name="Damage" x="0.5" y="0.273438" />
-                            <collision-poly>
-                                <point x="0.285156" y="0.230469" />
-                                <point x="0.669922" y="0.226563" />
-                                <point x="0.667969" y="0.759766" />
-                                <point x="0.289063" y="0.757813" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\stand\stand_00010.png">
-                            <image-point name="Damage" x="0.5" y="0.273438" />
-                            <collision-poly>
-                                <point x="0.285156" y="0.230469" />
-                                <point x="0.669922" y="0.226563" />
-                                <point x="0.667969" y="0.759766" />
-                                <point x="0.289063" y="0.757813" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\stand\stand_00011.png">
-                            <image-point name="Damage" x="0.5" y="0.273438" />
-                            <collision-poly>
-                                <point x="0.285156" y="0.230469" />
-                                <point x="0.669922" y="0.226563" />
-                                <point x="0.667969" y="0.759766" />
-                                <point x="0.289063" y="0.757813" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\stand\stand_00012.png">
-                            <image-point name="Damage" x="0.5" y="0.273438" />
-                            <collision-poly>
-                                <point x="0.285156" y="0.230469" />
-                                <point x="0.669922" y="0.226563" />
-                                <point x="0.667969" y="0.759766" />
-                                <point x="0.289063" y="0.757813" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\stand\stand_00013.png">
-                            <image-point name="Damage" x="0.5" y="0.273438" />
-                            <collision-poly>
-                                <point x="0.285156" y="0.230469" />
-                                <point x="0.669922" y="0.226563" />
-                                <point x="0.667969" y="0.759766" />
-                                <point x="0.289063" y="0.757813" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\stand\stand_00014.png">
-                            <image-point name="Damage" x="0.5" y="0.273438" />
-                            <collision-poly>
-                                <point x="0.285156" y="0.230469" />
-                                <point x="0.669922" y="0.226563" />
-                                <point x="0.667969" y="0.759766" />
-                                <point x="0.289063" y="0.757813" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\stand\stand_00015.png">
-                            <image-point name="Damage" x="0.5" y="0.273438" />
-                            <collision-poly>
-                                <point x="0.285156" y="0.230469" />
-                                <point x="0.669922" y="0.226563" />
-                                <point x="0.667969" y="0.759766" />
-                                <point x="0.289063" y="0.757813" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\stand\stand_00016.png">
-                            <image-point name="Damage" x="0.5" y="0.273438" />
-                            <collision-poly>
-                                <point x="0.285156" y="0.230469" />
-                                <point x="0.669922" y="0.226563" />
-                                <point x="0.667969" y="0.759766" />
-                                <point x="0.289063" y="0.757813" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\stand\stand_00017.png">
-                            <image-point name="Damage" x="0.5" y="0.273438" />
-                            <collision-poly>
-                                <point x="0.285156" y="0.230469" />
-                                <point x="0.669922" y="0.226563" />
-                                <point x="0.667969" y="0.759766" />
-                                <point x="0.289063" y="0.757813" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\stand\stand_00018.png">
-                            <image-point name="Damage" x="0.5" y="0.273438" />
-                            <collision-poly>
-                                <point x="0.285156" y="0.230469" />
-                                <point x="0.669922" y="0.226563" />
-                                <point x="0.667969" y="0.759766" />
-                                <point x="0.289063" y="0.757813" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\stand\stand_00019.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\run\run_00006.png">
                             <image-point name="Damage" x="0.5" y="0.273438" />
                             <collision-poly>
                                 <point x="0.285156" y="0.230469" />
@@ -7134,68 +7290,812 @@
                             </collision-poly>
                         </frame>
                     </animation>
-                    <animation framecount="7" loop="1" name="Run" pingpong="1" repeatcount="1" repeatto="0" sid="858348266429962" speed="30">
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\run\run_00000.png">
+                </animation-folder>
+            </object-type>
+            <object-type name="Wood_goblin" sid="239184831876318">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="7" loop="1" name="Run" pingpong="1" repeatcount="1" repeatto="0" sid="913121321259099" speed="30">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\sprout\run\run_00000.png">
                             <image-point name="Damage" x="0.5" y="0.273438" />
                             <collision-poly>
-                                <point x="0.285156" y="0.230469" />
-                                <point x="0.669922" y="0.226563" />
-                                <point x="0.667969" y="0.759766" />
-                                <point x="0.289063" y="0.757813" />
+                                <point x="0.308594" y="0.195313" />
+                                <point x="0.671875" y="0.199219" />
+                                <point x="0.675781" y="0.828125" />
+                                <point x="0.308594" y="0.828125" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\run\run_00001.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\sprout\run\run_00001.png">
                             <image-point name="Damage" x="0.5" y="0.273438" />
                             <collision-poly>
-                                <point x="0.285156" y="0.230469" />
-                                <point x="0.669922" y="0.226563" />
-                                <point x="0.667969" y="0.759766" />
-                                <point x="0.289063" y="0.757813" />
+                                <point x="0.308594" y="0.195313" />
+                                <point x="0.671875" y="0.199219" />
+                                <point x="0.675781" y="0.828125" />
+                                <point x="0.308594" y="0.828125" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\run\run_00002.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\sprout\run\run_00002.png">
                             <image-point name="Damage" x="0.5" y="0.273438" />
                             <collision-poly>
-                                <point x="0.285156" y="0.230469" />
-                                <point x="0.669922" y="0.226563" />
-                                <point x="0.667969" y="0.759766" />
-                                <point x="0.289063" y="0.757813" />
+                                <point x="0.308594" y="0.195313" />
+                                <point x="0.671875" y="0.199219" />
+                                <point x="0.675781" y="0.828125" />
+                                <point x="0.308594" y="0.828125" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\run\run_00003.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\sprout\run\run_00003.png">
                             <image-point name="Damage" x="0.5" y="0.273438" />
                             <collision-poly>
-                                <point x="0.285156" y="0.230469" />
-                                <point x="0.669922" y="0.226563" />
-                                <point x="0.667969" y="0.759766" />
-                                <point x="0.289063" y="0.757813" />
+                                <point x="0.308594" y="0.195313" />
+                                <point x="0.671875" y="0.199219" />
+                                <point x="0.675781" y="0.828125" />
+                                <point x="0.308594" y="0.828125" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\run\run_00004.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\sprout\run\run_00004.png">
                             <image-point name="Damage" x="0.5" y="0.273438" />
                             <collision-poly>
-                                <point x="0.285156" y="0.230469" />
-                                <point x="0.669922" y="0.226563" />
-                                <point x="0.667969" y="0.759766" />
-                                <point x="0.289063" y="0.757813" />
+                                <point x="0.308594" y="0.195313" />
+                                <point x="0.671875" y="0.199219" />
+                                <point x="0.675781" y="0.828125" />
+                                <point x="0.308594" y="0.828125" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\run\run_00005.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\sprout\run\run_00005.png">
                             <image-point name="Damage" x="0.5" y="0.273438" />
                             <collision-poly>
-                                <point x="0.285156" y="0.230469" />
-                                <point x="0.669922" y="0.226563" />
-                                <point x="0.667969" y="0.759766" />
-                                <point x="0.289063" y="0.757813" />
+                                <point x="0.308594" y="0.195313" />
+                                <point x="0.671875" y="0.199219" />
+                                <point x="0.675781" y="0.828125" />
+                                <point x="0.308594" y="0.828125" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\goblin\run\run_00006.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\sprout\run\run_00006.png">
                             <image-point name="Damage" x="0.5" y="0.273438" />
                             <collision-poly>
-                                <point x="0.285156" y="0.230469" />
-                                <point x="0.669922" y="0.226563" />
-                                <point x="0.667969" y="0.759766" />
-                                <point x="0.289063" y="0.757813" />
+                                <point x="0.308594" y="0.195313" />
+                                <point x="0.671875" y="0.199219" />
+                                <point x="0.675781" y="0.828125" />
+                                <point x="0.308594" y="0.828125" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Stone_goblin" sid="600472412797629">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="7" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="894145336210099" speed="18">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\stoney\walk\walk_00000.png">
+                            <image-point name="Damage" x="0.537109" y="0.234375" />
+                            <collision-poly>
+                                <point x="0.253906" y="0.109375" />
+                                <point x="0.707031" y="0.109375" />
+                                <point x="0.703125" y="0.863281" />
+                                <point x="0.257813" y="0.863281" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\stoney\walk\walk_00001.png">
+                            <image-point name="Damage" x="0.537109" y="0.234375" />
+                            <collision-poly>
+                                <point x="0.253906" y="0.109375" />
+                                <point x="0.707031" y="0.109375" />
+                                <point x="0.703125" y="0.863281" />
+                                <point x="0.257813" y="0.863281" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\stoney\walk\walk_00002.png">
+                            <image-point name="Damage" x="0.537109" y="0.234375" />
+                            <collision-poly>
+                                <point x="0.253906" y="0.109375" />
+                                <point x="0.707031" y="0.109375" />
+                                <point x="0.703125" y="0.863281" />
+                                <point x="0.257813" y="0.863281" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\stoney\walk\walk_00003.png">
+                            <image-point name="Damage" x="0.537109" y="0.234375" />
+                            <collision-poly>
+                                <point x="0.253906" y="0.109375" />
+                                <point x="0.707031" y="0.109375" />
+                                <point x="0.703125" y="0.863281" />
+                                <point x="0.257813" y="0.863281" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\stoney\walk\walk_00004.png">
+                            <image-point name="Damage" x="0.537109" y="0.234375" />
+                            <collision-poly>
+                                <point x="0.253906" y="0.109375" />
+                                <point x="0.707031" y="0.109375" />
+                                <point x="0.703125" y="0.863281" />
+                                <point x="0.257813" y="0.863281" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\stoney\walk\walk_00005.png">
+                            <image-point name="Damage" x="0.537109" y="0.234375" />
+                            <collision-poly>
+                                <point x="0.253906" y="0.109375" />
+                                <point x="0.707031" y="0.109375" />
+                                <point x="0.703125" y="0.863281" />
+                                <point x="0.257813" y="0.863281" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\stoney\walk\walk_00006.png">
+                            <image-point name="Damage" x="0.537109" y="0.234375" />
+                            <collision-poly>
+                                <point x="0.253906" y="0.109375" />
+                                <point x="0.707031" y="0.109375" />
+                                <point x="0.703125" y="0.863281" />
+                                <point x="0.257813" y="0.863281" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Birdie" sid="136511876266184">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="610362421988397" speed="20">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\birdie\1.png">
+                            <collision-poly>
+                                <point x="0.268" y="0.268" />
+                                <point x="0.5" y="0.274" />
+                                <point x="0.532" y="0.468" />
+                                <point x="0.63" y="0.5" />
+                                <point x="0.71" y="0.71" />
+                                <point x="0.5" y="0.77" />
+                                <point x="0.274" y="0.726" />
+                                <point x="0.232" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\birdie\2.png">
+                            <collision-poly>
+                                <point x="0.258" y="0.258" />
+                                <point x="0.5" y="0.276" />
+                                <point x="0.544" y="0.456" />
+                                <point x="0.63" y="0.5" />
+                                <point x="0.706" y="0.706" />
+                                <point x="0.5" y="0.766" />
+                                <point x="0.274" y="0.726" />
+                                <point x="0.234" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\birdie\3.png">
+                            <collision-poly>
+                                <point x="0.28" y="0.28" />
+                                <point x="0.5" y="0.308" />
+                                <point x="0.564" y="0.436" />
+                                <point x="0.63" y="0.5" />
+                                <point x="0.712" y="0.712" />
+                                <point x="0.5" y="0.772" />
+                                <point x="0.272" y="0.728" />
+                                <point x="0.232" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\birdie\4.png">
+                            <collision-poly>
+                                <point x="0.464" y="0.464" />
+                                <point x="0.5" y="0.464" />
+                                <point x="0.658" y="0.342" />
+                                <point x="0.628" y="0.5" />
+                                <point x="0.712" y="0.712" />
+                                <point x="0.5" y="0.772" />
+                                <point x="0.272" y="0.728" />
+                                <point x="0.116" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\birdie\5.png">
+                            <collision-poly>
+                                <point x="0.464" y="0.464" />
+                                <point x="0.5" y="0.464" />
+                                <point x="0.53" y="0.47" />
+                                <point x="0.63" y="0.5" />
+                                <point x="0.712" y="0.712" />
+                                <point x="0.5" y="0.772" />
+                                <point x="0.272" y="0.728" />
+                                <point x="0.232" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\birdie\6.png">
+                            <collision-poly>
+                                <point x="0.464" y="0.464" />
+                                <point x="0.5" y="0.464" />
+                                <point x="0.53" y="0.47" />
+                                <point x="0.63" y="0.5" />
+                                <point x="0.732" y="0.732" />
+                                <point x="0.5" y="0.772" />
+                                <point x="0.272" y="0.728" />
+                                <point x="0.232" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\birdie\7.png">
+                            <collision-poly>
+                                <point x="0.466" y="0.466" />
+                                <point x="0.5" y="0.466" />
+                                <point x="0.53" y="0.47" />
+                                <point x="0.63" y="0.5" />
+                                <point x="0.714" y="0.714" />
+                                <point x="0.5" y="0.774" />
+                                <point x="0.27" y="0.73" />
+                                <point x="0.232" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\birdie\8.png">
+                            <collision-poly>
+                                <point x="0.468" y="0.468" />
+                                <point x="0.5" y="0.468" />
+                                <point x="0.528" y="0.472" />
+                                <point x="0.63" y="0.5" />
+                                <point x="0.716" y="0.716" />
+                                <point x="0.5" y="0.914" />
+                                <point x="0.27" y="0.73" />
+                                <point x="0.232" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Wormie" sid="391142536005948">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="16" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="430381444913649" speed="20">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\wormie\wormie_00000.png">
+                            <image-point name="Damage" x="0.57" y="0.406" />
+                            <collision-poly>
+                                <point x="0.24" y="0.508" />
+                                <point x="0.512" y="0.374" />
+                                <point x="0.694" y="0.373" />
+                                <point x="0.692" y="0.566" />
+                                <point x="0.26" y="0.564" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\wormie\wormie_00001.png">
+                            <image-point name="Damage" x="0.57" y="0.406" />
+                            <collision-poly>
+                                <point x="0.24" y="0.508" />
+                                <point x="0.512" y="0.374" />
+                                <point x="0.694" y="0.373" />
+                                <point x="0.692" y="0.566" />
+                                <point x="0.26" y="0.564" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\wormie\wormie_00002.png">
+                            <image-point name="Damage" x="0.57" y="0.406" />
+                            <collision-poly>
+                                <point x="0.24" y="0.508" />
+                                <point x="0.512" y="0.374" />
+                                <point x="0.694" y="0.373" />
+                                <point x="0.692" y="0.566" />
+                                <point x="0.26" y="0.564" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\wormie\wormie_00003.png">
+                            <image-point name="Damage" x="0.57" y="0.406" />
+                            <collision-poly>
+                                <point x="0.24" y="0.508" />
+                                <point x="0.512" y="0.374" />
+                                <point x="0.694" y="0.373" />
+                                <point x="0.692" y="0.566" />
+                                <point x="0.26" y="0.564" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\wormie\wormie_00004.png">
+                            <image-point name="Damage" x="0.57" y="0.406" />
+                            <collision-poly>
+                                <point x="0.24" y="0.508" />
+                                <point x="0.512" y="0.374" />
+                                <point x="0.694" y="0.373" />
+                                <point x="0.692" y="0.566" />
+                                <point x="0.26" y="0.564" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\wormie\wormie_00005.png">
+                            <image-point name="Damage" x="0.57" y="0.406" />
+                            <collision-poly>
+                                <point x="0.24" y="0.508" />
+                                <point x="0.512" y="0.374" />
+                                <point x="0.694" y="0.373" />
+                                <point x="0.692" y="0.566" />
+                                <point x="0.26" y="0.564" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\wormie\wormie_00006.png">
+                            <image-point name="Damage" x="0.57" y="0.406" />
+                            <collision-poly>
+                                <point x="0.24" y="0.508" />
+                                <point x="0.512" y="0.374" />
+                                <point x="0.694" y="0.373" />
+                                <point x="0.692" y="0.566" />
+                                <point x="0.26" y="0.564" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\wormie\wormie_00007.png">
+                            <image-point name="Damage" x="0.57" y="0.406" />
+                            <collision-poly>
+                                <point x="0.24" y="0.508" />
+                                <point x="0.512" y="0.374" />
+                                <point x="0.694" y="0.373" />
+                                <point x="0.692" y="0.566" />
+                                <point x="0.26" y="0.564" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\wormie\wormie_00008.png">
+                            <image-point name="Damage" x="0.57" y="0.406" />
+                            <collision-poly>
+                                <point x="0.24" y="0.508" />
+                                <point x="0.512" y="0.374" />
+                                <point x="0.694" y="0.373" />
+                                <point x="0.692" y="0.566" />
+                                <point x="0.26" y="0.564" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\wormie\wormie_00009.png">
+                            <image-point name="Damage" x="0.57" y="0.406" />
+                            <collision-poly>
+                                <point x="0.24" y="0.508" />
+                                <point x="0.512" y="0.374" />
+                                <point x="0.694" y="0.373" />
+                                <point x="0.692" y="0.566" />
+                                <point x="0.26" y="0.564" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\wormie\wormie_00010.png">
+                            <image-point name="Damage" x="0.57" y="0.406" />
+                            <collision-poly>
+                                <point x="0.24" y="0.508" />
+                                <point x="0.512" y="0.374" />
+                                <point x="0.694" y="0.373" />
+                                <point x="0.692" y="0.566" />
+                                <point x="0.26" y="0.564" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\wormie\wormie_00011.png">
+                            <image-point name="Damage" x="0.57" y="0.406" />
+                            <collision-poly>
+                                <point x="0.24" y="0.508" />
+                                <point x="0.512" y="0.374" />
+                                <point x="0.694" y="0.373" />
+                                <point x="0.692" y="0.566" />
+                                <point x="0.26" y="0.564" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\wormie\wormie_00012.png">
+                            <image-point name="Damage" x="0.57" y="0.406" />
+                            <collision-poly>
+                                <point x="0.24" y="0.508" />
+                                <point x="0.512" y="0.374" />
+                                <point x="0.694" y="0.373" />
+                                <point x="0.692" y="0.566" />
+                                <point x="0.26" y="0.564" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\wormie\wormie_00013.png">
+                            <image-point name="Damage" x="0.57" y="0.406" />
+                            <collision-poly>
+                                <point x="0.24" y="0.508" />
+                                <point x="0.512" y="0.374" />
+                                <point x="0.694" y="0.373" />
+                                <point x="0.692" y="0.566" />
+                                <point x="0.26" y="0.564" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\wormie\wormie_00014.png">
+                            <image-point name="Damage" x="0.57" y="0.406" />
+                            <collision-poly>
+                                <point x="0.24" y="0.508" />
+                                <point x="0.512" y="0.374" />
+                                <point x="0.694" y="0.373" />
+                                <point x="0.692" y="0.566" />
+                                <point x="0.26" y="0.564" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\mini monster\wormie\wormie_00015.png">
+                            <image-point name="Damage" x="0.57" y="0.406" />
+                            <collision-poly>
+                                <point x="0.24" y="0.508" />
+                                <point x="0.512" y="0.374" />
+                                <point x="0.694" y="0.373" />
+                                <point x="0.692" y="0.566" />
+                                <point x="0.26" y="0.564" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Snowie" sid="900605911920932">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="16" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="651814620691537" speed="18">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\snowman\stand_00000.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\snowman\stand_00001.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\snowman\stand_00002.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\snowman\stand_00003.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\snowman\stand_00004.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\snowman\stand_00005.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\snowman\stand_00006.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\snowman\stand_00007.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\snowman\stand_00008.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\snowman\stand_00009.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\snowman\stand_00010.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\snowman\stand_00011.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\snowman\stand_00012.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\snowman\stand_00013.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\snowman\stand_00014.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\snowman\stand_00015.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="23" loop="0" name="Attack" pingpong="0" repeatcount="1" repeatto="0" sid="174849241325275" speed="30">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00000.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00001.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00002.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00003.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00004.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00005.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00006.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00007.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00008.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00009.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00010.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00011.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00012.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00013.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00014.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00015.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00016.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00017.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00018.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00019.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00020.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00021.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ichi\Downloads\asd\attack_00022.png">
+                            <image-point name="Damage" x="0.5" y="0.4" />
+                            <image-point name="Attack" x="0.428" y="0.552" />
+                            <collision-poly>
+                                <point x="0.618" y="0.68" />
+                                <point x="0.342" y="0.68" />
+                                <point x="0.340001" y="0.32" />
+                                <point x="0.616" y="0.32" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -7230,6 +8130,14 @@
             <object-type name="Particles_Health3" sid="253444398664021">
                 <plugin id="Particles" />
                 <texture />
+            </object-type>
+            <object-type name="Particles_poison_splash" sid="912407347565405">
+                <plugin id="Particles" />
+                <texture />
+            </object-type>
+            <object-type name="Particles_snow_bullet" sid="554819401489317">
+                <plugin id="Particles" />
+                <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\snowball\1.png" />
             </object-type>
         </object-folder>
         <object-type name="camera" sid="335349714748180">
@@ -8730,19 +9638,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="tesTile" sid="553981369376932">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="778970479087867">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="598667571775401" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="warpmask" sid="370087113907585">
             <plugin id="Sprite" />
             <effects>
@@ -8778,7 +9673,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="199849888167375" speed="5">
-                    <frame duration="1" hotspotX="0.500589" hotspotY="0.5" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\arrow.png">
+                    <frame duration="1" hotspotX="0.895171" hotspotY="0.602041" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\arrow.png">
                         <collision-poly>
                             <point x="0.941107" y="0.510204" />
                             <point x="0.937574" y="0.5" />
@@ -8801,14 +9696,9 @@
         </object-type>
         <object-type name="water_bullet" sid="906147585039196">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Bullet" sid="215594972835014">
-                    <behavior id="Bullet" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
                 <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="854745717921270" speed="50">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.503597" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\1.png">
+                    <frame duration="1" hotspotX="0" hotspotY="0.625899" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\1.png">
                         <collision-poly>
                             <point x="0.0851852" y="0.165468" />
                             <point x="0.5" y="0.0143885" />
@@ -8820,7 +9710,7 @@
                             <point x="0" y="0.496403" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.504065" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\2.png">
+                    <frame duration="1" hotspotX="0" hotspotY="0.626016" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\2.png">
                         <collision-poly>
                             <point x="0.0714286" y="0.130081" />
                             <point x="0.5" y="0.0243902" />
@@ -8832,7 +9722,7 @@
                             <point x="0.00446429" y="0.495935" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.502092" hotspotY="0.503759" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\3.png">
+                    <frame duration="1" hotspotX="0" hotspotY="0.62406" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\3.png">
                         <collision-poly>
                             <point x="0.0878661" y="0.157895" />
                             <point x="0.497908" y="0" />
@@ -8844,7 +9734,7 @@
                             <point x="0.0041841" y="0.496241" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\4.png">
+                    <frame duration="1" hotspotX="0" hotspotY="0.623077" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\4.png">
                         <collision-poly>
                             <point x="0.0859375" y="0.169231" />
                             <point x="0.5" y="0.0153846" />
@@ -8856,7 +9746,7 @@
                             <point x="0.0078125" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.501792" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\5.png">
+                    <frame duration="1" hotspotX="0" hotspotY="0.625" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\5.png">
                         <collision-poly>
                             <point x="0.0824373" y="0.169118" />
                             <point x="0.498208" y="0.0294118" />
@@ -8868,7 +9758,7 @@
                             <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.503704" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\6.png">
+                    <frame duration="1" hotspotX="0" hotspotY="0.622222" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\6.png">
                         <collision-poly>
                             <point x="0.075188" y="0.148148" />
                             <point x="0.5" y="0.0962963" />
@@ -8880,7 +9770,7 @@
                             <point x="0.0037594" y="0.496296" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.501683" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\7.png">
+                    <frame duration="1" hotspotX="0" hotspotY="0.623188" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\7.png">
                         <collision-poly>
                             <point x="0.13468" y="0.289855" />
                             <point x="0.498316" y="0.0144928" />
@@ -8892,7 +9782,7 @@
                             <point x="0.104377" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.501845" hotspotY="0.503597" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\8.png">
+                    <frame duration="1" hotspotX="0" hotspotY="0.625899" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\8.png">
                         <collision-poly>
                             <point x="0.0848708" y="0.165468" />
                             <point x="0.498155" y="0.0143885" />
@@ -8909,6 +9799,9 @@
         </object-type>
         <object-type name="Gate" sid="305762068879251">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="stage" sid="228232393756328" type="number" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="417656766864970" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -8917,6 +9810,9 @@
         </object-type>
         <object-type name="Block" sid="468841368833339">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="type" sid="390145384464495" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Solid" sid="927981567807808">
                     <behavior id="solid" />
@@ -8928,39 +9824,139 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Ice_1" sid="336478740779175">
-            <plugin id="TiledBg" />
-            <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Ice\1.png" />
+        <object-type name="poison" sid="354752654445268">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Water">
+                    <effect id="water" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="343239044066696" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
-        <object-type name="Ice_2" sid="954035723352177">
-            <plugin id="TiledBg" />
-            <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Ice\2_2.png" />
-        </object-type>
-        <object-type name="Ice_3" sid="626311094725747">
-            <plugin id="TiledBg" />
-            <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Ice\3_2.png" />
-        </object-type>
-        <object-type name="Lava_1" sid="954079787002597">
-            <plugin id="TiledBg" />
-            <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Lava\1.png" />
-        </object-type>
-        <object-type name="Lava_2" sid="366055479999377">
-            <plugin id="TiledBg" />
-            <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Lava\2.png" />
-        </object-type>
-        <object-type name="Lava_3" sid="315435454903791">
-            <plugin id="TiledBg" />
-            <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Lava\4.png" />
-        </object-type>
-        <object-type name="Lava_4" sid="493899131914681">
-            <plugin id="TiledBg" />
-            <texture original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Lava\5.png" />
-        </object-type>
-        <object-type name="Sprite" sid="524293532790892">
+        <object-type name="Fall_block" sid="257278803885000">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="139257949524499" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\Background\Lava\7.png" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="774985351465761" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lava" sid="151317676064504">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Water">
+                    <effect id="water" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="200543358313769" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Snow_bullet" sid="925626006798271">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="233731115232878" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\snowball\1.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\snowball\2.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\snowball\3.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\snowball\4.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="aloevera" sid="642356903467864">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="391036988833503" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="1" original-source="C:\Users\Ichi\Desktop\aloevera.png">
+                        <collision-poly>
+                            <point x="0.247058" y="0.700787" />
+                            <point x="0.494118" y="0" />
+                            <point x="0.729412" y="0.519685" />
+                            <point x="0.988235" y="0.409449" />
+                            <point x="0.952941" y="0.600394" />
+                            <point x="0.729412" y="0.72441" />
+                            <point x="0.741177" y="0.923228" />
+                            <point x="0.494118" y="1" />
+                            <point x="0.0352939" y="0.779528" />
+                            <point x="0.0470588" y="0.543307" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="random_spawn" sid="814845525201251">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="573268349763516" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="warning" sid="888654293817422">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="805079167991751" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="C:\Users\Ichi\Desktop\warning.png">
+                        <collision-poly>
+                            <point x="0.3" y="0.333333" />
+                            <point x="0.5" y="0" />
+                            <point x="0.7" y="0.333333" />
+                            <point x="0.78" y="0.488889" />
+                            <point x="0.98" y="0.977778" />
+                            <point x="0.04" y="0.955556" />
+                            <point x="0.22" y="0.488889" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -8987,7 +9983,12 @@
         </family>
         <family name="Monster" plugin-id="Sprite" sid="615798878284361">
             <members>
+                <member>Birdie</member>
                 <member>Goblin</member>
+                <member>Snowie</member>
+                <member>Stone_goblin</member>
+                <member>Wood_goblin</member>
+                <member>Wormie</member>
             </members>
             <instance-variables>
                 <instance-variable name="Patrol" sid="493832319410362" type="number" />
@@ -9020,10 +10021,20 @@
                 <instance-variable name="amount" sid="370728618775655" type="number" />
                 <instance-variable name="type" sid="966724311375541" type="string" />
             </instance-variables>
+            <behaviors>
+                <behavior-type name="Sine" sid="409742311779753">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
         </family>
         <family name="Boss" plugin-id="Sprite" sid="497020161822987">
             <members>
+                <member>Cerberus</member>
+                <member>Fafnir</member>
+                <member>Jormungandr</member>
                 <member>Sleipnir</member>
+                <member>Treant</member>
+                <member>Valkyrie</member>
             </members>
             <instance-variables>
                 <instance-variable name="Gold" sid="221967815750843" type="number" />
@@ -9039,7 +10050,30 @@
         </family>
         <family name="Enemy_Bullet" plugin-id="Sprite" sid="335924105994556">
             <members>
+                <member>Snow_bullet</member>
                 <member>water_bullet</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Bullet" sid="426809656372939">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="Tileset" plugin-id="Sprite" sid="445215065297747">
+            <members>
+                <member>Cave_tileset</member>
+                <member>Desert_tileset</member>
+                <member>Forest_tileset</member>
+                <member>Forest_tileset_2</member>
+                <member>Lake_tileset</member>
+                <member>Lava_tileset</member>
+                <member>Mount_tileset</member>
+                <member>Snow_tileset</member>
+            </members>
+        </family>
+        <family name="Boss_Atk" plugin-id="Sprite" sid="171653841355656">
+            <members>
+                <member>aloevera</member>
             </members>
         </family>
     </families>

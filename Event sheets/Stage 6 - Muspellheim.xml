@@ -4,5 +4,111 @@
     <name>Stage 6 - Muspellheim</name>
     <events>
         <include>GameControl_Event</include>
+        <event-block sid="703742392906879">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="574678669313618" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="13" name="Set double-jump" sid="450920552568683" type="Player_Evans">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block any="1" sid="519526280593861">
+                    <conditions>
+                        <condition id="5" name="Is tag playing" sid="639417877488026" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </condition>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="559259941357547" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="139168798544904" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="650355419344782" type="Audio">
+                            <param id="0" name="Audio file">Level 6 - Muspellheim (PerituneMaterial_Havoc_loop)</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">VolumeMusic</param>
+                            <param id="1" name="Tag (optional)">&quot;bgm&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="619148300139316">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="342788892719961" type="Cerberus" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="377793670918397">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="333605534558406" type="System">
+                            <param id="0" name="Interval (seconds)">4</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="674138610735535" type="System">
+                            <param id="0" name="Variable">stealth</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="128672220782729" type="Cerberus">
+                            <param id="0" name="Animation">&quot;Attack&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="992115078473237">
+            <conditions>
+                <condition id="4" name="On finished" sid="547868057172504" type="Cerberus">
+                    <param id="0" name="Animation">&quot;Attack&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="809728670078574" type="Cerberus">
+                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="876571553596882">
+            <conditions>
+                <condition id="2" name="Is playing" sid="375873337891488" type="Player_Evans">
+                    <param id="0" name="Animation">&quot;Fall&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block disabled="1" sid="321043527601647">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="153694192208695" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="6" name="Set max fall speed" sid="312890946603551" type="Player_Evans">
+                            <param id="0" name="Max fall speed">150</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block disabled="1" sid="622118189972436">
+            <conditions>
+                <condition id="3" name="On key released" sid="593102171111170" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="6" name="Set max fall speed" sid="943988264185273" type="Player_Evans">
+                    <param id="0" name="Max fall speed">1000</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

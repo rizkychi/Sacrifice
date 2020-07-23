@@ -33,5 +33,78 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="231364336196252">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="392167875714669" type="Mount_tile">
+                    <param id="0" name="Instance variable">hidden</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="662510651227353">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="801447499146968" type="Player_Evans">
+                            <param id="0" name="Object">Mount_tile</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="175946764865699" type="Mount_tile">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="308130541477875">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="731622435624950" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="442023578369101" type="Mount_tile">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="287573298522302">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="169477657016539" type="Valkyrie" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="114991213006408">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="860717069883308" type="System">
+                            <param id="0" name="Interval (seconds)">4</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="707095546097325" type="System">
+                            <param id="0" name="Variable">stealth</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="549498729370515" type="Valkyrie">
+                            <param id="0" name="Animation">&quot;Attack&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="631865914873732">
+            <conditions>
+                <condition id="4" name="On finished" sid="183431340648042" type="Valkyrie">
+                    <param id="0" name="Animation">&quot;Attack&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="350114777434352" type="Valkyrie">
+                    <param id="0" name="Animation">&quot;Standby&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

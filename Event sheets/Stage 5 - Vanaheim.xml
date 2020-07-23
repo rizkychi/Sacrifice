@@ -4,5 +4,107 @@
     <name>Stage 5 - Vanaheim</name>
     <events>
         <include>GameControl_Event</include>
+        <event-block sid="507012395692773">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="941816178847296" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="276934484766309">
+                    <conditions>
+                        <condition id="5" name="Is tag playing" sid="475745617978244" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </condition>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="584713690060189" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="742701735893926" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="513661880523748" type="Audio">
+                            <param id="0" name="Audio file">Level 5 - Vanaheim (PerituneMaterial_Desert_loop)</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">VolumeMusic</param>
+                            <param id="1" name="Tag (optional)">&quot;bgm&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="871487982308357">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="371526732452587" type="Desert_tile">
+                    <param id="0" name="Instance variable">hidden</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="961706308005697">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="730757603931733" type="Player_Evans">
+                            <param id="0" name="Object">Desert_tile</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="466097856070085" type="Desert_tile">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="719415069838488">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="575849017961419" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="240382952800932" type="Desert_tile">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="430115403814408">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="988771380149351" type="Jormungandr" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="670544339130350">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="516292144591566" type="System">
+                            <param id="0" name="Interval (seconds)">4</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="876041149724175" type="System">
+                            <param id="0" name="Variable">stealth</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="445875459893033" type="Jormungandr">
+                            <param id="0" name="Animation">&quot;Attack&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="963658099240609">
+            <conditions>
+                <condition id="4" name="On finished" sid="235444029814168" type="Jormungandr">
+                    <param id="0" name="Animation">&quot;Attack&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="553344080771482" type="Jormungandr">
+                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
