@@ -78,6 +78,10 @@
                         <action behavior="Platform" id="6" name="Set max fall speed" sid="479010667850632" type="Player_Evans">
                             <param id="0" name="Max fall speed">150</param>
                         </action>
+                        <action id="4" name="Set animation" sid="270873709434695" type="Player_Evans">
+                            <param id="0" name="Animation">&quot;Fly&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -91,6 +95,10 @@
             <actions>
                 <action behavior="Platform" id="6" name="Set max fall speed" sid="373689998608537" type="Player_Evans">
                     <param id="0" name="Max fall speed">1000</param>
+                </action>
+                <action id="4" name="Set animation" sid="576366125074392" type="Player_Evans">
+                    <param id="0" name="Animation">&quot;Fall&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
