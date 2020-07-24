@@ -67,60 +67,221 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="964939688066661">
+        <event-block sid="163667199486297">
             <conditions>
-                <condition id="-3" name="Is on-screen" sid="905284714763707" type="Fafnir" />
+                <condition id="-9" name="Layer is visible" sid="545737577022437" type="System">
+                    <param id="0" name="Layer">&quot;Game&quot;</param>
+                </condition>
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="633661138084418">
+                <variable constant="0" name="monster_atk" sid="356282851977313" static="1" type="number">0</variable>
+                <event-block sid="964939688066661">
                     <conditions>
-                        <condition id="-6" name="Every X seconds" sid="913333886389489" type="System">
-                            <param id="0" name="Interval (seconds)">4</param>
+                        <condition id="-3" name="Is on-screen" sid="905284714763707" type="Fafnir" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="633661138084418">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="913333886389489" type="System">
+                                    <param id="0" name="Interval (seconds)">4</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="802950246396200" type="System">
+                                    <param id="0" name="Variable">stealth</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="962806051777475" type="System">
+                                    <param id="0" name="Variable">monster_atk</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="653863023184875">
+                            <conditions>
+                                <condition id="4" name="On finished" sid="513986111945970" type="Fafnir">
+                                    <param id="0" name="Animation">&quot;Attack&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="978063680727277" type="Fafnir">
+                                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="113482691849183" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="464327132300442" type="System">
+                                    <param id="0" name="Variable">monster_atk</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="284091852620326">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="888984698293313" type="System">
+                            <param id="0" name="Variable">monster_atk</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
-                        <condition id="-14" name="Compare variable" sid="802950246396200" type="System">
-                            <param id="0" name="Variable">stealth</param>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <variable constant="0" name="rand_x" sid="224826963156667" static="1" type="number">0</variable>
+                        <variable constant="0" name="rand_x2" sid="778549206801540" static="1" type="number">0</variable>
+                        <variable constant="0" name="player_x" sid="475439533777294" static="1" type="number">0</variable>
+                        <event-block sid="160165492183310">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="619209593536020" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="480527086522849" type="System">
+                                    <param id="0" name="Variable">rand_x</param>
+                                    <param id="1" name="Value">random_spawn.X+random(0,random_spawn.Width)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="864448782981976" type="System">
+                                    <param id="0" name="Variable">rand_x2</param>
+                                    <param id="1" name="Value">random_spawn.X+random(0,random_spawn.Width)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="329844642069600" type="System">
+                                    <param id="0" name="Variable">player_x</param>
+                                    <param id="1" name="Value">Player_Evans.X</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="540077233699773" type="System">
+                                    <param id="0" name="Object to create">warning</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="X">rand_x</param>
+                                    <param id="3" name="Y">random_spawn.Y</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="495550696373827" type="System">
+                                    <param id="0" name="Object to create">warning</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="X">rand_x2</param>
+                                    <param id="3" name="Y">random_spawn.Y</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="997078043437991" type="System">
+                                    <param id="0" name="Object to create">warning</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="X">player_x</param>
+                                    <param id="3" name="Y">random_spawn.Y</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="602003481103128" type="System">
+                                    <param id="0" name="Seconds">0.25</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="628544230657858" type="Fafnir">
+                                    <param id="0" name="Animation">&quot;Attack&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="911556279046858" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="862145118157075" type="Fafnir">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="530862331941234" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="114258524500948">
+                                    <conditions>
+                                        <condition id="-19" name="Pick all" sid="564293026611385" type="System">
+                                            <param id="0" name="Object">warning</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="506781512240825" type="warning" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="413363339432130">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="304602112165155" type="System">
+                                            <param id="0" name="Object to create">Stalactite</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="X">rand_x</param>
+                                            <param id="3" name="Y">random_spawn.Y-canvas_height</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="744377296311122" type="Stalactite">
+                                            <param id="0" name="Frame number">round(random(0,2))</param>
+                                        </action>
+                                        <action id="-29" name="Move to object" sid="900145923196709" type="Stalactite">
+                                            <param id="0" name="Where">1</param>
+                                            <param id="1" name="Object">Cave_tileset2</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="503394985812059" type="System">
+                                            <param id="0" name="Object to create">Stalactite</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="X">rand_x2</param>
+                                            <param id="3" name="Y">random_spawn.Y-canvas_height</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="698475713975696" type="Stalactite">
+                                            <param id="0" name="Frame number">round(random(0,2))</param>
+                                        </action>
+                                        <action id="-29" name="Move to object" sid="856978443239087" type="Stalactite">
+                                            <param id="0" name="Where">1</param>
+                                            <param id="1" name="Object">Cave_tileset2</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="187082266274925" type="System">
+                                            <param id="0" name="Object to create">Stalactite</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="X">player_x</param>
+                                            <param id="3" name="Y">random_spawn.Y-canvas_height</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="836601779654232" type="Stalactite">
+                                            <param id="0" name="Frame number">round(random(0,2))</param>
+                                        </action>
+                                        <action id="-29" name="Move to object" sid="628122942232679" type="Stalactite">
+                                            <param id="0" name="Where">1</param>
+                                            <param id="1" name="Object">Cave_tileset2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="920351508586007">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="730114030429246" type="System">
+                            <param id="0" name="Variable">monster_atk</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="121867672844446" type="Fafnir">
-                            <param id="0" name="Animation">&quot;Attack&quot;</param>
-                            <param id="1" name="From">1</param>
+                        <action id="-16" name="Wait" sid="733033724890892" type="System">
+                            <param id="0" name="Seconds">0.5</param>
                         </action>
-                        <action id="-16" name="Wait" sid="911556279046858" type="System">
-                            <param id="0" name="Seconds">0.25</param>
-                        </action>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="862145118157075" type="Fafnir">
-                            <param id="0" name="Control">2</param>
+                        <action behavior="Fade" id="1" name="Start fade" sid="305024055602852" type="Stalactite" />
+                    </actions>
+                </event-block>
+                <event-block sid="779955213843395">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="387898953752053" type="Fafnir" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="692022608713085" type="System">
+                            <param id="0" name="Variable">monster_atk</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="653863023184875">
+        <event-block sid="588401162251391">
             <conditions>
-                <condition id="4" name="On finished" sid="513986111945970" type="Fafnir">
-                    <param id="0" name="Animation">&quot;Attack&quot;</param>
-                </condition>
+                <condition id="-1" name="Every tick" sid="340697715527385" type="System" />
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="978063680727277" type="Fafnir">
-                    <param id="0" name="Animation">&quot;Stand&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block disabled="1" sid="415994032125527">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="468959579578990" type="System">
-                    <param id="0" name="Interval (seconds)">0.2</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Platform" id="7" name="Simulate control" sid="110005059558514" type="Fafnir">
-                    <param id="0" name="Control">0</param>
+                <action id="-4" name="Set position to another object" sid="244874455606167" type="Light">
+                    <param id="0" name="Object">Player_Evans</param>
+                    <param id="1" name="Image point (optional)">&quot;Center&quot;</param>
                 </action>
             </actions>
         </event-block>

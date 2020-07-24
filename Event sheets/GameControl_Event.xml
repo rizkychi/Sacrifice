@@ -359,108 +359,12 @@
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="528502742539591">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="349303264028931" type="Gate">
-                                            <param id="0" name="Instance variable">stage</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Set value" sid="318118743184778" type="System">
-                                            <param id="0" name="Variable">range</param>
-                                            <param id="1" name="Value">500</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="857600303916370">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="349195509418506" type="Gate">
-                                            <param id="0" name="Instance variable">stage</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">2</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Set value" sid="380055995071807" type="System">
-                                            <param id="0" name="Variable">range</param>
-                                            <param id="1" name="Value">480</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="181500003144703">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="637753033230602" type="Gate">
-                                            <param id="0" name="Instance variable">stage</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">3</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Set value" sid="241093202121881" type="System">
-                                            <param id="0" name="Variable">range</param>
-                                            <param id="1" name="Value">400</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="314946550241801">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="183494459012850" type="Gate">
-                                            <param id="0" name="Instance variable">stage</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">4</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Set value" sid="530314417316810" type="System">
-                                            <param id="0" name="Variable">range</param>
-                                            <param id="1" name="Value">400</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="363790430212571">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="209075492158524" type="Gate">
-                                            <param id="0" name="Instance variable">stage</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">5</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Set value" sid="787937920512609" type="System">
-                                            <param id="0" name="Variable">range</param>
-                                            <param id="1" name="Value">480</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="895790259718873">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="378990467765215" type="Gate">
-                                            <param id="0" name="Instance variable">stage</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">6</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Set value" sid="398713102982189" type="System">
-                                            <param id="0" name="Variable">range</param>
-                                            <param id="1" name="Value">480</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="860357872031579">
-                                    <conditions />
-                                    <actions>
-                                        <action id="-3" name="Set position" sid="714685215271301" type="camera">
-                                            <param id="0" name="X">lerp(Self.X, Boss.X-range, 0.025)</param>
-                                            <param id="1" name="Y">lerp(Self.Y, Player_Evans.Y-200, 0.05)</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
+                            <actions>
+                                <action id="-3" name="Set position" sid="421075172829550" type="camera">
+                                    <param id="0" name="X">lerp(Self.X, Gate.X+canvas_width/2, 0.025)</param>
+                                    <param id="1" name="Y">lerp(Self.Y, Player_Evans.Y-200, 0.05)</param>
+                                </action>
+                            </actions>
                         </event-block>
                         <event-block sid="858723299084323">
                             <conditions>
@@ -1554,6 +1458,10 @@
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="878038002627180" type="Player_Evans">
                                     <param id="0" name="Object">Boss_Atk</param>
+                                </condition>
+                                <condition id="-10" name="Compare opacity" sid="839656895422053" type="Boss_Atk">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Opacity">100</param>
                                 </condition>
                             </conditions>
                             <actions />

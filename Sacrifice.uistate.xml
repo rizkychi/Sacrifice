@@ -10,11 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Stage 3 - Niddhavellir</layout>
-        <layout order="3">Stage 7 - Niflheim</layout>
-        <event-sheet order="0">Stage 2 - Alfheim</event-sheet>
-        <event-sheet order="2">GameControl_Event</event-sheet>
-        <event-sheet active="1" order="4">Stage 7 - Niflheim</event-sheet>
+        <layout order="1">Stage 5 - Vanaheim</layout>
+        <event-sheet active="1" order="0">Stage 5 - Vanaheim</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -26,7 +23,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="0" name="Button" />
         <family expanded="0" name="Monster" />
         <family expanded="0" name="Item" />
-        <family expanded="0" name="Boss" />
+        <family expanded="1" name="Boss" />
         <family expanded="0" name="Enemy_Bullet" />
         <family expanded="0" name="Tileset" />
         <family expanded="0" name="Boss_Atk" />
@@ -39,10 +36,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Text/" />
         <folder expanded="0" path="object-folder/Button/" />
         <folder expanded="0" path="object-folder/Sprites/" />
-        <folder expanded="1" path="object-folder/Sprites/item/" />
+        <folder expanded="0" path="object-folder/Sprites/item/" />
         <folder expanded="0" path="object-folder/Loading/" />
         <folder expanded="0" path="object-folder/UI/" />
-        <folder expanded="1" path="object-folder/Area/" />
+        <folder expanded="0" path="object-folder/Area/" />
         <folder expanded="0" path="object-folder/Area/Stage 1 - Svartalheim/" />
         <folder expanded="0" path="object-folder/Area/Stage 2 - Alfheim/" />
         <folder expanded="0" path="object-folder/Area/Stage 3 - Niddhavellir/" />
@@ -50,11 +47,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Area/Stage 5 - Vanaheim/" />
         <folder expanded="0" path="object-folder/Area/Stage 6 - Muspellheim/" />
         <folder expanded="0" path="object-folder/Area/Stage 7 - Niflheim/" />
-        <folder expanded="0" path="object-folder/Boss/" />
+        <folder expanded="1" path="object-folder/Boss/" />
         <folder expanded="0" path="object-folder/Monster/" />
         <folder expanded="0" path="object-folder/Particles/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="0" path="layout-folder/Stage/" />
+        <folder expanded="1" path="layout-folder/Stage/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="event-folder/Stage/" />
         <folder expanded="0" path="file-folder/" />
@@ -119,6 +116,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/icon_mana/" />
         <folder expanded="1" path="animation-folder/book_items/" />
         <folder expanded="1" path="animation-folder/player_head/" />
+        <folder expanded="1" path="animation-folder/aloevera/" />
+        <folder expanded="1" path="animation-folder/Snow_bullet/" />
+        <folder expanded="1" path="animation-folder/warning/" />
+        <folder expanded="1" path="animation-folder/water_bullet/" />
+        <folder expanded="1" path="animation-folder/Stalactite/" />
+        <folder expanded="1" path="animation-folder/arrow/" />
         <folder expanded="1" path="animation-folder/loading_bg/" />
         <folder expanded="1" path="animation-folder/loading_logo/" />
         <folder expanded="1" path="animation-folder/Loading_text/" />
@@ -143,6 +146,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Forest_properties/" />
         <folder expanded="1" path="animation-folder/Forest_tileset_2/" />
         <folder expanded="1" path="animation-folder/Cave_tileset/" />
+        <folder expanded="1" path="animation-folder/Cave_tileset2/" />
         <folder expanded="1" path="animation-folder/Mount_tileset/" />
         <folder expanded="1" path="animation-folder/Desert_tileset/" />
         <folder expanded="1" path="animation-folder/Desert_properties/" />
@@ -168,17 +172,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Player_Evans/" />
         <folder expanded="1" path="animation-folder/warpmask/" />
         <folder expanded="1" path="animation-folder/water/" />
-        <folder expanded="1" path="animation-folder/arrow/" />
         <folder expanded="1" path="animation-folder/Border/" />
-        <folder expanded="1" path="animation-folder/water_bullet/" />
         <folder expanded="1" path="animation-folder/Gate/" />
         <folder expanded="1" path="animation-folder/Block/" />
         <folder expanded="1" path="animation-folder/poison/" />
         <folder expanded="1" path="animation-folder/Fall_block/" />
         <folder expanded="1" path="animation-folder/lava/" />
-        <folder expanded="1" path="animation-folder/Snow_bullet/" />
-        <folder expanded="1" path="animation-folder/aloevera/" />
         <folder expanded="1" path="animation-folder/random_spawn/" />
-        <folder expanded="1" path="animation-folder/warning/" />
+        <folder expanded="1" path="animation-folder/Light/" />
     </folders-expanded>
 </c2uistate>

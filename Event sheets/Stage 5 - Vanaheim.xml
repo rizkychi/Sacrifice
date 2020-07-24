@@ -67,21 +67,79 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="430115403814408">
+        <event-block sid="157431436775254">
             <conditions>
-                <condition id="-3" name="Is on-screen" sid="988771380149351" type="Jormungandr" />
+                <condition id="-9" name="Layer is visible" sid="355728873506110" type="System">
+                    <param id="0" name="Layer">&quot;Game&quot;</param>
+                </condition>
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="670544339130350">
+                <variable constant="0" name="monster_atk" sid="928922187203850" static="1" type="number">0</variable>
+                <event-block sid="430115403814408">
                     <conditions>
-                        <condition id="-6" name="Every X seconds" sid="516292144591566" type="System">
-                            <param id="0" name="Interval (seconds)">4</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="876041149724175" type="System">
-                            <param id="0" name="Variable">stealth</param>
-                            <param id="1" name="Comparison">0</param>
+                        <condition id="-3" name="Is on-screen" sid="401668863223614" type="Jormungandr" />
+                        <condition id="-7" name="Compare instance variable" sid="961712867114526" type="Jormungandr">
+                            <param id="0" name="Instance variable">HP</param>
+                            <param id="1" name="Comparison">4</param>
                             <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="670544339130350">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="663251209333854" type="Jormungandr">
+                                    <param id="0" name="Object">Player_Evans</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="876041149724175" type="System">
+                                    <param id="0" name="Variable">stealth</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="972534627197338">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="543987218074165" type="System">
+                                            <param id="0" name="Interval (seconds)">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="962100509382808" type="System">
+                                            <param id="0" name="Variable">monster_atk</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="963658099240609">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="235444029814168" type="Jormungandr">
+                            <param id="0" name="Animation">&quot;Attack&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="463592738866584" type="System">
+                            <param id="0" name="Variable">monster_atk</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="467277023035311" type="Jormungandr">
+                            <param id="0" name="Animation">&quot;Stand&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="365553291308360">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="352629334365907" type="System">
+                            <param id="0" name="Variable">monster_atk</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -91,20 +149,158 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="651923363578108">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="851735053903716" type="System">
+                            <param id="0" name="Variable">monster_atk</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="315692043390847" type="Jormungandr">
+                            <param id="0" name="Object">Player_Evans</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="482033124338211">
+                            <conditions>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="261236227381704" type="Jormungandr" />
+                                <condition behavior="Platform" id="2" name="Is on floor" sid="173770998453256" type="Jormungandr" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="502139616723310" type="Jormungandr">
+                                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="817414221114545">
+                            <conditions>
+                                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="428781768531448" type="Jormungandr" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="753222291606219" type="Jormungandr">
+                                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="449637547855587">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="884622413291683" type="Player_Evans">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">Jormungandr.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="447951383021743" type="Jormungandr">
+                                    <param id="0" name="Instance variable">Patrol</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="265258474237087">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="246576514382863" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="818010791752391" type="Jormungandr">
+                                    <param id="0" name="Instance variable">Patrol</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="339304153653404">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="602413995013432" type="Jormungandr">
+                                    <param id="0" name="Instance variable">Patrol</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="639084390800474" type="Jormungandr">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="X co-ordinate">Player_Evans.X+50</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="487702722294091" type="Jormungandr">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="828102373159827" type="Jormungandr">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="965665414887527">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="265323765878668" type="Jormungandr">
+                                    <param id="0" name="Instance variable">Patrol</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="398534404849544" type="Jormungandr">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="X co-ordinate">Player_Evans.X-50</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="556069833746023" type="Jormungandr">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="909413277852162" type="Jormungandr">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="963658099240609">
+        <event-block sid="984450712143218">
             <conditions>
-                <condition id="4" name="On finished" sid="235444029814168" type="Jormungandr">
+                <condition id="2" name="Is playing" sid="137183882481163" type="Jormungandr">
                     <param id="0" name="Animation">&quot;Attack&quot;</param>
                 </condition>
+                <condition id="-4" name="Trigger once while true" sid="562767030075146" type="System" />
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="553344080771482" type="Jormungandr">
-                    <param id="0" name="Animation">&quot;Stand&quot;</param>
-                    <param id="1" name="From">1</param>
+                <action id="-16" name="Wait" sid="698172306091845" type="System">
+                    <param id="0" name="Seconds">0.7</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="483729109176198">
+                    <conditions>
+                        <condition id="9" name="Is overlapping at offset" sid="927990062942876" type="Jormungandr">
+                            <param id="0" name="Object">Player_Evans</param>
+                            <param id="1" name="Offset X">0</param>
+                            <param id="2" name="Offset Y">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="419667306801185" type="Player_Evans">
+                            <param id="0" name="Instance variable">HP</param>
+                            <param id="1" name="Value">Jormungandr.Attack-((Player_Evans.DEF/100)*Jormungandr.Attack)</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="926746133674166" type="Player_Evans">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">0.3</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="369196481816210" type="Player_Evans">
+                            <param id="0" name="Object">SpriteFont_Damage</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="Image point">&quot;Damage&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="556604352543016" type="SpriteFont_Damage">
+                            <param id="0" name="Text">Jormungandr.Attack-((Player_Evans.DEF/100)*Jormungandr.Attack)</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="254234824875266" type="SpriteFont_Damage">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

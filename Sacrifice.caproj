@@ -40,6 +40,7 @@
     <used-effects>
         <effect author="Scirra" id="brightness">Brightness</effect>
         <effect author="Scirra" id="hsladjust">Adjust HSL</effect>
+        <effect author="Scirra" id="multiply">Multiply</effect>
         <effect author="Scirra" id="warpmask">Warp Mask</effect>
         <effect author="Viktor Korsun" id="water">Water</effect>
     </used-effects>
@@ -2401,6 +2402,280 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="aloevera" sid="642356903467864">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="391036988833503" speed="5">
+                        <frame duration="1" hotspotX="0.505882" hotspotY="1" original-source="C:\Users\Ichi\Desktop\aloevera.png">
+                            <collision-poly>
+                                <point x="0.247058" y="0.700787" />
+                                <point x="0.494118" y="0" />
+                                <point x="0.729412" y="0.519685" />
+                                <point x="0.988235" y="0.409449" />
+                                <point x="0.952941" y="0.600394" />
+                                <point x="0.729412" y="0.72441" />
+                                <point x="0.741177" y="0.923228" />
+                                <point x="0.494118" y="1" />
+                                <point x="0.0352939" y="0.779528" />
+                                <point x="0.0470588" y="0.543307" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Snow_bullet" sid="925626006798271">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="233731115232878" speed="10">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\snowball\1.png">
+                            <collision-poly>
+                                <point x="0.15" y="0.15" />
+                                <point x="0.5" y="0" />
+                                <point x="0.85" y="0.15" />
+                                <point x="1" y="0.5" />
+                                <point x="0.85" y="0.85" />
+                                <point x="0.5" y="1" />
+                                <point x="0.15" y="0.85" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\snowball\2.png">
+                            <collision-poly>
+                                <point x="0.15" y="0.15" />
+                                <point x="0.5" y="0" />
+                                <point x="0.85" y="0.15" />
+                                <point x="1" y="0.5" />
+                                <point x="0.85" y="0.85" />
+                                <point x="0.5" y="1" />
+                                <point x="0.15" y="0.85" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\snowball\3.png">
+                            <collision-poly>
+                                <point x="0.15" y="0.15" />
+                                <point x="0.5" y="0" />
+                                <point x="0.85" y="0.15" />
+                                <point x="1" y="0.5" />
+                                <point x="0.85" y="0.85" />
+                                <point x="0.5" y="1" />
+                                <point x="0.15" y="0.85" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\snowball\4.png">
+                            <collision-poly>
+                                <point x="0.15" y="0.15" />
+                                <point x="0.5" y="0" />
+                                <point x="0.85" y="0.15" />
+                                <point x="1" y="0.5" />
+                                <point x="0.85" y="0.85" />
+                                <point x="0.5" y="1" />
+                                <point x="0.15" y="0.85" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="warning" sid="888654293817422">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="805079167991751" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="C:\Users\Ichi\Desktop\warning.png">
+                            <collision-poly>
+                                <point x="0.3" y="0.333333" />
+                                <point x="0.5" y="0" />
+                                <point x="0.7" y="0.333333" />
+                                <point x="0.78" y="0.488889" />
+                                <point x="0.98" y="0.977778" />
+                                <point x="0.04" y="0.955556" />
+                                <point x="0.22" y="0.488889" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="water_bullet" sid="906147585039196">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="854745717921270" speed="50">
+                        <frame duration="1" hotspotX="0" hotspotY="0.625899" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\1.png">
+                            <collision-poly>
+                                <point x="0.0851852" y="0.165468" />
+                                <point x="0.5" y="0.0143885" />
+                                <point x="0.7" y="0.582734" />
+                                <point x="0.955556" y="0.496403" />
+                                <point x="0.8" y="0.611511" />
+                                <point x="0.5" y="0.992806" />
+                                <point x="0.0777778" y="0.848921" />
+                                <point x="0" y="0.496403" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0.626016" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\2.png">
+                            <collision-poly>
+                                <point x="0.0714286" y="0.130081" />
+                                <point x="0.5" y="0.0243902" />
+                                <point x="0.772321" y="0.414634" />
+                                <point x="0.991071" y="0.495935" />
+                                <point x="0.834821" y="0.699187" />
+                                <point x="0.5" y="0.98374" />
+                                <point x="0.0803571" y="0.853659" />
+                                <point x="0.00446429" y="0.495935" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0.62406" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\3.png">
+                            <collision-poly>
+                                <point x="0.0878661" y="0.157895" />
+                                <point x="0.497908" y="0" />
+                                <point x="0.83682" y="0.293233" />
+                                <point x="0.991632" y="0.496241" />
+                                <point x="0.74477" y="0.541353" />
+                                <point x="0.497908" y="0.969925" />
+                                <point x="0.083682" y="0.849624" />
+                                <point x="0.0041841" y="0.496241" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0.623077" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\4.png">
+                            <collision-poly>
+                                <point x="0.0859375" y="0.169231" />
+                                <point x="0.5" y="0.0153846" />
+                                <point x="0.882813" y="0.230769" />
+                                <point x="0.996094" y="0.5" />
+                                <point x="0.914063" y="0.830769" />
+                                <point x="0.5" y="0.969231" />
+                                <point x="0.0546875" y="0.892308" />
+                                <point x="0.0078125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0.625" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\5.png">
+                            <collision-poly>
+                                <point x="0.0824373" y="0.169118" />
+                                <point x="0.498208" y="0.0294118" />
+                                <point x="0.896057" y="0.213235" />
+                                <point x="0.996416" y="0.5" />
+                                <point x="0.9319" y="0.860294" />
+                                <point x="0.498208" y="0.948529" />
+                                <point x="0.0752688" y="0.845588" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0.622222" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\6.png">
+                            <collision-poly>
+                                <point x="0.075188" y="0.148148" />
+                                <point x="0.5" y="0.0962963" />
+                                <point x="0.894737" y="0.207407" />
+                                <point x="0.815789" y="0.496296" />
+                                <point x="0.924812" y="0.851852" />
+                                <point x="0.5" y="0.955556" />
+                                <point x="0.0676692" y="0.866667" />
+                                <point x="0.0037594" y="0.496296" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0.623188" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\7.png">
+                            <collision-poly>
+                                <point x="0.13468" y="0.289855" />
+                                <point x="0.498316" y="0.0144928" />
+                                <point x="0.784512" y="0.463768" />
+                                <point x="0.915825" y="0.5" />
+                                <point x="0.811448" y="0.594203" />
+                                <point x="0.498316" y="0.978261" />
+                                <point x="0.124579" y="0.731884" />
+                                <point x="0.104377" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0.625899" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\8.png">
+                            <collision-poly>
+                                <point x="0.0848708" y="0.165468" />
+                                <point x="0.498155" y="0.0143885" />
+                                <point x="0.697417" y="0.589928" />
+                                <point x="0.97048" y="0.496403" />
+                                <point x="0.797048" y="0.604317" />
+                                <point x="0.498155" y="0.985611" />
+                                <point x="0.0774908" y="0.848921" />
+                                <point x="0" y="0.496403" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Stalactite" sid="774674442841982">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Platform" sid="266942118159044">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                    <behavior-type name="Fade" sid="537563815304912">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="358710590252805" speed="0">
+                        <frame duration="1" hotspotX="0.507463" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\rock\1.png">
+                            <collision-poly>
+                                <point x="0.164179" y="0.055" />
+                                <point x="0.347015" y="0" />
+                                <point x="0.973881" y="0.0625" />
+                                <point x="0.923508" y="0.2625" />
+                                <point x="0.701492" y="0.5" />
+                                <point x="0.570895" y="0.66" />
+                                <point x="0.503731" y="0.87625" />
+                                <point x="0.242537" y="0.875" />
+                                <point x="0.179104" y="0.5" />
+                                <point x="0.136194" y="0.424063" />
+                                <point x="0.0261194" y="0.378125" />
+                                <point x="0.0149254" y="0.27375" />
+                                <point x="0.130597" y="0.169375" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.509434" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\rock\2.png">
+                            <collision-poly>
+                                <point x="0.0471698" y="0.00625" />
+                                <point x="1" y="0" />
+                                <point x="0.924528" y="0.334374" />
+                                <point x="0.863208" y="0.81875" />
+                                <point x="0.377358" y="0.818749" />
+                                <point x="0.0235849" y="0.19375" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\rock\3.png">
+                            <collision-poly>
+                                <point x="0.0862069" y="0.0294118" />
+                                <point x="0.362069" y="0.00882353" />
+                                <point x="0.844828" y="0.0529412" />
+                                <point x="1" y="0.223529" />
+                                <point x="0.793103" y="0.520588" />
+                                <point x="0.689655" y="0.894118" />
+                                <point x="0.344828" y="0.894118" />
+                                <point x="0.211207" y="0.405882" />
+                                <point x="0.00862068" y="0.217647" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="arrow" sid="102100321704879">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="982146845039215">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="199849888167375" speed="5">
+                        <frame duration="1" hotspotX="0.895171" hotspotY="0.602041" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\arrow.png">
+                            <collision-poly>
+                                <point x="0.941107" y="0.510204" />
+                                <point x="0.937574" y="0.5" />
+                                <point x="0.959953" y="0.653061" />
+                                <point x="0.499411" y="0.683673" />
+                                <point x="0.04947" y="0.571429" />
+                                <point x="0.0530035" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Loading">
             <object-type name="loading_bg" sid="481666072463064">
@@ -3453,28 +3728,10 @@
                                 </collision-poly>
                             </frame>
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\nograss.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice36_36.png" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice25_25.png">
-                                <collision-poly>
-                                    <point x="0" y="0" />
-                                    <point x="1" y="0" />
-                                    <point x="0.648438" y="0.171875" />
-                                    <point x="0.53125" y="0.546875" />
-                                    <point x="0.1875" y="0.632813" />
-                                    <point x="0" y="1" />
-                                </collision-poly>
-                            </frame>
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice26_26.png">
-                                <collision-poly>
-                                    <point x="0" y="0" />
-                                    <point x="1" y="0" />
-                                    <point x="1" y="1" />
-                                    <point x="0.78125" y="0.625" />
-                                    <point x="0.46875" y="0.546875" />
-                                    <point x="0.328125" y="0.171875" />
-                                </collision-poly>
-                            </frame>
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice27_27.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\23.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\24.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\25.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice20_20.png" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice21_21.png" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\My Drive\Semester 6\Teknologi Game\Assets\Area\lake\PNG Grass\slice22_22.png" />
@@ -3524,6 +3781,26 @@
                         <instance-variable name="hidden" sid="178160949391304" type="number" />
                     </instance-variables>
                     <texture original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\nograss.png" />
+                </object-type>
+                <object-type name="Cave_tileset2" sid="860477629794736">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="972268112329129">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="678850007776014" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Documents\Construct 2\Assets\tileset\cave\GrassJoinHillLeft&amp;Right.png">
+                                <collision-poly>
+                                    <point x="0" y="0.136719" />
+                                    <point x="1" y="0.136719" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
                 </object-type>
             </object-folder>
             <object-folder name="Stage 4 - Asgard">
@@ -6171,246 +6448,677 @@
             </object-type>
             <object-type name="Jormungandr" sid="737858377720007">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Patrol" sid="105684405205960" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Platform" sid="868848945999562">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                    <behavior-type name="LineOfSight" sid="727938828349741">
+                        <behavior id="LOS" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="30" loop="1" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="119189132736198" speed="20">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00000.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00000.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00001.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00001.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00002.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00002.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00003.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00003.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00004.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00004.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00005.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00005.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00006.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00006.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00007.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00007.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00008.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00008.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00009.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00009.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00010.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00010.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00011.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00011.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00012.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00012.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00013.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00013.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00014.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00014.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00015.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00015.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00016.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00016.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00017.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00017.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00018.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00018.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00019.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00019.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00020.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00020.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00021.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00021.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00022.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00022.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00023.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00023.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00024.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00024.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00025.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00025.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00026.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00026.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00027.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00027.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00028.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00028.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Iqbal\Downloads\boss\stand_00029.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stand\stand_00029.png">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="22" loop="0" name="Attack" pingpong="0" repeatcount="1" repeatto="0" sid="750849410069638" speed="25">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00000.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00001.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00002.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00003.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00004.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00005.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00006.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00007.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00008.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00009.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00010.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00011.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00012.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00013.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00014.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00015.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00016.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00017.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00018.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00019.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00020.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\stomp\stomp_00021.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="30" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="192801805312582" speed="20">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00000.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00001.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00002.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00003.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00004.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00005.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00006.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00007.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00008.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00009.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00010.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00011.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00012.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00013.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00014.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00015.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00016.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00017.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00018.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00019.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00020.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00021.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00022.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00023.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00024.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00025.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00026.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00027.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00028.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\enemy\walk\walk_00029.png">
+                            <collision-poly>
+                                <point x="0.34" y="0.283333" />
+                                <point x="0.658334" y="0.285" />
+                                <point x="0.656667" y="0.85" />
+                                <point x="0.341667" y="0.85" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -9730,136 +10438,11 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="arrow" sid="102100321704879">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Bullet" sid="982146845039215">
-                    <behavior id="Bullet" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="199849888167375" speed="5">
-                    <frame duration="1" hotspotX="0.895171" hotspotY="0.602041" original-source="G:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\arrow.png">
-                        <collision-poly>
-                            <point x="0.941107" y="0.510204" />
-                            <point x="0.937574" y="0.5" />
-                            <point x="0.959953" y="0.653061" />
-                            <point x="0.499411" y="0.683673" />
-                            <point x="0.04947" y="0.571429" />
-                            <point x="0.0530035" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Border" sid="693783586521962">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="266353904576904" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="water_bullet" sid="906147585039196">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="854745717921270" speed="50">
-                    <frame duration="1" hotspotX="0" hotspotY="0.625899" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\1.png">
-                        <collision-poly>
-                            <point x="0.0851852" y="0.165468" />
-                            <point x="0.5" y="0.0143885" />
-                            <point x="0.7" y="0.582734" />
-                            <point x="0.955556" y="0.496403" />
-                            <point x="0.8" y="0.611511" />
-                            <point x="0.5" y="0.992806" />
-                            <point x="0.0777778" y="0.848921" />
-                            <point x="0" y="0.496403" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0" hotspotY="0.626016" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\2.png">
-                        <collision-poly>
-                            <point x="0.0714286" y="0.130081" />
-                            <point x="0.5" y="0.0243902" />
-                            <point x="0.772321" y="0.414634" />
-                            <point x="0.991071" y="0.495935" />
-                            <point x="0.834821" y="0.699187" />
-                            <point x="0.5" y="0.98374" />
-                            <point x="0.0803571" y="0.853659" />
-                            <point x="0.00446429" y="0.495935" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0" hotspotY="0.62406" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\3.png">
-                        <collision-poly>
-                            <point x="0.0878661" y="0.157895" />
-                            <point x="0.497908" y="0" />
-                            <point x="0.83682" y="0.293233" />
-                            <point x="0.991632" y="0.496241" />
-                            <point x="0.74477" y="0.541353" />
-                            <point x="0.497908" y="0.969925" />
-                            <point x="0.083682" y="0.849624" />
-                            <point x="0.0041841" y="0.496241" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0" hotspotY="0.623077" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\4.png">
-                        <collision-poly>
-                            <point x="0.0859375" y="0.169231" />
-                            <point x="0.5" y="0.0153846" />
-                            <point x="0.882813" y="0.230769" />
-                            <point x="0.996094" y="0.5" />
-                            <point x="0.914063" y="0.830769" />
-                            <point x="0.5" y="0.969231" />
-                            <point x="0.0546875" y="0.892308" />
-                            <point x="0.0078125" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0" hotspotY="0.625" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\5.png">
-                        <collision-poly>
-                            <point x="0.0824373" y="0.169118" />
-                            <point x="0.498208" y="0.0294118" />
-                            <point x="0.896057" y="0.213235" />
-                            <point x="0.996416" y="0.5" />
-                            <point x="0.9319" y="0.860294" />
-                            <point x="0.498208" y="0.948529" />
-                            <point x="0.0752688" y="0.845588" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0" hotspotY="0.622222" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\6.png">
-                        <collision-poly>
-                            <point x="0.075188" y="0.148148" />
-                            <point x="0.5" y="0.0962963" />
-                            <point x="0.894737" y="0.207407" />
-                            <point x="0.815789" y="0.496296" />
-                            <point x="0.924812" y="0.851852" />
-                            <point x="0.5" y="0.955556" />
-                            <point x="0.0676692" y="0.866667" />
-                            <point x="0.0037594" y="0.496296" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0" hotspotY="0.623188" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\7.png">
-                        <collision-poly>
-                            <point x="0.13468" y="0.289855" />
-                            <point x="0.498316" y="0.0144928" />
-                            <point x="0.784512" y="0.463768" />
-                            <point x="0.915825" y="0.5" />
-                            <point x="0.811448" y="0.594203" />
-                            <point x="0.498316" y="0.978261" />
-                            <point x="0.124579" y="0.731884" />
-                            <point x="0.104377" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0" hotspotY="0.625899" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\waterball\8.png">
-                        <collision-poly>
-                            <point x="0.0848708" y="0.165468" />
-                            <point x="0.498155" y="0.0143885" />
-                            <point x="0.697417" y="0.589928" />
-                            <point x="0.97048" y="0.496403" />
-                            <point x="0.797048" y="0.604317" />
-                            <point x="0.498155" y="0.985611" />
-                            <point x="0.0774908" y="0.848921" />
-                            <point x="0" y="0.496403" />
-                        </collision-poly>
-                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -9924,82 +10507,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Snow_bullet" sid="925626006798271">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="233731115232878" speed="10">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\snowball\1.png">
-                        <collision-poly>
-                            <point x="0.15" y="0.15" />
-                            <point x="0.5" y="0" />
-                            <point x="0.85" y="0.15" />
-                            <point x="1" y="0.5" />
-                            <point x="0.85" y="0.85" />
-                            <point x="0.5" y="1" />
-                            <point x="0.15" y="0.85" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\snowball\2.png">
-                        <collision-poly>
-                            <point x="0.15" y="0.15" />
-                            <point x="0.5" y="0" />
-                            <point x="0.85" y="0.15" />
-                            <point x="1" y="0.5" />
-                            <point x="0.85" y="0.85" />
-                            <point x="0.5" y="1" />
-                            <point x="0.15" y="0.85" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\snowball\3.png">
-                        <collision-poly>
-                            <point x="0.15" y="0.15" />
-                            <point x="0.5" y="0" />
-                            <point x="0.85" y="0.15" />
-                            <point x="1" y="0.5" />
-                            <point x="0.85" y="0.85" />
-                            <point x="0.5" y="1" />
-                            <point x="0.15" y="0.85" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="H:\.shortcut-targets-by-id\1vhy38Yv35wzofwismkvYAqtso5FG-MXh\Assets\PNG\snowball\4.png">
-                        <collision-poly>
-                            <point x="0.15" y="0.15" />
-                            <point x="0.5" y="0" />
-                            <point x="0.85" y="0.15" />
-                            <point x="1" y="0.5" />
-                            <point x="0.85" y="0.85" />
-                            <point x="0.5" y="1" />
-                            <point x="0.15" y="0.85" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="aloevera" sid="642356903467864">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="391036988833503" speed="5">
-                    <frame duration="1" hotspotX="0.505882" hotspotY="1" original-source="C:\Users\Ichi\Desktop\aloevera.png">
-                        <collision-poly>
-                            <point x="0.247058" y="0.700787" />
-                            <point x="0.494118" y="0" />
-                            <point x="0.729412" y="0.519685" />
-                            <point x="0.988235" y="0.409449" />
-                            <point x="0.952941" y="0.600394" />
-                            <point x="0.729412" y="0.72441" />
-                            <point x="0.741177" y="0.923228" />
-                            <point x="0.494118" y="1" />
-                            <point x="0.0352939" y="0.779528" />
-                            <point x="0.0470588" y="0.543307" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="random_spawn" sid="814845525201251">
             <plugin id="Sprite" />
             <animation-folder>
@@ -10008,19 +10515,20 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="warning" sid="888654293817422">
+        <object-type name="Light" sid="781201060833365">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="805079167991751" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="C:\Users\Ichi\Desktop\warning.png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="981615312077812" speed="5">
+                    <frame duration="1" hotspotX="0.500514" hotspotY="0.5" original-source="C:\Users\Rizky\Desktop\Light.png">
                         <collision-poly>
-                            <point x="0.3" y="0.333333" />
-                            <point x="0.5" y="0" />
-                            <point x="0.7" y="0.333333" />
-                            <point x="0.78" y="0.488889" />
-                            <point x="0.98" y="0.977778" />
-                            <point x="0.04" y="0.955556" />
-                            <point x="0.22" y="0.488889" />
+                            <point x="0.382323" y="0.380368" />
+                            <point x="0.499486" y="0.332311" />
+                            <point x="0.617677" y="0.380368" />
+                            <point x="0.668037" y="0.5" />
+                            <point x="0.618705" y="0.620654" />
+                            <point x="0.499486" y="0.669734" />
+                            <point x="0.380267" y="0.621677" />
+                            <point x="0.329908" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -10128,6 +10636,7 @@
         <family name="Tileset" plugin-id="Sprite" sid="445215065297747">
             <members>
                 <member>Cave_tileset</member>
+                <member>Cave_tileset2</member>
                 <member>Desert_tileset</member>
                 <member>Forest_tileset</member>
                 <member>Forest_tileset_2</member>
@@ -10140,6 +10649,7 @@
         <family name="Boss_Atk" plugin-id="Sprite" sid="171653841355656">
             <members>
                 <member>aloevera</member>
+                <member>Stalactite</member>
             </members>
         </family>
     </families>

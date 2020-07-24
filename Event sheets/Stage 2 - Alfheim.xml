@@ -67,217 +67,227 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <variable constant="0" name="monster_atk" sid="576465730737229" static="0" type="number">0</variable>
-        <event-block sid="156504159595047">
+        <event-block sid="118146496031450">
             <conditions>
-                <condition id="-3" name="Is on-screen" sid="543793123674832" type="Treant" />
+                <condition id="-9" name="Layer is visible" sid="250463324875939" type="System">
+                    <param id="0" name="Layer">&quot;Game&quot;</param>
+                </condition>
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="863172423274088">
+                <variable constant="0" name="monster_atk" sid="576465730737229" static="1" type="number">0</variable>
+                <event-block sid="156504159595047">
                     <conditions>
-                        <condition id="-6" name="Every X seconds" sid="165510537791600" type="System">
-                            <param id="0" name="Interval (seconds)">4</param>
+                        <condition id="-3" name="Is on-screen" sid="748723666720046" type="Treant" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="863172423274088">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="165510537791600" type="System">
+                                    <param id="0" name="Interval (seconds)">4</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="973508309213986" type="System">
+                                    <param id="0" name="Variable">stealth</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="461479451035114" type="System">
+                                    <param id="0" name="Variable">monster_atk</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="597980997411529">
+                            <conditions>
+                                <condition id="4" name="On finished" sid="583997218653148" type="Treant">
+                                    <param id="0" name="Animation">&quot;Attack&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="569026887221703" type="Treant">
+                                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="365940484680560" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="604809894074099" type="System">
+                                    <param id="0" name="Variable">monster_atk</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="403332765124324">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="347351568722346" type="System">
+                            <param id="0" name="Variable">monster_atk</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
-                        <condition id="-14" name="Compare variable" sid="973508309213986" type="System">
-                            <param id="0" name="Variable">stealth</param>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <variable constant="0" name="rand_x" sid="273649391271798" static="1" type="number">0</variable>
+                        <variable constant="0" name="player_x" sid="913373471171185" static="1" type="number">0</variable>
+                        <event-block sid="425689383543806">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="831967439079416" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="122474982100668" type="System">
+                                    <param id="0" name="Variable">rand_x</param>
+                                    <param id="1" name="Value">random_spawn.X+random(0,random_spawn.Width)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="524556491168210" type="System">
+                                    <param id="0" name="Variable">player_x</param>
+                                    <param id="1" name="Value">Player_Evans.X</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="109013442566485" type="System">
+                                    <param id="0" name="Object to create">warning</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="X">rand_x</param>
+                                    <param id="3" name="Y">random_spawn.Y</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="102736273192512" type="System">
+                                    <param id="0" name="Object to create">warning</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="X">player_x</param>
+                                    <param id="3" name="Y">random_spawn.Y</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="531432807875481" type="System">
+                                    <param id="0" name="Seconds">0.25</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="569066328875758" type="Treant">
+                                    <param id="0" name="Animation">&quot;Attack&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="166573980799426" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="913917466096508">
+                                    <conditions>
+                                        <condition id="-19" name="Pick all" sid="514910562416538" type="System">
+                                            <param id="0" name="Object">warning</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="808109969961099" type="warning" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="521010835761345">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="905147346628484" type="System">
+                                            <param id="0" name="Object to create">aloevera</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="X">rand_x</param>
+                                            <param id="3" name="Y">random_spawn.Y+500</param>
+                                        </action>
+                                        <action id="-29" name="Move to object" sid="169632234746007" type="aloevera">
+                                            <param id="0" name="Where">1</param>
+                                            <param id="1" name="Object">Forest_tileset_2</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="550998831102031" type="System">
+                                            <param id="0" name="Object to create">aloevera</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="X">player_x</param>
+                                            <param id="3" name="Y">random_spawn.Y+500</param>
+                                        </action>
+                                        <action id="-29" name="Move to object" sid="898728587693412" type="aloevera">
+                                            <param id="0" name="Where">1</param>
+                                            <param id="1" name="Object">Forest_tileset_2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="222966865192570">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="255855542935959" type="aloevera">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">random_spawn.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="312281294637586">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="303107791055423" type="System">
+                                            <param id="0" name="Interval (seconds)">0.0001</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="241302284371141" type="aloevera">
+                                            <param id="0" name="Y">aloevera.Y-15</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="904691421507063">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="986559786020036" type="System">
+                            <param id="0" name="Variable">monster_atk</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="461479451035114" type="System">
-                            <param id="0" name="Variable">monster_atk</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="370856117886104">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="566479537396041" type="aloevera">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">random_spawn.Y+aloevera.Height</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="707436758511533">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="725530269528680" type="System">
+                                            <param id="0" name="Interval (seconds)">0.0001</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="530227240698343" type="aloevera">
+                                            <param id="0" name="Y">aloevera.Y+5</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="256389627176922">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="794890918550365" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="186268090617268" type="aloevera" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
-                <event-block any="1" sid="597980997411529">
+                <event-block sid="463311317066604">
                     <conditions>
-                        <condition id="4" name="On finished" sid="583997218653148" type="Treant">
-                            <param id="0" name="Animation">&quot;Attack&quot;</param>
-                        </condition>
+                        <condition id="-19" name="On destroyed" sid="788668525196173" type="Treant" />
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="569026887221703" type="Treant">
-                            <param id="0" name="Animation">&quot;Stand&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="365940484680560" type="System">
-                            <param id="0" name="Seconds">1</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="604809894074099" type="System">
+                        <action id="-9" name="Set value" sid="337092415174513" type="System">
                             <param id="0" name="Variable">monster_atk</param>
                             <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="403332765124324">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="347351568722346" type="System">
-                    <param id="0" name="Variable">monster_atk</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <variable constant="0" name="rand_x" sid="273649391271798" static="1" type="number">0</variable>
-                <variable constant="0" name="player_x" sid="913373471171185" static="1" type="number">0</variable>
-                <event-block sid="425689383543806">
-                    <conditions>
-                        <condition id="-4" name="Trigger once while true" sid="831967439079416" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="122474982100668" type="System">
-                            <param id="0" name="Variable">rand_x</param>
-                            <param id="1" name="Value">random_spawn.X+random(0,random_spawn.Width)</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="524556491168210" type="System">
-                            <param id="0" name="Variable">player_x</param>
-                            <param id="1" name="Value">Player_Evans.X</param>
-                        </action>
-                        <action id="-3" name="Create object" sid="109013442566485" type="System">
-                            <param id="0" name="Object to create">warning</param>
-                            <param id="1" name="Layer">&quot;Game&quot;</param>
-                            <param id="2" name="X">rand_x</param>
-                            <param id="3" name="Y">random_spawn.Y</param>
-                        </action>
-                        <action id="-3" name="Create object" sid="102736273192512" type="System">
-                            <param id="0" name="Object to create">warning</param>
-                            <param id="1" name="Layer">&quot;Game&quot;</param>
-                            <param id="2" name="X">player_x</param>
-                            <param id="3" name="Y">random_spawn.Y</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="531432807875481" type="System">
-                            <param id="0" name="Seconds">0.25</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="569066328875758" type="Treant">
-                            <param id="0" name="Animation">&quot;Attack&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="166573980799426" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                    </actions>
-                    <sub-events>
-                        <event-block sid="913917466096508">
-                            <conditions>
-                                <condition id="-19" name="Pick all" sid="514910562416538" type="System">
-                                    <param id="0" name="Object">warning</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Destroy" sid="808109969961099" type="warning" />
-                            </actions>
-                        </event-block>
-                        <event-block sid="521010835761345">
-                            <conditions />
-                            <actions>
-                                <action id="-3" name="Create object" sid="905147346628484" type="System">
-                                    <param id="0" name="Object to create">aloevera</param>
-                                    <param id="1" name="Layer">&quot;Game&quot;</param>
-                                    <param id="2" name="X">rand_x</param>
-                                    <param id="3" name="Y">random_spawn.Y+500</param>
-                                </action>
-                                <action id="-29" name="Move to object" sid="169632234746007" type="aloevera">
-                                    <param id="0" name="Where">1</param>
-                                    <param id="1" name="Object">Forest_tileset_2</param>
-                                </action>
-                                <action id="-3" name="Create object" sid="550998831102031" type="System">
-                                    <param id="0" name="Object to create">aloevera</param>
-                                    <param id="1" name="Layer">&quot;Game&quot;</param>
-                                    <param id="2" name="X">player_x</param>
-                                    <param id="3" name="Y">random_spawn.Y+500</param>
-                                </action>
-                                <action id="-29" name="Move to object" sid="898728587693412" type="aloevera">
-                                    <param id="0" name="Where">1</param>
-                                    <param id="1" name="Object">Forest_tileset_2</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="222966865192570">
-                    <conditions>
-                        <condition id="-2" name="Compare Y" sid="255855542935959" type="aloevera">
-                            <param id="0" name="Comparison">4</param>
-                            <param id="1" name="Y co-ordinate">random_spawn.Y</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="312281294637586">
-                            <conditions>
-                                <condition id="-6" name="Every X seconds" sid="303107791055423" type="System">
-                                    <param id="0" name="Interval (seconds)">0.0001</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-2" name="Set Y" sid="241302284371141" type="aloevera">
-                                    <param id="0" name="Y">aloevera.Y-15</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="904691421507063">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="986559786020036" type="System">
-                    <param id="0" name="Variable">monster_atk</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="370856117886104">
-                    <conditions>
-                        <condition id="-2" name="Compare Y" sid="566479537396041" type="aloevera">
-                            <param id="0" name="Comparison">2</param>
-                            <param id="1" name="Y co-ordinate">random_spawn.Y+aloevera.Height</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="707436758511533">
-                            <conditions>
-                                <condition id="-6" name="Every X seconds" sid="725530269528680" type="System">
-                                    <param id="0" name="Interval (seconds)">0.0001</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-2" name="Set Y" sid="530227240698343" type="aloevera">
-                                    <param id="0" name="Y">aloevera.Y+5</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="256389627176922">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="794890918550365" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="186268090617268" type="aloevera" />
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="463311317066604">
-            <conditions>
-                <condition id="-19" name="On destroyed" sid="788668525196173" type="Treant" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="337092415174513" type="System">
-                    <param id="0" name="Variable">monster_atk</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
         </event-block>
     </events>
 </c2eventsheet>
