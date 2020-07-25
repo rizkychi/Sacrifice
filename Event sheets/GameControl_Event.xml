@@ -316,6 +316,11 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
+                        <condition id="-7" name="Compare instance variable" sid="361371918699398" type="Player_Evans">
+                            <param id="0" name="Instance variable">HP</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions />
                     <sub-events>
@@ -739,6 +744,30 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="511499125912123">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="977057350522068" type="Player_Evans">
+                                    <param id="0" name="Object">lava</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="865916729231567" type="Audio">
+                                    <param id="0" name="Audio file">water_splash_player</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">VolumeSFX</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="355694730911070" type="Player_Evans">
+                                    <param id="0" name="Object">Particles_fire</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="867625850581200" type="Player_Evans">
+                                    <param id="0" name="Instance variable">HP</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="309292301359687">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="691229537503065" type="Player_Evans">
@@ -859,7 +888,7 @@
                                                     <param id="0" name="Instance variable">HP</param>
                                                     <param id="1" name="Value">Player_Evans.ATK</param>
                                                 </action>
-                                                <action id="0" name="Spawn another object" sid="260732908596373" type="Boss">
+                                                <action id="0" name="Spawn another object" sid="867134833999935" type="Boss">
                                                     <param id="0" name="Object">SpriteFont_Damage</param>
                                                     <param id="1" name="Layer">&quot;Game&quot;</param>
                                                     <param id="2" name="Image point">&quot;Damage&quot;</param>
@@ -871,6 +900,9 @@
                                                 </action>
                                                 <action id="0" name="Set text" sid="247899567901840" type="SpriteFont_Damage">
                                                     <param id="0" name="Text">Player_Evans.ATK</param>
+                                                </action>
+                                                <action id="-19" name="Rotate counter-clockwise" sid="598289800830609" type="SpriteFont_Damage">
+                                                    <param id="0" name="Degrees">Boss.Angle</param>
                                                 </action>
                                                 <action behavior="Bullet" id="3" name="Set angle of motion" sid="108293770835882" type="SpriteFont_Damage">
                                                     <param id="0" name="Angle">270</param>
@@ -941,6 +973,9 @@
                                                 </action>
                                                 <action id="0" name="Set text" sid="712268044001594" type="SpriteFont_Damage">
                                                     <param id="0" name="Text">Player_Evans.ATK</param>
+                                                </action>
+                                                <action id="-19" name="Rotate counter-clockwise" sid="556663390647482" type="SpriteFont_Damage">
+                                                    <param id="0" name="Degrees">Boss.Angle</param>
                                                 </action>
                                                 <action behavior="Bullet" id="3" name="Set angle of motion" sid="468569028721786" type="SpriteFont_Damage">
                                                     <param id="0" name="Angle">270</param>
@@ -1636,6 +1671,9 @@
                                 </action>
                                 <action id="0" name="Set text" sid="562910426856329" type="SpriteFont_Damage">
                                     <param id="0" name="Text">Player_Evans.ATK/2</param>
+                                </action>
+                                <action id="-19" name="Rotate counter-clockwise" sid="680512671042099" type="SpriteFont_Damage">
+                                    <param id="0" name="Degrees">Boss.Angle</param>
                                 </action>
                                 <action behavior="Bullet" id="3" name="Set angle of motion" sid="904192021926175" type="SpriteFont_Damage">
                                     <param id="0" name="Angle">270</param>
@@ -2945,13 +2983,13 @@
                             <param id="2" name="Value">1</param>
                         </condition>
                         <condition id="-6" name="Every X seconds" sid="426540444581834" type="System">
-                            <param id="0" name="Interval (seconds)">0.25</param>
+                            <param id="0" name="Interval (seconds)">0.01</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-12" name="Subtract from" sid="207489966495519" type="Player_Evans">
                             <param id="0" name="Instance variable">MP</param>
-                            <param id="1" name="Value">1</param>
+                            <param id="1" name="Value">0.1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -2993,6 +3031,78 @@
                         <action id="-9" name="Set value" sid="536127554417216" type="System">
                             <param id="0" name="Variable">defend</param>
                             <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Skill Double Jump</comment>
+                <event-block sid="188284457455021">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="648497385237922" type="System">
+                            <param id="0" name="Variable">stage</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="13" name="Set double-jump" sid="598626722489395" type="Player_Evans">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Skill Fly</comment>
+                <event-block sid="852508965575343">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="272975929629539" type="System">
+                            <param id="0" name="Variable">stage</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="949319852566903">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="238765203193453" type="Player_Evans">
+                            <param id="0" name="Animation">&quot;Fall&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="956892507782117">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="921318109899575" type="Keyboard">
+                                    <param id="0" name="Key">32</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="6" name="Set max fall speed" sid="198694346138748" type="Player_Evans">
+                                    <param id="0" name="Max fall speed">150</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="944294120166151" type="Player_Evans">
+                                    <param id="0" name="Animation">&quot;Fly&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-12" name="Subtract from" sid="584606742397631" type="Player_Evans">
+                                    <param id="0" name="Instance variable">MP</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="287289909050659">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="212450365049530" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="6" name="Set max fall speed" sid="430651876648212" type="Player_Evans">
+                            <param id="0" name="Max fall speed">1000</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="178067348480735" type="Player_Evans">
+                            <param id="0" name="Animation">&quot;Fall&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>

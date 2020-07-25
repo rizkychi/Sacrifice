@@ -67,6 +67,17 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="588401162251391">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="340697715527385" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="244874455606167" type="Light">
+                    <param id="0" name="Object">Player_Evans</param>
+                    <param id="1" name="Image point (optional)">&quot;Center&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="163667199486297">
             <conditions>
                 <condition id="-9" name="Layer is visible" sid="545737577022437" type="System">
@@ -273,17 +284,6 @@
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="588401162251391">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="340697715527385" type="System" />
-            </conditions>
-            <actions>
-                <action id="-4" name="Set position to another object" sid="244874455606167" type="Light">
-                    <param id="0" name="Object">Player_Evans</param>
-                    <param id="1" name="Image point (optional)">&quot;Center&quot;</param>
-                </action>
-            </actions>
         </event-block>
     </events>
 </c2eventsheet>

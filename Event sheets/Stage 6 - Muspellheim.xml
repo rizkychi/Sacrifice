@@ -8,11 +8,7 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="574678669313618" type="System" />
             </conditions>
-            <actions>
-                <action behavior="Platform" id="13" name="Set double-jump" sid="450920552568683" type="Player_Evans">
-                    <param id="0" name="State">1</param>
-                </action>
-            </actions>
+            <actions />
             <sub-events>
                 <event-block any="1" sid="519526280593861">
                     <conditions>
@@ -37,78 +33,272 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="619148300139316">
+        <event-block sid="409509842464132">
             <conditions>
-                <condition id="-3" name="Is on-screen" sid="342788892719961" type="Cerberus" />
+                <condition id="3" name="Compare frame" sid="827871852610521" type="Lava_tileset">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">19</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Solid" id="0" name="Set enabled" sid="947821219528538" type="Lava_tileset">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Jumpthru" id="0" name="Set enabled" sid="327421512810234" type="Lava_tileset">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="762287018199092">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="523248439522220" type="System">
+                    <param id="0" name="Layer">&quot;Game&quot;</param>
+                </condition>
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="377793670918397">
+                <variable constant="0" name="monster_atk" sid="262112064208838" static="1" type="number">0</variable>
+                <event-block sid="619148300139316">
                     <conditions>
-                        <condition id="-6" name="Every X seconds" sid="333605534558406" type="System">
-                            <param id="0" name="Interval (seconds)">4</param>
+                        <condition id="-3" name="Is on-screen" sid="342788892719961" type="Cerberus" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="161016748259285" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="377793670918397">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="333605534558406" type="System">
+                                    <param id="0" name="Interval (seconds)">9</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="674138610735535" type="System">
+                                    <param id="0" name="Variable">stealth</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="499047435328685" type="System">
+                                    <param id="0" name="Variable">monster_atk</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="128672220782729" type="Cerberus">
+                                    <param id="0" name="Animation">&quot;Attack&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="536760338261924" type="System">
+                                    <param id="0" name="Variable">monster_atk</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="263686666288442">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="555563688695237" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="237944606992931" type="System">
+                            <param id="0" name="Variable">monster_atk</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="992115078473237">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="547868057172504" type="Cerberus">
+                            <param id="0" name="Animation">&quot;Attack&quot;</param>
                         </condition>
-                        <condition id="-14" name="Compare variable" sid="674138610735535" type="System">
-                            <param id="0" name="Variable">stealth</param>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="809728670078574" type="Cerberus">
+                            <param id="0" name="Animation">&quot;Stand&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <variable constant="0" name="rand_num" sid="816041863851093" static="1" type="number">0</variable>
+                <event-block sid="996398373286475">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="245988027476200" type="System">
+                            <param id="0" name="Variable">monster_atk</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="320442180628734">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="758927217547482" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="322951793054769" type="System">
+                                    <param id="0" name="Variable">rand_num</param>
+                                    <param id="1" name="Value">round(random(1,5))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="345862939446429">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="402160912935276" type="Lava_tileset">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">19</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="119252781645144" type="Lava_tileset">
+                                    <param id="0" name="Instance variable">num</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">rand_num</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="454461385166509">
+                                    <conditions>
+                                        <condition id="-2" name="Compare Y" sid="927827990198488" type="Lava_tileset">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="Y co-ordinate">lava.Y-75</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="407173014090491">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="246456624224019" type="System">
+                                                    <param id="0" name="Interval (seconds)">0.001</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Set Y" sid="924787879013678" type="lava">
+                                                    <param id="0" name="Y">self.Y-1.5</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="971559978243461">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="366435735147027" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="148805990492814" type="Lava_tileset">
+                                            <param id="0" name="Object">warning</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="9" name="Set scale" sid="847304108531095" type="warning">
+                                            <param id="0" name="Scale">0.75</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="616098990810001" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="584572641265064" type="warning" />
+                                        <action id="0" name="Spawn another object" sid="698501833482976" type="Lava_tileset">
+                                            <param id="0" name="Object">Particles_fire</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="217620218015460" type="Particles_fire">
+                                            <param id="0" name="Angle">-90</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="738275807191864" type="System">
+                                            <param id="0" name="Seconds">3</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="123240406568594" type="System">
+                                            <param id="0" name="Variable">monster_atk</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="560690323360722">
+                                    <conditions>
+                                        <condition id="1" name="Is overlapping another object" sid="526996838184075" type="Player_Evans">
+                                            <param id="0" name="Object">Particles_fire</param>
+                                        </condition>
+                                        <condition id="-2" name="Compare Y" sid="766059769037704" type="Lava_tileset">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Y co-ordinate">Particles_fire.Y</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="303288284327424">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="493965421330562" type="System">
+                                                    <param id="0" name="Interval (seconds)">0.5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Flash" id="0" name="Flash" sid="849762678751169" type="Player_Evans">
+                                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                                    <param id="2" name="Duration">0.3</param>
+                                                </action>
+                                                <action id="-12" name="Subtract from" sid="540833953612113" type="Player_Evans">
+                                                    <param id="0" name="Instance variable">HP</param>
+                                                    <param id="1" name="Value">Cerberus.Attack-((Player_Evans.DEF/100)*Cerberus.Attack)</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="139424991142653" type="Player_Evans">
+                                                    <param id="0" name="Object">SpriteFont_Damage</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="Image point">&quot;Damage&quot;</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="919458235265916" type="SpriteFont_Damage">
+                                                    <param id="0" name="Text">Cerberus.Attack-((Player_Evans.DEF/100)*Cerberus.Attack)</param>
+                                                </action>
+                                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="234390351000547" type="SpriteFont_Damage">
+                                                    <param id="0" name="Angle">270</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="824756159504877">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="980089951936834" type="System">
+                            <param id="0" name="Variable">monster_atk</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="128672220782729" type="Cerberus">
-                            <param id="0" name="Animation">&quot;Attack&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="528623295143018" type="Particles_fire" />
                     </actions>
+                    <sub-events>
+                        <event-block sid="701940963282367">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="479290681158559" type="lava">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">1200</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="814631756993233">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="155209131228883" type="System">
+                                            <param id="0" name="Interval (seconds)">0.001</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="933890937296921" type="lava">
+                                            <param id="0" name="Y">self.Y+1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="992115078473237">
-            <conditions>
-                <condition id="4" name="On finished" sid="547868057172504" type="Cerberus">
-                    <param id="0" name="Animation">&quot;Attack&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="809728670078574" type="Cerberus">
-                    <param id="0" name="Animation">&quot;Stand&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block disabled="1" sid="876571553596882">
-            <conditions>
-                <condition id="2" name="Is playing" sid="375873337891488" type="Player_Evans">
-                    <param id="0" name="Animation">&quot;Fall&quot;</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block disabled="1" sid="321043527601647">
-                    <conditions>
-                        <condition id="2" name="Key is down" sid="153694192208695" type="Keyboard">
-                            <param id="0" name="Key">32</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="6" name="Set max fall speed" sid="312890946603551" type="Player_Evans">
-                            <param id="0" name="Max fall speed">150</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block disabled="1" sid="622118189972436">
-            <conditions>
-                <condition id="3" name="On key released" sid="593102171111170" type="Keyboard">
-                    <param id="0" name="Key">32</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Platform" id="6" name="Set max fall speed" sid="943988264185273" type="Player_Evans">
-                    <param id="0" name="Max fall speed">1000</param>
-                </action>
-            </actions>
         </event-block>
     </events>
 </c2eventsheet>

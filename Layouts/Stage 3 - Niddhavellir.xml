@@ -21465,10 +21465,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>14652</x>
-                        <y>1428</y>
+                        <y>860</y>
                         <z>0</z>
                         <width>30</width>
-                        <height>340</height>
+                        <height>1476</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

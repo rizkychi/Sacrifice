@@ -67,21 +67,64 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="287573298522302">
+        <event-block sid="454850899719930">
             <conditions>
-                <condition id="-3" name="Is on-screen" sid="169477657016539" type="Valkyrie" />
+                <condition id="-9" name="Layer is visible" sid="764468738119949" type="System">
+                    <param id="0" name="Layer">&quot;Game&quot;</param>
+                </condition>
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="114991213006408">
+                <variable constant="0" name="monster_atk" sid="960364267030301" static="1" type="number">0</variable>
+                <event-block sid="287573298522302">
                     <conditions>
-                        <condition id="-6" name="Every X seconds" sid="860717069883308" type="System">
-                            <param id="0" name="Interval (seconds)">4</param>
+                        <condition id="-3" name="Is on-screen" sid="169477657016539" type="Valkyrie" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="114991213006408">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="860717069883308" type="System">
+                                    <param id="0" name="Interval (seconds)">4</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="707095546097325" type="System">
+                                    <param id="0" name="Variable">stealth</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="254440359155066" type="System">
+                                    <param id="0" name="Variable">monster_atk</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="631865914873732">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="183431340648042" type="Valkyrie">
+                            <param id="0" name="Animation">&quot;Attack&quot;</param>
                         </condition>
-                        <condition id="-14" name="Compare variable" sid="707095546097325" type="System">
-                            <param id="0" name="Variable">stealth</param>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="350114777434352" type="Valkyrie">
+                            <param id="0" name="Animation">&quot;Standby&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="495144178420256" type="System">
+                            <param id="0" name="Variable">monster_atk</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="199530341542293">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="186365571786097" type="System">
+                            <param id="0" name="Variable">monster_atk</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -90,21 +133,121 @@
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="661846808102596">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="302824431873280" type="Valkyrie">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Number">20</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="592347555815662" type="Valkyrie">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="Number">23</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="136412028249056" type="Valkyrie">
+                                    <param id="0" name="Object">Particles_flame</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">&quot;Fire&quot;</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="376095446480051" type="Particles_flame">
+                                    <param id="0" name="Angle">angle(Valkyrie.ImagePointX(&quot;Fire&quot;), Valkyrie.ImagePointY(&quot;Fire&quot;), Player_Evans.X, Player_Evans.Y)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="450717489004169">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="683582768806082" type="System">
+                            <param id="0" name="Variable">monster_atk</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="631865914873732">
+        <event-block sid="415755324905735">
             <conditions>
-                <condition id="4" name="On finished" sid="183431340648042" type="Valkyrie">
-                    <param id="0" name="Animation">&quot;Attack&quot;</param>
+                <condition id="1" name="Is overlapping another object" sid="431379640218528" type="Player_Evans">
+                    <param id="0" name="Object">Particles_flame</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="517449805492786" type="System">
+                    <param id="0" name="Variable">defend</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="350114777434352" type="Valkyrie">
-                    <param id="0" name="Animation">&quot;Standby&quot;</param>
-                    <param id="1" name="From">1</param>
+                <action id="-24" name="Move to top" sid="209792954442925" type="Player_Evans" />
+            </actions>
+        </event-block>
+        <event-block sid="966138919844874">
+            <conditions>
+                <condition id="-22" name="Else" sid="213851246635931" type="System" />
+            </conditions>
+            <actions>
+                <action id="-29" name="Move to object" sid="902397536376046" type="Player_Evans">
+                    <param id="0" name="Where">1</param>
+                    <param id="1" name="Object">Monster</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="470062721871507">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="777872317477686" type="Player_Evans">
+                    <param id="0" name="Object">Particles_flame</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="915743986011375" type="System">
+                    <param id="0" name="Variable">defend</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="589086858336907">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="586881204035714" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="544537414956368" type="Player_Evans">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">0.3</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="168274685526413">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="696738454171815" type="System">
+                                    <param id="0" name="Interval (seconds)">0.5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="522154206204974" type="Player_Evans">
+                                    <param id="0" name="Instance variable">HP</param>
+                                    <param id="1" name="Value">Valkyrie.Attack-((Player_Evans.DEF/100)*Valkyrie.Attack)</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="766569776454031" type="Player_Evans">
+                                    <param id="0" name="Object">SpriteFont_Damage</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">&quot;Damage&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="889258631190660" type="SpriteFont_Damage">
+                                    <param id="0" name="Text">Valkyrie.Attack-((Player_Evans.DEF/100)*Valkyrie.Attack)</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="194814068425377" type="SpriteFont_Damage">
+                                    <param id="0" name="Angle">270</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

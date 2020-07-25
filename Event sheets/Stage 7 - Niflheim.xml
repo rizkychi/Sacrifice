@@ -60,48 +60,6 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="937941694926984">
-            <conditions>
-                <condition id="2" name="Is playing" sid="734233259471386" type="Player_Evans">
-                    <param id="0" name="Animation">&quot;Fall&quot;</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="702347862467317">
-                    <conditions>
-                        <condition id="2" name="Key is down" sid="258495164063772" type="Keyboard">
-                            <param id="0" name="Key">32</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="6" name="Set max fall speed" sid="479010667850632" type="Player_Evans">
-                            <param id="0" name="Max fall speed">150</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="270873709434695" type="Player_Evans">
-                            <param id="0" name="Animation">&quot;Fly&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="664406034452166">
-            <conditions>
-                <condition id="3" name="On key released" sid="515633153720901" type="Keyboard">
-                    <param id="0" name="Key">32</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Platform" id="6" name="Set max fall speed" sid="373689998608537" type="Player_Evans">
-                    <param id="0" name="Max fall speed">1000</param>
-                </action>
-                <action id="4" name="Set animation" sid="576366125074392" type="Player_Evans">
-                    <param id="0" name="Animation">&quot;Fall&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="381873761909889">
             <conditions>
                 <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="147654375773326" type="Snowie">
