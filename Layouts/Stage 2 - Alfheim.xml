@@ -21810,8 +21810,8 @@
                         <x>14736</x>
                         <y>840</y>
                         <z>0</z>
-                        <width>550</width>
-                        <height>550</height>
+                        <width>560</width>
+                        <height>560</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -28437,8 +28437,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>144</x>
-                        <y>540</y>
+                        <x>156</x>
+                        <y>576</y>
                         <z>0</z>
                         <width>93.808067322</width>
                         <height>125.138496399</height>

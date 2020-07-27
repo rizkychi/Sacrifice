@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Stage 8 - Yggdrasil</name>
+    <events>
+        <include>GameControl_Event</include>
+        <event-block sid="177112574051575">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="860445808683671" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="792798495791847">
+                    <conditions>
+                        <condition id="5" name="Is tag playing" sid="320026209507702" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </condition>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="184723836273995" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="534770353399528" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="478008474986639" type="Audio">
+                            <param id="0" name="Audio file">Level 8 - Yggdrasil Scene  (PerituneMaterial_Wish5_loop)</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">VolumeMusic</param>
+                            <param id="1" name="Tag (optional)">&quot;bgm&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="848153147744395">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="271529312637202" type="System">
+                    <param id="0" name="Layer">&quot;Game&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <variable constant="0" name="start_spawn" sid="390987676755598" static="1" type="number">0</variable>
+                <variable constant="0" name="drop_item" sid="909766897910690" static="1" type="number">0</variable>
+                <variable constant="0" name="loop" sid="831677080484097" static="1" type="number">0</variable>
+                <event-block sid="600508290836562">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="705319805649849" type="Player_Evans">
+                            <param id="0" name="Object">Final</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="873984430403433" type="Player_Evans">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="939920182694996" type="Player_Evans">
+                            <param id="0" name="Max Speed">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="841330521827953" type="Player_Evans">
+                            <param id="0" name="Animation">&quot;Stand&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="177603367657839" type="System">
+                            <param id="0" name="Group name">&quot;Player Movement &amp; Control&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="775787673688774" type="System">
+                            <param id="0" name="Group name">&quot;Item Property&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="845798672349170" type="Array_gems_position">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">Player_Evans.ImagePointX(&quot;Center&quot;)</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="244229076304884" type="Array_gems_position">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">Player_Evans.ImagePointY(&quot;Center&quot;)</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="849850326896175" type="Array_gems_position">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">Array_gems_position.At(0,0)+100</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="517066432483798" type="Array_gems_position">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">Array_gems_position.At(0,1)-45</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="656868744880491" type="Array_gems_position">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">Array_gems_position.At(0,0)+100</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="314209727564967" type="Array_gems_position">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">Array_gems_position.At(0,1)+45</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="155600770118189" type="Array_gems_position">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">Array_gems_position.At(0,0)</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="798232014807925" type="Array_gems_position">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">Array_gems_position.At(0,1)+90</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="998559347850862" type="Array_gems_position">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">Array_gems_position.At(0,0)-100</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="316168999677371" type="Array_gems_position">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">Array_gems_position.At(0,1)+45</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="638850079048083" type="Array_gems_position">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">Array_gems_position.At(0,0)-100</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="741953874453134" type="Array_gems_position">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">Array_gems_position.At(0,1)-45</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="246848228088200" type="Array_gems_position">
+                            <param id="0" name="X">6</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">Array_gems_position.At(0,0)</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="414480918315636" type="Array_gems_position">
+                            <param id="0" name="X">6</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">Array_gems_position.At(0,1)-90</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="483393395679016" type="System">
+                            <param id="0" name="Variable">start_spawn</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="109480225002402" type="Final" />
+                    </actions>
+                </event-block>
+                <event-block sid="963630960987389">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="503345849846062" type="System">
+                            <param id="0" name="Variable">start_spawn</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="331344913646274">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="261498955666196" type="System">
+                                    <param id="0" name="Interval (seconds)">0.25</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="221013689886872">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="243263276547461" type="System">
+                                            <param id="0" name="Variable">loop</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">Array_gems_position.Width</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="193108209716278" type="System">
+                                            <param id="0" name="Object to create">item_gems</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="X">Array_gems_position.At(loop,0)</param>
+                                            <param id="3" name="Y">Array_gems_position.At(loop,1)</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="887947014424507" type="item_gems">
+                                            <param id="0" name="Frame number">loop+1</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="118708432188756" type="System">
+                                            <param id="0" name="Variable">loop</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="513001438076333" type="System">
+                                            <param id="0" name="Seconds">3-loop*0.25</param>
+                                        </action>
+                                        <action behavior="Pathfinding" id="3" name="Set enabled" sid="567194918843128" type="item_gems">
+                                            <param id="0" name="Set">1</param>
+                                        </action>
+                                        <action behavior="Pathfinding" id="0" name="Find path" sid="199120178868882" type="item_gems">
+                                            <param id="0" name="X">yggdrasil.X</param>
+                                            <param id="1" name="Y">yggdrasil.Y</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="185327194969522">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="411325144393192" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="903770858792044" type="camera">
+                            <param id="0" name="X">canvas_width/2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="134929915328793">
+                    <conditions>
+                        <condition behavior="Pathfinding" id="0" name="On path found" sid="149784847080190" type="item_gems" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="1" name="Move along path" sid="639541118984558" type="item_gems" />
+                    </actions>
+                </event-block>
+                <event-block sid="485492513669323">
+                    <conditions>
+                        <condition behavior="Pathfinding" id="5" name="On arrived" sid="290066938321779" type="item_gems" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="751038109419782" type="item_gems" />
+                        <action id="-9" name="Set value" sid="134693830790066" type="System">
+                            <param id="0" name="Variable">drop_item</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="418570127724087">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="213021949981273" type="System">
+                            <param id="0" name="Variable">drop_item</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="814184559702838">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="320175615606351" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="555046410091514" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action behavior="ScrollTo" id="0" name="Shake" sid="892032985070438" type="camera">
+                                    <param id="0" name="Magnitude">20</param>
+                                    <param id="1" name="Duration">1.5</param>
+                                    <param id="2" name="Mode">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="372592279678782" type="System">
+                                    <param id="0" name="Seconds">1.75</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="245710870420667" type="System">
+                                    <param id="0" name="Group name">&quot;Item Property&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="803358509782520" type="System">
+                                    <param id="0" name="Object to create">item_gems</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="X">yggdrasil.X</param>
+                                    <param id="3" name="Y">yggdrasil.Y</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="688245270359934" type="item_gems">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action behavior="Platform" id="0" name="Set ignoring input" sid="556240227990209" type="Player_Evans">
+                                    <param id="0" name="Input">0</param>
+                                </action>
+                                <action behavior="Platform" id="1" name="Set max speed" sid="913152125404063" type="Player_Evans">
+                                    <param id="0" name="Max Speed">400</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="199463900092901" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement &amp; Control&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

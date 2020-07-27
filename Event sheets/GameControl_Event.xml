@@ -3,7 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GameControl_Event</name>
     <events>
-        <variable constant="0" name="mp_shield" sid="858672182208520" static="0" type="number">5</variable>
         <include>SaveGame_Event</include>
         <include>Loading_Event</include>
         <variable constant="0" name="attack_sword" sid="990305244945250" static="0" type="number">0</variable>
@@ -16,6 +15,8 @@
         <variable constant="0" name="temp_hp" sid="645397107881112" static="0" type="number">0</variable>
         <variable constant="0" name="temp_hp_boss" sid="507302622849784" static="0" type="number">0</variable>
         <variable constant="0" name="temp_mp" sid="668947951898672" static="0" type="number">0</variable>
+        <variable constant="0" name="MULTIPLIER" sid="605448101457535" static="0" type="number">1</variable>
+        <variable constant="0" name="mp_shield" sid="858672182208520" static="0" type="number">5</variable>
         <event-group description="" sid="449830121261773" title="Game Property">
             <sub-events>
                 <event-block sid="605677867570628">
@@ -179,7 +180,6 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <variable constant="0" name="MULTIPLIER" sid="605448101457535" static="1" type="number">1</variable>
                         <event-block sid="546861589395459">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="115526020112485" type="System">
@@ -364,12 +364,35 @@
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-3" name="Set position" sid="421075172829550" type="camera">
-                                    <param id="0" name="X">lerp(Self.X, Gate.X+canvas_width/2, 0.025)</param>
-                                    <param id="1" name="Y">lerp(Self.Y, Player_Evans.Y-200, 0.05)</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="759009430814471">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="248339516415318" type="System">
+                                            <param id="0" name="First value">LayoutName</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;Stage 7 - Niflheim&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="127628246725882" type="camera">
+                                            <param id="0" name="X">lerp(Self.X, LayoutWidth-canvas_width/2, 0.025)</param>
+                                            <param id="1" name="Y">lerp(Self.Y, Player_Evans.Y-200, 0.05)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="218517207525922">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="143313899644150" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="421075172829550" type="camera">
+                                            <param id="0" name="X">lerp(Self.X, Gate.X+canvas_width/2, 0.025)</param>
+                                            <param id="1" name="Y">lerp(Self.Y, Player_Evans.Y-200, 0.05)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="858723299084323">
                             <conditions>
@@ -563,6 +586,112 @@
                                                 <action id="0" name="Call function" sid="612978428377723" type="Function">
                                                     <param id="0" name="Name">&quot;popup_show&quot;</param>
                                                     <param id="1" name="Parameter {n}">&quot;gems&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="547006654389837">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="331213024819199" type="Boss">
+                                    <param id="0" name="Instance variable">HP</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="769464023518253">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="230381006215602" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="462211176050316" type="System">
+                                            <param id="0" name="Variable">gold</param>
+                                            <param id="1" name="Value">boss.Gold+((level_gold*10/100)*Boss.Gold)</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="262911035721593">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="966680056630136" type="System">
+                                                    <param id="0" name="First value">LayoutName</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;Stage 7 - Niflheim&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="440925358278151" type="System">
+                                                    <param id="0" name="Object to create">item_gems</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">LayoutWidth-canvas_width/2</param>
+                                                    <param id="3" name="Y">camera.Y</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="893319773633893" type="item_gems">
+                                                    <param id="0" name="Frame number">Boss.Gems</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="371558564339576">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="600516576679695" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="955851631195669" type="System">
+                                                    <param id="0" name="Object to create">item_gems</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">Gate.X+canvas_width/2</param>
+                                                    <param id="3" name="Y">camera.Y</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="840735494451957" type="item_gems">
+                                                    <param id="0" name="Frame number">Boss.Gems</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="356351657163108">
+                            <conditions>
+                                <condition id="-3" name="Is on-screen" sid="907569680231759" type="item_gems" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="711564226194656">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="547851634666478" type="System">
+                                            <param id="0" name="Interval (seconds)">0.5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="314262497685335" type="item_gems">
+                                            <param id="0" name="Object">Particles_sparkling</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="201040900065924">
+                                    <conditions>
+                                        <condition id="-2" name="Compare Y" sid="121805260820477" type="item_gems">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="Y co-ordinate">camera.Y+130</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="978212794036816">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="319027346336267" type="System">
+                                                    <param id="0" name="Interval (seconds)">0.0005</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Set Y" sid="609470427064893" type="item_gems">
+                                                    <param id="0" name="Y">Self.Y+1</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1619,27 +1748,6 @@
                                 <action id="2" name="Stop" sid="509604960778545" type="Boss" />
                                 <action behavior="Fade" id="1" name="Start fade" sid="343003636407995" type="Boss" />
                             </actions>
-                            <sub-events>
-                                <event-block sid="303003170898056">
-                                    <conditions>
-                                        <condition id="-4" name="Trigger once while true" sid="701889450239660" type="System" />
-                                    </conditions>
-                                    <actions>
-                                        <action id="-10" name="Add to" sid="614273314130635" type="System">
-                                            <param id="0" name="Variable">gold</param>
-                                            <param id="1" name="Value">boss.Gold+((level_gold*10/100)*Boss.Gold)</param>
-                                        </action>
-                                        <action id="0" name="Spawn another object" sid="441571475847834" type="camera">
-                                            <param id="0" name="Object">item_gems</param>
-                                            <param id="1" name="Layer">&quot;Game&quot;</param>
-                                            <param id="2" name="Image point">0</param>
-                                        </action>
-                                        <action id="5" name="Set frame" sid="632479212021589" type="item_gems">
-                                            <param id="0" name="Frame number">Boss.Gems</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
                         </event-block>
                         <event-block sid="284313049188833">
                             <conditions>

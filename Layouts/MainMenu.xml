@@ -492,10 +492,10 @@
                         <x>1100</x>
                         <y>1181</y>
                         <z>0</z>
-                        <width>826.864685059</width>
-                        <height>359.033355713</height>
+                        <width>829</width>
+                        <height>360</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
+                        <hotspotX>0.500603139</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -3118,6 +3118,15 @@
             <effects />
         </layer>
     </layers>
-    <nonworld-instances />
+    <nonworld-instances>
+        <instance type="Array_gems_position" uid="5171">
+            <properties>
+                <width>7</width>
+                <height>2</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
+        <instance type="XML" uid="5174" />
+    </nonworld-instances>
     <effects />
 </c2layout>

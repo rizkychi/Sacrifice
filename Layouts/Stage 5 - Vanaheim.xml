@@ -3705,7 +3705,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>3458.571289063</x>
-                        <y>572.697570801</y>
+                        <y>577.697570801</y>
                         <z>0</z>
                         <width>207.158157349</width>
                         <height>189.072921753</height>
@@ -6271,7 +6271,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>13056</x>
-                        <y>708</y>
+                        <y>723</y>
                         <z>0</z>
                         <width>207.158157349</width>
                         <height>189.072921753</height>
@@ -7428,7 +7428,7 @@
                         </behavior-instance>
                         <behavior-instance type="Platform">
                             <properties>
-                                <max-speed>50</max-speed>
+                                <max-speed>80</max-speed>
                                 <acceleration>1500</acceleration>
                                 <deceleration>1500</deceleration>
                                 <jump-strength>650</jump-strength>

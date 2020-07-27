@@ -801,7 +801,7 @@
         </event-block>
         <event-group description="" sid="507399272256641" title="Area">
             <sub-events>
-                <variable constant="0" name="area" sid="276265898089362" static="0" type="number">0</variable>
+                <variable constant="0" name="area" sid="276265898089362" static="0" type="number">-1</variable>
                 <event-block sid="969340777326343">
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="694584508391711" type="area">
@@ -832,7 +832,7 @@
                             <actions>
                                 <action id="-9" name="Set value" sid="443042191838155" type="System">
                                     <param id="0" name="Variable">area</param>
-                                    <param id="1" name="Value">0</param>
+                                    <param id="1" name="Value">-1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -940,11 +940,25 @@
                                         <condition id="-7" name="Compare instance variable" sid="296696028674901" type="area">
                                             <param id="0" name="Instance variable">id</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
+                                            <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
                                         <action id="-2" name="Go to layout" sid="562124634202689" type="System">
+                                            <param id="0" name="Layout">Stage 0 - Midgard</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="713295751466607">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="343137546319606" type="area">
+                                            <param id="0" name="Instance variable">id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="149396014021924" type="System">
                                             <param id="0" name="Layout">Stage 1 - Svartalfheim</param>
                                         </action>
                                     </actions>
@@ -1027,7 +1041,25 @@
                                             <param id="2" name="Value">7</param>
                                         </condition>
                                     </conditions>
-                                    <actions />
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="626843632954362" type="System">
+                                            <param id="0" name="Layout">Stage 7 - Niflheim</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="123788867092536">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="839309315028613" type="area">
+                                            <param id="0" name="Instance variable">id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">8</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="643647128422688" type="System">
+                                            <param id="0" name="Layout">Stage 8 - Yggdrasil</param>
+                                        </action>
+                                    </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -2859,20 +2891,5 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="482587083997391">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="338748613263568" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">tes_shop</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-10" name="Add to" sid="149501391309668" type="System">
-                    <param id="0" name="Variable">gold</param>
-                    <param id="1" name="Value">100000</param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>

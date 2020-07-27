@@ -9,9 +9,6 @@
                 <condition id="-2" name="On start of layout" sid="470805110950343" type="System" />
             </conditions>
             <actions>
-                <action behavior="Platform" id="13" name="Set double-jump" sid="994479229252189" type="Player_Evans">
-                    <param id="0" name="State">1</param>
-                </action>
                 <action behavior="Platform" id="1" name="Set max speed" sid="633737565158671" type="Snowie">
                     <param id="0" name="Max Speed">0</param>
                 </action>
@@ -106,6 +103,504 @@
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="629602965343425">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="528700892499342" type="System">
+                    <param id="0" name="Layer">&quot;Game&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <variable constant="0" name="monster_atk" sid="474465170788689" static="1" type="number">0</variable>
+                <variable constant="0" name="offsets" sid="220957921584223" static="1" type="number">100</variable>
+                <event-block sid="205710610143799">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="384278614750469" type="Garm" />
+                        <condition id="-7" name="Compare instance variable" sid="806322410395493" type="Garm">
+                            <param id="0" name="Instance variable">HP</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="768027987359732">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="903088858224359" type="Garm">
+                                    <param id="0" name="Instance variable">Patrol</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="311336030611493">
+                                    <conditions>
+                                        <condition id="9" name="Is overlapping at offset" sid="702791878328706" type="Garm">
+                                            <param id="0" name="Object">Player_Evans</param>
+                                            <param id="1" name="Offset X">offsets</param>
+                                            <param id="2" name="Offset Y">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="390365887955361" type="System">
+                                            <param id="0" name="Variable">stealth</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="611540452040262">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="657654599234707" type="System">
+                                                    <param id="0" name="Interval (seconds)">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="138977991487375" type="System">
+                                                    <param id="0" name="Variable">monster_atk</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="703240970091862">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="863173913580644" type="Garm">
+                                    <param id="0" name="Instance variable">Patrol</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="468489040937595">
+                                    <conditions>
+                                        <condition id="9" name="Is overlapping at offset" sid="521052341287387" type="Garm">
+                                            <param id="0" name="Object">Player_Evans</param>
+                                            <param id="1" name="Offset X">-offsets</param>
+                                            <param id="2" name="Offset Y">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="891381194902041" type="System">
+                                            <param id="0" name="Variable">stealth</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="431861931865947">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="502668518440898" type="System">
+                                                    <param id="0" name="Interval (seconds)">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="494150331577932" type="System">
+                                                    <param id="0" name="Variable">monster_atk</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="840479782748808">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="778788066686275" type="Garm">
+                            <param id="0" name="Animation">&quot;Attack&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="715629584570041" type="System">
+                            <param id="0" name="Variable">monster_atk</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="787809047447915" type="Garm">
+                            <param id="0" name="Animation">&quot;Stand&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="656336527100280">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="686635187090713" type="System">
+                            <param id="0" name="Variable">monster_atk</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="845845642584403" type="Garm">
+                            <param id="0" name="Animation">&quot;Attack&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="136880581213529">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="917441029372359" type="System">
+                            <param id="0" name="Variable">monster_atk</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition behavior="LineOfSight" id="0" inverted="1" name="Has LOS to object" sid="644057474262419" type="Garm">
+                            <param id="0" name="Object">Player_Evans</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="159708472948945" type="Garm">
+                            <param id="0" name="Animation">&quot;Stand&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="961627867420592">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="583966192270726" type="System">
+                            <param id="0" name="Variable">monster_atk</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="855372803963044" type="Garm">
+                            <param id="0" name="Object">Player_Evans</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="822143080024933">
+                            <conditions>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="584980232103629" type="Garm" />
+                                <condition behavior="Platform" id="2" name="Is on floor" sid="950602295358487" type="Garm" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="383759337181157" type="Garm">
+                                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="962842845689920">
+                            <conditions>
+                                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="728475064230004" type="Garm" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="273261351367439" type="Garm">
+                                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="943118816939535">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="674650763588865" type="Player_Evans">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">Garm.X</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="542604246603153">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="834597666150830" type="Garm">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="X co-ordinate">Player_Evans.X+50</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="241353198569284" type="Garm">
+                                            <param id="0" name="Instance variable">Patrol</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="925408756591670">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="700112777600072" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="374449719087970">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="827561195106452" type="Garm">
+                                            <param id="0" name="Comparison">3</param>
+                                            <param id="1" name="X co-ordinate">Player_Evans.X-50</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="748777069631601" type="Garm">
+                                            <param id="0" name="Instance variable">Patrol</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="740438338816274">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="601574237172576" type="Garm">
+                                    <param id="0" name="Instance variable">Patrol</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="520213210438150" type="Garm">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="393965823534570" type="Garm">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="234328291432518">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="712937327013554" type="Garm">
+                                    <param id="0" name="Instance variable">Patrol</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="516280969374170" type="Garm">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="486917939138888" type="Garm">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="777031510788268">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="394033319586225" type="Garm">
+                            <param id="0" name="Animation">&quot;Attack&quot;</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="957146142069568" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="378821982722751" type="System">
+                            <param id="0" name="Seconds">0.7</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <variable constant="0" name="damaged" sid="749018094085673" static="1" type="number">0</variable>
+                        <event-block sid="920314716578801">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="680640790407472" type="Garm">
+                                    <param id="0" name="Instance variable">Patrol</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="553288518626764">
+                                    <conditions>
+                                        <condition id="9" name="Is overlapping at offset" sid="855737321546380" type="Garm">
+                                            <param id="0" name="Object">Player_Evans</param>
+                                            <param id="1" name="Offset X">offsets</param>
+                                            <param id="2" name="Offset Y">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="434047948618798" type="System">
+                                            <param id="0" name="Variable">damaged</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="236927532924844">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="250299050763646" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="606275055652921" type="System">
+                                            <param id="0" name="Variable">damaged</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="911008553336784">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="713027031035647" type="Garm">
+                                    <param id="0" name="Instance variable">Patrol</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="378263347642364" type="System">
+                                    <param id="0" name="Variable">damaged</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="992640735233790">
+                                    <conditions>
+                                        <condition id="9" name="Is overlapping at offset" sid="376224721356233" type="Garm">
+                                            <param id="0" name="Object">Player_Evans</param>
+                                            <param id="1" name="Offset X">-offsets</param>
+                                            <param id="2" name="Offset Y">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                </event-block>
+                                <event-block sid="435618567608064">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="308428776650055" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="159718638626312" type="System">
+                                            <param id="0" name="Variable">damaged</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="779816744622642">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="845626326620050" type="System">
+                                    <param id="0" name="Variable">damaged</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="804975785801922">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="338480002108504" type="System">
+                                            <param id="0" name="Variable">defend</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="409262790404843" type="Player_Evans">
+                                            <param id="0" name="Instance variable">HP</param>
+                                            <param id="1" name="Value">Garm.Attack-((Player_Evans.DEF/100)*Garm.Attack)</param>
+                                        </action>
+                                        <action behavior="Flash" id="0" name="Flash" sid="907578837236777" type="Player_Evans">
+                                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                            <param id="2" name="Duration">0.3</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="255821344086784" type="Player_Evans">
+                                            <param id="0" name="Object">SpriteFont_Damage</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="Image point">&quot;Damage&quot;</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="360654048670685" type="SpriteFont_Damage">
+                                            <param id="0" name="Text">Garm.Attack-((Player_Evans.DEF/100)*Garm.Attack)</param>
+                                        </action>
+                                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="250166234422022" type="SpriteFont_Damage">
+                                            <param id="0" name="Angle">270</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="668223916397625">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="954061966814630" type="System">
+                                            <param id="0" name="Variable">defend</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="159737588053551">
+                                            <conditions>
+                                                <condition id="7" inverted="1" name="Is mirrored" sid="733746676462009" type="Player_Evans" />
+                                                <condition id="-7" name="Compare instance variable" sid="686213413793755" type="Garm">
+                                                    <param id="0" name="Instance variable">Patrol</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Subtract from" sid="731594741993684" type="Player_Evans">
+                                                    <param id="0" name="Instance variable">HP</param>
+                                                    <param id="1" name="Value">Garm.Attack-((Player_Evans.DEF/100)*Garm.Attack)</param>
+                                                </action>
+                                                <action behavior="Flash" id="0" name="Flash" sid="910920487989507" type="Player_Evans">
+                                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                                    <param id="2" name="Duration">0.3</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="417101740291447" type="Player_Evans">
+                                                    <param id="0" name="Object">SpriteFont_Damage</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="Image point">&quot;Damage&quot;</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="934811473995511" type="SpriteFont_Damage">
+                                                    <param id="0" name="Text">Garm.Attack-((Player_Evans.DEF/100)*Garm.Attack)</param>
+                                                </action>
+                                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="983839887584352" type="SpriteFont_Damage">
+                                                    <param id="0" name="Angle">270</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="962585334796162">
+                                            <conditions>
+                                                <condition id="7" name="Is mirrored" sid="930994712684009" type="Player_Evans" />
+                                                <condition id="-7" name="Compare instance variable" sid="971256015212425" type="Garm">
+                                                    <param id="0" name="Instance variable">Patrol</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Subtract from" sid="647944567571084" type="Player_Evans">
+                                                    <param id="0" name="Instance variable">HP</param>
+                                                    <param id="1" name="Value">Garm.Attack-((Player_Evans.DEF/100)*Garm.Attack)</param>
+                                                </action>
+                                                <action behavior="Flash" id="0" name="Flash" sid="787690541776734" type="Player_Evans">
+                                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                                    <param id="2" name="Duration">0.3</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="647832983281676" type="Player_Evans">
+                                                    <param id="0" name="Object">SpriteFont_Damage</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="Image point">&quot;Damage&quot;</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="970677926889324" type="SpriteFont_Damage">
+                                                    <param id="0" name="Text">Garm.Attack-((Player_Evans.DEF/100)*Garm.Attack)</param>
+                                                </action>
+                                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="921223443693231" type="SpriteFont_Damage">
+                                                    <param id="0" name="Angle">270</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="908232650871734">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="895512963768425" type="System">
+                                            <param id="0" name="Variable">damaged</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
