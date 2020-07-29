@@ -57,10 +57,28 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="674591129467041">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="561851735529760" type="System">
+                    <param id="0" name="Interval (seconds)">0.05</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="395546846436754" type="Player_Evans">
+                    <param id="0" name="Instance variable">MP</param>
+                    <param id="1" name="Value">0.1*MULTIPLIER</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="381873761909889">
             <conditions>
                 <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="147654375773326" type="Snowie">
                     <param id="0" name="Object">Player_Evans</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="565596152588019" type="System">
+                    <param id="0" name="Variable">stealth</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions />
@@ -242,6 +260,24 @@
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="210048610839311">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="442175193293969" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="777432104990281" type="System">
+                                    <param id="0" name="Seconds">0.6</param>
+                                </action>
+                                <action id="0" name="Play" sid="823660232490108" type="Audio">
+                                    <param id="0" name="Audio file">boss_sword</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">VolumeSFX</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="136880581213529">
                     <conditions>

@@ -255,7 +255,7 @@
                     </conditions>
                     <actions>
                         <action id="-16" name="Wait" sid="161016748259285" type="System">
-                            <param id="0" name="Seconds">3</param>
+                            <param id="0" name="Seconds">1.5</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -334,6 +334,12 @@
                                 <action id="-9" name="Set value" sid="322951793054769" type="System">
                                     <param id="0" name="Variable">rand_num</param>
                                     <param id="1" name="Value">round(random(1,5))</param>
+                                </action>
+                                <action id="0" name="Play" sid="893587555190875" type="Audio">
+                                    <param id="0" name="Audio file">lava_flows</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">VolumeSFX</param>
+                                    <param id="1" name="Tag (optional)">&quot;lava&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -465,6 +471,9 @@
                     </conditions>
                     <actions>
                         <action behavior="Fade" id="1" name="Start fade" sid="528623295143018" type="Particles_fire" />
+                        <action id="6" name="Stop" sid="494388925876343" type="Audio">
+                            <param id="0" name="Tag">&quot;lava&quot;</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="701940963282367">

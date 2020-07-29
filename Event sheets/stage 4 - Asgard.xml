@@ -146,6 +146,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="256436689163943" type="Audio">
+                                    <param id="0" name="Audio file">fireball</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">VolumeSFX</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                </action>
                                 <action id="0" name="Spawn another object" sid="136412028249056" type="Valkyrie">
                                     <param id="0" name="Object">Particles_flame</param>
                                     <param id="1" name="Layer">&quot;Game&quot;</param>

@@ -2,5 +2,453 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Stage 0 - Midgard</name>
-    <events />
+    <events>
+        <include>GameControl_Event</include>
+        <variable constant="0" name="story" sid="487585810238022" static="0" type="text">intro</variable>
+        <event-group description="" sid="663794820550378" title="Story">
+            <sub-events>
+                <variable constant="0" name="delay_dialogue" sid="886551587029432" static="1" type="number">14</variable>
+                <variable constant="0" name="delay_fade" sid="591418091862032" static="1" type="number">1.5</variable>
+                <event-block sid="499553439636155">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="113215784016071" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="247126615600739" type="Function">
+                            <param id="0" name="Name">&quot;LoadStory&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="102537826901025" type="SpriteFont_Story">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="725474649112371" type="item_story">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="533254407882546" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block any="1" sid="732981625798197">
+                            <conditions>
+                                <condition id="5" name="Is tag playing" sid="541184921228367" type="Audio">
+                                    <param id="0" name="Tag">&quot;bgm&quot;</param>
+                                </condition>
+                                <condition id="5" inverted="1" name="Is tag playing" sid="167036683455247" type="Audio">
+                                    <param id="0" name="Tag">&quot;bgm&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Stop" sid="385366701853767" type="Audio">
+                                    <param id="0" name="Tag">&quot;bgm&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="965777676291923" type="Audio">
+                                    <param id="0" name="Audio file">a promise</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">VolumeMusic</param>
+                                    <param id="1" name="Tag (optional)">&quot;bgm&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="669565380188880">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="466558489615122" type="System">
+                                    <param id="0" name="Variable">story</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;intro&quot;</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="900796698827970" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="386097256778163" type="Function">
+                                    <param id="0" name="Name">&quot;dialog_intro&quot;</param>
+                                    <param id="1" name="Parameter {n}">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="483302946229727" type="System">
+                                    <param id="0" name="Seconds">delay_dialogue</param>
+                                </action>
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="260578717539086" type="SpriteFont_Story" />
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="585020617247528" type="item_story" />
+                                <action id="-16" name="Wait" sid="789460497935523" type="System">
+                                    <param id="0" name="Seconds">delay_fade</param>
+                                </action>
+                                <action id="0" name="Call function" sid="126386590640230" type="Function">
+                                    <param id="0" name="Name">&quot;dialog_intro&quot;</param>
+                                    <param id="1" name="Parameter {n}">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="560231414256917" type="System">
+                                    <param id="0" name="Seconds">delay_dialogue</param>
+                                </action>
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="788078117631088" type="SpriteFont_Story" />
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="603552919619206" type="item_story" />
+                                <action id="-16" name="Wait" sid="436958346279816" type="System">
+                                    <param id="0" name="Seconds">delay_fade</param>
+                                </action>
+                                <action id="0" name="Call function" sid="817007656442686" type="Function">
+                                    <param id="0" name="Name">&quot;dialog_intro&quot;</param>
+                                    <param id="1" name="Parameter {n}">2</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="996857103990345" type="System">
+                                    <param id="0" name="Seconds">delay_dialogue</param>
+                                </action>
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="250126497926318" type="SpriteFont_Story" />
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="678560346773691" type="item_story" />
+                                <action id="-16" name="Wait" sid="675145350912696" type="System">
+                                    <param id="0" name="Seconds">delay_fade</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="758001638348042" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="710365185767223" type="Function">
+                                    <param id="0" name="Name">&quot;loading_show&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-16" name="Wait" sid="121788752315335" type="System">
+                                    <param id="0" name="Seconds">LOADING_TIME</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="479974964976326" type="System">
+                                    <param id="0" name="Layout">WorldMap</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="822259103976280">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="190707927971222" type="System">
+                                    <param id="0" name="Variable">story</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;outro&quot;</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="821960729632172" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="867551124627735" type="Function">
+                                    <param id="0" name="Name">&quot;dialog_outro&quot;</param>
+                                    <param id="1" name="Parameter {n}">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="462870295146303" type="System">
+                                    <param id="0" name="Seconds">delay_dialogue</param>
+                                </action>
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="113159596922056" type="SpriteFont_Story" />
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="206872624376501" type="item_story" />
+                                <action id="-16" name="Wait" sid="851566214648251" type="System">
+                                    <param id="0" name="Seconds">delay_fade</param>
+                                </action>
+                                <action id="0" name="Call function" sid="691856369411093" type="Function">
+                                    <param id="0" name="Name">&quot;dialog_outro&quot;</param>
+                                    <param id="1" name="Parameter {n}">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="594844264959312" type="System">
+                                    <param id="0" name="Seconds">delay_dialogue</param>
+                                </action>
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="920612812432886" type="SpriteFont_Story" />
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="990958718987199" type="item_story" />
+                                <action id="-16" name="Wait" sid="522951030893378" type="System">
+                                    <param id="0" name="Seconds">delay_fade</param>
+                                </action>
+                                <action id="0" name="Call function" sid="470506791140816" type="Function">
+                                    <param id="0" name="Name">&quot;dialog_outro&quot;</param>
+                                    <param id="1" name="Parameter {n}">2</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="209656708634243" type="System">
+                                    <param id="0" name="Seconds">delay_dialogue</param>
+                                </action>
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="491312637197789" type="SpriteFont_Story" />
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="298412629108225" type="item_story" />
+                                <action id="-16" name="Wait" sid="681752844078167" type="System">
+                                    <param id="0" name="Seconds">delay_fade</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="334887249235551" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="913633987907302" type="Function">
+                                    <param id="0" name="Name">&quot;loading_show&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-16" name="Wait" sid="752769078831084" type="System">
+                                    <param id="0" name="Seconds">LOADING_TIME</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="934969045178847" type="System">
+                                    <param id="0" name="Layout">MainMenu</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="601275863659710">
+                    <conditions>
+                        <condition id="0" name="On function" sid="320895326246714" type="Function">
+                            <param id="0" name="Name">&quot;LoadStory&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>Intro</comment>
+                        <event-block sid="813307788254529">
+                            <conditions />
+                            <actions>
+                                <action id="2" name="Set at X" sid="373907246307113" type="Array_intro">
+                                    <param id="0" name="X">0</param>
+                                    <param id="1" name="Value">&quot;Midgard. That&apos;s the name of the world inhabited by humans.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="707674983497395" type="Array_intro">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Value">&quot;It is one of the eight worlds that surround the world tree or better known as Yggdrasil.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="735818789897188" type="Array_intro">
+                                    <param id="0" name="X">2</param>
+                                    <param id="1" name="Value">&quot;In midgard there is one ritual that is performed every time a solar eclipse occurs.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="334731979385909" type="Array_intro">
+                                    <param id="0" name="X">3</param>
+                                    <param id="1" name="Value">&quot;This ritual is to prevent the place from being disastrous by sacrificing a little boy to offer his soul to the god they believe in.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="198598136000601" type="Array_intro">
+                                    <param id="0" name="X">4</param>
+                                    <param id="1" name="Value">&quot;-&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="483585174546496" type="Array_intro">
+                                    <param id="0" name="X">5</param>
+                                    <param id="1" name="Value">&quot;Evans is one of the children born in Midgard. He has a younger brother named Loki.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="782877266051553" type="Array_intro">
+                                    <param id="0" name="X">6</param>
+                                    <param id="1" name="Value">&quot;Unfortunately in the last ritual, Loki was chosen as a sacrifice for the ritual.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="100637205746117" type="Array_intro">
+                                    <param id="0" name="X">7</param>
+                                    <param id="1" name="Value">&quot;Evans has done various ways to prevent the ritual, but it is useless.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="233394129313610" type="Array_intro">
+                                    <param id="0" name="X">8</param>
+                                    <param id="1" name="Value">&quot;Loki was still forced to become a sacrificial ritual&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="637739446652135" type="Array_intro">
+                                    <param id="0" name="X">9</param>
+                                    <param id="1" name="Value">&quot;-&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="287270018817930" type="Array_intro">
+                                    <param id="0" name="X">10</param>
+                                    <param id="1" name="Value">&quot;In the midst of the sadness of evans left by his younger brother, he found an old book that contained the truth of the Yggdrasil world tree and about The Water of Life.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="360563155491731" type="Array_intro">
+                                    <param id="0" name="X">11</param>
+                                    <param id="1" name="Value">&quot;The water is said to cure all diseases and restore the body condition of all beings.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="677017736561998" type="Array_intro">
+                                    <param id="0" name="X">12</param>
+                                    <param id="1" name="Value">&quot;With this motivation, Evans ventured into various worlds that surround the Yggdrasil in search of seven gems.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="641255970467747" type="Array_intro">
+                                    <param id="0" name="X">13</param>
+                                    <param id="1" name="Value">&quot;The gems is a prerequisite for getting The Water of Life. Each gems is protected by a strong guardian.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="827202410585599" type="Array_intro">
+                                    <param id="0" name="X">14</param>
+                                    <param id="1" name="Value">&quot;-&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Outro</comment>
+                        <event-block sid="256547143446688">
+                            <conditions />
+                            <actions>
+                                <action id="2" name="Set at X" sid="925048253729207" type="Array_outro">
+                                    <param id="0" name="X">0</param>
+                                    <param id="1" name="Value">&quot;Everything in the old book is true.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="474279543416432" type="Array_outro">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Value">&quot;The seven gems were converted into Water of Life by Yggdrasil tree.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="124654075807119" type="Array_outro">
+                                    <param id="0" name="X">2</param>
+                                    <param id="1" name="Value">&quot;Evans was very happy because he found hope.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="813431734444984" type="Array_outro">
+                                    <param id="0" name="X">3</param>
+                                    <param id="1" name="Value">&quot;He immediately left Yggdrasil and returned to Midgard.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="901339994678790" type="Array_outro">
+                                    <param id="0" name="X">4</param>
+                                    <param id="1" name="Value">&quot;-&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="818435566377804" type="Array_outro">
+                                    <param id="0" name="X">5</param>
+                                    <param id="1" name="Value">&quot;When the evans arrived in the village, he immediately headed to the altar of sacrifice.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="451883121033982" type="Array_outro">
+                                    <param id="0" name="X">6</param>
+                                    <param id="1" name="Value">&quot;He searched for the body of his brother who lost his soul.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="850232899847258" type="Array_outro">
+                                    <param id="0" name="X">7</param>
+                                    <param id="1" name="Value">&quot;The Water of Life is poured into his brother&apos;s mouth&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="364795144895242" type="Array_outro">
+                                    <param id="0" name="X">8</param>
+                                    <param id="1" name="Value">&quot;Loki opened his eyes slowly.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="266460219975707" type="Array_outro">
+                                    <param id="0" name="X">9</param>
+                                    <param id="1" name="Value">&quot;-&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="496180895625157" type="Array_outro">
+                                    <param id="0" name="X">10</param>
+                                    <param id="1" name="Value">&quot;The Water of Life was working as it should.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="953250989390641" type="Array_outro">
+                                    <param id="0" name="X">11</param>
+                                    <param id="1" name="Value">&quot;Loki&apos;s body is now getting better.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="883059237759915" type="Array_outro">
+                                    <param id="0" name="X">12</param>
+                                    <param id="1" name="Value">&quot;Finally, they both returned to their homes happily.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="162088098156164" type="Array_outro">
+                                    <param id="0" name="X">13</param>
+                                    <param id="1" name="Value">&quot;End.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="579888916439506" type="Array_outro">
+                                    <param id="0" name="X">14</param>
+                                    <param id="1" name="Value">&quot;-&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="573757349360190">
+                    <conditions>
+                        <condition id="0" name="On function" sid="657982040838872" type="Function">
+                            <param id="0" name="Name">&quot;dialog_intro&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="492288055655294">
+                            <conditions>
+                                <condition id="-10" name="For" sid="958313429457913" type="System">
+                                    <param id="0" name="Name">&quot;showing&quot;</param>
+                                    <param id="1" name="Start index">0</param>
+                                    <param id="2" name="End index">3</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="695675011677111">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="482798034030832" type="SpriteFont_Story">
+                                            <param id="0" name="Instance variable">id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">loopindex</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="306910488198876" type="SpriteFont_Story">
+                                            <param id="0" name="Text">Array_intro.At(loopindex+Function.Param(0)*5)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="591945775880853" type="System">
+                                            <param id="0" name="Seconds">loopindex*3</param>
+                                        </action>
+                                        <action behavior="FadeIn" id="0" name="Restart fade" sid="242085086943831" type="SpriteFont_Story" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="553801003145153">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="436842869016265" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="273491632430702" type="item_story">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action behavior="FadeIn" id="0" name="Restart fade" sid="259498267830647" type="item_story" />
+                                <action id="-16" name="Wait" sid="700524672292294" type="System">
+                                    <param id="0" name="Seconds">7</param>
+                                </action>
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="973462008300687" type="item_story" />
+                                <action id="-16" name="Wait" sid="732397294980568" type="System">
+                                    <param id="0" name="Seconds">1.5</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="250962390008975" type="item_story">
+                                    <param id="0" name="Frame number">3</param>
+                                </action>
+                                <action behavior="FadeIn" id="0" name="Restart fade" sid="257038784322538" type="item_story" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="480890603308894">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="875557054262370" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="356909528653059" type="item_story">
+                                    <param id="0" name="Frame number">Function.Param(0)</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="181553288698986" type="System">
+                                    <param id="0" name="Seconds">2</param>
+                                </action>
+                                <action behavior="FadeIn" id="0" name="Restart fade" sid="723384022093914" type="item_story" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="919913950396196">
+                    <conditions>
+                        <condition id="0" name="On function" sid="551915917898757" type="Function">
+                            <param id="0" name="Name">&quot;dialog_outro&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="768076642332002">
+                            <conditions>
+                                <condition id="-10" name="For" sid="299569126852034" type="System">
+                                    <param id="0" name="Name">&quot;showing&quot;</param>
+                                    <param id="1" name="Start index">0</param>
+                                    <param id="2" name="End index">3</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="903769334687261">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="498499739741363" type="SpriteFont_Story">
+                                            <param id="0" name="Instance variable">id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">loopindex</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="779348066992074" type="SpriteFont_Story">
+                                            <param id="0" name="Text">Array_outro.At(loopindex+Function.Param(0)*5)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="641717029446008" type="System">
+                                            <param id="0" name="Seconds">loopindex*3</param>
+                                        </action>
+                                        <action behavior="FadeIn" id="0" name="Restart fade" sid="227331150591830" type="SpriteFont_Story" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="493580657481383">
+                                    <conditions />
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="645125069544099" type="item_story">
+                                            <param id="0" name="Frame number">Function.Param(0)+4</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="118551579287675" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action behavior="FadeIn" id="0" name="Restart fade" sid="853924157875678" type="item_story" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
 </c2eventsheet>

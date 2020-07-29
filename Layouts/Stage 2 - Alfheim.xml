@@ -26934,67 +26934,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Wood_goblin" uid="1595">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Patrol>0</Patrol>
-                        <Attack>125</Attack>
-                        <HP>125</HP>
-                        <Gold>600</Gold>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>150</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="LineOfSight">
-                            <properties>
-                                <obstacles>Custom</obstacles>
-                                <range>200</range>
-                                <cone-of-view>360</cone-of-view>
-                                <use-collision-cells>Yes</use-collision-cells>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>2532</x>
-                        <y>588</y>
-                        <z>0</z>
-                        <width>100</width>
-                        <height>100</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Border" uid="1606">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
@@ -27039,67 +26978,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Wood_goblin" uid="1656">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Patrol>0</Patrol>
-                        <Attack>125</Attack>
-                        <HP>125</HP>
-                        <Gold>600</Gold>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>150</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="LineOfSight">
-                            <properties>
-                                <obstacles>Custom</obstacles>
-                                <range>200</range>
-                                <cone-of-view>360</cone-of-view>
-                                <use-collision-cells>Yes</use-collision-cells>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>3216</x>
-                        <y>684</y>
-                        <z>0</z>
-                        <width>100</width>
-                        <height>100</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Border" uid="1657">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
@@ -27115,67 +26993,6 @@
                         <z>0</z>
                         <width>20</width>
                         <height>250</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Wood_goblin" uid="1693">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Patrol>0</Patrol>
-                        <Attack>125</Attack>
-                        <HP>125</HP>
-                        <Gold>600</Gold>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>150</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="LineOfSight">
-                            <properties>
-                                <obstacles>Custom</obstacles>
-                                <range>200</range>
-                                <cone-of-view>360</cone-of-view>
-                                <use-collision-cells>Yes</use-collision-cells>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>5112</x>
-                        <y>1068</y>
-                        <z>0</z>
-                        <width>100</width>
-                        <height>100</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -27227,67 +27044,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Wood_goblin" uid="1857">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Patrol>1</Patrol>
-                        <Attack>125</Attack>
-                        <HP>125</HP>
-                        <Gold>600</Gold>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>150</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="LineOfSight">
-                            <properties>
-                                <obstacles>Custom</obstacles>
-                                <range>200</range>
-                                <cone-of-view>360</cone-of-view>
-                                <use-collision-cells>Yes</use-collision-cells>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>5436</x>
-                        <y>1068</y>
-                        <z>0</z>
-                        <width>100</width>
-                        <height>100</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Border" uid="1858">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
@@ -27303,189 +27059,6 @@
                         <z>0</z>
                         <width>20</width>
                         <height>250</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Wood_goblin" uid="1869">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Patrol>0</Patrol>
-                        <Attack>125</Attack>
-                        <HP>125</HP>
-                        <Gold>600</Gold>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>150</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="LineOfSight">
-                            <properties>
-                                <obstacles>Custom</obstacles>
-                                <range>200</range>
-                                <cone-of-view>360</cone-of-view>
-                                <use-collision-cells>Yes</use-collision-cells>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>6240</x>
-                        <y>780</y>
-                        <z>0</z>
-                        <width>100</width>
-                        <height>100</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Wood_goblin" uid="1870">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Patrol>1</Patrol>
-                        <Attack>125</Attack>
-                        <HP>125</HP>
-                        <Gold>600</Gold>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>150</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="LineOfSight">
-                            <properties>
-                                <obstacles>Custom</obstacles>
-                                <range>200</range>
-                                <cone-of-view>360</cone-of-view>
-                                <use-collision-cells>Yes</use-collision-cells>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>7116</x>
-                        <y>780</y>
-                        <z>0</z>
-                        <width>100</width>
-                        <height>100</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Wood_goblin" uid="1871">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Patrol>1</Patrol>
-                        <Attack>125</Attack>
-                        <HP>125</HP>
-                        <Gold>600</Gold>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>150</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="LineOfSight">
-                            <properties>
-                                <obstacles>Custom</obstacles>
-                                <range>200</range>
-                                <cone-of-view>360</cone-of-view>
-                                <use-collision-cells>Yes</use-collision-cells>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>6660</x>
-                        <y>780</y>
-                        <z>0</z>
-                        <width>100</width>
-                        <height>100</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -27530,67 +27103,6 @@
                         <z>0</z>
                         <width>20</width>
                         <height>250</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Wood_goblin" uid="1879">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Patrol>0</Patrol>
-                        <Attack>125</Attack>
-                        <HP>125</HP>
-                        <Gold>600</Gold>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>150</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="LineOfSight">
-                            <properties>
-                                <obstacles>Custom</obstacles>
-                                <range>200</range>
-                                <cone-of-view>360</cone-of-view>
-                                <use-collision-cells>Yes</use-collision-cells>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>8400</x>
-                        <y>588</y>
-                        <z>0</z>
-                        <width>100</width>
-                        <height>100</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -27806,67 +27318,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Wood_goblin" uid="1947">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Patrol>0</Patrol>
-                        <Attack>125</Attack>
-                        <HP>125</HP>
-                        <Gold>600</Gold>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>150</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="LineOfSight">
-                            <properties>
-                                <obstacles>Custom</obstacles>
-                                <range>200</range>
-                                <cone-of-view>360</cone-of-view>
-                                <use-collision-cells>Yes</use-collision-cells>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>9744</x>
-                        <y>972</y>
-                        <z>0</z>
-                        <width>100</width>
-                        <height>100</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Border" uid="1948">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
@@ -27904,67 +27355,6 @@
                         <z>0</z>
                         <width>20</width>
                         <height>250</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Wood_goblin" uid="1950">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Patrol>0</Patrol>
-                        <Attack>125</Attack>
-                        <HP>125</HP>
-                        <Gold>600</Gold>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>150</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="LineOfSight">
-                            <properties>
-                                <obstacles>Custom</obstacles>
-                                <range>200</range>
-                                <cone-of-view>360</cone-of-view>
-                                <use-collision-cells>Yes</use-collision-cells>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>11508</x>
-                        <y>972</y>
-                        <z>0</z>
-                        <width>100</width>
-                        <height>100</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -29439,6 +28829,616 @@
                         <z>0</z>
                         <width>50</width>
                         <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Wood_goblin" uid="1595">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Patrol>0</Patrol>
+                        <Attack>125</Attack>
+                        <HP>125</HP>
+                        <Gold>600</Gold>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>150</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Custom</obstacles>
+                                <range>200</range>
+                                <cone-of-view>360</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2532</x>
+                        <y>588</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Wood_goblin" uid="1656">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Patrol>0</Patrol>
+                        <Attack>125</Attack>
+                        <HP>125</HP>
+                        <Gold>600</Gold>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>150</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Custom</obstacles>
+                                <range>200</range>
+                                <cone-of-view>360</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3216</x>
+                        <y>684</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Wood_goblin" uid="1693">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Patrol>0</Patrol>
+                        <Attack>125</Attack>
+                        <HP>125</HP>
+                        <Gold>600</Gold>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>150</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Custom</obstacles>
+                                <range>200</range>
+                                <cone-of-view>360</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5112</x>
+                        <y>1068</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Wood_goblin" uid="1857">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Patrol>1</Patrol>
+                        <Attack>125</Attack>
+                        <HP>125</HP>
+                        <Gold>600</Gold>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>150</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Custom</obstacles>
+                                <range>200</range>
+                                <cone-of-view>360</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5436</x>
+                        <y>1068</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Wood_goblin" uid="1869">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Patrol>0</Patrol>
+                        <Attack>125</Attack>
+                        <HP>125</HP>
+                        <Gold>600</Gold>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>150</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Custom</obstacles>
+                                <range>200</range>
+                                <cone-of-view>360</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6240</x>
+                        <y>780</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Wood_goblin" uid="1870">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Patrol>1</Patrol>
+                        <Attack>125</Attack>
+                        <HP>125</HP>
+                        <Gold>600</Gold>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>150</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Custom</obstacles>
+                                <range>200</range>
+                                <cone-of-view>360</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>7116</x>
+                        <y>780</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Wood_goblin" uid="1871">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Patrol>1</Patrol>
+                        <Attack>125</Attack>
+                        <HP>125</HP>
+                        <Gold>600</Gold>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>150</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Custom</obstacles>
+                                <range>200</range>
+                                <cone-of-view>360</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6660</x>
+                        <y>780</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Wood_goblin" uid="1879">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Patrol>0</Patrol>
+                        <Attack>125</Attack>
+                        <HP>125</HP>
+                        <Gold>600</Gold>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>150</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Custom</obstacles>
+                                <range>200</range>
+                                <cone-of-view>360</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>8400</x>
+                        <y>588</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Wood_goblin" uid="1947">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Patrol>0</Patrol>
+                        <Attack>125</Attack>
+                        <HP>125</HP>
+                        <Gold>600</Gold>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>150</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Custom</obstacles>
+                                <range>200</range>
+                                <cone-of-view>360</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>9744</x>
+                        <y>972</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Wood_goblin" uid="1950">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Patrol>0</Patrol>
+                        <Attack>125</Attack>
+                        <HP>125</HP>
+                        <Gold>600</Gold>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>150</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Custom</obstacles>
+                                <range>200</range>
+                                <cone-of-view>360</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>11508</x>
+                        <y>972</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

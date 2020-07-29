@@ -13,10 +13,332 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="705266805785108">
+        <layer name="Background" sid="705266805785108">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="bg_story" uid="79">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>640</x>
+                        <y>360</y>
+                        <z>0</z>
+                        <width>1280</width>
+                        <height>720</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Story" sid="116492222740217">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="item_story" uid="5215">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="FadeIn">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeOut">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>640</x>
+                        <y>540</y>
+                        <z>0</z>
+                        <width>250</width>
+                        <height>250</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.800000012</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFont_Story" uid="5216">
+                    <properties>
+                        <character-width>27</character-width>
+                        <character-height>32</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>Lorem ipsum sir dolor amet </text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,20,1],&quot;&quot;data&quot;&quot;:[[[7],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[22],[23],[24],[25]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;`&quot;&quot;],[&quot;&quot;il1,:&apos;|&quot;&quot;],[&quot;&quot;.;!&quot;&quot;],[&quot;&quot;)°&quot;&quot;],[&quot;&quot;([]+&quot;&quot;],[&quot;&quot;-=&quot;&quot;],[&quot;&quot;j_\&quot;&quot;\\&lt;&gt;&quot;&quot;],[&quot;&quot;Lt~/%&quot;&quot;],[&quot;&quot;IJTsz&quot;&quot;],[&quot;&quot;EFSfhnru7#*$£&quot;&quot;],[&quot;&quot;BDKUZcox23568?€&quot;&quot;],[&quot;&quot;CGHPRabdegkpqy049&amp;&quot;&quot;],[&quot;&quot;AYv&quot;&quot;],[&quot;&quot;NVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;w&quot;&quot;],[&quot;&quot;Wm&quot;&quot;],[&quot;&quot;M&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <instance-variables>
+                        <id>0</id>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="FadeOut">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeIn">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>640</x>
+                        <y>100</y>
+                        <z>0</z>
+                        <width>1152</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.800000012</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFont_Story" uid="5214">
+                    <properties>
+                        <character-width>27</character-width>
+                        <character-height>32</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>Lorem ipsum sir dolor amet </text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,20,1],&quot;&quot;data&quot;&quot;:[[[7],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[22],[23],[24],[25]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;`&quot;&quot;],[&quot;&quot;il1,:&apos;|&quot;&quot;],[&quot;&quot;.;!&quot;&quot;],[&quot;&quot;)°&quot;&quot;],[&quot;&quot;([]+&quot;&quot;],[&quot;&quot;-=&quot;&quot;],[&quot;&quot;j_\&quot;&quot;\\&lt;&gt;&quot;&quot;],[&quot;&quot;Lt~/%&quot;&quot;],[&quot;&quot;IJTsz&quot;&quot;],[&quot;&quot;EFSfhnru7#*$£&quot;&quot;],[&quot;&quot;BDKUZcox23568?€&quot;&quot;],[&quot;&quot;CGHPRabdegkpqy049&amp;&quot;&quot;],[&quot;&quot;AYv&quot;&quot;],[&quot;&quot;NVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;w&quot;&quot;],[&quot;&quot;Wm&quot;&quot;],[&quot;&quot;M&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <instance-variables>
+                        <id>1</id>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="FadeOut">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeIn">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>640</x>
+                        <y>180</y>
+                        <z>0</z>
+                        <width>1152</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.800000012</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFont_Story" uid="5217">
+                    <properties>
+                        <character-width>27</character-width>
+                        <character-height>32</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>Lorem ipsum sir dolor amet </text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,20,1],&quot;&quot;data&quot;&quot;:[[[7],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[22],[23],[24],[25]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;`&quot;&quot;],[&quot;&quot;il1,:&apos;|&quot;&quot;],[&quot;&quot;.;!&quot;&quot;],[&quot;&quot;)°&quot;&quot;],[&quot;&quot;([]+&quot;&quot;],[&quot;&quot;-=&quot;&quot;],[&quot;&quot;j_\&quot;&quot;\\&lt;&gt;&quot;&quot;],[&quot;&quot;Lt~/%&quot;&quot;],[&quot;&quot;IJTsz&quot;&quot;],[&quot;&quot;EFSfhnru7#*$£&quot;&quot;],[&quot;&quot;BDKUZcox23568?€&quot;&quot;],[&quot;&quot;CGHPRabdegkpqy049&amp;&quot;&quot;],[&quot;&quot;AYv&quot;&quot;],[&quot;&quot;NVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;w&quot;&quot;],[&quot;&quot;Wm&quot;&quot;],[&quot;&quot;M&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <instance-variables>
+                        <id>2</id>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="FadeOut">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeIn">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>640</x>
+                        <y>260</y>
+                        <z>0</z>
+                        <width>1152</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.800000012</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFont_Story" uid="5218">
+                    <properties>
+                        <character-width>27</character-width>
+                        <character-height>32</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>Lorem ipsum sir dolor amet </text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,20,1],&quot;&quot;data&quot;&quot;:[[[7],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[22],[23],[24],[25]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;`&quot;&quot;],[&quot;&quot;il1,:&apos;|&quot;&quot;],[&quot;&quot;.;!&quot;&quot;],[&quot;&quot;)°&quot;&quot;],[&quot;&quot;([]+&quot;&quot;],[&quot;&quot;-=&quot;&quot;],[&quot;&quot;j_\&quot;&quot;\\&lt;&gt;&quot;&quot;],[&quot;&quot;Lt~/%&quot;&quot;],[&quot;&quot;IJTsz&quot;&quot;],[&quot;&quot;EFSfhnru7#*$£&quot;&quot;],[&quot;&quot;BDKUZcox23568?€&quot;&quot;],[&quot;&quot;CGHPRabdegkpqy049&amp;&quot;&quot;],[&quot;&quot;AYv&quot;&quot;],[&quot;&quot;NVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;w&quot;&quot;],[&quot;&quot;Wm&quot;&quot;],[&quot;&quot;M&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <instance-variables>
+                        <id>3</id>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="FadeOut">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeIn">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>640</x>
+                        <y>340</y>
+                        <z>0</z>
+                        <width>1152</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.800000012</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Loading" sid="251526209036170">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
             <parallax>
                 <x>1</x>
                 <y>1</y>

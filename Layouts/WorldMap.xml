@@ -6477,6 +6477,133 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="icon_close" uid="224">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Size</tweened-property>
+                                <function>EaseOutBack</function>
+                                <target>0,0</target>
+                                <target-mode>Absolute</target-mode>
+                                <duration>0.5</duration>
+                                <enforce-mode>Enforce</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Pin">
+                            <properties>
+                                <x>Disabled</x>
+                                <y>Disabled</y>
+                                <zindex>Disabled</zindex>
+                                <angle>Disabled</angle>
+                                <width>Disabled</width>
+                                <height>Disabled</height>
+                                <opacity>Enabled</opacity>
+                                <visibility>Disabled</visibility>
+                                <collisions-enabled>Disabled</collisions-enabled>
+                                <timescale>Disabled</timescale>
+                                <hotspot-x>Disabled</hotspot-x>
+                                <hotspot-y>Disabled</hotspot-y>
+                                <imagepoint>0</imagepoint>
+                                <animation>Disabled</animation>
+                                <frame>Disabled</frame>
+                                <mirror>Disabled</mirror>
+                                <flip>Disabled</flip>
+                                <destroy>Disabled</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>652</x>
+                        <y>683</y>
+                        <z>0</z>
+                        <width>65</width>
+                        <height>65</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFont_NormalText" uid="225">
+                    <properties>
+                        <character-width>27</character-width>
+                        <character-height>32</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text></text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,20,1],&quot;&quot;data&quot;&quot;:[[[7],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[22],[23],[24],[25]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;`&quot;&quot;],[&quot;&quot;il1,:&apos;|&quot;&quot;],[&quot;&quot;.;!&quot;&quot;],[&quot;&quot;)°&quot;&quot;],[&quot;&quot;([]+&quot;&quot;],[&quot;&quot;-=&quot;&quot;],[&quot;&quot;j_\&quot;&quot;\\&lt;&gt;&quot;&quot;],[&quot;&quot;Lt~/%&quot;&quot;],[&quot;&quot;IJTsz&quot;&quot;],[&quot;&quot;EFSfhnru7#*$£&quot;&quot;],[&quot;&quot;BDKUZcox23568?€&quot;&quot;],[&quot;&quot;CGHPRabdegkpqy049&amp;&quot;&quot;],[&quot;&quot;AYv&quot;&quot;],[&quot;&quot;NVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;w&quot;&quot;],[&quot;&quot;Wm&quot;&quot;],[&quot;&quot;M&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <instance-variables>
+                        <layout>WorldMap_Text</layout>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Opacity</tweened-property>
+                                <function>Linear</function>
+                                <target>0,0</target>
+                                <target-mode>Absolute</target-mode>
+                                <duration>0.3</duration>
+                                <enforce-mode>Enforce</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Pin">
+                            <properties>
+                                <x>Disabled</x>
+                                <y>Disabled</y>
+                                <zindex>Disabled</zindex>
+                                <angle>Disabled</angle>
+                                <width>Disabled</width>
+                                <height>Disabled</height>
+                                <opacity>Disabled</opacity>
+                                <visibility>Disabled</visibility>
+                                <collisions-enabled>Disabled</collisions-enabled>
+                                <timescale>Disabled</timescale>
+                                <hotspot-x>Disabled</hotspot-x>
+                                <hotspot-y>Disabled</hotspot-y>
+                                <imagepoint>0</imagepoint>
+                                <animation>Disabled</animation>
+                                <frame>Disabled</frame>
+                                <mirror>Disabled</mirror>
+                                <flip>Disabled</flip>
+                                <destroy>Disabled</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>636</x>
+                        <y>174</y>
+                        <z>0</z>
+                        <width>120</width>
+                        <height>40</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>

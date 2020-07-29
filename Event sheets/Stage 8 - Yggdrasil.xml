@@ -173,6 +173,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="225044402291240" type="Audio">
+                                            <param id="0" name="Audio file">get_potion</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">VolumeSFX</param>
+                                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                        </action>
                                         <action id="-3" name="Create object" sid="193108209716278" type="System">
                                             <param id="0" name="Object to create">item_gems</param>
                                             <param id="1" name="Layer">&quot;Game&quot;</param>
@@ -261,6 +267,12 @@
                                 <action id="-12" name="Set group active" sid="245710870420667" type="System">
                                     <param id="0" name="Group name">&quot;Item Property&quot;</param>
                                     <param id="1" name="State">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="328458850978051" type="Audio">
+                                    <param id="0" name="Audio file">get_coin</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">VolumeSFX</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
                                 </action>
                                 <action id="-3" name="Create object" sid="803358509782520" type="System">
                                     <param id="0" name="Object to create">item_gems</param>

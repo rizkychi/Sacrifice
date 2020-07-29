@@ -118,6 +118,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="363617001160177" type="Audio">
+                                    <param id="0" name="Audio file">ground_smash</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">VolumeSFX</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                </action>
                                 <action id="4" name="Set animation" sid="978063680727277" type="Fafnir">
                                     <param id="0" name="Animation">&quot;Stand&quot;</param>
                                     <param id="1" name="From">1</param>

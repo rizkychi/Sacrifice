@@ -124,6 +124,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="873904977851878" type="Audio">
+                            <param id="0" name="Audio file">golem_stomp</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">VolumeSFX</param>
+                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                        </action>
                         <action id="-9" name="Set value" sid="463592738866584" type="System">
                             <param id="0" name="Variable">monster_atk</param>
                             <param id="1" name="Value">0</param>

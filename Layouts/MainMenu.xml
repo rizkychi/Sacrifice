@@ -1380,7 +1380,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>3200</x>
-                        <y>1250</y>
+                        <y>1260</y>
                         <z>0</z>
                         <width>55</width>
                         <height>60</height>
@@ -1450,7 +1450,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>3200</x>
-                        <y>900</y>
+                        <y>906</y>
                         <z>0</z>
                         <width>160</width>
                         <height>40</height>
@@ -1855,301 +1855,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="key_input" uid="215">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>9</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>2950</x>
-                        <y>1090</y>
-                        <z>0</z>
-                        <width>50</width>
-                        <height>50</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="key_input" uid="216">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>10</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>3030</x>
-                        <y>1000</y>
-                        <z>0</z>
-                        <width>50</width>
-                        <height>50</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="key_input" uid="217">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>11</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>3110</x>
-                        <y>1090</y>
-                        <z>0</z>
-                        <width>50</width>
-                        <height>50</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="key_input" uid="218">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>3280</x>
-                        <y>1180</y>
-                        <z>0</z>
-                        <width>50</width>
-                        <height>50</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="key_input" uid="219">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>1</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>3335</x>
-                        <y>1180</y>
-                        <z>0</z>
-                        <width>50</width>
-                        <height>50</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="key_input" uid="220">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>2</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>3390</x>
-                        <y>1180</y>
-                        <z>0</z>
-                        <width>50</width>
-                        <height>50</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="key_input" uid="221">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>3</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>3445</x>
-                        <y>1180</y>
-                        <z>0</z>
-                        <width>50</width>
-                        <height>50</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="key_input" uid="222">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>14</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>3360</x>
-                        <y>1000</y>
-                        <z>0</z>
-                        <width>50</width>
-                        <height>50</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="key_input" uid="223">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>4</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>3280</x>
-                        <y>1090</y>
-                        <z>0</z>
-                        <width>50</width>
-                        <height>50</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="key_input" uid="224">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>5</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>3200</x>
-                        <y>1020</y>
-                        <z>0</z>
-                        <width>50</width>
-                        <height>50</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="key_input" uid="225">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>6</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>3005</x>
-                        <y>1180</y>
-                        <z>0</z>
-                        <width>50</width>
-                        <height>50</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="key_input" uid="226">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>7</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>3060</x>
-                        <y>1180</y>
-                        <z>0</z>
-                        <width>50</width>
-                        <height>50</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="key_input" uid="227">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>12</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>3445</x>
-                        <y>1090</y>
-                        <z>0</z>
-                        <width>50</width>
-                        <height>50</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="SpriteFont_NormalText" uid="228">
                     <properties>
                         <character-width>27</character-width>
                         <character-height>32</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>Jump</text>
+                        <text>[Up] = Jump</text>
                         <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
-                        <horizontal-alignment>Center</horizontal-alignment>
+                        <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
@@ -2199,10 +1913,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3030</x>
-                        <y>950</y>
+                        <x>3000</x>
+                        <y>1030</y>
                         <z>0</z>
-                        <width>120</width>
+                        <width>300</width>
                         <height>40</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -2216,10 +1930,10 @@
                         <character-width>27</character-width>
                         <character-height>32</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>Move</text>
+                        <text>[Left], [Right] = Move</text>
                         <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
-                        <horizontal-alignment>Center</horizontal-alignment>
+                        <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
@@ -2269,80 +1983,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3030</x>
-                        <y>1090</y>
+                        <x>3000</x>
+                        <y>990</y>
                         <z>0</z>
-                        <width>95</width>
-                        <height>40</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="SpriteFont_NormalText" uid="230">
-                    <properties>
-                        <character-width>27</character-width>
-                        <character-height>32</character-height>
-                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>Attack</text>
-                        <scale>1</scale>
-                        <initial-visibility>Visible</initial-visibility>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Center</hotspot>
-                        <wrapping>Word</wrapping>
-                        <character-spacing>0</character-spacing>
-                        <line-height>0</line-height>
-                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,20,1],&quot;&quot;data&quot;&quot;:[[[7],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[22],[23],[24],[25]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;`&quot;&quot;],[&quot;&quot;il1,:&apos;|&quot;&quot;],[&quot;&quot;.;!&quot;&quot;],[&quot;&quot;)°&quot;&quot;],[&quot;&quot;([]+&quot;&quot;],[&quot;&quot;-=&quot;&quot;],[&quot;&quot;j_\&quot;&quot;\\&lt;&gt;&quot;&quot;],[&quot;&quot;Lt~/%&quot;&quot;],[&quot;&quot;IJTsz&quot;&quot;],[&quot;&quot;EFSfhnru7#*$£&quot;&quot;],[&quot;&quot;BDKUZcox23568?€&quot;&quot;],[&quot;&quot;CGHPRabdegkpqy049&amp;&quot;&quot;],[&quot;&quot;AYv&quot;&quot;],[&quot;&quot;NVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;w&quot;&quot;],[&quot;&quot;Wm&quot;&quot;],[&quot;&quot;M&quot;&quot;]]]}</char-width-json>
-                        <space-char-width>-1</space-char-width>
-                    </properties>
-                    <instance-variables>
-                        <layout>WorldMap_Text</layout>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="LiteTween">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <tweened-property>Opacity</tweened-property>
-                                <function>Linear</function>
-                                <target>0,0</target>
-                                <target-mode>Absolute</target-mode>
-                                <duration>0.3</duration>
-                                <enforce-mode>Enforce</enforce-mode>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Pin">
-                            <properties>
-                                <x>Disabled</x>
-                                <y>Disabled</y>
-                                <zindex>Disabled</zindex>
-                                <angle>Disabled</angle>
-                                <width>Disabled</width>
-                                <height>Disabled</height>
-                                <opacity>Disabled</opacity>
-                                <visibility>Disabled</visibility>
-                                <collisions-enabled>Disabled</collisions-enabled>
-                                <timescale>Disabled</timescale>
-                                <hotspot-x>Disabled</hotspot-x>
-                                <hotspot-y>Disabled</hotspot-y>
-                                <imagepoint>0</imagepoint>
-                                <animation>Disabled</animation>
-                                <frame>Disabled</frame>
-                                <mirror>Disabled</mirror>
-                                <flip>Disabled</flip>
-                                <destroy>Disabled</destroy>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>3035</x>
-                        <y>1230</y>
-                        <z>0</z>
-                        <width>160</width>
+                        <width>300</width>
                         <height>40</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -2356,10 +2000,150 @@
                         <character-width>27</character-width>
                         <character-height>32</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>Pause</text>
+                        <text>[Esc] = Pause</text>
                         <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
-                        <horizontal-alignment>Center</horizontal-alignment>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,20,1],&quot;&quot;data&quot;&quot;:[[[7],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[22],[23],[24],[25]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;`&quot;&quot;],[&quot;&quot;il1,:&apos;|&quot;&quot;],[&quot;&quot;.;!&quot;&quot;],[&quot;&quot;)°&quot;&quot;],[&quot;&quot;([]+&quot;&quot;],[&quot;&quot;-=&quot;&quot;],[&quot;&quot;j_\&quot;&quot;\\&lt;&gt;&quot;&quot;],[&quot;&quot;Lt~/%&quot;&quot;],[&quot;&quot;IJTsz&quot;&quot;],[&quot;&quot;EFSfhnru7#*$£&quot;&quot;],[&quot;&quot;BDKUZcox23568?€&quot;&quot;],[&quot;&quot;CGHPRabdegkpqy049&amp;&quot;&quot;],[&quot;&quot;AYv&quot;&quot;],[&quot;&quot;NVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;w&quot;&quot;],[&quot;&quot;Wm&quot;&quot;],[&quot;&quot;M&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <instance-variables>
+                        <layout>WorldMap_Text</layout>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Opacity</tweened-property>
+                                <function>Linear</function>
+                                <target>0,0</target>
+                                <target-mode>Absolute</target-mode>
+                                <duration>0.3</duration>
+                                <enforce-mode>Enforce</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Pin">
+                            <properties>
+                                <x>Disabled</x>
+                                <y>Disabled</y>
+                                <zindex>Disabled</zindex>
+                                <angle>Disabled</angle>
+                                <width>Disabled</width>
+                                <height>Disabled</height>
+                                <opacity>Disabled</opacity>
+                                <visibility>Disabled</visibility>
+                                <collisions-enabled>Disabled</collisions-enabled>
+                                <timescale>Disabled</timescale>
+                                <hotspot-x>Disabled</hotspot-x>
+                                <hotspot-y>Disabled</hotspot-y>
+                                <imagepoint>0</imagepoint>
+                                <animation>Disabled</animation>
+                                <frame>Disabled</frame>
+                                <mirror>Disabled</mirror>
+                                <flip>Disabled</flip>
+                                <destroy>Disabled</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3000</x>
+                        <y>950</y>
+                        <z>0</z>
+                        <width>300</width>
+                        <height>40</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFont_NormalText" uid="232">
+                    <properties>
+                        <character-width>27</character-width>
+                        <character-height>32</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>[1] = Small HP Potion</text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,20,1],&quot;&quot;data&quot;&quot;:[[[7],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[22],[23],[24],[25]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;`&quot;&quot;],[&quot;&quot;il1,:&apos;|&quot;&quot;],[&quot;&quot;.;!&quot;&quot;],[&quot;&quot;)°&quot;&quot;],[&quot;&quot;([]+&quot;&quot;],[&quot;&quot;-=&quot;&quot;],[&quot;&quot;j_\&quot;&quot;\\&lt;&gt;&quot;&quot;],[&quot;&quot;Lt~/%&quot;&quot;],[&quot;&quot;IJTsz&quot;&quot;],[&quot;&quot;EFSfhnru7#*$£&quot;&quot;],[&quot;&quot;BDKUZcox23568?€&quot;&quot;],[&quot;&quot;CGHPRabdegkpqy049&amp;&quot;&quot;],[&quot;&quot;AYv&quot;&quot;],[&quot;&quot;NVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;w&quot;&quot;],[&quot;&quot;Wm&quot;&quot;],[&quot;&quot;M&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <instance-variables>
+                        <layout>WorldMap_Text</layout>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Opacity</tweened-property>
+                                <function>Linear</function>
+                                <target>0,0</target>
+                                <target-mode>Absolute</target-mode>
+                                <duration>0.3</duration>
+                                <enforce-mode>Enforce</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Pin">
+                            <properties>
+                                <x>Disabled</x>
+                                <y>Disabled</y>
+                                <zindex>Disabled</zindex>
+                                <angle>Disabled</angle>
+                                <width>Disabled</width>
+                                <height>Disabled</height>
+                                <opacity>Disabled</opacity>
+                                <visibility>Disabled</visibility>
+                                <collisions-enabled>Disabled</collisions-enabled>
+                                <timescale>Disabled</timescale>
+                                <hotspot-x>Disabled</hotspot-x>
+                                <hotspot-y>Disabled</hotspot-y>
+                                <imagepoint>0</imagepoint>
+                                <animation>Disabled</animation>
+                                <frame>Disabled</frame>
+                                <mirror>Disabled</mirror>
+                                <flip>Disabled</flip>
+                                <destroy>Disabled</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3000</x>
+                        <y>1070</y>
+                        <z>0</z>
+                        <width>300</width>
+                        <height>40</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFont_NormalText" uid="234">
+                    <properties>
+                        <character-width>27</character-width>
+                        <character-height>32</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>[S] = CrossBow (stage 1)</text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
@@ -2412,7 +2196,7 @@
                         <x>3360</x>
                         <y>950</y>
                         <z>0</z>
-                        <width>120</width>
+                        <width>340</width>
                         <height>40</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -2421,15 +2205,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SpriteFont_NormalText" uid="232">
+                <instance type="SpriteFont_NormalText" uid="215">
                     <properties>
                         <character-width>27</character-width>
                         <character-height>32</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>Items</text>
+                        <text>[2] = Large HP Potion</text>
                         <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
-                        <horizontal-alignment>Center</horizontal-alignment>
+                        <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
@@ -2479,10 +2263,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3365</x>
-                        <y>1230</y>
+                        <x>3000</x>
+                        <y>1110</y>
                         <z>0</z>
-                        <width>160</width>
+                        <width>300</width>
                         <height>40</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -2491,15 +2275,15 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SpriteFont_NormalText" uid="233">
+                <instance type="SpriteFont_NormalText" uid="216">
                     <properties>
                         <character-width>27</character-width>
                         <character-height>32</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>Defend</text>
+                        <text>[4] = Large MP Potion</text>
                         <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
-                        <horizontal-alignment>Center</horizontal-alignment>
+                        <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
@@ -2549,10 +2333,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3200</x>
-                        <y>970</y>
+                        <x>3000</x>
+                        <y>1190</y>
                         <z>0</z>
-                        <width>120</width>
+                        <width>300</width>
                         <height>40</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -2561,15 +2345,85 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SpriteFont_NormalText" uid="234">
+                <instance type="SpriteFont_NormalText" uid="217">
                     <properties>
                         <character-width>27</character-width>
                         <character-height>32</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>Skills</text>
+                        <text>[3] = Small MP Potion</text>
                         <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
-                        <horizontal-alignment>Center</horizontal-alignment>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,20,1],&quot;&quot;data&quot;&quot;:[[[7],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[22],[23],[24],[25]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;`&quot;&quot;],[&quot;&quot;il1,:&apos;|&quot;&quot;],[&quot;&quot;.;!&quot;&quot;],[&quot;&quot;)°&quot;&quot;],[&quot;&quot;([]+&quot;&quot;],[&quot;&quot;-=&quot;&quot;],[&quot;&quot;j_\&quot;&quot;\\&lt;&gt;&quot;&quot;],[&quot;&quot;Lt~/%&quot;&quot;],[&quot;&quot;IJTsz&quot;&quot;],[&quot;&quot;EFSfhnru7#*$£&quot;&quot;],[&quot;&quot;BDKUZcox23568?€&quot;&quot;],[&quot;&quot;CGHPRabdegkpqy049&amp;&quot;&quot;],[&quot;&quot;AYv&quot;&quot;],[&quot;&quot;NVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;w&quot;&quot;],[&quot;&quot;Wm&quot;&quot;],[&quot;&quot;M&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <instance-variables>
+                        <layout>WorldMap_Text</layout>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Opacity</tweened-property>
+                                <function>Linear</function>
+                                <target>0,0</target>
+                                <target-mode>Absolute</target-mode>
+                                <duration>0.3</duration>
+                                <enforce-mode>Enforce</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Pin">
+                            <properties>
+                                <x>Disabled</x>
+                                <y>Disabled</y>
+                                <zindex>Disabled</zindex>
+                                <angle>Disabled</angle>
+                                <width>Disabled</width>
+                                <height>Disabled</height>
+                                <opacity>Disabled</opacity>
+                                <visibility>Disabled</visibility>
+                                <collisions-enabled>Disabled</collisions-enabled>
+                                <timescale>Disabled</timescale>
+                                <hotspot-x>Disabled</hotspot-x>
+                                <hotspot-y>Disabled</hotspot-y>
+                                <imagepoint>0</imagepoint>
+                                <animation>Disabled</animation>
+                                <frame>Disabled</frame>
+                                <mirror>Disabled</mirror>
+                                <flip>Disabled</flip>
+                                <destroy>Disabled</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3000</x>
+                        <y>1150</y>
+                        <z>0</z>
+                        <width>300</width>
+                        <height>40</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFont_NormalText" uid="218">
+                    <properties>
+                        <character-width>27</character-width>
+                        <character-height>32</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>[D] = Sword (stage 2)</text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
@@ -2620,9 +2474,359 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>3360</x>
-                        <y>1090</y>
+                        <y>990</y>
                         <z>0</z>
-                        <width>95</width>
+                        <width>340</width>
+                        <height>40</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFont_NormalText" uid="219">
+                    <properties>
+                        <character-width>27</character-width>
+                        <character-height>32</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>[A] = Shield (stage 3)</text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,20,1],&quot;&quot;data&quot;&quot;:[[[7],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[22],[23],[24],[25]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;`&quot;&quot;],[&quot;&quot;il1,:&apos;|&quot;&quot;],[&quot;&quot;.;!&quot;&quot;],[&quot;&quot;)°&quot;&quot;],[&quot;&quot;([]+&quot;&quot;],[&quot;&quot;-=&quot;&quot;],[&quot;&quot;j_\&quot;&quot;\\&lt;&gt;&quot;&quot;],[&quot;&quot;Lt~/%&quot;&quot;],[&quot;&quot;IJTsz&quot;&quot;],[&quot;&quot;EFSfhnru7#*$£&quot;&quot;],[&quot;&quot;BDKUZcox23568?€&quot;&quot;],[&quot;&quot;CGHPRabdegkpqy049&amp;&quot;&quot;],[&quot;&quot;AYv&quot;&quot;],[&quot;&quot;NVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;w&quot;&quot;],[&quot;&quot;Wm&quot;&quot;],[&quot;&quot;M&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <instance-variables>
+                        <layout>WorldMap_Text</layout>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Opacity</tweened-property>
+                                <function>Linear</function>
+                                <target>0,0</target>
+                                <target-mode>Absolute</target-mode>
+                                <duration>0.3</duration>
+                                <enforce-mode>Enforce</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Pin">
+                            <properties>
+                                <x>Disabled</x>
+                                <y>Disabled</y>
+                                <zindex>Disabled</zindex>
+                                <angle>Disabled</angle>
+                                <width>Disabled</width>
+                                <height>Disabled</height>
+                                <opacity>Disabled</opacity>
+                                <visibility>Disabled</visibility>
+                                <collisions-enabled>Disabled</collisions-enabled>
+                                <timescale>Disabled</timescale>
+                                <hotspot-x>Disabled</hotspot-x>
+                                <hotspot-y>Disabled</hotspot-y>
+                                <imagepoint>0</imagepoint>
+                                <animation>Disabled</animation>
+                                <frame>Disabled</frame>
+                                <mirror>Disabled</mirror>
+                                <flip>Disabled</flip>
+                                <destroy>Disabled</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3360</x>
+                        <y>1030</y>
+                        <z>0</z>
+                        <width>340</width>
+                        <height>40</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFont_NormalText" uid="220">
+                    <properties>
+                        <character-width>27</character-width>
+                        <character-height>32</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>[Up]+[Up] = Double Jump (stage 4)</text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,20,1],&quot;&quot;data&quot;&quot;:[[[7],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[22],[23],[24],[25]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;`&quot;&quot;],[&quot;&quot;il1,:&apos;|&quot;&quot;],[&quot;&quot;.;!&quot;&quot;],[&quot;&quot;)°&quot;&quot;],[&quot;&quot;([]+&quot;&quot;],[&quot;&quot;-=&quot;&quot;],[&quot;&quot;j_\&quot;&quot;\\&lt;&gt;&quot;&quot;],[&quot;&quot;Lt~/%&quot;&quot;],[&quot;&quot;IJTsz&quot;&quot;],[&quot;&quot;EFSfhnru7#*$£&quot;&quot;],[&quot;&quot;BDKUZcox23568?€&quot;&quot;],[&quot;&quot;CGHPRabdegkpqy049&amp;&quot;&quot;],[&quot;&quot;AYv&quot;&quot;],[&quot;&quot;NVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;w&quot;&quot;],[&quot;&quot;Wm&quot;&quot;],[&quot;&quot;M&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <instance-variables>
+                        <layout>WorldMap_Text</layout>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Opacity</tweened-property>
+                                <function>Linear</function>
+                                <target>0,0</target>
+                                <target-mode>Absolute</target-mode>
+                                <duration>0.3</duration>
+                                <enforce-mode>Enforce</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Pin">
+                            <properties>
+                                <x>Disabled</x>
+                                <y>Disabled</y>
+                                <zindex>Disabled</zindex>
+                                <angle>Disabled</angle>
+                                <width>Disabled</width>
+                                <height>Disabled</height>
+                                <opacity>Disabled</opacity>
+                                <visibility>Disabled</visibility>
+                                <collisions-enabled>Disabled</collisions-enabled>
+                                <timescale>Disabled</timescale>
+                                <hotspot-x>Disabled</hotspot-x>
+                                <hotspot-y>Disabled</hotspot-y>
+                                <imagepoint>0</imagepoint>
+                                <animation>Disabled</animation>
+                                <frame>Disabled</frame>
+                                <mirror>Disabled</mirror>
+                                <flip>Disabled</flip>
+                                <destroy>Disabled</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3410</x>
+                        <y>1070</y>
+                        <z>0</z>
+                        <width>440</width>
+                        <height>40</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFont_NormalText" uid="221">
+                    <properties>
+                        <character-width>27</character-width>
+                        <character-height>32</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>[Up]+[Space] = Fly (stage 5)</text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,20,1],&quot;&quot;data&quot;&quot;:[[[7],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[22],[23],[24],[25]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;`&quot;&quot;],[&quot;&quot;il1,:&apos;|&quot;&quot;],[&quot;&quot;.;!&quot;&quot;],[&quot;&quot;)°&quot;&quot;],[&quot;&quot;([]+&quot;&quot;],[&quot;&quot;-=&quot;&quot;],[&quot;&quot;j_\&quot;&quot;\\&lt;&gt;&quot;&quot;],[&quot;&quot;Lt~/%&quot;&quot;],[&quot;&quot;IJTsz&quot;&quot;],[&quot;&quot;EFSfhnru7#*$£&quot;&quot;],[&quot;&quot;BDKUZcox23568?€&quot;&quot;],[&quot;&quot;CGHPRabdegkpqy049&amp;&quot;&quot;],[&quot;&quot;AYv&quot;&quot;],[&quot;&quot;NVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;w&quot;&quot;],[&quot;&quot;Wm&quot;&quot;],[&quot;&quot;M&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <instance-variables>
+                        <layout>WorldMap_Text</layout>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Opacity</tweened-property>
+                                <function>Linear</function>
+                                <target>0,0</target>
+                                <target-mode>Absolute</target-mode>
+                                <duration>0.3</duration>
+                                <enforce-mode>Enforce</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Pin">
+                            <properties>
+                                <x>Disabled</x>
+                                <y>Disabled</y>
+                                <zindex>Disabled</zindex>
+                                <angle>Disabled</angle>
+                                <width>Disabled</width>
+                                <height>Disabled</height>
+                                <opacity>Disabled</opacity>
+                                <visibility>Disabled</visibility>
+                                <collisions-enabled>Disabled</collisions-enabled>
+                                <timescale>Disabled</timescale>
+                                <hotspot-x>Disabled</hotspot-x>
+                                <hotspot-y>Disabled</hotspot-y>
+                                <imagepoint>0</imagepoint>
+                                <animation>Disabled</animation>
+                                <frame>Disabled</frame>
+                                <mirror>Disabled</mirror>
+                                <flip>Disabled</flip>
+                                <destroy>Disabled</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3410</x>
+                        <y>1110</y>
+                        <z>0</z>
+                        <width>440</width>
+                        <height>40</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFont_NormalText" uid="222">
+                    <properties>
+                        <character-width>27</character-width>
+                        <character-height>32</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>[E] = Enrage (stage 7)</text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,20,1],&quot;&quot;data&quot;&quot;:[[[7],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[22],[23],[24],[25]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;`&quot;&quot;],[&quot;&quot;il1,:&apos;|&quot;&quot;],[&quot;&quot;.;!&quot;&quot;],[&quot;&quot;)°&quot;&quot;],[&quot;&quot;([]+&quot;&quot;],[&quot;&quot;-=&quot;&quot;],[&quot;&quot;j_\&quot;&quot;\\&lt;&gt;&quot;&quot;],[&quot;&quot;Lt~/%&quot;&quot;],[&quot;&quot;IJTsz&quot;&quot;],[&quot;&quot;EFSfhnru7#*$£&quot;&quot;],[&quot;&quot;BDKUZcox23568?€&quot;&quot;],[&quot;&quot;CGHPRabdegkpqy049&amp;&quot;&quot;],[&quot;&quot;AYv&quot;&quot;],[&quot;&quot;NVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;w&quot;&quot;],[&quot;&quot;Wm&quot;&quot;],[&quot;&quot;M&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <instance-variables>
+                        <layout>WorldMap_Text</layout>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Opacity</tweened-property>
+                                <function>Linear</function>
+                                <target>0,0</target>
+                                <target-mode>Absolute</target-mode>
+                                <duration>0.3</duration>
+                                <enforce-mode>Enforce</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Pin">
+                            <properties>
+                                <x>Disabled</x>
+                                <y>Disabled</y>
+                                <zindex>Disabled</zindex>
+                                <angle>Disabled</angle>
+                                <width>Disabled</width>
+                                <height>Disabled</height>
+                                <opacity>Disabled</opacity>
+                                <visibility>Disabled</visibility>
+                                <collisions-enabled>Disabled</collisions-enabled>
+                                <timescale>Disabled</timescale>
+                                <hotspot-x>Disabled</hotspot-x>
+                                <hotspot-y>Disabled</hotspot-y>
+                                <imagepoint>0</imagepoint>
+                                <animation>Disabled</animation>
+                                <frame>Disabled</frame>
+                                <mirror>Disabled</mirror>
+                                <flip>Disabled</flip>
+                                <destroy>Disabled</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3410</x>
+                        <y>1190</y>
+                        <z>0</z>
+                        <width>440</width>
+                        <height>40</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFont_NormalText" uid="223">
+                    <properties>
+                        <character-width>27</character-width>
+                        <character-height>32</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>[W] = Stealth (stage 6)</text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,20,1],&quot;&quot;data&quot;&quot;:[[[7],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[22],[23],[24],[25]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;`&quot;&quot;],[&quot;&quot;il1,:&apos;|&quot;&quot;],[&quot;&quot;.;!&quot;&quot;],[&quot;&quot;)°&quot;&quot;],[&quot;&quot;([]+&quot;&quot;],[&quot;&quot;-=&quot;&quot;],[&quot;&quot;j_\&quot;&quot;\\&lt;&gt;&quot;&quot;],[&quot;&quot;Lt~/%&quot;&quot;],[&quot;&quot;IJTsz&quot;&quot;],[&quot;&quot;EFSfhnru7#*$£&quot;&quot;],[&quot;&quot;BDKUZcox23568?€&quot;&quot;],[&quot;&quot;CGHPRabdegkpqy049&amp;&quot;&quot;],[&quot;&quot;AYv&quot;&quot;],[&quot;&quot;NVX&quot;&quot;],[&quot;&quot;OQ&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;w&quot;&quot;],[&quot;&quot;Wm&quot;&quot;],[&quot;&quot;M&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <instance-variables>
+                        <layout>WorldMap_Text</layout>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Opacity</tweened-property>
+                                <function>Linear</function>
+                                <target>0,0</target>
+                                <target-mode>Absolute</target-mode>
+                                <duration>0.3</duration>
+                                <enforce-mode>Enforce</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Pin">
+                            <properties>
+                                <x>Disabled</x>
+                                <y>Disabled</y>
+                                <zindex>Disabled</zindex>
+                                <angle>Disabled</angle>
+                                <width>Disabled</width>
+                                <height>Disabled</height>
+                                <opacity>Disabled</opacity>
+                                <visibility>Disabled</visibility>
+                                <collisions-enabled>Disabled</collisions-enabled>
+                                <timescale>Disabled</timescale>
+                                <hotspot-x>Disabled</hotspot-x>
+                                <hotspot-y>Disabled</hotspot-y>
+                                <imagepoint>0</imagepoint>
+                                <animation>Disabled</animation>
+                                <frame>Disabled</frame>
+                                <mirror>Disabled</mirror>
+                                <flip>Disabled</flip>
+                                <destroy>Disabled</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3410</x>
+                        <y>1150</y>
+                        <z>0</z>
+                        <width>440</width>
                         <height>40</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -3126,7 +3330,20 @@
                 <depth>1</depth>
             </properties>
         </instance>
-        <instance type="XML" uid="5174" />
+        <instance type="Array_intro" uid="5173">
+            <properties>
+                <width>15</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
+        <instance type="Array_outro" uid="5174">
+            <properties>
+                <width>15</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
     </nonworld-instances>
     <effects />
 </c2layout>

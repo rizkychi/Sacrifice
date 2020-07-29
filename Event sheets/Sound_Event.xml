@@ -243,15 +243,5 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="858436151851879">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="515174388998089" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Button</param>
-                </condition>
-            </conditions>
-            <actions />
-        </event-block>
     </events>
 </c2eventsheet>

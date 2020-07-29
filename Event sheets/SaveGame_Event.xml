@@ -647,42 +647,42 @@
                         <action id="3" name="Set at XY" sid="606225402664112" type="Array_book">
                             <param id="0" name="X">0</param>
                             <param id="1" name="Y">3</param>
-                            <param id="2" name="Value">&quot;The water of life is obtained from the dew of the yggdrasil world tree. This water can cure various diseases and restore the state of the body and soul of all beings.&quot;&amp;newline&amp;&quot;Conditions to obtain : Bring seven gems from seven different worlds to the world tree.&quot;</param>
+                            <param id="2" name="Value">&quot;The Water of Life is obtained from the dew of the yggdrasil world tree. This water can cure various diseases and restore the state of the body and soul of all beings.&quot;&amp;newline&amp;&quot;Conditions to obtain : Bring seven gems from seven different worlds to the world tree.&quot;</param>
                         </action>
                         <action id="3" name="Set at XY" sid="463040837331536" type="Array_book">
                             <param id="0" name="X">1</param>
                             <param id="1" name="Y">3</param>
-                            <param id="2" name="Value">&quot;Diamond&quot;</param>
+                            <param id="2" name="Value">&quot;Pink Sapphire is a gem that comes from ancient creatures that live in lakes. This gem can be obtained by defeating and picking it up at the head of a monster named Sleipnir.&quot;&amp;newline&amp;&quot;Caution! Sleipnir can shoot high-pressure water that can kill other creatures.&quot;</param>
                         </action>
                         <action id="3" name="Set at XY" sid="580987232405166" type="Array_book">
                             <param id="0" name="X">2</param>
                             <param id="1" name="Y">3</param>
-                            <param id="2" name="Value">&quot;Saphire&quot;</param>
+                            <param id="2" name="Value">&quot;Green Emerald is in the middle of the sacred forest of Alfheim. This gem was guarded by ancestral spirits that existed before the sacred forest was formed. This spirit is able to control the whole forest at will. &quot;&amp;newline&amp;&quot;If you enter this sacred forest there will be no turning back&quot;</param>
                         </action>
                         <action id="3" name="Set at XY" sid="824206382869073" type="Array_book">
                             <param id="0" name="X">3</param>
                             <param id="1" name="Y">3</param>
-                            <param id="2" name="Value">&quot;Emerald&quot;</param>
+                            <param id="2" name="Value">&quot;Purple Amethyst is made from poison in Niddhavelir&apos;s deepest cave. The poison is very deadly and there is no cure for it. The poison came from the golems who lived there. When the golem moves, the ceiling of the cave will collapse.&quot;</param>
                         </action>
                         <action id="3" name="Set at XY" sid="332079021113865" type="Array_book">
                             <param id="0" name="X">4</param>
                             <param id="1" name="Y">3</param>
-                            <param id="2" name="Value">&quot;Topaz&quot;</param>
+                            <param id="2" name="Value">&quot;Orange Citrine is a legendary dragon eye gem. This dragon is called by the name of Valkyrie. This dragon is the incarnation of the great god. He is very vicious and does not hesitate to kill the creatures that bother him.&quot;</param>
                         </action>
                         <action id="3" name="Set at XY" sid="299715987112593" type="Array_book">
                             <param id="0" name="X">5</param>
                             <param id="1" name="Y">3</param>
-                            <param id="2" name="Value">&quot;Amethyst&quot;</param>
+                            <param id="2" name="Value">&quot;Lemon Quartz is a source of energy from a golem named Jormungandr. No one can defeat this golem because it has a protective aura that neutralizes the attack. The golem was very hard and could only be slashed by pure myhtril swords.&quot;</param>
                         </action>
                         <action id="3" name="Set at XY" sid="458319822314997" type="Array_book">
                             <param id="0" name="X">6</param>
                             <param id="1" name="Y">3</param>
-                            <param id="2" name="Value">&quot;Ruby&quot;</param>
+                            <param id="2" name="Value">&quot;Red ruby is formed from the pressure of extremely hot lava that can melt anything. This gem is a treasure of monsters that inhabit the mountains of Muspellheim. The area around there is very hot and can reduce human life.&quot;</param>
                         </action>
                         <action id="3" name="Set at XY" sid="413378190475334" type="Array_book">
                             <param id="0" name="X">7</param>
                             <param id="1" name="Y">3</param>
-                            <param id="2" name="Value">&quot;Alexandrite&quot;</param>
+                            <param id="2" name="Value">&quot;Blue Diamond is the hardest and strongest gem. Formed from ice that solidified millions of years ago. &quot;&amp;newline&amp;&quot;Able to break a sword of iron and steel. &quot;&amp;newline&amp;&quot;This gem is very rare and expensive. Many people are looking for it&quot;</param>
                         </action>
                     </actions>
                 </event-block>

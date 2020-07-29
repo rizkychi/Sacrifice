@@ -26,7 +26,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="0" name="Boss_Atk" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/" />
         <folder expanded="0" path="object-folder/System/" />
         <folder expanded="0" path="object-folder/Background/" />
         <folder expanded="0" path="object-folder/Background/MainMenu/" />
@@ -44,10 +44,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Area/Stage 5 - Vanaheim/" />
         <folder expanded="0" path="object-folder/Area/Stage 6 - Muspellheim/" />
         <folder expanded="0" path="object-folder/Area/Stage 7 - Niflheim/" />
-        <folder expanded="1" path="object-folder/Boss/" />
+        <folder expanded="0" path="object-folder/Boss/" />
         <folder expanded="0" path="object-folder/Monster/" />
         <folder expanded="0" path="object-folder/Particles/" />
-        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="0" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Stage/" />
         <folder expanded="0" path="event-folder/" />
         <folder expanded="0" path="event-folder/Stage/" />
@@ -73,6 +73,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/worldMap/" />
         <folder expanded="1" path="animation-folder/fog/" />
         <folder expanded="1" path="animation-folder/bg_yggdrasil/" />
+        <folder expanded="1" path="animation-folder/bg_story/" />
         <folder expanded="1" path="animation-folder/btn_back/" />
         <folder expanded="1" path="animation-folder/btn_check/" />
         <folder expanded="1" path="animation-folder/btn_close/" />
@@ -87,7 +88,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/btn_credits/" />
         <folder expanded="1" path="animation-folder/btn_difficulty_hard/" />
         <folder expanded="1" path="animation-folder/btn_difficulty_normal/" />
-        <folder expanded="1" path="animation-folder/key_input/" />
         <folder expanded="1" path="animation-folder/tuner/" />
         <folder expanded="1" path="animation-folder/item_gold_coin/" />
         <folder expanded="1" path="animation-folder/item_hp_large/" />
@@ -122,6 +122,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/arrow/" />
         <folder expanded="1" path="animation-folder/yggdrasil/" />
         <folder expanded="1" path="animation-folder/Light/" />
+        <folder expanded="1" path="animation-folder/item_story/" />
+        <folder expanded="1" path="animation-folder/shield/" />
         <folder expanded="1" path="animation-folder/loading_bg/" />
         <folder expanded="1" path="animation-folder/loading_logo/" />
         <folder expanded="1" path="animation-folder/Loading_text/" />

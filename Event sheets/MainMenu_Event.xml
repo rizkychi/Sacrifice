@@ -3,8 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>MainMenu_Event</name>
     <events>
-        <include>Loading_Event</include>
         <include>SaveGame_Event</include>
+        <include>Loading_Event</include>
         <variable constant="0" name="selected_menu" sid="400337251306604" static="0" type="number">1</variable>
         <variable constant="0" name="canvas_width" sid="810359835436184" static="0" type="number">1280</variable>
         <variable constant="0" name="canvas_height" sid="270031639976141" static="0" type="number">720</variable>
@@ -921,6 +921,17 @@
                                     <param id="0" name="Frame number">0</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="550260873425400">
+                                    <conditions />
+                                    <actions>
+                                        <action id="8" name="Open URL in new window" sid="436524847884057" type="Browser">
+                                            <param id="0" name="URL">&quot;https://rizkychi.itch.io/sacrifice&quot;</param>
+                                            <param id="1" name="Tag">&quot;Credits&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -1279,8 +1290,12 @@
                                                 <action id="-16" name="Wait" sid="199841563696114" type="System">
                                                     <param id="0" name="Seconds">LOADING_TIME</param>
                                                 </action>
+                                                <action id="-9" name="Set value" sid="307372218858452" type="System">
+                                                    <param id="0" name="Variable">story</param>
+                                                    <param id="1" name="Value">&quot;intro&quot;</param>
+                                                </action>
                                                 <action id="-2" name="Go to layout" sid="205658296160228" type="System">
-                                                    <param id="0" name="Layout">WorldMap</param>
+                                                    <param id="0" name="Layout">Stage 0 - Midgard</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1341,8 +1356,12 @@
                                                 <action id="-16" name="Wait" sid="702490384026511" type="System">
                                                     <param id="0" name="Seconds">LOADING_TIME</param>
                                                 </action>
-                                                <action id="-2" name="Go to layout" sid="408215175917364" type="System">
-                                                    <param id="0" name="Layout">WorldMap</param>
+                                                <action id="-9" name="Set value" sid="771269579317560" type="System">
+                                                    <param id="0" name="Variable">story</param>
+                                                    <param id="1" name="Value">&quot;intro&quot;</param>
+                                                </action>
+                                                <action id="-2" name="Go to layout" sid="461705425978392" type="System">
+                                                    <param id="0" name="Layout">Stage 0 - Midgard</param>
                                                 </action>
                                             </actions>
                                         </event-block>
