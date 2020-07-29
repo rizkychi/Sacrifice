@@ -630,7 +630,32 @@
                                 <point x="0.122302" y="0.453333" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.501587" original-source="C:\Users\Rizky\Downloads\maps\Midgard.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501587" original-source="C:\Users\Rizky\Downloads\maps\Midgard.png">
+                            <collision-poly>
+                                <point x="0.0306748" y="0.536508" />
+                                <point x="0.245399" y="0.51746" />
+                                <point x="0.303681" y="0.439683" />
+                                <point x="0.406441" y="0.442064" />
+                                <point x="0.439416" y="0.35754" />
+                                <point x="0.590873" y="0.359722" />
+                                <point x="0.580712" y="0.0528771" />
+                                <point x="0.664589" y="0.0518354" />
+                                <point x="0.662049" y="0.349727" />
+                                <point x="0.818754" y="0.36534" />
+                                <point x="0.875635" y="0.50013" />
+                                <point x="0.919412" y="0.589748" />
+                                <point x="0.790994" y="0.752017" />
+                                <point x="0.68384" y="0.791881" />
+                                <point x="0.80368" y="0.866667" />
+                                <point x="0.843558" y="0.931746" />
+                                <point x="0.63957" y="0.921429" />
+                                <point x="0.527608" y="0.961905" />
+                                <point x="0.507669" y="0.830952" />
+                                <point x="0.43865" y="0.757143" />
+                                <point x="0.27454" y="0.676984" />
+                                <point x="0.0621165" y="0.65119" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>

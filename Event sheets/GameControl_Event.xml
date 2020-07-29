@@ -1023,6 +1023,10 @@
                                                     <param id="1" name="Offset X">OFFSET_ATK</param>
                                                     <param id="2" name="Offset Y">0</param>
                                                 </condition>
+                                                <condition id="-10" name="Compare opacity" sid="781121880135820" type="Monster">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Opacity">100</param>
+                                                </condition>
                                             </conditions>
                                             <actions>
                                                 <action id="-12" name="Subtract from" sid="688127800504985" type="Monster">
@@ -1053,6 +1057,10 @@
                                                     <param id="0" name="Object">Player_Evans</param>
                                                     <param id="1" name="Offset X">OFFSET_ATK</param>
                                                     <param id="2" name="Offset Y">0</param>
+                                                </condition>
+                                                <condition id="-10" name="Compare opacity" sid="477119129861957" type="Boss">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Opacity">100</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
@@ -1096,6 +1104,10 @@
                                                     <param id="1" name="Offset X">-OFFSET_ATK</param>
                                                     <param id="2" name="Offset Y">0</param>
                                                 </condition>
+                                                <condition id="-10" name="Compare opacity" sid="265200260390156" type="Monster">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Opacity">100</param>
+                                                </condition>
                                             </conditions>
                                             <actions>
                                                 <action id="-12" name="Subtract from" sid="626129420624265" type="Monster">
@@ -1126,6 +1138,10 @@
                                                     <param id="0" name="Object">Player_Evans</param>
                                                     <param id="1" name="Offset X">-OFFSET_ATK</param>
                                                     <param id="2" name="Offset Y">0</param>
+                                                </condition>
+                                                <condition id="-10" name="Compare opacity" sid="407782838244875" type="Boss">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Opacity">100</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
@@ -1740,6 +1756,10 @@
                                 <condition id="0" name="On collision with another object" sid="495923948165200" type="Monster">
                                     <param id="0" name="Object">arrow</param>
                                 </condition>
+                                <condition id="-10" name="Compare opacity" sid="904868542276731" type="Monster">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="0" name="Play" sid="230366779541686" type="Audio">
@@ -1796,6 +1816,10 @@
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="534532687256917" type="Boss">
                                     <param id="0" name="Object">arrow</param>
+                                </condition>
+                                <condition id="-10" name="Compare opacity" sid="663777968224323" type="Boss">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Opacity">100</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -2434,6 +2458,10 @@
                             <param id="0" name="Variable">stealth</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-10" name="Compare opacity" sid="376271849383973" type="Monster">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Opacity">100</param>
                         </condition>
                     </conditions>
                     <actions />

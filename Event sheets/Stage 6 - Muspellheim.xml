@@ -79,6 +79,11 @@
                             <param id="1" name="Offset X">-80</param>
                             <param id="2" name="Offset Y">-40</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="642980222594968" type="System">
+                            <param id="0" name="Variable">stealth</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action behavior="Platform" id="1" name="Set max speed" sid="235944079239159" type="Fiery">
@@ -120,6 +125,11 @@
                             <param id="0" name="Object">Player_Evans</param>
                             <param id="1" name="Offset X">80</param>
                             <param id="2" name="Offset Y">-40</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="783750329775516" type="System">
+                            <param id="0" name="Variable">stealth</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>

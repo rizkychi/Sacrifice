@@ -9,7 +9,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         </active>
         <display name="HTML5" />
     </configurations>
-    <open-tabs />
+    <open-tabs>
+        <layout order="1">Stage 6 - Muspellheim</layout>
+        <event-sheet order="2">Stage 6 - Muspellheim</event-sheet>
+        <event-sheet active="1" order="3">GameControl_Event</event-sheet>
+    </open-tabs>
     <properties>
         <property expanded="1" name="About" />
         <property expanded="1" name="Project settings" />
@@ -47,10 +51,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Boss/" />
         <folder expanded="0" path="object-folder/Monster/" />
         <folder expanded="0" path="object-folder/Particles/" />
-        <folder expanded="0" path="layout-folder/" />
+        <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Stage/" />
-        <folder expanded="0" path="event-folder/" />
-        <folder expanded="0" path="event-folder/Stage/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="event-folder/Stage/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />
