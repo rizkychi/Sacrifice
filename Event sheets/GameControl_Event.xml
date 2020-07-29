@@ -2498,6 +2498,7 @@
         <event-group description="" sid="323076362773935" title="Player Movement &amp; Control">
             <sub-events>
                 <comment>Ignore input</comment>
+                <variable constant="0" name="flying" sid="678211186561330" static="1" type="number">0</variable>
                 <event-block sid="609168144157301">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="818356361240387" type="System">
@@ -2586,11 +2587,32 @@
                             <sub-events>
                                 <event-block sid="140083924546411">
                                     <conditions>
+                                        <condition id="-14" name="Compare variable" sid="750826066691622" type="System">
+                                            <param id="0" name="Variable">flying</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
                                         <condition id="-4" name="Trigger once while true" sid="876381160768843" type="System" />
                                     </conditions>
                                     <actions>
                                         <action id="4" name="Set animation" sid="512182710993167" type="Player_Evans">
                                             <param id="0" name="Animation">&quot;Fall&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="151134401581707">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="397262918439934" type="System">
+                                            <param id="0" name="Variable">flying</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="786470133190689" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="985589092554591" type="Player_Evans">
+                                            <param id="0" name="Animation">&quot;Fly&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
                                     </actions>
@@ -3057,6 +3079,11 @@
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
+                                <condition id="-14" name="Compare variable" sid="406751894943459" type="System">
+                                    <param id="0" name="Variable">flying</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-9" name="Set value" sid="693543979342644" type="System">
@@ -3170,6 +3197,11 @@
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
+                                <condition id="-14" name="Compare variable" sid="807166271226534" type="System">
+                                    <param id="0" name="Variable">flying</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="0" name="Play" sid="627179078724732" type="Audio">
@@ -3235,6 +3267,11 @@
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="844142101251370" type="System">
                                     <param id="0" name="Variable">defend</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="184630522819891" type="System">
+                                    <param id="0" name="Variable">flying</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
@@ -3350,7 +3387,9 @@
                     <sub-events>
                         <event-block sid="949319852566903">
                             <conditions>
-                                <condition behavior="Platform" id="4" name="Is falling" sid="447930408621047" type="Player_Evans" />
+                                <condition id="2" name="Is playing" sid="447930408621047" type="Player_Evans">
+                                    <param id="0" name="Animation">&quot;Fall&quot;</param>
+                                </condition>
                                 <condition id="-7" name="Compare instance variable" sid="377318128207334" type="Player_Evans">
                                     <param id="0" name="Instance variable">MP</param>
                                     <param id="1" name="Comparison">5</param>
@@ -3366,12 +3405,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="-9" name="Set value" sid="904324324147387" type="System">
+                                            <param id="0" name="Variable">flying</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
                                         <action behavior="Platform" id="6" name="Set max fall speed" sid="198694346138748" type="Player_Evans">
                                             <param id="0" name="Max fall speed">150</param>
-                                        </action>
-                                        <action id="4" name="Set animation" sid="594440372482805" type="Player_Evans">
-                                            <param id="0" name="Animation">&quot;Fly&quot;</param>
-                                            <param id="1" name="From">1</param>
                                         </action>
                                     </actions>
                                     <sub-events>
@@ -3397,12 +3436,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-9" name="Set value" sid="851998717624508" type="System">
+                                    <param id="0" name="Variable">flying</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
                                 <action behavior="Platform" id="6" name="Set max fall speed" sid="430651876648212" type="Player_Evans">
                                     <param id="0" name="Max fall speed">1000</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="178067348480735" type="Player_Evans">
-                                    <param id="0" name="Animation">&quot;Fall&quot;</param>
-                                    <param id="1" name="From">1</param>
                                 </action>
                             </actions>
                         </event-block>

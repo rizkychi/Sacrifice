@@ -12342,9 +12342,7 @@
         <file name="plant_grow.ogg" />
         <file name="golem_stomp.ogg" />
         <file name="lava_flows.ogg" />
-    </sounds-folder>
-    <music-folder>
-        <file name="Main menu  2 (PerituneMaterial_World_OP).ogg" />
+        <file name="a promise.ogg" />
         <file name="Level 1 - Svartalfheim (PerituneMaterial_Exotic_loop).ogg" />
         <file name="Level 2 - Alfheim (PerituneMaterial_Deep_Woods3_loop).ogg" />
         <file name="Level 3 - Niddhavellir (Background Music Epic Tension and Mysterious).ogg" />
@@ -12352,10 +12350,11 @@
         <file name="Level 5 - Vanaheim (PerituneMaterial_Desert_loop).ogg" />
         <file name="Level 6 - Muspellheim (PerituneMaterial_Havoc_loop).ogg" />
         <file name="Level 7 - Nilfheim (PerituneMaterial_Snowy_Day2_loop).ogg" />
-        <file name="World map (PerituneMaterial_Bazaar_loop).ogg" />
         <file name="Level 8 - Yggdrasil Scene  (PerituneMaterial_Wish5_loop).ogg" />
-        <file name="a promise.ogg" />
-    </music-folder>
+        <file name="Main menu  2 (PerituneMaterial_World_OP).ogg" />
+        <file name="World map (PerituneMaterial_Bazaar_loop).ogg" />
+    </sounds-folder>
+    <music-folder />
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />
